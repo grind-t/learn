@@ -1,6 +1,0 @@
-﻿  TableLab.cpp
-C:\Users\grind\Desktop\study\HigherOrderLanguageProgramming\TableLab\TableLab\Table.h(34,2): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\grind\Desktop\study\HigherOrderLanguageProgramming\TableLab\TableLab\Table.h(31): message : во время компиляции функции-члена класс шаблон "std::string Table<std::string,int>::toJSON(void)"
-C:\Users\grind\Desktop\study\HigherOrderLanguageProgramming\TableLab\TableLab\TableLab.cpp(15): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::string Table<std::string,int>::toJSON(void)"
-C:\Users\grind\Desktop\study\HigherOrderLanguageProgramming\TableLab\TableLab\TableLab.cpp(11): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "Table<std::string,int>"
-  TableLab.vcxproj -> C:\Users\grind\Desktop\study\HigherOrderLanguageProgramming\TableLab\Debug\TableLab.exe
