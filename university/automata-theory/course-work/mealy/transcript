@@ -1,0 +1,105 @@
+# Compile of pack.vhd was successful.
+# Compile of mealy_pack.vhd was successful.
+# Compile of mealy.vhd failed with 3 errors.
+# 3 compiles, 1 failed with 3 errors.
+# Compile of pack.vhd was successful.
+# Compile of mealy_pack.vhd was successful.
+# Compile of mealy.vhd failed with 1 errors.
+# 3 compiles, 1 failed with 1 error.
+# Compile of pack.vhd was successful.
+# Compile of mealy_pack.vhd was successful.
+# Compile of mealy.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.mealy
+# vsim -gui work.mealy 
+# Start time: 19:33:02 on Mar 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.mealy_pack
+# Loading work.pack
+# Loading work.mealy(archmealy)
+add wave -position insertpoint  \
+sim:/mealy/set
+add wave -position insertpoint  \
+sim:/mealy/clk
+add wave -position insertpoint  \
+sim:/mealy/x
+add wave -position insertpoint  \
+sim:/mealy/s
+add wave -position insertpoint  \
+sim:/mealy/NEXT_s
+add wave -position insertpoint  \
+sim:/mealy/y
+force -freeze sim:/mealy/clk 1 0, 0 {5000 ps} -r {10 ns}
+force -freeze sim:/mealy/clk 1 0, 0 {5000 ps} -r {10 ns}
+force -freeze sim:/mealy/set 1 0
+run
+force -freeze sim:/mealy/set 0 0
+run
+# Break key hit
+# Break key hit
+# Compile of pack.vhd was successful.
+# Compile of mealy_pack.vhd was successful.
+# Compile of mealy.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.mealy
+# End time: 20:05:43 on Mar 24,2020, Elapsed time: 0:32:41
+# Errors: 2, Warnings: 0
+# vsim -gui work.mealy 
+# Start time: 20:05:43 on Mar 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.mealy_pack
+# Loading work.pack
+# Loading work.mealy(archmealy)
+add wave -position insertpoint  \
+sim:/mealy/set
+add wave -position insertpoint  \
+sim:/mealy/clk
+add wave -position insertpoint  \
+sim:/mealy/x
+add wave -position insertpoint  \
+sim:/mealy/s
+add wave -position insertpoint  \
+sim:/mealy/NEXT_s
+add wave -position insertpoint  \
+sim:/mealy/y
+force -freeze sim:/mealy/clk 1 0, 0 {5000 ps} -r {10 ns}
+force -freeze sim:/mealy/x x2 0
+force -freeze sim:/mealy/set 1 0
+run
+force -freeze sim:/mealy/set 0 0
+run
+force -freeze sim:/mealy/x x1 0
+run
+run
+force -freeze sim:/mealy/x x3 0
+run
+force -freeze sim:/mealy/x x2 0
+run
+run
+force -freeze sim:/mealy/x x3 0
+run
+force -freeze sim:/mealy/x x2 0
+run
+force -freeze sim:/mealy/x x4 0
+run
+force -freeze sim:/mealy/x x3 0
+run
+force -freeze sim:/mealy/x x4 0
+run
+force -freeze sim:/mealy/x x1 0
+run
+force -freeze sim:/mealy/x x3 0
+run
+force -freeze sim:/mealy/x x4 0
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/grind/Desktop/study/automata-theory/wave.do
+# End time: 20:24:36 on Mar 24,2020, Elapsed time: 0:18:53
+# Errors: 1, Warnings: 0

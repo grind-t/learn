@@ -1,0 +1,115 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/grind/Desktop/study/automata-theory/quartus/simulation/qsim
+vhard_block
+Z0 !s110 1587827371
+!i10b 1
+!s100 AJNeD_6zHfVm:m?gJFPUe3
+IN8Qjl1a9e@ZGGEecAg`oP2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/quartus/simulation/qsim
+Z3 w1587827370
+Z4 8kursovaya.vo
+Z5 Fkursovaya.vo
+L0 380
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1587827370.000000
+Z8 !s107 kursovaya.vo|
+Z9 !s90 -work|work|kursovaya.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vmealy
+R0
+!i10b 1
+!s100 XA7eKoz4`DgZ@2CjjR8R`3
+IcUR1AXJO0a@ji]i6DmPgJ3
+R1
+R2
+R3
+R4
+R5
+Z12 L0 32
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vmealy_vlg_vec_tst
+R0
+!i10b 1
+!s100 koRda@ODLbbBE`EO2_`^^3
+I3L1hHoC=?B8Ia`FAJDoa=1
+R1
+R2
+w1587827369
+Z13 8test_mealy.vwf.vt
+Z14 Ftest_mealy.vwf.vt
+Z15 L0 30
+R6
+r1
+!s85 0
+31
+!s108 1587827371.000000
+!s107 test_mealy.vwf.vt|
+Z16 !s90 -work|work|test_mealy.vwf.vt|
+!i113 1
+R10
+R11
+vmoore
+Z17 !s110 1587827179
+!i10b 1
+!s100 i[GfaiC2I?5V14>JQAfnC0
+I@CD8:h[7zWiLC=NAO587E2
+R1
+R2
+Z18 w1587827176
+R4
+R5
+R12
+R6
+r1
+!s85 0
+31
+!s108 1587827178.000000
+R8
+R9
+!i113 1
+R10
+R11
+vmoore_vlg_vec_tst
+R17
+!i10b 1
+!s100 M9z7cS1GYeo^9:40Mz8P_2
+IBH8Ya9QkRUODLXPo>MzY42
+R1
+R2
+R18
+R13
+R14
+R15
+R6
+r1
+!s85 0
+31
+!s108 1587827179.000000
+!s107 test_mealy.vwf.vt|
+R16
+!i113 1
+R10
+R11

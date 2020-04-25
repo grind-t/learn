@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HexPrint",
+            "request": "launch",
+            "mainClass": "hexPrint.HexPrint"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "tmDat.Main"
+        }
+    ]
+}

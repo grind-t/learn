@@ -4,9 +4,9 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.*;
 import java.util.*;
 
-class Main{
+class Main {
     public static void main(String[] args){
-        try{
+        try {
             DataInputStream in = new DataInputStream(new FileInputStream("1802.cm1"));
             FileWriter fw = new FileWriter("output.txt");
 

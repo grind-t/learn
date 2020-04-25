@@ -1,0 +1,23 @@
+C:/Users/grind/Desktop/study/automata-theory/mealy.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/grind/Desktop/study/automata-theory/mealy.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2019.2 Compiler 2019.04 Apr 17 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package mealy_pack
+-- Loading package pack
+-- Compiling entity Mealy
+-- Compiling architecture ArchMealy of Mealy
+
+} {} {}} C:/Users/grind/Desktop/study/automata-theory/mealy_pack.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/grind/Desktop/study/automata-theory/mealy_pack.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2019.2 Compiler 2019.04 Apr 17 2019
+-- Loading package STANDARD
+-- Compiling package mealy_pack
+
+} {} {}} C:/Users/grind/Desktop/study/automata-theory/pack.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/grind/Desktop/study/automata-theory/pack.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2019.2 Compiler 2019.04 Apr 17 2019
+-- Loading package STANDARD
+-- Compiling package pack
+
+} {} {}}

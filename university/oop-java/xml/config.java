@@ -1,10 +1,9 @@
 import java.io.*;
-import java.security.KeyStore.Entry;
-
 import javax.xml.parsers.*;
 import org.w3c.dom.*;
 import org.xml.sax.SAXException;
 import java.util.*;
+import java.util.Map.*;
 
 class Config {
     Map<Integer, String> params = new HashMap<Integer, String>();
@@ -46,7 +45,7 @@ class Config {
 
     public static void main(String[] args) {
         Config obj = new Config("KNP-173.14.33.58.dat.xml");
-        for (java.util.Map.Entry<Integer, String> kv : obj.params.entrySet()) {
+        for (Entry<Integer, String> kv : obj.params.entrySet()) {
             System.out.println(String.valueOf(kv.getKey()) + " " + kv.getValue());
         }
     }

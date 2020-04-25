@@ -1,0 +1,23 @@
+C:/Users/grind/Desktop/study/automata-theory/moore/pack.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/grind/Desktop/study/automata-theory/moore/pack.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2019.2 Compiler 2019.04 Apr 17 2019
+-- Loading package STANDARD
+-- Compiling package pack
+
+} {} {}} C:/Users/grind/Desktop/study/automata-theory/moore/moore_pack.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/grind/Desktop/study/automata-theory/moore/moore_pack.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2019.2 Compiler 2019.04 Apr 17 2019
+-- Loading package STANDARD
+-- Compiling package moore_pack
+
+} {} {}} C:/Users/grind/Desktop/study/automata-theory/moore/Moore.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/grind/Desktop/study/automata-theory/moore/Moore.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2019.2 Compiler 2019.04 Apr 17 2019
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package moore_pack
+-- Loading package pack
+-- Compiling entity Moore
+-- Compiling architecture ArchMoore of Moore
+
+} {} {}}

@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Queue",
+            "request": "launch",
+            "mainClass": "Queue"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Spis",
+            "request": "launch",
+            "mainClass": "Spis"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "Main"
+        }
+    ]
+}

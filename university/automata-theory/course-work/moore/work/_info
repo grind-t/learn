@@ -1,0 +1,96 @@
+m255
+K4
+z2
+!s11e vcom 2019.2 2019.04, Apr 17 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_pro/19.4
+Emoore
+Z0 w1585495408
+Z1 DPx4 work 4 pack 0 22 c]g=eNIVRLj3n:>77^<L90
+Z2 DPx4 work 10 moore_pack 0 22 =k;TniiOXX_MBR4:SGF1>3
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z7 dC:/Users/grind/Desktop/study/automata-theory/moore
+Z8 8C:/Users/grind/Desktop/study/automata-theory/moore/Moore.vhd
+Z9 FC:/Users/grind/Desktop/study/automata-theory/moore/Moore.vhd
+l0
+L9
+V0z:f_OP]Nf63NIBSW8d8]2
+!s100 j>7Q^IT1gg=oTGdZhk9Ni3
+Z10 OV;C;2019.2;69
+32
+Z11 !s110 1585496412
+!i10b 1
+Z12 !s108 1585496412.000000
+Z13 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/grind/Desktop/study/automata-theory/moore/Moore.vhd|
+!s107 C:/Users/grind/Desktop/study/automata-theory/moore/Moore.vhd|
+!i113 1
+Z14 o-work work -2002 -explicit
+Z15 tExplicit 1 CvgOpt 0
+Aarchmoore
+R1
+R2
+R3
+R4
+R5
+R6
+DEx4 work 5 moore 0 22 0z:f_OP]Nf63NIBSW8d8]2
+l21
+L19
+VblI8z5WYOi^3_>R@Vz_a;0
+!s100 ^NIPT8>Z^<74Z_PMWZ2GW1
+R10
+32
+R11
+!i10b 1
+R12
+R13
+Z16 !s107 C:/Users/grind/Desktop/study/automata-theory/moore/Moore.vhd|
+!i113 1
+R14
+R15
+Pmoore_pack
+w1585492453
+R7
+8C:/Users/grind/Desktop/study/automata-theory/moore/moore_pack.vhd
+FC:/Users/grind/Desktop/study/automata-theory/moore/moore_pack.vhd
+l0
+L1
+V=k;TniiOXX_MBR4:SGF1>3
+!s100 9j[dN9ij6mEcgFZB7bgCL1
+R10
+32
+R11
+!i10b 1
+R12
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/grind/Desktop/study/automata-theory/moore/moore_pack.vhd|
+!s107 C:/Users/grind/Desktop/study/automata-theory/moore/moore_pack.vhd|
+!i113 1
+R14
+R15
+Ppack
+w1585496105
+R7
+8C:/Users/grind/Desktop/study/automata-theory/moore/pack.vhd
+FC:/Users/grind/Desktop/study/automata-theory/moore/pack.vhd
+l0
+L1
+Vc]g=eNIVRLj3n:>77^<L90
+!s100 @n3aM^h01aB>Z8RDOoYT52
+R10
+32
+R11
+!i10b 1
+R12
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/grind/Desktop/study/automata-theory/moore/pack.vhd|
+!s107 C:/Users/grind/Desktop/study/automata-theory/moore/pack.vhd|
+!i113 1
+R14
+R15
