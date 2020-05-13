@@ -1,0 +1,18 @@
+Analysis & Synthesis Status : Successful - Wed May 06 15:01:51 2020
+Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Revision Name : qartus
+Top-level Entity Name : multiply_scheme
+Family : Cyclone IV GX
+Total logic elements : 41
+    Total combinational functions : 41
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 16
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0

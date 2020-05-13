@@ -1,0 +1,98 @@
+|mealy_full_decompose
+t1 <= mealy_dec:inst.t1
+x1 => mealy_dec:inst.x1
+x2 => mealy_dec:inst.x2
+clock => mealy_dec:inst.clock
+resetn => mealy_dec:inst.resetn
+enable => mealy_dec:inst.enable
+t2 <= mealy_dec:inst.t2
+y1 <= mealy_dec:inst.y1
+y2 <= mealy_dec:inst.y2
+y3 <= mealy_dec:inst.y3
+
+
+|mealy_full_decompose|mealy_dec:inst
+x1 => vozbuzh:circ2.x1
+x1 => output:circ3.x1
+x2 => vozbuzh:circ2.x2
+x2 => output:circ3.x2
+clock => memory:circ1.clock
+resetn => memory:circ1.resetn
+enable => memory:circ1.enable
+t1 <= memory:circ1.t1
+t2 <= memory:circ1.t2
+y1 <= output:circ3.y1
+y2 <= output:circ3.y2
+y3 <= output:circ3.y3
+
+
+|mealy_full_decompose|mealy_dec:inst|memory:circ1
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+D => t2.DATAB
+clock => t2~reg0.CLK
+clock => t1~reg0.CLK
+enable => t2.OUTPUTSELECT
+enable => t1~reg0.ENA
+resetn => t1~reg0.ACLR
+resetn => t2~reg0.ENA
+t1 <= t1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+t2 <= t2~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mealy_full_decompose|mealy_dec:inst|vozbuzh:circ2
+x1 => D.IN0
+x1 => J.IN1
+x1 => K.IN0
+x2 => J.IN0
+x2 => K.IN1
+x2 => D.IN0
+x2 => J.IN0
+x2 => D.IN1
+t1 => D.IN1
+t1 => D.IN0
+t1 => D.IN1
+t2 => J.IN1
+t2 => D.IN1
+t2 => J.IN1
+t2 => K.IN1
+t2 => D.IN1
+J <= J.DB_MAX_OUTPUT_PORT_TYPE
+K <= K.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mealy_full_decompose|mealy_dec:inst|output:circ3
+x1 => y1.IN0
+x1 => y1.IN0
+x1 => y2.IN0
+x1 => y3.IN0
+x1 => y1.IN0
+x1 => y2.IN0
+x2 => y1.IN0
+x2 => y1.IN1
+x2 => y2.IN1
+x2 => y3.IN0
+x2 => y1.IN1
+x2 => y3.IN0
+t1 => y1.IN1
+t1 => y2.IN1
+t1 => y3.IN1
+t1 => y1.IN1
+t1 => y2.IN1
+t1 => y3.IN1
+t2 => y1.IN1
+t2 => y1.IN1
+t2 => y3.IN1
+t2 => y1.IN1
+t2 => y2.IN1
+t2 => y3.IN1
+y1 <= y1.DB_MAX_OUTPUT_PORT_TYPE
+y2 <= y2.DB_MAX_OUTPUT_PORT_TYPE
+y3 <= y3.DB_MAX_OUTPUT_PORT_TYPE
+
+

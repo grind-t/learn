@@ -1,0 +1,43 @@
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 14:03:07 on May 13,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.mealy_pack
+# Loading work.moore_pack
+# Loading work.pack
+# Loading work.testbench(archtestbench)
+# Loading work.mealy(archmealy)
+# Loading work.moore(archmoore)
+add wave -position insertpoint  \
+sim:/testbench/set
+add wave -position insertpoint  \
+sim:/testbench/clk
+add wave -position insertpoint  \
+sim:/testbench/x
+add wave -position insertpoint  \
+sim:/testbench/y_mealy
+add wave -position insertpoint  \
+sim:/testbench/y_moore
+add wave -position insertpoint  \
+sim:/testbench/equal
+add wave -position insertpoint  \
+sim:/testbench/clock_period
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+run
+# End time: 14:09:49 on May 13,2020, Elapsed time: 0:06:42
+# Errors: 0, Warnings: 0
