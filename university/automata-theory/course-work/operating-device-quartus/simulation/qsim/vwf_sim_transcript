@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off qartus -c qartus --vector_source="C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/Waveform.vwf" --testbench_file="C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/simulation/qsim/Waveform.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off qartus -c qartus --vector_source="C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/test_multiply_scheme.vwf" --testbench_file="C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/simulation/qsim/test_multiply_scheme.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -26,8 +26,8 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed May 06 15:02:19 2020
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off qartus -c qartus --vector_source=C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/Waveform.vwf --testbench_file=C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/simulation/qsim/Waveform.vwf.vht
+    Info: Processing started: Wed Jun 03 13:01:19 2020
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off qartus -c qartus --vector_source=C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/test_multiply_scheme.vwf --testbench_file=C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/simulation/qsim/test_multiply_scheme.vwf.vht
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
 Completed successfully. 
@@ -53,13 +53,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed May 06 15:02:20 2020
+    Info: Processing started: Wed Jun 03 13:01:21 2020
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/simulation/qsim/ qartus -c qartus
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file qartus.vho in folder "C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4717 megabytes
-    Info: Processing ended: Wed May 06 15:02:21 2020
+    Info: Processing ended: Wed Jun 03 13:01:22 2020
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -79,13 +79,15 @@ Reading C:/intelFPGA/19.1/modelsim_ase/tcl/vsim/pref.tcl
 
 # 10.5b
 
+
 # do qartus.do
 
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:02:22 on May 06,2020
+# Start time: 13:01:23 on Jun 03,2020
 # vcom -work work qartus.vho 
 # -- Loading package STANDARD
+
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package VITAL_Timing
@@ -94,31 +96,36 @@ Reading C:/intelFPGA/19.1/modelsim_ase/tcl/vsim/pref.tcl
 # -- Loading package cycloneiv_components
 # -- Compiling entity hard_block
 # -- Compiling architecture structure of hard_block
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
 # -- Compiling entity multiply_scheme
 # -- Compiling architecture structure of multiply_scheme
 
-# End time: 15:02:22 on May 06,2020, Elapsed time: 0:00:00
+# End time: 13:01:23 on Jun 03,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:02:22 on May 06,2020
-# vcom -work work Waveform.vwf.vht 
+# Start time: 13:01:23 on Jun 03,2020
+# vcom -work work test_multiply_scheme.vwf.vht 
+
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity multiply_scheme_vhd_vec_tst
 # -- Compiling architecture multiply_scheme_arch of multiply_scheme_vhd_vec_tst
 
-# End time: 15:02:22 on May 06,2020, Elapsed time: 0:00:00
+# End time: 13:01:23 on Jun 03,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cycloneiv -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.multiply_scheme_vhd_vec_tst 
-# Start time: 15:02:22 on May 06,2020
+# Start time: 13:01:23 on Jun 03,2020
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading work.multiply_scheme_vhd_vec_tst(multiply_scheme_arch)
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
 # Loading cycloneiv.cycloneiv_atom_pack(body)
 # Loading cycloneiv.cycloneiv_components
 # Loading work.multiply_scheme(structure)
@@ -126,23 +133,28 @@ Reading C:/intelFPGA/19.1/modelsim_ase/tcl/vsim/pref.tcl
 # Loading ieee.std_logic_arith(body)
 # Loading cycloneiv.cycloneiv_io_obuf(arch)
 # Loading cycloneiv.cycloneiv_io_ibuf(arch)
+# Loading cycloneiv.cycloneiv_clkctrl(vital_clkctrl)
+# Loading cycloneiv.cycloneiv_ena_reg(behave)
 # Loading cycloneiv.cycloneiv_lcell_comb(vital_lcell_comb)
-# after#33
+# Loading altera.dffeas(vital_dffeas)
+# ** Warning: Design size of 11951 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# after#35
 
-# End time: 15:02:22 on May 06,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
+# End time: 13:01:24 on Jun 03,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/Waveform.vwf...
+Reading C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/test_multiply_scheme.vwf...
 
 Reading C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/simulation/qsim/qartus.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/simulation/qsim/qartus_20200506150222.sim.vwf
+Writing the resulting VWF to C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/simulation/qsim/qartus_20200603130125.sim.vwf
 
 Finished VCD to VWF conversion.
 

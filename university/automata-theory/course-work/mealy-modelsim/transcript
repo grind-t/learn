@@ -1,2 +1,5 @@
-# reading C:/intelFPGA/19.1/modelsim_ase/win32aloem/../modelsim.ini
-# Loading project testbench
+# Compile of pack.vhd was successful.
+# Compile of mealy_pack.vhd was successful.
+# Compile of mealy.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+# Load canceled

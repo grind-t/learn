@@ -8,494 +8,579 @@ z2
 !i10f 100
 cModel Technology
 dC:/Users/grind/Desktop/study/automata-theory/quartus/simulation/qsim
-Ehard_block
-Z0 w1588348645
-Z1 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
-Z2 DPx9 cycloneiv 19 cycloneiv_atom_pack 0 22 6IFORMJD7PB;R3^Ka8L1g0
-Z3 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
-Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z6 DPx9 cycloneiv 20 cycloneiv_components 0 22 ce8R95=d@dVjA2O3VIW4k0
-Z7 dC:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/quartus/simulation/qsim
-Z8 8kursovaya.vho
-Z9 Fkursovaya.vho
-l0
-L35
-V5mcF]JUg7TS^l0EMa_h4A1
-!s100 Q?IbEnM>aW3cc=hi`GCc71
-Z10 OV;C;10.5b;63
-32
-Z11 !s110 1588348648
+vhard_block
+Z0 !s110 1591906521
 !i10b 1
-Z12 !s108 1588348648.000000
-Z13 !s90 -work|work|kursovaya.vho|
-Z14 !s107 kursovaya.vho|
-!i113 1
-Z15 o-work work
-Z16 tExplicit 1 CvgOpt 0
-Astructure
-R1
-R2
-R3
-R4
-R5
-R6
-DEx4 work 10 hard_block 0 22 5mcF]JUg7TS^l0EMa_h4A1
-l65
-L51
-VMkbPfL8S?h^i>Mg3GSGD`1
-!s100 O>:lWQfHCcIaXgQ<=Tgn10
-R10
-32
-R11
-!i10b 1
-R12
-R13
-R14
-!i113 1
-R15
-R16
-vmealy
-Z17 !s110 1588018816
-!i10b 1
-!s100 XA7eKoz4`DgZ@2CjjR8R`3
-IcUR1AXJO0a@ji]i6DmPgJ3
-Z18 VDg1SIo80bB@j0V0VzS_@n1
-R7
-w1588018815
-Z19 8kursovaya.vo
-Z20 Fkursovaya.vo
-Z21 L0 32
-Z22 OV;L;10.5b;63
+!s100 AJNeD_6zHfVm:m?gJFPUe3
+IN8Qjl1a9e@ZGGEecAg`oP2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/structure-automata-quartus/simulation/qsim
+Z3 w1591906518
+Z4 8kursovaya.vo
+Z5 Fkursovaya.vo
+L0 380
+Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z23 !s108 1588018816.000000
-Z24 !s107 kursovaya.vo|
-Z25 !s90 -work|work|kursovaya.vo|
+Z7 !s108 1591906521.000000
+Z8 !s107 kursovaya.vo|
+Z9 !s90 -work|work|kursovaya.vo|
 !i113 1
-R15
-Z26 tCvgOpt 0
-Emealy_decompose
-Z27 w1588164108
-R2
-R6
+Z10 o-work work
+Z11 tCvgOpt 0
+vmealy
+Z12 !s110 1591819851
+!i10b 1
+!s100 XA7eKoz4`DgZ@2CjjR8R`3
+IcUR1AXJO0a@ji]i6DmPgJ3
 R1
-Z28 DPx6 altera 11 dffeas_pack 0 22 dbC[kT^o8P[ggjb1if:RT1
-R3
+R2
+w1591819850
 R4
 R5
-Z29 DPx6 altera 28 altera_primitives_components 0 22 PoC3B_7fao?IDTS[NR5Q62
-R7
+Z13 L0 32
+R6
+r1
+!s85 0
+31
+Z14 !s108 1591819851.000000
 R8
 R9
+!i113 1
+R10
+R11
+Emealy_decompose
+Z15 w1588164108
+Z16 DPx9 cycloneiv 19 cycloneiv_atom_pack 0 22 6IFORMJD7PB;R3^Ka8L1g0
+Z17 DPx9 cycloneiv 20 cycloneiv_components 0 22 ce8R95=d@dVjA2O3VIW4k0
+Z18 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z19 DPx6 altera 11 dffeas_pack 0 22 dbC[kT^o8P[ggjb1if:RT1
+Z20 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z21 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z22 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z23 DPx6 altera 28 altera_primitives_components 0 22 PoC3B_7fao?IDTS[NR5Q62
+Z24 dC:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/quartus/simulation/qsim
+Z25 8kursovaya.vho
+Z26 Fkursovaya.vho
 l0
 L80
 VfZTZeeSaXC1?ZlPS_jDB`3
 !s100 ASbn]IJI`LOeB<eIj5N?N3
-R10
+Z27 OV;C;10.5b;63
 32
-Z30 !s110 1588164109
+Z28 !s110 1588164109
 !i10b 1
-Z31 !s108 1588164109.000000
-R13
-R14
+Z29 !s108 1588164109.000000
+Z30 !s90 -work|work|kursovaya.vho|
+Z31 !s107 kursovaya.vho|
 !i113 1
-R15
-R16
+R10
+Z32 tExplicit 1 CvgOpt 0
 Astructure
-R2
-R6
-R1
-R28
-R3
-R4
-R5
-R29
+R16
+R17
+R18
+R19
+R20
+R21
+R22
+R23
 DEx4 work 15 mealy_decompose 0 22 fZTZeeSaXC1?ZlPS_jDB`3
 l171
 L114
 VSg_TC<;A;HhPPP0B0SLa>1
 !s100 dbG<bMcd?JakLbBBzB1C?3
-R10
+R27
 32
-R30
+R28
 !i10b 1
+R29
+R30
 R31
-R13
-R14
 !i113 1
-R15
-R16
-Emealy_decompose_vhd_vec_tst
-Z32 w1588164107
+R10
+R32
+vmealy_decompose_scheme
+R0
+!i10b 1
+!s100 k@E4fa4`3>z<Q3N>5ND_A2
+IWnILPoCcn_CT=>g`QCk8G0
+R1
+R2
+R3
 R4
 R5
+R13
+R6
+r1
+!s85 0
+31
 R7
-Z33 8Waveform.vwf.vht
-Z34 FWaveform.vwf.vht
+R8
+R9
+!i113 1
+R10
+R11
+vmealy_decompose_scheme_vlg_vec_tst
+R0
+!i10b 1
+!s100 U8GWn3kU?VnDB;`2:Wnz10
+InWZGejPLEZmY;55M^RLcF1
+R1
+R2
+w1591906517
+Z33 8test_mealy_decompose.vwf.vt
+Z34 Ftest_mealy_decompose.vwf.vt
+Z35 L0 30
+R6
+r1
+!s85 0
+31
+R7
+!s107 test_mealy_decompose.vwf.vt|
+Z36 !s90 -work|work|test_mealy_decompose.vwf.vt|
+!i113 1
+R10
+R11
+Emealy_decompose_vhd_vec_tst
+Z37 w1588164107
+R21
+R22
+R24
+Z38 8Waveform.vwf.vht
+Z39 FWaveform.vwf.vht
 l0
 L32
 VC7>[R6hXKjmzzfbHE[iEI2
 !s100 ?An3k]JmFPnhmc3?XI^PN2
-R10
+R27
 32
-R30
+R28
 !i10b 1
-R31
-Z35 !s90 -work|work|Waveform.vwf.vht|
-Z36 !s107 Waveform.vwf.vht|
+R29
+Z40 !s90 -work|work|Waveform.vwf.vht|
+Z41 !s107 Waveform.vwf.vht|
 !i113 1
-R15
-R16
+R10
+R32
 Amealy_decompose_arch
-R4
-R5
+R21
+R22
 DEx4 work 27 mealy_decompose_vhd_vec_tst 0 22 C7>[R6hXKjmzzfbHE[iEI2
 l67
 L34
 VF4NR0<d0`d6@6XZOfYSIe1
 !s100 K[gm_B[AFDR`3B807Ndb@3
-R10
+R27
 32
-R30
-!i10b 1
-R31
-R35
-R36
-!i113 1
-R15
-R16
-Emealy_full_decompose
-R0
-R2
-R6
-R1
 R28
-R3
+!i10b 1
+R29
+R40
+R41
+!i113 1
+R10
+R32
+vmealy_full_decompose
+!s110 1591876211
+!i10b 1
+!s100 L?Dh0JA=ck=hPUU>iC0=b3
+I4C<=Zf2Y6Qbi3g`^RIkQ?3
+R1
+R2
+w1591876211
 R4
 R5
-R29
-R7
+R13
+R6
+r1
+!s85 0
+31
+!s108 1591876211.000000
 R8
 R9
-l0
-L80
-Vk`=n4PjIT94XUeEEZokFS0
-!s100 7U7jBkO5DPoL<f`OKmoEE3
-R10
-32
-R11
-!i10b 1
-R12
-R13
-R14
 !i113 1
-R15
-R16
-Astructure
-R2
-R6
-R1
-R28
-R3
-R4
-R5
-R29
-DEx4 work 20 mealy_full_decompose 0 22 k`=n4PjIT94XUeEEZokFS0
-l157
-L108
-VJQU5Uj]BBjO@6;^Ee>B9<3
-!s100 nLdoYM8`_HQTH@OPCkf2h0
 R10
-32
 R11
-!i10b 1
-R12
-R13
-R14
-!i113 1
-R15
-R16
 Emealy_full_decompose_vhd_vec_tst
-Z37 w1588348644
-R4
-R5
-R7
-R33
-R34
+Z42 w1591808798
+R21
+R22
+R2
+Z43 8test_mealy.vwf.vht
+Z44 Ftest_mealy.vwf.vht
 l0
 L32
 V2=K:3[;YmN`S<jG0g6Kl@3
 !s100 Z06Vm:DgWmWYgXlhlY4b_0
-R10
+R27
 32
-R11
+Z45 !s110 1591808800
 !i10b 1
-R12
-R35
-R36
+Z46 !s108 1591808800.000000
+Z47 !s90 -work|work|test_mealy.vwf.vht|
+Z48 !s107 test_mealy.vwf.vht|
 !i113 1
-R15
-R16
+R10
+R32
 Amealy_full_decompose_arch
-R4
-R5
+R21
+R22
 DEx4 work 32 mealy_full_decompose_vhd_vec_tst 0 22 2=K:3[;YmN`S<jG0g6Kl@3
 l61
 L34
-V_EFCF@OjRDg[mFV8J;eVW2
-!s100 c@G;f?;lDYIQf<dlO9z]a1
-R10
+V^?aCdoGmUzbDM9c21`BN[1
+!s100 W[f=2dAVbzHI95O3FQTW_2
+R27
 32
-R11
+R45
 !i10b 1
-R12
+R46
+R47
+R48
+!i113 1
+R10
+R32
+vmealy_full_decompose_vlg_vec_tst
+!s110 1591876212
+!i10b 1
+!s100 bbzRdbe1Z37_?WA:7R[3X2
+INFN;K9=KWIahSTSdbahVP2
+R1
+R2
+w1591876210
+R33
+R34
 R35
+R6
+r1
+!s85 0
+31
+!s108 1591876212.000000
+!s107 test_mealy_decompose.vwf.vt|
 R36
 !i113 1
-R15
-R16
-Emealy_vhdl
-Z38 w1588028339
+R10
+R11
+Emealy_vhd_vec_tst
+Z49 w1591819671
+R21
+R22
 R2
-R6
-R1
-R28
-R3
-R4
-R5
-R29
-R7
-R8
-R9
+R43
+R44
+l0
+L32
+VIeoW09nRUjC5i=GQ_O4dP0
+!s100 VA97FAP:@ZkZg46]gVa432
+R27
+32
+Z50 !s110 1591819672
+!i10b 1
+Z51 !s108 1591819672.000000
+R47
+R48
+!i113 1
+R10
+R32
+Amealy_arch
+R21
+R22
+DEx4 work 17 mealy_vhd_vec_tst 0 22 IeoW09nRUjC5i=GQ_O4dP0
+l61
+L34
+VHcVO49Ajcc<LEPTMLdgM;2
+!s100 ]OK@D2>M2H9K;:BFDkI7P2
+R27
+32
+R50
+!i10b 1
+R51
+R47
+R48
+!i113 1
+R10
+R32
+Emealy_vhdl
+Z52 w1588028339
+R16
+R17
+R18
+R19
+R20
+R21
+R22
+R23
+R24
+R25
+R26
 l0
 L80
 V]fjI^BDB>`3FEnUH5@Jia0
 !s100 OBIZCE2k>_@`c^^czUPg@2
-R10
+R27
 32
-Z39 !s110 1588028339
+Z53 !s110 1588028339
 !i10b 1
-Z40 !s108 1588028339.000000
-R13
-R14
+Z54 !s108 1588028339.000000
+R30
+R31
 !i113 1
-R15
-R16
+R10
+R32
 Astructure
-R2
-R6
-R1
-R28
-R3
-R4
-R5
-R29
+R16
+R17
+R18
+R19
+R20
+R21
+R22
+R23
 DEx4 work 10 mealy_vhdl 0 22 ]fjI^BDB>`3FEnUH5@Jia0
 l157
 L108
 VUb[dLRa?QiAYGAn1UOcf32
 !s100 mPWCeC`;c0alf0d`22Yb^2
-R10
+R27
 32
-R39
+R53
 !i10b 1
-R40
-R13
-R14
+R54
+R30
+R31
 !i113 1
-R15
-R16
+R10
+R32
 Emealy_vhdl_vhd_vec_tst
-Z41 w1588028338
-R4
-R5
-R7
-Z42 8test_mealy_vhdl.vwf.vht
-Z43 Ftest_mealy_vhdl.vwf.vht
+Z55 w1588028338
+R21
+R22
+R24
+Z56 8test_mealy_vhdl.vwf.vht
+Z57 Ftest_mealy_vhdl.vwf.vht
 l0
 L32
 V3a:k_Mb8P<>;28jkJKnlz2
 !s100 <gRCVfLG:Bi3P1Mm3dmWz3
-R10
+R27
 32
-Z44 !s110 1588028340
+Z58 !s110 1588028340
 !i10b 1
-Z45 !s108 1588028340.000000
-Z46 !s90 -work|work|test_mealy_vhdl.vwf.vht|
-Z47 !s107 test_mealy_vhdl.vwf.vht|
+Z59 !s108 1588028340.000000
+Z60 !s90 -work|work|test_mealy_vhdl.vwf.vht|
+Z61 !s107 test_mealy_vhdl.vwf.vht|
 !i113 1
-R15
-R16
+R10
+R32
 Amealy_vhdl_arch
-R4
-R5
+R21
+R22
 DEx4 work 22 mealy_vhdl_vhd_vec_tst 0 22 3a:k_Mb8P<>;28jkJKnlz2
 l61
 L34
 VRYkje<a_2JnTIKCCa:UnQ3
 !s100 Hj>nfQcAV1_070lH0<KYk1
-R10
+R27
 32
-R44
+R58
 !i10b 1
-R45
-R46
-R47
+R59
+R60
+R61
 !i113 1
-R15
-R16
+R10
+R32
 vmealy_vlg_vec_tst
-R17
+R12
 !i10b 1
 !s100 koRda@ODLbbBE`EO2_`^^3
 I3L1hHoC=?B8Ia`FAJDoa=1
-R18
-R7
-w1588018814
-Z48 8test_mealy.vwf.vt
-Z49 Ftest_mealy.vwf.vt
-Z50 L0 30
-R22
+R1
+R2
+w1591819849
+8test_mealy.vwf.vt
+Ftest_mealy.vwf.vt
+R35
+R6
 r1
 !s85 0
 31
-R23
-Z51 !s107 test_mealy.vwf.vt|
-Z52 !s90 -work|work|test_mealy.vwf.vt|
+R14
+!s107 test_mealy.vwf.vt|
+!s90 -work|work|test_mealy.vwf.vt|
 !i113 1
-R15
-R26
+R10
+R11
 vmoore
-Z53 !s110 1587827179
+Z62 !s110 1591873499
 !i10b 1
 !s100 i[GfaiC2I?5V14>JQAfnC0
 I@CD8:h[7zWiLC=NAO587E2
+R1
+R2
+w1591873496
+R4
+R5
+R13
+R6
+r1
+!s85 0
+31
+Z63 !s108 1591873499.000000
+R8
+R9
+!i113 1
+R10
+R11
+Emoore_vhd_vec_tst
+Z64 w1591819617
+R21
+R22
+R2
+R43
+R44
+l0
+L32
+VR5JA:hZ^]>IXDbd>_b<K:0
+!s100 6?[@19E3C3PgVDVOd5^=n0
+R27
+32
+Z65 !s110 1591819619
+!i10b 1
+Z66 !s108 1591819619.000000
+R47
+R48
+!i113 1
+R10
+R32
+Amoore_arch
+R21
+R22
+DEx4 work 17 moore_vhd_vec_tst 0 22 R5JA:hZ^]>IXDbd>_b<K:0
+l63
+L34
+V=n2TbmnKcdH?PW:K?:_Td1
+!s100 >71<ZYQ4ARjWj:E=WlgW42
+R27
+32
+R65
+!i10b 1
+R66
+R47
+R48
+!i113 1
+R10
+R32
+vmoore_vlg_vec_tst
+R62
+!i10b 1
+!s100 IXElSVi3Z9kgNmTSb@b=G0
+I5hmag@GYJDVB>VW`mJ7NP2
+R1
+R2
+w1591873495
+8test_moore.vwf.vt
+Ftest_moore.vwf.vt
+R35
+R6
+r1
+!s85 0
+31
+R63
+!s107 test_moore.vwf.vt|
+!s90 -work|work|test_moore.vwf.vt|
+!i113 1
+R10
+R11
+Etest_memory
+Z67 w1588073709
+R16
+R17
 R18
-R7
-Z54 w1587827176
 R19
 R20
 R21
 R22
-r1
-!s85 0
-31
-!s108 1587827178.000000
+R23
 R24
 R25
-!i113 1
-R15
 R26
-vmoore_vlg_vec_tst
-R53
-!i10b 1
-!s100 M9z7cS1GYeo^9:40Mz8P_2
-IBH8Ya9QkRUODLXPo>MzY42
-R18
-R7
-R54
-R48
-R49
-R50
-R22
-r1
-!s85 0
-31
-!s108 1587827179.000000
-R51
-R52
-!i113 1
-R15
-R26
-Etest_memory
-Z55 w1588073709
-R2
-R6
-R1
-R28
-R3
-R4
-R5
-R29
-R7
-R8
-R9
 l0
 L80
 V6;@5?P7FCnCGfm;DICW1;0
 !s100 Yo;6X2O?Vzzc34oJN7HMA1
-R10
+R27
 32
-Z56 !s110 1588073710
+Z68 !s110 1588073710
 !i10b 1
-Z57 !s108 1588073710.000000
-R13
-R14
+Z69 !s108 1588073710.000000
+R30
+R31
 !i113 1
-R15
-R16
+R10
+R32
 Astructure
-R2
-R6
-R1
-R28
-R3
-R4
-R5
-R29
+R16
+R17
+R18
+R19
+R20
+R21
+R22
+R23
 DEx4 work 11 test_memory 0 22 6;@5?P7FCnCGfm;DICW1;0
 l155
 L108
 V6Zaa0MZiB^hI<WI?3k4]_0
 !s100 _jgSYRVQXgg]@;fe`DKA_2
-R10
+R27
 32
-R56
+R68
 !i10b 1
-R57
-R13
-R14
+R69
+R30
+R31
 !i113 1
-R15
-R16
+R10
+R32
 Etest_memory_vhd_vec_tst
-Z58 w1588073708
-R4
-R5
-R7
-R42
-R43
+Z70 w1588073708
+R21
+R22
+R24
+R56
+R57
 l0
 L32
 Vgad;=HD5cee3@g]cQeX5Y0
 !s100 KIk6F::lN^C2HhITX6B3g0
-R10
+R27
 32
-R56
+R68
 !i10b 1
-R57
-R46
-R47
+R69
+R60
+R61
 !i113 1
-R15
-R16
+R10
+R32
 Atest_memory_arch
-R4
-R5
+R21
+R22
 DEx4 work 23 test_memory_vhd_vec_tst 0 22 gad;=HD5cee3@g]cQeX5Y0
 l61
 L34
 V5OMKD?CT92hN^l?LLdaCa2
 !s100 k6L^i^0XXKFMZ2[7hIH5@0
-R10
+R27
 32
-R56
+R68
 !i10b 1
-R57
-R46
-R47
+R69
+R60
+R61
 !i113 1
-R15
-R16
+R10
+R32

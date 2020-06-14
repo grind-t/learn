@@ -1,6 +1,14 @@
+# Load canceled
+# Compile of pack.vhd was successful.
+# Compile of mealy_pack.vhd was successful.
+# Compile of moore_pack.vhd was successful.
+# Compile of mealy.vhd was successful.
+# Compile of moore.vhd was successful.
+# Compile of Testbench.vhd was successful.
+# 6 compiles, 0 failed with no errors.
 vsim -gui work.testbench
 # vsim -gui work.testbench 
-# Start time: 14:03:07 on May 13,2020
+# Start time: 23:08:05 on Jun 06,2020
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -13,31 +21,12 @@ vsim -gui work.testbench
 # Loading work.mealy(archmealy)
 # Loading work.moore(archmoore)
 add wave -position insertpoint  \
-sim:/testbench/set
-add wave -position insertpoint  \
-sim:/testbench/clk
-add wave -position insertpoint  \
-sim:/testbench/x
-add wave -position insertpoint  \
-sim:/testbench/y_mealy
-add wave -position insertpoint  \
-sim:/testbench/y_moore
-add wave -position insertpoint  \
+sim:/testbench/x \
+sim:/testbench/clk \
+sim:/testbench/set \
+sim:/testbench/y_mealy \
+sim:/testbench/y_moore \
 sim:/testbench/equal
-add wave -position insertpoint  \
-sim:/testbench/clock_period
 run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-restart
-run
-# End time: 14:09:49 on May 13,2020, Elapsed time: 0:06:42
+# End time: 23:11:31 on Jun 06,2020, Elapsed time: 0:03:26
 # Errors: 0, Warnings: 0

@@ -25,31 +25,31 @@ begin
 	N_state:	process (x,s)
 	-- Процесс формирования следующего состояния и выходного сигнала автомата										
 	begin
-			case s is
-			-- Формирование состояний и выходов автомата в состоянии s1
-				when s1=>
-					if (x=x2) then NEXT_s<=s4; y<=y3;
-                    elsif (x=x3) then NEXT_s<=s2; y<=y6;
-                    elsif (x=x4) then NEXT_s<=s4; y<=y5;
-					end if;
-			-- Формирование состояний и выходов автомата в состоянии s2
-				when s2=>
-                    if (x=x2) then NEXT_s<=s4; y<=y5;
-                    elsif (x=x3) then NEXT_s<=s3; y<=y2;
-                    elsif (x=x4) then NEXT_s<=s2; y<=y6;
-                    end if;
-			-- Формирование состояний и выходов автомата в состоянии s3
-				when s3=>
-					if (x=x1 or x=x2) then NEXT_s<=s1; y<=y2;
-					end if;
-			-- Формирование состояний и выходов автомата в состоянии s4
-				when s4=>
-					if (x=x1) then NEXT_s<=s3; y<=y1;
-					elsif (x=x2) then NEXT_s<=s2; y<=y6;
-                    elsif (x=x3) then NEXT_s<=s4; y<=y5;
-                    elsif (x=x4) then NEXT_s<=s3; y<=y4;
-					end if;
-			end case;		
+		case s is
+		-- Формирование состояний и выходов автомата в состоянии s1
+			when s1=>
+				if (x=x2) then NEXT_s<=s4; y<=y3;
+				elsif (x=x3) then NEXT_s<=s2; y<=y6;
+				elsif (x=x4) then NEXT_s<=s4; y<=y5;
+				end if;
+		-- Формирование состояний и выходов автомата в состоянии s2
+			when s2=>
+				if (x=x2) then NEXT_s<=s4; y<=y5;
+				elsif (x=x3) then NEXT_s<=s3; y<=y2;
+				elsif (x=x4) then NEXT_s<=s2; y<=y6;
+				end if;
+		-- Формирование состояний и выходов автомата в состоянии s3
+			when s3=>
+				if (x=x1 or x=x2) then NEXT_s<=s1; y<=y2;
+				end if;
+		-- Формирование состояний и выходов автомата в состоянии s4
+			when s4=>
+				if (x=x1) then NEXT_s<=s3; y<=y1;
+				elsif (x=x2) then NEXT_s<=s2; y<=y6;
+				elsif (x=x3) then NEXT_s<=s4; y<=y5;
+				elsif (x=x4) then NEXT_s<=s3; y<=y4;
+				end if;
+		end case;		
 	end process N_state;
 	
 	T_state: process (set,clk) -- Процесс формирует текущее состояние автомата

@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off kursovaya -c kursovaya --vector_source="C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/quartus/Waveform.vwf" --testbench_file="C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/quartus/simulation/qsim/Waveform.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off kursovaya -c kursovaya --vector_source="C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/structure-automata-quartus/test_mealy_decompose.vwf" --testbench_file="C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/structure-automata-quartus/simulation/qsim/test_mealy_decompose.vwf.vt"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -26,15 +26,17 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Fri May 01 18:57:24 2020
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off kursovaya -c kursovaya --vector_source=C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/quartus/Waveform.vwf --testbench_file=C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/quartus/simulation/qsim/Waveform.vwf.vht
+    Info: Processing started: Thu Jun 11 23:15:17 2020
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off kursovaya -c kursovaya --vector_source=C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/structure-automata-quartus/test_mealy_decompose.vwf --testbench_file=C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/structure-automata-quartus/simulation/qsim/test_mealy_decompose.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+Completed successfully. 
 
 Completed successfully. 
 
 **** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/quartus/simulation/qsim/" kursovaya -c kursovaya
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/structure-automata-quartus/simulation/qsim/" kursovaya -c kursovaya
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -53,13 +55,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Fri May 01 18:57:25 2020
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/quartus/simulation/qsim/ kursovaya -c kursovaya
+    Info: Processing started: Thu Jun 11 23:15:18 2020
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/structure-automata-quartus/simulation/qsim/ kursovaya -c kursovaya
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file kursovaya.vho in folder "C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/quartus/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file kursovaya.vo in folder "C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/structure-automata-quartus/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4717 megabytes
-    Info: Processing ended: Fri May 01 18:57:25 2020
+    Info: Processing ended: Thu Jun 11 23:15:18 2020
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -67,7 +69,7 @@ Completed successfully.
 
 **** Generating the ModelSim .do script ****
 
-C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/quartus/simulation/qsim/kursovaya.do generated.
+C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/structure-automata-quartus/simulation/qsim/kursovaya.do generated.
 
 Completed successfully. 
 
@@ -77,82 +79,65 @@ C:/intelFPGA/19.1/modelsim_ase/win32aloem/vsim -c -do kursovaya.do
 
 Reading C:/intelFPGA/19.1/modelsim_ase/tcl/vsim/pref.tcl
 
-# 10.5b
 
+# 10.5b
 
 # do kursovaya.do
 
 # ** Warning: (vlib-34) Library already exists at "work".
 
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:57:28 on May 01,2020
-# vcom -work work kursovaya.vho 
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:15:21 on Jun 11,2020
+# vlog -work work kursovaya.vo 
 
-# -- Loading package STANDARD
-
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package VITAL_Timing
-# -- Loading package VITAL_Primitives
-# -- Loading package cycloneiv_atom_pack
-# -- Loading package cycloneiv_components
-# -- Compiling entity hard_block
-# -- Compiling architecture structure of hard_block
-# -- Loading package dffeas_pack
-# -- Loading package altera_primitives_components
-# -- Compiling entity mealy_full_decompose
-# -- Compiling architecture structure of mealy_full_decompose
-# End time: 18:57:28 on May 01,2020, Elapsed time: 0:00:00
+# -- Compiling module mealy_decompose_scheme
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	mealy_decompose_scheme
+# End time: 23:15:21 on Jun 11,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:57:28 on May 01,2020
-# vcom -work work Waveform.vwf.vht 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mealy_full_decompose_vhd_vec_tst
-# -- Compiling architecture mealy_full_decompose_arch of mealy_full_decompose_vhd_vec_tst
-# End time: 18:57:28 on May 01,2020, Elapsed time: 0:00:00
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:15:21 on Jun 11,2020
+# vlog -work work test_mealy_decompose.vwf.vt 
+# -- Compiling module mealy_decompose_scheme_vlg_vec_tst
+# 
+# Top level modules:
+# 	mealy_decompose_scheme_vlg_vec_tst
+# End time: 23:15:21 on Jun 11,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
-# vsim -novopt -c -t 1ps -L cycloneiv -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.mealy_full_decompose_vhd_vec_tst 
-# Start time: 18:57:29 on May 01,2020
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.mealy_full_decompose_vhd_vec_tst(mealy_full_decompose_arch)
-# Loading ieee.vital_timing(body)
-# Loading ieee.vital_primitives(body)
-# Loading altera.dffeas_pack
-# Loading altera.altera_primitives_components
-# Loading cycloneiv.cycloneiv_atom_pack(body)
-# Loading cycloneiv.cycloneiv_components
-# Loading work.mealy_full_decompose(structure)
-# Loading work.hard_block(structure)
-# Loading ieee.std_logic_arith(body)
-# Loading cycloneiv.cycloneiv_io_obuf(arch)
-# Loading cycloneiv.cycloneiv_io_ibuf(arch)
-# Loading cycloneiv.cycloneiv_clkctrl(vital_clkctrl)
-# Loading cycloneiv.cycloneiv_ena_reg(behave)
-# Loading cycloneiv.cycloneiv_lcell_comb(vital_lcell_comb)
-# Loading altera.dffeas(vital_dffeas)
-# after#35
-
-# End time: 18:57:29 on May 01,2020, Elapsed time: 0:00:00
+# vsim -novopt -c -t 1ps -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.mealy_decompose_scheme_vlg_vec_tst 
+# Start time: 23:15:22 on Jun 11,2020
+# Loading work.mealy_decompose_scheme_vlg_vec_tst
+# Loading work.mealy_decompose_scheme
+# Loading work.hard_block
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_clkctrl
+# Loading cycloneiv_ver.cycloneiv_mux41
+# Loading cycloneiv_ver.cycloneiv_ena_reg
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading altera_ver.dffeas
+# Loading altera_ver.PRIM_GDFF_LOW
+# after#26
+# ** Note: $finish    : test_mealy_decompose.vwf.vt(61)
+#    Time: 1 us  Iteration: 0  Instance: /mealy_decompose_scheme_vlg_vec_tst
+# End time: 23:15:22 on Jun 11,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/quartus/Waveform.vwf...
+Reading C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/structure-automata-quartus/test_mealy_decompose.vwf...
 
-Reading C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/quartus/simulation/qsim/kursovaya.msim.vcd...
+Reading C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/structure-automata-quartus/simulation/qsim/kursovaya.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/quartus/simulation/qsim/kursovaya_20200501185730.sim.vwf
+Writing the resulting VWF to C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/structure-automata-quartus/simulation/qsim/kursovaya_20200611231523.sim.vwf
 
 Finished VCD to VWF conversion.
 

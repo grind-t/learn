@@ -6,9 +6,9 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity vozbuzh is
 port
 (
-	x1, x2: in bit;  -- входные сигналы автомата
-	t1, t2: in bit;  -- состояния элементов памяти
-	J, K, D: out bit -- функции возбуждения элементов памяти
+    x1, x2: in bit;  -- входные сигналы автомата
+ 	t1, t2: in bit;  -- состояния элементов памяти
+ 	J, K, D: out bit -- функции возбуждения элементов памяти
 );
 end vozbuzh;
 

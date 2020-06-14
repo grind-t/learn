@@ -1,54 +1,39 @@
 # do kursovaya.do
 # ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:57:28 on May 01,2020
-# vcom -work work kursovaya.vho 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package VITAL_Timing
-# -- Loading package VITAL_Primitives
-# -- Loading package cycloneiv_atom_pack
-# -- Loading package cycloneiv_components
-# -- Compiling entity hard_block
-# -- Compiling architecture structure of hard_block
-# -- Loading package dffeas_pack
-# -- Loading package altera_primitives_components
-# -- Compiling entity mealy_full_decompose
-# -- Compiling architecture structure of mealy_full_decompose
-# End time: 18:57:28 on May 01,2020, Elapsed time: 0:00:00
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:15:21 on Jun 11,2020
+# vlog -work work kursovaya.vo 
+# -- Compiling module mealy_decompose_scheme
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	mealy_decompose_scheme
+# End time: 23:15:21 on Jun 11,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:57:28 on May 01,2020
-# vcom -work work Waveform.vwf.vht 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mealy_full_decompose_vhd_vec_tst
-# -- Compiling architecture mealy_full_decompose_arch of mealy_full_decompose_vhd_vec_tst
-# End time: 18:57:28 on May 01,2020, Elapsed time: 0:00:00
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:15:21 on Jun 11,2020
+# vlog -work work test_mealy_decompose.vwf.vt 
+# -- Compiling module mealy_decompose_scheme_vlg_vec_tst
+# 
+# Top level modules:
+# 	mealy_decompose_scheme_vlg_vec_tst
+# End time: 23:15:21 on Jun 11,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -novopt -c -t 1ps -L cycloneiv -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.mealy_full_decompose_vhd_vec_tst 
-# Start time: 18:57:29 on May 01,2020
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.mealy_full_decompose_vhd_vec_tst(mealy_full_decompose_arch)
-# Loading ieee.vital_timing(body)
-# Loading ieee.vital_primitives(body)
-# Loading altera.dffeas_pack
-# Loading altera.altera_primitives_components
-# Loading cycloneiv.cycloneiv_atom_pack(body)
-# Loading cycloneiv.cycloneiv_components
-# Loading work.mealy_full_decompose(structure)
-# Loading work.hard_block(structure)
-# Loading ieee.std_logic_arith(body)
-# Loading cycloneiv.cycloneiv_io_obuf(arch)
-# Loading cycloneiv.cycloneiv_io_ibuf(arch)
-# Loading cycloneiv.cycloneiv_clkctrl(vital_clkctrl)
-# Loading cycloneiv.cycloneiv_ena_reg(behave)
-# Loading cycloneiv.cycloneiv_lcell_comb(vital_lcell_comb)
-# Loading altera.dffeas(vital_dffeas)
-# after#35
-# End time: 18:57:29 on May 01,2020, Elapsed time: 0:00:00
+# vsim -novopt -c -t 1ps -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.mealy_decompose_scheme_vlg_vec_tst 
+# Start time: 23:15:22 on Jun 11,2020
+# Loading work.mealy_decompose_scheme_vlg_vec_tst
+# Loading work.mealy_decompose_scheme
+# Loading work.hard_block
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_clkctrl
+# Loading cycloneiv_ver.cycloneiv_mux41
+# Loading cycloneiv_ver.cycloneiv_ena_reg
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading altera_ver.dffeas
+# Loading altera_ver.PRIM_GDFF_LOW
+# after#26
+# ** Note: $finish    : test_mealy_decompose.vwf.vt(61)
+#    Time: 1 us  Iteration: 0  Instance: /mealy_decompose_scheme_vlg_vec_tst
+# End time: 23:15:22 on Jun 11,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

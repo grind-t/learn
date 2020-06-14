@@ -25,9 +25,9 @@ VhC?a@`?VTnNAV2nZg5MMY0
 !s100 nH8ZT7dceomNCfc`1MbLK2
 Z10 OV;C;10.5b;63
 32
-Z11 !s110 1589303809
+Z11 !s110 1591474074
 !i10b 1
-Z12 !s108 1589303809.000000
+Z12 !s108 1591474074.000000
 Z13 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/testbench/mealy.vhd|
 Z14 !s107 C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/testbench/mealy.vhd|
 !i113 1
@@ -66,34 +66,34 @@ V517]H7@[mH`JUM7Lk[AEd1
 !s100 HD__moNnZZ:WNTJ5NcX@j0
 R10
 32
-R11
+Z17 !s110 1591474073
 !i10b 1
-R12
+Z18 !s108 1591474073.000000
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/testbench/mealy_pack.vhd|
 !s107 C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/testbench/mealy_pack.vhd|
 !i113 1
 R15
 R16
 Emoore
-Z17 w1585495408
+Z19 w1585495408
 R1
-Z18 DPx4 work 10 moore_pack 0 22 =k;TniiOXX_MBR4:SGF1>3
+Z20 DPx4 work 10 moore_pack 0 22 =k;TniiOXX_MBR4:SGF1>3
 R3
 R4
 R5
 R6
 R7
-Z19 8C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/testbench/moore.vhd
-Z20 FC:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/testbench/moore.vhd
+Z21 8C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/testbench/moore.vhd
+Z22 FC:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/testbench/moore.vhd
 l0
 L9
 V0z:f_OP]Nf63NIBSW8d8]2
 !s100 j>7Q^IT1gg=oTGdZhk9Ni3
 R10
 32
-Z21 !s110 1589303810
+R11
 !i10b 1
-Z22 !s108 1589303810.000000
+R12
 Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/testbench/moore.vhd|
 Z24 !s107 C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/testbench/moore.vhd|
 !i113 1
@@ -101,7 +101,7 @@ R15
 R16
 Aarchmoore
 R1
-R18
+R20
 R3
 R4
 R5
@@ -113,9 +113,9 @@ VblI8z5WYOi^3_>R@Vz_a;0
 !s100 ^NIPT8>Z^<74Z_PMWZ2GW1
 R10
 32
-R21
+R11
 !i10b 1
-R22
+R12
 R23
 R24
 !i113 1
@@ -151,18 +151,18 @@ Vc]g=eNIVRLj3n:>77^<L90
 !s100 @n3aM^h01aB>Z8RDOoYT52
 R10
 32
-R11
+R17
 !i10b 1
-R12
+R18
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/testbench/pack.vhd|
 !s107 C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/testbench/pack.vhd|
 !i113 1
 R15
 R16
 Etestbench
-Z25 w1589303591
+Z25 w1591473990
 R1
-R18
+R20
 R2
 R3
 R4
@@ -177,9 +177,9 @@ VVWEfJQhG]kf^oJ6OKoZha3
 !s100 2R:z^?=R>RNmTXh@g4L3:0
 R10
 32
-R21
+R11
 !i10b 1
-R22
+R12
 Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/testbench/Testbench.vhd|
 Z29 !s107 C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/testbench/Testbench.vhd|
 !i113 1
@@ -187,22 +187,22 @@ R15
 R16
 Aarchtestbench
 R1
-R18
+R20
 R2
 R3
 R4
 R5
 R6
-DEx4 work 9 testbench 0 22 VWEfJQhG]kf^oJ6OKoZha3
+Z30 DEx4 work 9 testbench 0 22 VWEfJQhG]kf^oJ6OKoZha3
 l42
 L13
-VH8Z8K9RRFnCm4l2MaZbK^3
-!s100 `3EoW4m5H@H>Y;h@HjHX@1
+Z31 VH8Z8K9RRFnCm4l2MaZbK^3
+Z32 !s100 `3EoW4m5H@H>Y;h@HjHX@1
 R10
 32
-R21
+R11
 !i10b 1
-R22
+R12
 R28
 R29
 !i113 1

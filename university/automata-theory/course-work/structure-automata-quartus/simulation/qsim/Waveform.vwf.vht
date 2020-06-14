@@ -19,9 +19,9 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "05/01/2020 18:57:24"
+-- Generated on "06/10/2020 22:43:08"
                                                              
--- Vhdl Test Bench(with test vectors) for design  :          mealy_full_decompose
+-- Vhdl Test Bench(with test vectors) for design  :          mealy
 -- 
 -- Simulation tool : 3rd Party
 -- 
@@ -29,28 +29,28 @@
 LIBRARY ieee;                                               
 USE ieee.std_logic_1164.all;                                
 
-ENTITY mealy_full_decompose_vhd_vec_tst IS
-END mealy_full_decompose_vhd_vec_tst;
-ARCHITECTURE mealy_full_decompose_arch OF mealy_full_decompose_vhd_vec_tst IS
+ENTITY mealy_vhd_vec_tst IS
+END mealy_vhd_vec_tst;
+ARCHITECTURE mealy_arch OF mealy_vhd_vec_tst IS
 -- constants                                                 
 -- signals                                                   
-SIGNAL clock : STD_LOGIC;
-SIGNAL enable : STD_LOGIC;
-SIGNAL resetn : STD_LOGIC;
-SIGNAL t1 : STD_LOGIC;
-SIGNAL t2 : STD_LOGIC;
+SIGNAL CLK : STD_LOGIC;
+SIGNAL CLRN : STD_LOGIC;
+SIGNAL ENA : STD_LOGIC;
+SIGNAL tay1 : STD_LOGIC;
+SIGNAL tay2 : STD_LOGIC;
 SIGNAL x1 : STD_LOGIC;
 SIGNAL x2 : STD_LOGIC;
 SIGNAL y1 : STD_LOGIC;
 SIGNAL y2 : STD_LOGIC;
 SIGNAL y3 : STD_LOGIC;
-COMPONENT mealy_full_decompose
+COMPONENT mealy
 	PORT (
-	clock : IN STD_LOGIC;
-	enable : IN STD_LOGIC;
-	resetn : IN STD_LOGIC;
-	t1 : OUT STD_LOGIC;
-	t2 : OUT STD_LOGIC;
+	CLK : IN STD_LOGIC;
+	CLRN : IN STD_LOGIC;
+	ENA : IN STD_LOGIC;
+	tay1 : OUT STD_LOGIC;
+	tay2 : OUT STD_LOGIC;
 	x1 : IN STD_LOGIC;
 	x2 : IN STD_LOGIC;
 	y1 : OUT STD_LOGIC;
@@ -59,14 +59,14 @@ COMPONENT mealy_full_decompose
 	);
 END COMPONENT;
 BEGIN
-	i1 : mealy_full_decompose
+	i1 : mealy
 	PORT MAP (
 -- list connections between master ports and signals
-	clock => clock,
-	enable => enable,
-	resetn => resetn,
-	t1 => t1,
-	t2 => t2,
+	CLK => CLK,
+	CLRN => CLRN,
+	ENA => ENA,
+	tay1 => tay1,
+	tay2 => tay2,
 	x1 => x1,
 	x2 => x2,
 	y1 => y1,
@@ -74,45 +74,36 @@ BEGIN
 	y3 => y3
 	);
 
--- clock
-t_prcs_clock: PROCESS
+-- CLRN
+t_prcs_CLRN: PROCESS
 BEGIN
-	clock <= '1';
+	CLRN <= '0';
+	WAIT FOR 10000 ps;
+	CLRN <= '1';
+WAIT;
+END PROCESS t_prcs_CLRN;
+
+-- CLK
+t_prcs_CLK: PROCESS
+BEGIN
+	CLK <= '1';
 	WAIT FOR 5000 ps;
 	FOR i IN 1 TO 99
 	LOOP
-		clock <= '0';
+		CLK <= '0';
 		WAIT FOR 5000 ps;
-		clock <= '1';
+		CLK <= '1';
 		WAIT FOR 5000 ps;
 	END LOOP;
-	clock <= '0';
+	CLK <= '0';
 WAIT;
-END PROCESS t_prcs_clock;
-
--- enable
-t_prcs_enable: PROCESS
-BEGIN
-	enable <= '0';
-	WAIT FOR 10000 ps;
-	enable <= '1';
-WAIT;
-END PROCESS t_prcs_enable;
-
--- resetn
-t_prcs_resetn: PROCESS
-BEGIN
-	resetn <= '0';
-	WAIT FOR 10000 ps;
-	resetn <= '1';
-WAIT;
-END PROCESS t_prcs_resetn;
+END PROCESS t_prcs_CLK;
 
 -- x1
 t_prcs_x1: PROCESS
 BEGIN
 	x1 <= '0';
-	WAIT FOR 40000 ps;
+	WAIT FOR 60000 ps;
 	x1 <= '1';
 	WAIT FOR 10000 ps;
 	x1 <= '0';
@@ -123,14 +114,17 @@ END PROCESS t_prcs_x1;
 t_prcs_x2: PROCESS
 BEGIN
 	x2 <= '0';
-	WAIT FOR 10000 ps;
-	x2 <= '1';
-	WAIT FOR 10000 ps;
-	x2 <= '0';
 	WAIT FOR 30000 ps;
 	x2 <= '1';
-	WAIT FOR 20000 ps;
+	WAIT FOR 10000 ps;
 	x2 <= '0';
 WAIT;
 END PROCESS t_prcs_x2;
-END mealy_full_decompose_arch;
+
+-- ENA
+t_prcs_ENA: PROCESS
+BEGIN
+	ENA <= '1';
+WAIT;
+END PROCESS t_prcs_ENA;
+END mealy_arch;

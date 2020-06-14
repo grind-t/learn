@@ -20,6 +20,19 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package STANDARD
 -- Compiling package pack
 
+} {} {}} C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/testbench/Testbench.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/testbench/Testbench.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package mealy_pack
+-- Loading package moore_pack
+-- Loading package pack
+-- Compiling entity Testbench
+-- Compiling architecture ArchTestbench of Testbench
+
 } {} {}} C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/testbench/moore_pack.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/testbench/moore_pack.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
@@ -36,18 +49,5 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package pack
 -- Compiling entity Mealy
 -- Compiling architecture ArchMealy of Mealy
-
-} {} {}} C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/testbench/Testbench.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/testbench/Testbench.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Loading package mealy_pack
--- Loading package moore_pack
--- Loading package pack
--- Compiling entity Testbench
--- Compiling architecture ArchTestbench of Testbench
 
 } {} {}}

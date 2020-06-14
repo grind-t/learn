@@ -1,5 +1,5 @@
 Analysis & Synthesis report for qartus
-Wed May 06 15:01:51 2020
+Wed Jun 03 13:00:28 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -13,11 +13,13 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Multiply:inst
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  8. State Machine - |multiply_scheme|ControlUnit:inst|state
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: OperationAutomat:inst1
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -44,16 +46,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed May 06 15:01:51 2020       ;
+; Analysis & Synthesis Status        ; Successful - Wed Jun 03 13:00:28 2020       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; qartus                                      ;
 ; Top-level Entity Name              ; multiply_scheme                             ;
 ; Family                             ; Cyclone IV GX                               ;
-; Total logic elements               ; 41                                          ;
-;     Total combinational functions  ; 41                                          ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 16                                          ;
+; Total logic elements               ; 47                                          ;
+;     Total combinational functions  ; 47                                          ;
+;     Dedicated logic registers      ; 26                                          ;
+; Total registers                    ; 26                                          ;
+; Total pins                         ; 20                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -159,21 +161,25 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                        ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                              ; Library ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
-; multiply.vhd                     ; yes             ; User VHDL File                     ; C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/multiply.vhd        ;         ;
-; multiply_scheme.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/multiply_scheme.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                         ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                               ; Library ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
+; arch_body_moore.vhd              ; yes             ; User VHDL File                     ; C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/arch_body_moore.vhd  ;         ;
+; ControlUnit.vhd                  ; yes             ; User VHDL File                     ; C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/ControlUnit.vhd      ;         ;
+; OperationAutomat.vhd             ; yes             ; User VHDL File                     ; C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/OperationAutomat.vhd ;         ;
+; multiply_scheme.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/multiply_scheme.bdf  ;         ;
+; arch_body_mealy.vhd              ; yes             ; User VHDL File                     ; C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/arch_body_mealy.vhd  ;         ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------+
@@ -181,26 +187,40 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------+------------------+
 ; Resource                 ; Usage            ;
 +--------------------------+------------------+
-; I/O pins                 ; 16               ;
+; I/O pins                 ; 20               ;
 ;                          ;                  ;
 ; DSP block 9-bit elements ; 0                ;
 ;                          ;                  ;
-; Maximum fan-out node     ; b[0]~input       ;
-; Maximum fan-out          ; 8                ;
-; Total fan-out            ; 149              ;
-; Average fan-out          ; 2.04             ;
+; Maximum fan-out node     ; clk~input        ;
+; Maximum fan-out          ; 26               ;
+; Total fan-out            ; 269              ;
+; Average fan-out          ; 2.38             ;
 +--------------------------+------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                 ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------+-----------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name            ; Entity Name     ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------+-----------------+--------------+
-; |multiply_scheme           ; 41 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 16   ; 0            ; |multiply_scheme               ; multiply_scheme ; work         ;
-;    |Multiply:inst|         ; 41 (41)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |multiply_scheme|Multiply:inst ; Multiply        ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------------------------+-----------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                            ;
++-----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------+------------------+--------------+
+; Compilation Hierarchy Node  ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                     ; Entity Name      ; Library Name ;
++-----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------+------------------+--------------+
+; |multiply_scheme            ; 47 (0)              ; 26 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0         ; 20   ; 0            ; |multiply_scheme                        ; multiply_scheme  ; work         ;
+;    |ControlUnit:inst|       ; 8 (8)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |multiply_scheme|ControlUnit:inst       ; ControlUnit      ; work         ;
+;    |OperationAutomat:inst1| ; 39 (39)             ; 22 (22)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |multiply_scheme|OperationAutomat:inst1 ; OperationAutomat ; work         ;
++-----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------+
+; State Machine - |multiply_scheme|ControlUnit:inst|state ;
++----------+----------+----------+----------+-------------+
+; Name     ; state.s3 ; state.s2 ; state.s1 ; state.s0    ;
++----------+----------+----------+----------+-------------+
+; state.s0 ; 0        ; 0        ; 0        ; 0           ;
+; state.s1 ; 0        ; 0        ; 1        ; 1           ;
+; state.s2 ; 0        ; 1        ; 0        ; 1           ;
+; state.s3 ; 1        ; 0        ; 0        ; 1           ;
++----------+----------+----------+----------+-------------+
 
 
 +------------------------------------------------------+
@@ -208,23 +228,35 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Total registers                              ; 26    ;
+; Number of registers using Synchronous Clear  ; 8     ;
+; Number of registers using Synchronous Load   ; 7     ;
+; Number of registers using Asynchronous Clear ; 4     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 17    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Multiply:inst ;
-+----------------+-------+-----------------------------------+
-; Parameter Name ; Value ; Type                              ;
-+----------------+-------+-----------------------------------+
-; n              ; 4     ; Unsigned Integer                  ;
-+----------------+-------+-----------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |multiply_scheme|OperationAutomat:inst1|i[0]  ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |multiply_scheme|OperationAutomat:inst1|rc[7] ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |multiply_scheme|OperationAutomat:inst1|rb[3] ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |multiply_scheme|OperationAutomat:inst1|ra[7] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: OperationAutomat:inst1 ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; n              ; 4     ; Unsigned Integer                           ;
++----------------+-------+--------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -233,17 +265,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 16                          ;
-; cycloneiii_lcell_comb ; 41                          ;
-;     arith             ; 12                          ;
-;         3 data inputs ; 12                          ;
-;     normal            ; 29                          ;
-;         2 data inputs ; 5                           ;
-;         3 data inputs ; 17                          ;
-;         4 data inputs ; 7                           ;
+; boundary_port         ; 20                          ;
+; cycloneiii_ff         ; 26                          ;
+;     CLR               ; 4                           ;
+;     ENA               ; 2                           ;
+;     ENA SCLR          ; 8                           ;
+;     ENA SLD           ; 7                           ;
+;     plain             ; 5                           ;
+; cycloneiii_lcell_comb ; 48                          ;
+;     arith             ; 14                          ;
+;         2 data inputs ; 7                           ;
+;         3 data inputs ; 7                           ;
+;     normal            ; 34                          ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 13                          ;
+;         4 data inputs ; 16                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 8.50                        ;
-; Average LUT depth     ; 7.71                        ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 2.09                        ;
 +-----------------------+-----------------------------+
 
 
@@ -252,7 +292,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -262,28 +302,45 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Wed May 06 15:01:42 2020
+    Info: Processing started: Wed Jun 03 13:00:07 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off qartus -c qartus
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 0 entities, in source file conf_moore_for_oy.vhd
+    Info (12022): Found design unit 1: moore_for_OY File: C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/conf_moore_for_OY.vhd Line: 6
+Info (12021): Found 1 design units, including 0 entities, in source file arch_body_moore.vhd
+    Info (12022): Found design unit 1: ControlUnit-arch_moore File: C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/arch_body_moore.vhd Line: 12
+Info (12021): Found 2 design units, including 1 entities, in source file oy.vhd
+    Info (12022): Found design unit 1: OY-struct File: C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/OY.vhd Line: 24
+    Info (12023): Found entity 1: OY File: C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/OY.vhd Line: 10
+Info (12021): Found 1 design units, including 1 entities, in source file controlunit.vhd
+    Info (12023): Found entity 1: ControlUnit File: C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/ControlUnit.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file operationautomat.vhd
+    Info (12022): Found design unit 1: OperationAutomat-arch File: C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/OperationAutomat.vhd Line: 21
+    Info (12023): Found entity 1: OperationAutomat File: C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/OperationAutomat.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file multiply.vhd
     Info (12022): Found design unit 1: Multiply-Behavioral File: C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/multiply.vhd Line: 13
     Info (12023): Found entity 1: Multiply File: C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/multiply.vhd Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file multiply_scheme.bdf
     Info (12023): Found entity 1: multiply_scheme
+Info (12021): Found 1 design units, including 1 entities, in source file oy_scheme.bdf
+    Info (12023): Found entity 1: OY_scheme
+Info (12021): Found 1 design units, including 0 entities, in source file arch_body_mealy.vhd
+    Info (12022): Found design unit 1: ControlUnit-arch_mealy File: C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/arch_body_mealy.vhd Line: 6
 Info (12127): Elaborating entity "multiply_scheme" for the top level hierarchy
-Info (12128): Elaborating entity "Multiply" for hierarchy "Multiply:inst"
+Info (12128): Elaborating entity "ControlUnit" for hierarchy "ControlUnit:inst"
+Info (12128): Elaborating entity "OperationAutomat" for hierarchy "OperationAutomat:inst1"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 57 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 8 input pins
-    Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 41 logic cells
+Info (21057): Implemented 69 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 11 input pins
+    Info (21059): Implemented 9 output pins
+    Info (21061): Implemented 49 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4858 megabytes
-    Info: Processing ended: Wed May 06 15:01:51 2020
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Peak virtual memory: 4860 megabytes
+    Info: Processing ended: Wed Jun 03 13:00:28 2020
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:54
 
 

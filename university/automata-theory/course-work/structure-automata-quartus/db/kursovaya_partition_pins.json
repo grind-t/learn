@@ -32,15 +32,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "enable",
-					"strict" : false
-				},
-				{
 					"name" : "clock",
 					"strict" : false
 				},
 				{
-					"name" : "resetn",
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "enable",
 					"strict" : false
 				}
 			]
