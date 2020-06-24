@@ -24,3 +24,4 @@ C:\Users\grind\source\repos\university\WindowsFormsApp1\WindowsFormsApp1\bin\Deb
 C:\Users\grind\source\repos\university\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Tao.FreeGlut.xml
 C:\Users\grind\source\repos\university\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Tao.OpenGl.xml
 C:\Users\grind\source\repos\university\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Tao.Platform.Windows.xml
+C:\Users\grind\source\repos\university\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Lab7Form.resources

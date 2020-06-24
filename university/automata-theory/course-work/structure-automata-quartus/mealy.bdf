@@ -1413,34 +1413,14 @@ https://fpgasoftware.intel.com/eula.
 	(pt 104 496)
 )
 (connector
-	(text "nx1" (rect 114 528 130 545)(font "Intel Clear" ))
-	(pt 144 544)
-	(pt 104 544)
-)
-(connector
 	(text "x2" (rect 114 536 124 553)(font "Intel Clear" ))
 	(pt 144 552)
 	(pt 104 552)
 )
 (connector
-	(text "tay2" (rect 114 544 135 561)(font "Intel Clear" ))
-	(pt 144 560)
-	(pt 104 560)
-)
-(connector
-	(text "x1" (rect 114 592 124 609)(font "Intel Clear" ))
-	(pt 144 608)
-	(pt 104 608)
-)
-(connector
 	(text "nx2" (rect 114 600 130 617)(font "Intel Clear" ))
 	(pt 144 616)
 	(pt 104 616)
-)
-(connector
-	(text "tay1" (rect 114 608 135 625)(font "Intel Clear" ))
-	(pt 144 624)
-	(pt 104 624)
 )
 (connector
 	(pt 816 48)
@@ -1766,16 +1746,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 704 592)
 )
 (connector
-	(text "J" (rect 482 184 487 201)(font "Intel Clear" ))
-	(pt 512 200)
-	(pt 472 200)
-)
-(connector
-	(text "K" (rect 482 232 489 249)(font "Intel Clear" ))
-	(pt 512 248)
-	(pt 472 248)
-)
-(connector
 	(pt 544 136)
 	(pt 544 176)
 )
@@ -2054,6 +2024,84 @@ https://fpgasoftware.intel.com/eula.
 	(text "ntay1" (rect 714 112 741 129)(font "Intel Clear" ))
 	(pt 736 128)
 	(pt 704 128)
+)
+(connector
+	(pt 144 608)
+	(pt 136 608)
+)
+(connector
+	(pt 136 608)
+	(pt 136 600)
+)
+(connector
+	(text "x1" (rect 114 584 124 601)(font "Intel Clear" ))
+	(pt 136 600)
+	(pt 104 600)
+)
+(connector
+	(pt 144 624)
+	(pt 136 624)
+)
+(connector
+	(pt 136 624)
+	(pt 136 632)
+)
+(connector
+	(text "tay1" (rect 114 616 135 633)(font "Intel Clear" ))
+	(pt 136 632)
+	(pt 104 632)
+)
+(connector
+	(pt 144 544)
+	(pt 136 544)
+)
+(connector
+	(pt 136 544)
+	(pt 136 536)
+)
+(connector
+	(text "nx1" (rect 114 520 130 537)(font "Intel Clear" ))
+	(pt 136 536)
+	(pt 104 536)
+)
+(connector
+	(pt 136 560)
+	(pt 136 568)
+)
+(connector
+	(pt 144 560)
+	(pt 136 560)
+)
+(connector
+	(text "tay2" (rect 114 552 135 569)(font "Intel Clear" ))
+	(pt 136 568)
+	(pt 104 568)
+)
+(connector
+	(pt 504 200)
+	(pt 504 192)
+)
+(connector
+	(pt 512 200)
+	(pt 504 200)
+)
+(connector
+	(text "J" (rect 482 176 487 193)(font "Intel Clear" ))
+	(pt 504 192)
+	(pt 472 192)
+)
+(connector
+	(pt 504 248)
+	(pt 504 256)
+)
+(connector
+	(pt 512 248)
+	(pt 504 248)
+)
+(connector
+	(text "K" (rect 482 240 489 257)(font "Intel Clear" ))
+	(pt 504 256)
+	(pt 472 256)
 )
 (junction (pt 384 56))
 (junction (pt 384 104))

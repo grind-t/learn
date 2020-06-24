@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Wed Jun 03 13:00:28 2020
+Analysis & Synthesis Status : Successful - Sat Jun 20 20:37:27 2020
 Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 Revision Name : qartus
-Top-level Entity Name : multiply_scheme
+Top-level Entity Name : OY
 Family : Cyclone IV GX
 Total logic elements : 47
     Total combinational functions : 47
-    Dedicated logic registers : 26
-Total registers : 26
+    Dedicated logic registers : 29
+Total registers : 29
 Total pins : 20
 Total virtual pins : 0
 Total memory bits : 0

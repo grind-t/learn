@@ -7,10 +7,10 @@
 vlib work
 vcom -work work qartus.vho
 vcom -work work test_OY.vwf.vht
-vsim -novopt -c -t 1ps -L cycloneiv -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.OY_scheme_vhd_vec_tst
+vsim -novopt -c -t 1ps -L cycloneiv -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.OY_vhd_vec_tst
 vcd file -direction qartus.msim.vcd
-vcd add -internal OY_scheme_vhd_vec_tst/*
-vcd add -internal OY_scheme_vhd_vec_tst/i1/*
+vcd add -internal OY_vhd_vec_tst/*
+vcd add -internal OY_vhd_vec_tst/i1/*
 proc simTimestamp {} {
     echo "Simulation time: $::now ps"
     if { [string equal running [runStatus]] } {
@@ -20,18 +20,16 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
-
-
 
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
 vcom -work work qartus.vho
 vcom -work work test_OY.vwf.vht
-vsim -novopt -c -t 1ps -sdfmax OY_scheme_vhd_vec_tst/i1=qartus_vhd.sdo -L cycloneiv -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.OY_scheme_vhd_vec_tst
+vsim -novopt -c -t 1ps -sdfmax OY_vhd_vec_tst/i1=qartus_vhd.sdo -L cycloneiv -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.OY_vhd_vec_tst
 vcd file -direction qartus.msim.vcd
-vcd add -internal OY_scheme_vhd_vec_tst/*
-vcd add -internal OY_scheme_vhd_vec_tst/i1/*
+vcd add -internal OY_vhd_vec_tst/*
+vcd add -internal OY_vhd_vec_tst/i1/*
 proc simTimestamp {} {
     echo "Simulation time: $::now ps"
     if { [string equal running [runStatus]] } {
@@ -41,8 +39,6 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
-
-
 
 </modelsim_script_timing>
 <hdl_lang>vhdl</hdl_lang>
@@ -78,7 +74,7 @@ HEADER
 	DATA_DURATION = 1000.0;
 	SIMULATION_TIME = 0.0;
 	GRID_PHASE = 0.0;
-	GRID_PERIOD = 5.0;
+	GRID_PERIOD = 10.0;
 	GRID_DUTY_CYCLE = 50;
 }
 
@@ -317,7 +313,13 @@ TRANSITION_LIST("a[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 220.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 90.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 580.0;
 	}
 }
 
@@ -326,7 +328,9 @@ TRANSITION_LIST("a[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 220.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 770.0;
 	}
 }
 
@@ -335,11 +339,13 @@ TRANSITION_LIST("a[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 25.0;
+		LEVEL 0 FOR 30.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 35.0;
+		LEVEL 0 FOR 80.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 920.0;
+		LEVEL 0 FOR 180.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 680.0;
 	}
 }
 
@@ -348,11 +354,15 @@ TRANSITION_LIST("a[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 25.0;
+		LEVEL 0 FOR 30.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 35.0;
+		LEVEL 0 FOR 80.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 920.0;
+		LEVEL 0 FOR 90.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 680.0;
 	}
 }
 
@@ -361,9 +371,13 @@ TRANSITION_LIST("b[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 70.0;
+		LEVEL 0 FOR 120.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 920.0;
+		LEVEL 0 FOR 180.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 90.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 580.0;
 	}
 }
 
@@ -372,7 +386,9 @@ TRANSITION_LIST("b[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 220.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 770.0;
 	}
 }
 
@@ -381,11 +397,13 @@ TRANSITION_LIST("b[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 25.0;
+		LEVEL 0 FOR 30.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 35.0;
+		LEVEL 0 FOR 80.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 920.0;
+		LEVEL 0 FOR 180.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 680.0;
 	}
 }
 
@@ -394,11 +412,15 @@ TRANSITION_LIST("b[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 25.0;
+		LEVEL 0 FOR 30.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 35.0;
+		LEVEL 0 FOR 80.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 920.0;
+		LEVEL 0 FOR 90.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 680.0;
 	}
 }
 
@@ -409,9 +431,9 @@ TRANSITION_LIST("clk")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 200;
-			LEVEL 0 FOR 2.5;
-			LEVEL 1 FOR 2.5;
+			REPEAT = 100;
+			LEVEL 0 FOR 5.0;
+			LEVEL 1 FOR 5.0;
 		}
 	}
 }
@@ -493,8 +515,8 @@ TRANSITION_LIST("set")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 25.0;
-		LEVEL 0 FOR 975.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 970.0;
 	}
 }
 
@@ -512,11 +534,17 @@ TRANSITION_LIST("sno")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 25.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 5.0;
-		LEVEL 0 FOR 925.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 90.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 90.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 580.0;
 	}
 }
 

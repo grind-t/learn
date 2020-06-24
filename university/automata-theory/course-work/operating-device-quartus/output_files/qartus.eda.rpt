@@ -1,5 +1,5 @@
 EDA Netlist Writer report for qartus
-Wed Jun 03 13:01:22 2020
+Wed Jun 24 11:41:38 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -37,9 +37,9 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Jun 03 13:01:22 2020 ;
+; EDA Netlist Writer Status ; Successful - Wed Jun 24 11:41:38 2020 ;
 ; Revision Name             ; qartus                                ;
-; Top-level Entity Name     ; multiply_scheme                       ;
+; Top-level Entity Name     ; OY                                    ;
 ; Family                    ; Cyclone IV GX                         ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -95,13 +95,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed Jun 03 13:01:21 2020
+    Info: Processing started: Wed Jun 24 11:41:37 2020
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/simulation/qsim/ qartus -c qartus
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file qartus.vho in folder "C:/Users/grind/Desktop/projects/learn/university/automata-theory/course-work/operating-device-quartus/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4717 megabytes
-    Info: Processing ended: Wed Jun 03 13:01:22 2020
+    Info: Peak virtual memory: 4709 megabytes
+    Info: Processing ended: Wed Jun 24 11:41:38 2020
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

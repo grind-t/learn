@@ -78,5 +78,13 @@ namespace WindowsFormsApp1
             form.FormClosed += (object s, FormClosedEventArgs args) => Close();
             form.Show();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Hide();
+            var form = new Lab7Form();
+            form.FormClosed += (object s, FormClosedEventArgs args) => Close();
+            form.Show();
+        }
     }
 }

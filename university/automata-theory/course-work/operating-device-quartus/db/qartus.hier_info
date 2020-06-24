@@ -1,65 +1,28 @@
-|multiply_scheme
-sko <= ControlUnit:inst.sko
-clk => ControlUnit:inst.clk
-clk => OperationAutomat:inst1.clk
-set => ControlUnit:inst.set
-sno => ControlUnit:inst.sno
-a[0] => OperationAutomat:inst1.a[0]
-a[1] => OperationAutomat:inst1.a[1]
-a[2] => OperationAutomat:inst1.a[2]
-a[3] => OperationAutomat:inst1.a[3]
-b[0] => OperationAutomat:inst1.b[0]
-b[1] => OperationAutomat:inst1.b[1]
-b[2] => OperationAutomat:inst1.b[2]
-b[3] => OperationAutomat:inst1.b[3]
-rc[0] <= OperationAutomat:inst1.rc[0]
-rc[1] <= OperationAutomat:inst1.rc[1]
-rc[2] <= OperationAutomat:inst1.rc[2]
-rc[3] <= OperationAutomat:inst1.rc[3]
-rc[4] <= OperationAutomat:inst1.rc[4]
-rc[5] <= OperationAutomat:inst1.rc[5]
-rc[6] <= OperationAutomat:inst1.rc[6]
-rc[7] <= OperationAutomat:inst1.rc[7]
+|OY
+a[0] => OperationAutomat:unit_OA.a[0]
+a[1] => OperationAutomat:unit_OA.a[1]
+a[2] => OperationAutomat:unit_OA.a[2]
+a[3] => OperationAutomat:unit_OA.a[3]
+b[0] => OperationAutomat:unit_OA.b[0]
+b[1] => OperationAutomat:unit_OA.b[1]
+b[2] => OperationAutomat:unit_OA.b[2]
+b[3] => OperationAutomat:unit_OA.b[3]
+clk => OperationAutomat:unit_OA.clk
+clk => controlunit:unit_YA.clk
+set => controlunit:unit_YA.set
+sno => controlunit:unit_YA.sno
+sko << controlunit:unit_YA.sko
+rc[0] << OperationAutomat:unit_OA.rc[0]
+rc[1] << OperationAutomat:unit_OA.rc[1]
+rc[2] << OperationAutomat:unit_OA.rc[2]
+rc[3] << OperationAutomat:unit_OA.rc[3]
+rc[4] << OperationAutomat:unit_OA.rc[4]
+rc[5] << OperationAutomat:unit_OA.rc[5]
+rc[6] << OperationAutomat:unit_OA.rc[6]
+rc[7] << OperationAutomat:unit_OA.rc[7]
 
 
-|multiply_scheme|ControlUnit:inst
-y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[4] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[5] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[6] <= Selector4.DB_MAX_OUTPUT_PORT_TYPE
-y[7] <= Selector3.DB_MAX_OUTPUT_PORT_TYPE
-y[8] <= y.DB_MAX_OUTPUT_PORT_TYPE
-y[9] <= y.DB_MAX_OUTPUT_PORT_TYPE
-x[0] => y.OUTPUTSELECT
-x[0] => y.OUTPUTSELECT
-x[0] => Selector1.IN3
-x[0] => y.DATAB
-x[0] => y.DATAB
-x[0] => Selector2.IN2
-x[1] => y.DATAA
-x[1] => Selector4.IN3
-x[1] => y.DATAA
-x[1] => Selector3.IN1
-x[2] => Selector0.IN3
-x[2] => sko.DATAB
-x[2] => Selector1.IN1
-x[2] => y.DATAB
-x[2] => y.DATAB
-clk => state~1.DATAIN
-set => state~3.DATAIN
-sno => Next_state.s1.DATAB
-sno => y.DATAB
-sno => y.DATAB
-sno => y.DATAB
-sno => y.DATAB
-sno => Selector0.IN1
-sko <= sko.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|multiply_scheme|OperationAutomat:inst1
+|OY|OperationAutomat:unit_OA
 y[0] => ra.OUTPUTSELECT
 y[0] => ra.OUTPUTSELECT
 y[0] => ra.OUTPUTSELECT
@@ -165,5 +128,33 @@ clk => ra[4].CLK
 clk => ra[5].CLK
 clk => ra[6].CLK
 clk => ra[7].CLK
+
+
+|OY|ControlUnit:unit_YA
+y[0] <= y[0].DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y[1].DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y[2].DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y[3].DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[7] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[8] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[9] <= y.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => Next_state.OUTPUTSELECT
+x[0] => Next_state.OUTPUTSELECT
+x[0] => Next_state.s2.DATAB
+x[1] => Next_state.DATAA
+x[1] => Selector1.IN4
+x[1] => Next_state.DATAA
+x[1] => Selector2.IN1
+x[1] => Selector2.IN2
+x[2] => Next_state.s6.DATAB
+x[2] => Selector3.IN1
+clk => state~1.DATAIN
+set => state~3.DATAIN
+sno => Next_state.s1.DATAB
+sno => Selector0.IN2
+sko <= sko.DB_MAX_OUTPUT_PORT_TYPE
 
 

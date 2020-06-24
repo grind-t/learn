@@ -111,6 +111,12 @@
     <Compile Include="Lab6Form.Designer.cs">
       <DependentUpon>Lab6Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lab7Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab7Form.Designer.cs">
+      <DependentUpon>Lab7Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -136,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lab6Form.resx">
       <DependentUpon>Lab6Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab7Form.resx">
+      <DependentUpon>Lab7Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

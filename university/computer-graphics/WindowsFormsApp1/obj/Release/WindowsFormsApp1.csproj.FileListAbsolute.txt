@@ -24,3 +24,4 @@ C:\Users\grind\source\repos\university\WindowsFormsApp1\WindowsFormsApp1\bin\Rel
 C:\Users\grind\source\repos\university\WindowsFormsApp1\WindowsFormsApp1\bin\Release\Tao.OpenGl.xml
 C:\Users\grind\source\repos\university\WindowsFormsApp1\WindowsFormsApp1\bin\Release\Tao.Platform.Windows.xml
 C:\Users\grind\source\repos\university\WindowsFormsApp1\WindowsFormsApp1\obj\Release\WindowsFormsApp1.Lab6Form.resources
+C:\Users\grind\source\repos\university\WindowsFormsApp1\WindowsFormsApp1\obj\Release\WindowsFormsApp1.Lab7Form.resources
