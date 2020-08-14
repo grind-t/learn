@@ -1,0 +1,169 @@
+Flow report for tstand
+Fri Jun 12 20:06:11 2020
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Fri Jun 12 20:06:11 2020       ;
+; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
+; Revision Name                      ; tstand                                      ;
+; Top-level Entity Name              ; tstand                                      ;
+; Family                             ; Cyclone IV GX                               ;
+; Total logic elements               ; 114 / 14,400 ( < 1 % )                      ;
+;     Total combinational functions  ; 114 / 14,400 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 82 / 14,400 ( < 1 % )                       ;
+; Total registers                    ; 82                                          ;
+; Total pins                         ; 24 / 81 ( 30 % )                            ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 336 / 552,960 ( < 1 % )                     ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total GXB Receiver Channel PCS     ; 0 / 2 ( 0 % )                               ;
+; Total GXB Receiver Channel PMA     ; 0 / 2 ( 0 % )                               ;
+; Total GXB Transmitter Channel PCS  ; 0 / 2 ( 0 % )                               ;
+; Total GXB Transmitter Channel PMA  ; 0 / 2 ( 0 % )                               ;
+; Total PLLs                         ; 0 / 3 ( 0 % )                               ;
+; Device                             ; EP4CGX15BF14C6                              ;
+; Timing Models                      ; Final                                       ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 06/12/2020 20:04:46 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; tstand              ;
++-------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                          ;
++-------------------------------------+------------------------------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                                                ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+------------------------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 229549749933847.159198148605816                      ; --            ; --          ; --             ;
+; EDA_DESIGN_INSTANCE_NAME            ; NA                                                   ; --            ; --          ; testing        ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                                   ; --            ; --          ; eda_simulation ;
+; EDA_NETLIST_WRITER_OUTPUT_DIR       ; D:/AlteraProjects/Bondarenko/TSTAND/simulation/qsim/ ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                          ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                            ; <None>        ; --          ; --             ;
+; EDA_TEST_BENCH_ENABLE_STATUS        ; NOT_USED                                             ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                 ; Waveform1.vwf                                        ; --            ; --          ; testing        ;
+; EDA_TEST_BENCH_MODULE_NAME          ; testing                                              ; --            ; --          ; testing        ;
+; EDA_TEST_BENCH_RUN_SIM_FOR          ; 1 us                                                 ; --            ; --          ; testing        ;
+; EDA_TIME_SCALE                      ; 1 ps                                                 ; --            ; --          ; eda_simulation ;
+; MISC_FILE                           ; G:/AVT/Стенд_мили_мура_block/tstand.dpf              ; --            ; --          ; --             ;
+; MISC_FILE                           ; test_sequence.bsf                                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; test_sequence_inst.vhd                               ; --            ; --          ; --             ;
+; MISC_FILE                           ; test_sequence.inc                                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; test_sequence.cmp                                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; x_choice.bsf                                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; x_choice_inst.vhd                                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; x_choice.inc                                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; x_choice.cmp                                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; count_100.bsf                                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; count_100_inst.vhd                                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; count_100.inc                                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; count_100.cmp                                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; true_S.bsf                                           ; --            ; --          ; --             ;
+; MISC_FILE                           ; true_S_inst.vhd                                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; true_S.inc                                           ; --            ; --          ; --             ;
+; MISC_FILE                           ; true_S.cmp                                           ; --            ; --          ; --             ;
+; MISC_FILE                           ; true_Y.bsf                                           ; --            ; --          ; --             ;
+; MISC_FILE                           ; true_Y_inst.vhd                                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; true_Y.inc                                           ; --            ; --          ; --             ;
+; MISC_FILE                           ; true_Y.cmp                                           ; --            ; --          ; --             ;
+; MISC_FILE                           ; del.bsf                                              ; --            ; --          ; --             ;
+; MISC_FILE                           ; del_inst.vhd                                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; del.inc                                              ; --            ; --          ; --             ;
+; MISC_FILE                           ; del.cmp                                              ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family)               ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)               ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)               ; --            ; --          ; Top            ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS  ; Off                                                  ; --            ; --          ; eda_blast_fpga ;
++-------------------------------------+------------------------------------------------------+---------------+-------------+----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4875 MB             ; 00:00:33                           ;
+; Fitter               ; 00:00:06     ; 1.0                     ; 5587 MB             ; 00:00:07                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4752 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4757 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4710 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4704 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4709 MB             ; 00:00:01                           ;
+; Total                ; 00:00:24     ; --                      ; --                  ; 00:00:46                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; DESKTOP-1IJEN2J  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-1IJEN2J  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-1IJEN2J  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-1IJEN2J  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-1IJEN2J  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-1IJEN2J  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-1IJEN2J  ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off tstand -c tstand
+quartus_fit --read_settings_files=off --write_settings_files=off tstand -c tstand
+quartus_asm --read_settings_files=off --write_settings_files=off tstand -c tstand
+quartus_sta tstand -c tstand
+quartus_eda --read_settings_files=off --write_settings_files=off tstand -c tstand
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off tstand -c tstand --vector_source=C:/test-stands/TSTAND/MYAVT/test.vwf --testbench_file=C:/test-stands/TSTAND/simulation/qsim/MYAVT/test.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/test-stands/TSTAND/simulation/qsim/ tstand -c tstand
+
+
+

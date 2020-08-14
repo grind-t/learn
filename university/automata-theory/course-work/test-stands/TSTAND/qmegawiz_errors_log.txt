@@ -1,0 +1,31 @@
+
+
+C:/Users/HP/Desktop/STAND/del.vhd
+
+May 27 08PM:28:44>: Megafunction LPM_FF is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/HP/Desktop/STAND/del.vhd
+
+May 27 08PM:30:20>: Megafunction LPM_FF is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/HP/Desktop/STAND/del.vhd
+
+May 27 08PM:34:28>: Megafunction LPM_FF is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/HP/Desktop/STAND/del.vhd
+
+May 31 03PM:10:37>: Megafunction LPM_FF is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/HP/Desktop/STAND/del.vhd
+
+Jun 03 11AM:06:57>: Megafunction LPM_FF is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/HP/Desktop/STAND/del.vhd
+
+Jun 03 01PM:02:19>: Megafunction LPM_FF is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted

@@ -1,0 +1,18 @@
+Analysis & Synthesis Status : Successful - Fri Jun 12 20:04:59 2020
+Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Revision Name : tstand
+Top-level Entity Name : tstand
+Family : Cyclone IV GX
+Total logic elements : 114
+    Total combinational functions : 114
+    Dedicated logic registers : 82
+Total registers : 82
+Total pins : 24
+Total virtual pins : 0
+Total memory bits : 336
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0

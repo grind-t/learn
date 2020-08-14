@@ -1,0 +1,332 @@
+m255
+K3
+z0
+13
+cModel Technology
+Z0 dF:\STAND\simulation\qsim
+E\begin\
+Z1 w1496411460
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 e`^h93R^CdmMEVe0e1VU_3
+Z3 DPx10 cycloneive 21 cycloneive_components 0 22 Q;lLU[K?fTJPSa^YaZf>B3
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx6 altera 11 dffeas_pack 0 22 >EJOc2K4@P4f?njWHdOcd0
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z9 DPx6 altera 28 altera_primitives_components 0 22 14j`ZKHCzSI;]V?hmAE6_1
+Z10 dC:/Users/necro/Desktop/STAND/simulation/qsim
+Z11 8begin.vho
+Z12 Fbegin.vho
+l0
+L80
+VXYe;MH6R3lI^Xa52LhcT]2
+Z13 OV;C;10.5b;63
+32
+Z14 !s110 1496411461
+Z15 !s108 1496411461.000000
+Z16 !s90 -work|work|begin.vho|
+Z17 !s107 begin.vho|
+Z18 o-work work
+Z19 tExplicit 1 CvgOpt 0
+n@134begin@134
+!s100 :bfFOn3jNUco2`o=m?0Yb1
+!i10b 1
+!i113 1
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 7 \begin\ 0 22 XYe;MH6R3lI^Xa52LhcT]2
+l413
+L135
+VEd2O70_jLjCkRP05U>F0Y0
+R13
+32
+R14
+R15
+R16
+R17
+R18
+R19
+!s100 mj:X=G5P>]]eHV:7MSaGd0
+!i10b 1
+!i113 1
+vbegin
+IXAD=NSeA1So;gUIQhlR:81
+V=oe1Z0YQ]:]d;IFiEAzN:3
+R0
+w1496224192
+8begin.vo
+Fbegin.vo
+L0 31
+Z20 OV;L;10.1d;51
+r1
+31
+Z21 o-work work -O0
+!s100 9Gc<2X9`dbAOgM08P2P?b1
+!s90 -work|work|begin.vo|
+!s108 1496224193.400000
+!s107 begin.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+Ebegin_vhd_vec_tst
+w1496411458
+R7
+R8
+R10
+8Waveform1.vwf.vht
+FWaveform1.vwf.vht
+l0
+L32
+VfBn]m<cUkZL45BC:>H4=M2
+R13
+32
+R14
+R15
+!s90 -work|work|Waveform1.vwf.vht|
+R18
+R19
+!s100 dV<i9Wz<U?92MMWTaVh?k3
+!s107 Waveform1.vwf.vht|
+!i10b 1
+!i113 1
+vbegin_vlg_check_tst
+IiTY[61lcR<fDX6]nLIKg43
+V;;9lO8ao6@7XOFB@EO4Zo1
+R0
+Z22 w1496224190
+Z23 8Waveform1.vwf.vt
+Z24 FWaveform1.vwf.vt
+L0 63
+R20
+r1
+31
+Z25 !s108 1496224193.963000
+Z26 !s107 Waveform1.vwf.vt|
+Z27 !s90 -work|work|Waveform1.vwf.vt|
+R21
+!s100 ggGKQzfdaLD4TO<6U5Dk73
+!i10b 1
+!s85 0
+!s101 -O0
+vbegin_vlg_sample_tst
+IZS>Dn@@cK;7gfPQ<3NB4@3
+VizJgR2GM@8B5<hQRCmbVQ3
+R0
+R22
+R23
+R24
+Z28 L0 29
+R20
+r1
+31
+R25
+R26
+R27
+R21
+!s100 @_M;]oM]:QcmZ8;_kXVB?3
+!i10b 1
+!s85 0
+!s101 -O0
+Ehard_block
+Z29 w1591981571
+R4
+Z30 DPx9 cycloneiv 19 cycloneiv_atom_pack 0 22 6IFORMJD7PB;R3^Ka8L1g0
+R6
+R7
+R8
+Z31 DPx9 cycloneiv 20 cycloneiv_components 0 22 ce8R95=d@dVjA2O3VIW4k0
+Z32 dC:/test-stands/TSTAND/simulation/qsim
+Z33 8tstand.vho
+Z34 Ftstand.vho
+l0
+L35
+V5mcF]JUg7TS^l0EMa_h4A1
+!s100 Q?IbEnM>aW3cc=hi`GCc71
+R13
+32
+Z35 !s110 1591981572
+!i10b 1
+Z36 !s108 1591981572.000000
+Z37 !s90 -work|work|tstand.vho|
+Z38 !s107 tstand.vho|
+!i113 1
+R18
+R19
+Astructure
+R4
+R30
+R6
+R7
+R8
+R31
+DEx4 work 10 hard_block 0 22 5mcF]JUg7TS^l0EMa_h4A1
+l65
+L51
+VMkbPfL8S?h^i>Mg3GSGD`1
+!s100 O>:lWQfHCcIaXgQ<=Tgn10
+R13
+32
+R35
+!i10b 1
+R36
+R37
+R38
+!i113 1
+R18
+R19
+Etstand
+R29
+R30
+R31
+R4
+Z39 DPx6 altera 11 dffeas_pack 0 22 dbC[kT^o8P[ggjb1if:RT1
+R6
+R7
+R8
+Z40 DPx6 altera 28 altera_primitives_components 0 22 PoC3B_7fao?IDTS[NR5Q62
+R32
+R33
+R34
+l0
+L80
+Vj@:N@ZLCmS2e[JW]Z4D;P0
+!s100 4EhISG0e5?GWeWA9]ZFSz0
+R13
+32
+R35
+!i10b 1
+R36
+R37
+R38
+!i113 1
+R18
+R19
+Astructure
+R30
+R31
+R4
+R39
+R6
+R7
+R8
+R40
+DEx4 work 6 tstand 0 22 j@:N@ZLCmS2e[JW]Z4D;P0
+l404
+L133
+VZggb_M?9RZe]<BdMDBf=o3
+!s100 WaAZS4[>FzMl4OmEf>N`10
+R13
+32
+R35
+!i10b 1
+R36
+R37
+R38
+!i113 1
+R18
+R19
+Etstand_vhd_vec_tst
+Z41 w1591981570
+R7
+R8
+R32
+Z42 8MYAVT/test.vwf.vht
+Z43 FMYAVT/test.vwf.vht
+l0
+L32
+V8enfK36@>IB^>`4SP0Za93
+!s100 L3eATo?UGbl^g4Ol1c;7A2
+R13
+32
+R35
+!i10b 1
+R36
+Z44 !s90 -work|work|MYAVT/test.vwf.vht|
+Z45 !s107 MYAVT/test.vwf.vht|
+!i113 1
+R18
+R19
+Atstand_arch
+R7
+R8
+Z46 DEx4 work 18 tstand_vhd_vec_tst 0 22 8enfK36@>IB^>`4SP0Za93
+l83
+L34
+Z47 VdVT>Y_VOoFA`fj2SOYP1m0
+Z48 !s100 K^Ee09UMz4a24Ri@1J];80
+R13
+32
+R35
+!i10b 1
+R36
+R44
+R45
+!i113 1
+R18
+R19
+vtstand_vlg_check_tst
+!i10b 1
+!s100 ]=?mL:mlOC?b@942cHAF@2
+I@]`K<N`<d6n5>K4L;BomB0
+VG8HZUSo]mHhTidSCmE4kz2
+Z49 dD:\AlteraProjects\Bondarenko\TSTAND\simulation\qsim
+Z50 w1551959563
+Z51 8test.vwf.vt
+Z52 Ftest.vwf.vt
+L0 61
+R20
+r1
+!s85 0
+31
+Z53 !s108 1551959571.940000
+Z54 !s107 test.vwf.vt|
+Z55 !s90 -work|work|test.vwf.vt|
+!s101 -O0
+R21
+vtstand_vlg_sample_tst
+!i10b 1
+!s100 nlzagEXdco8W4JmQRk5Qz2
+I?h]IF[UWZ8G6AhE@TW3Zo1
+VZS`iH]59MQgR1ZbQg>XII1
+R49
+R50
+R51
+R52
+R28
+R20
+r1
+!s85 0
+31
+R53
+R54
+R55
+!s101 -O0
+R21
+vtstand_vlg_vec_tst
+!s110 1591981309
+!i10b 1
+!s100 `d@5zl@kgzBLfDk3>5Tgl2
+ILlXo[gG>lLeif>D46gLY_1
+VDg1SIo80bB@j0V0VzS_@n1
+R32
+w1591981306
+8MYAVT/test.vwf.vt
+FMYAVT/test.vwf.vt
+L0 30
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1591981308.000000
+!s107 MYAVT/test.vwf.vt|
+!s90 -work|work|MYAVT/test.vwf.vt|
+!i113 1
+R18
+tCvgOpt 0

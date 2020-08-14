@@ -1,0 +1,1225 @@
+TimeQuest Timing Analyzer report for maket_avt
+Thu Jul 05 14:41:16 2018
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1200mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1200mV 85C Model Setup Summary
+  8. Slow 1200mV 85C Model Hold Summary
+  9. Slow 1200mV 85C Model Recovery Summary
+ 10. Slow 1200mV 85C Model Removal Summary
+ 11. Slow 1200mV 85C Model Minimum Pulse Width Summary
+ 12. Slow 1200mV 85C Model Setup: 'KEY1'
+ 13. Slow 1200mV 85C Model Hold: 'KEY1'
+ 14. Slow 1200mV 85C Model Minimum Pulse Width: 'KEY1'
+ 15. Setup Times
+ 16. Hold Times
+ 17. Clock to Output Times
+ 18. Minimum Clock to Output Times
+ 19. Propagation Delay
+ 20. Minimum Propagation Delay
+ 21. Slow 1200mV 85C Model Metastability Report
+ 22. Slow 1200mV 0C Model Fmax Summary
+ 23. Slow 1200mV 0C Model Setup Summary
+ 24. Slow 1200mV 0C Model Hold Summary
+ 25. Slow 1200mV 0C Model Recovery Summary
+ 26. Slow 1200mV 0C Model Removal Summary
+ 27. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 28. Slow 1200mV 0C Model Setup: 'KEY1'
+ 29. Slow 1200mV 0C Model Hold: 'KEY1'
+ 30. Slow 1200mV 0C Model Minimum Pulse Width: 'KEY1'
+ 31. Setup Times
+ 32. Hold Times
+ 33. Clock to Output Times
+ 34. Minimum Clock to Output Times
+ 35. Propagation Delay
+ 36. Minimum Propagation Delay
+ 37. Slow 1200mV 0C Model Metastability Report
+ 38. Fast 1200mV 0C Model Setup Summary
+ 39. Fast 1200mV 0C Model Hold Summary
+ 40. Fast 1200mV 0C Model Recovery Summary
+ 41. Fast 1200mV 0C Model Removal Summary
+ 42. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 43. Fast 1200mV 0C Model Setup: 'KEY1'
+ 44. Fast 1200mV 0C Model Hold: 'KEY1'
+ 45. Fast 1200mV 0C Model Minimum Pulse Width: 'KEY1'
+ 46. Setup Times
+ 47. Hold Times
+ 48. Clock to Output Times
+ 49. Minimum Clock to Output Times
+ 50. Propagation Delay
+ 51. Minimum Propagation Delay
+ 52. Fast 1200mV 0C Model Metastability Report
+ 53. Multicorner Timing Analysis Summary
+ 54. Setup Times
+ 55. Hold Times
+ 56. Clock to Output Times
+ 57. Minimum Clock to Output Times
+ 58. Propagation Delay
+ 59. Minimum Propagation Delay
+ 60. Board Trace Model Assignments
+ 61. Input Transition Times
+ 62. Signal Integrity Metrics (Slow 1200mv 0c Model)
+ 63. Signal Integrity Metrics (Slow 1200mv 85c Model)
+ 64. Signal Integrity Metrics (Fast 1200mv 0c Model)
+ 65. Setup Transfers
+ 66. Hold Transfers
+ 67. Report TCCS
+ 68. Report RSKM
+ 69. Unconstrained Paths
+ 70. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                       ;
++--------------------+----------------------------------------------------+
+; Quartus II Version ; Version 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name      ; maket_avt                                          ;
+; Device Family      ; Cyclone IV E                                       ;
+; Device Name        ; EP4CE6E22C6                                        ;
+; Timing Models      ; Final                                              ;
+; Delay Model        ; Combined                                           ;
+; Rise/Fall Delays   ; Enabled                                            ;
++--------------------+----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ; < 0.1%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                           ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets  ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------+
+; KEY1       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { KEY1 } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Fmax Summary                                                                        ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; 701.75 MHz ; 250.0 MHz       ; KEY1       ; limit due to minimum period restriction (max I/O toggle rate) ;
++------------+-----------------+------------+---------------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
++-------------------------------------+
+; Slow 1200mV 85C Model Setup Summary ;
++-------+--------+--------------------+
+; Clock ; Slack  ; End Point TNS      ;
++-------+--------+--------------------+
+; KEY1  ; -0.425 ; -1.181             ;
++-------+--------+--------------------+
+
+
++------------------------------------+
+; Slow 1200mV 85C Model Hold Summary ;
++-------+-------+--------------------+
+; Clock ; Slack ; End Point TNS      ;
++-------+-------+--------------------+
+; KEY1  ; 0.357 ; 0.000              ;
++-------+-------+--------------------+
+
+
+------------------------------------------
+; Slow 1200mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
++---------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
++-------+--------+----------------------------------+
+; Clock ; Slack  ; End Point TNS                    ;
++-------+--------+----------------------------------+
+; KEY1  ; -3.000 ; -8.000                           ;
++-------+--------+----------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Setup: 'KEY1'                                                                                                  ;
++--------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                 ; To Node                   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
+; -0.425 ; avtomat_myra:inst1|inst8  ; avtomat_myra:inst1|inst62 ; KEY1         ; KEY1        ; 1.000        ; -0.063     ; 1.357      ;
+; -0.393 ; avtomat_myra:inst1|inst8  ; avtomat_myra:inst1|inst8  ; KEY1         ; KEY1        ; 1.000        ; -0.063     ; 1.325      ;
+; -0.363 ; avtomat_myra:inst1|inst8  ; avtomat_myra:inst1|inst   ; KEY1         ; KEY1        ; 1.000        ; -0.063     ; 1.295      ;
+; -0.280 ; avtomat_myra:inst1|inst62 ; avtomat_myra:inst1|inst8  ; KEY1         ; KEY1        ; 1.000        ; -0.063     ; 1.212      ;
+; -0.276 ; avtomat_myra:inst1|inst62 ; avtomat_myra:inst1|inst62 ; KEY1         ; KEY1        ; 1.000        ; -0.063     ; 1.208      ;
+; -0.239 ; avtomat_myra:inst1|inst   ; avtomat_myra:inst1|inst   ; KEY1         ; KEY1        ; 1.000        ; -0.063     ; 1.171      ;
+; -0.132 ; avtomat_myra:inst1|inst   ; avtomat_myra:inst1|inst8  ; KEY1         ; KEY1        ; 1.000        ; -0.063     ; 1.064      ;
+; -0.128 ; avtomat_myra:inst1|inst   ; avtomat_myra:inst1|inst62 ; KEY1         ; KEY1        ; 1.000        ; -0.063     ; 1.060      ;
+; -0.085 ; avtomat_myra:inst1|inst62 ; avtomat_myra:inst1|inst   ; KEY1         ; KEY1        ; 1.000        ; -0.063     ; 1.017      ;
+; 0.221  ; avtomat_mili:inst|inst8   ; avtomat_mili:inst|inst    ; KEY1         ; KEY1        ; 1.000        ; -0.063     ; 0.711      ;
+; 0.221  ; avtomat_mili:inst|inst    ; avtomat_mili:inst|inst8   ; KEY1         ; KEY1        ; 1.000        ; -0.063     ; 0.711      ;
+; 0.273  ; avtomat_mili:inst|inst8   ; avtomat_mili:inst|inst8   ; KEY1         ; KEY1        ; 1.000        ; -0.063     ; 0.659      ;
+; 0.273  ; avtomat_mili:inst|inst    ; avtomat_mili:inst|inst    ; KEY1         ; KEY1        ; 1.000        ; -0.063     ; 0.659      ;
++--------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Hold: 'KEY1'                                                                                                  ;
++-------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                 ; To Node                   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
+; 0.357 ; avtomat_myra:inst1|inst8  ; avtomat_myra:inst1|inst8  ; KEY1         ; KEY1        ; 0.000        ; 0.063      ; 0.577      ;
+; 0.357 ; avtomat_mili:inst|inst8   ; avtomat_mili:inst|inst8   ; KEY1         ; KEY1        ; 0.000        ; 0.063      ; 0.577      ;
+; 0.360 ; avtomat_mili:inst|inst    ; avtomat_mili:inst|inst    ; KEY1         ; KEY1        ; 0.000        ; 0.063      ; 0.580      ;
+; 0.390 ; avtomat_mili:inst|inst    ; avtomat_mili:inst|inst8   ; KEY1         ; KEY1        ; 0.000        ; 0.063      ; 0.610      ;
+; 0.390 ; avtomat_mili:inst|inst8   ; avtomat_mili:inst|inst    ; KEY1         ; KEY1        ; 0.000        ; 0.063      ; 0.610      ;
+; 0.603 ; avtomat_myra:inst1|inst   ; avtomat_myra:inst1|inst8  ; KEY1         ; KEY1        ; 0.000        ; 0.063      ; 0.823      ;
+; 0.661 ; avtomat_myra:inst1|inst   ; avtomat_myra:inst1|inst62 ; KEY1         ; KEY1        ; 0.000        ; 0.063      ; 0.881      ;
+; 0.676 ; avtomat_myra:inst1|inst62 ; avtomat_myra:inst1|inst   ; KEY1         ; KEY1        ; 0.000        ; 0.063      ; 0.896      ;
+; 0.711 ; avtomat_myra:inst1|inst   ; avtomat_myra:inst1|inst   ; KEY1         ; KEY1        ; 0.000        ; 0.063      ; 0.931      ;
+; 0.813 ; avtomat_myra:inst1|inst8  ; avtomat_myra:inst1|inst   ; KEY1         ; KEY1        ; 0.000        ; 0.063      ; 1.033      ;
+; 0.823 ; avtomat_myra:inst1|inst62 ; avtomat_myra:inst1|inst62 ; KEY1         ; KEY1        ; 0.000        ; 0.063      ; 1.043      ;
+; 0.827 ; avtomat_myra:inst1|inst62 ; avtomat_myra:inst1|inst8  ; KEY1         ; KEY1        ; 0.000        ; 0.063      ; 1.047      ;
+; 0.883 ; avtomat_myra:inst1|inst8  ; avtomat_myra:inst1|inst62 ; KEY1         ; KEY1        ; 0.000        ; 0.063      ; 1.103      ;
++-------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width: 'KEY1'                                                           ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                     ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------+
+; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; KEY1  ; Rise       ; KEY1                       ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; KEY1  ; Rise       ; avtomat_mili:inst|inst     ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; KEY1  ; Rise       ; avtomat_mili:inst|inst8    ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; KEY1  ; Rise       ; avtomat_myra:inst1|inst    ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; KEY1  ; Rise       ; avtomat_myra:inst1|inst62  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; KEY1  ; Rise       ; avtomat_myra:inst1|inst8   ;
+; 0.165  ; 0.349        ; 0.184          ; Low Pulse Width  ; KEY1  ; Rise       ; avtomat_mili:inst|inst     ;
+; 0.165  ; 0.349        ; 0.184          ; Low Pulse Width  ; KEY1  ; Rise       ; avtomat_mili:inst|inst8    ;
+; 0.165  ; 0.349        ; 0.184          ; Low Pulse Width  ; KEY1  ; Rise       ; avtomat_myra:inst1|inst    ;
+; 0.165  ; 0.349        ; 0.184          ; Low Pulse Width  ; KEY1  ; Rise       ; avtomat_myra:inst1|inst62  ;
+; 0.165  ; 0.349        ; 0.184          ; Low Pulse Width  ; KEY1  ; Rise       ; avtomat_myra:inst1|inst8   ;
+; 0.327  ; 0.327        ; 0.000          ; Low Pulse Width  ; KEY1  ; Rise       ; inst1|inst62|clk           ;
+; 0.327  ; 0.327        ; 0.000          ; Low Pulse Width  ; KEY1  ; Rise       ; inst1|inst8|clk            ;
+; 0.327  ; 0.327        ; 0.000          ; Low Pulse Width  ; KEY1  ; Rise       ; inst1|inst|clk             ;
+; 0.327  ; 0.327        ; 0.000          ; Low Pulse Width  ; KEY1  ; Rise       ; inst|inst8|clk             ;
+; 0.327  ; 0.327        ; 0.000          ; Low Pulse Width  ; KEY1  ; Rise       ; inst|inst|clk              ;
+; 0.335  ; 0.335        ; 0.000          ; Low Pulse Width  ; KEY1  ; Rise       ; KEY1~input|o               ;
+; 0.356  ; 0.356        ; 0.000          ; Low Pulse Width  ; KEY1  ; Rise       ; KEY1~inputclkctrl|inclk[0] ;
+; 0.356  ; 0.356        ; 0.000          ; Low Pulse Width  ; KEY1  ; Rise       ; KEY1~inputclkctrl|outclk   ;
+; 0.432  ; 0.648        ; 0.216          ; High Pulse Width ; KEY1  ; Rise       ; avtomat_mili:inst|inst     ;
+; 0.432  ; 0.648        ; 0.216          ; High Pulse Width ; KEY1  ; Rise       ; avtomat_mili:inst|inst8    ;
+; 0.432  ; 0.648        ; 0.216          ; High Pulse Width ; KEY1  ; Rise       ; avtomat_myra:inst1|inst    ;
+; 0.432  ; 0.648        ; 0.216          ; High Pulse Width ; KEY1  ; Rise       ; avtomat_myra:inst1|inst62  ;
+; 0.432  ; 0.648        ; 0.216          ; High Pulse Width ; KEY1  ; Rise       ; avtomat_myra:inst1|inst8   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY1  ; Rise       ; KEY1~input|i               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY1  ; Rise       ; KEY1~input|i               ;
+; 0.643  ; 0.643        ; 0.000          ; High Pulse Width ; KEY1  ; Rise       ; KEY1~inputclkctrl|inclk[0] ;
+; 0.643  ; 0.643        ; 0.000          ; High Pulse Width ; KEY1  ; Rise       ; KEY1~inputclkctrl|outclk   ;
+; 0.665  ; 0.665        ; 0.000          ; High Pulse Width ; KEY1  ; Rise       ; KEY1~input|o               ;
+; 0.672  ; 0.672        ; 0.000          ; High Pulse Width ; KEY1  ; Rise       ; inst1|inst62|clk           ;
+; 0.672  ; 0.672        ; 0.000          ; High Pulse Width ; KEY1  ; Rise       ; inst1|inst8|clk            ;
+; 0.672  ; 0.672        ; 0.000          ; High Pulse Width ; KEY1  ; Rise       ; inst1|inst|clk             ;
+; 0.672  ; 0.672        ; 0.000          ; High Pulse Width ; KEY1  ; Rise       ; inst|inst8|clk             ;
+; 0.672  ; 0.672        ; 0.000          ; High Pulse Width ; KEY1  ; Rise       ; inst|inst|clk              ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; SW0       ; KEY1       ; 1.955 ; 2.362 ; Rise       ; KEY1            ;
+; SW16      ; KEY1       ; 2.774 ; 3.213 ; Rise       ; KEY1            ;
+; SW17      ; KEY1       ; 1.124 ; 1.265 ; Rise       ; KEY1            ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; SW0       ; KEY1       ; -1.704 ; -2.101 ; Rise       ; KEY1            ;
+; SW16      ; KEY1       ; -1.867 ; -2.310 ; Rise       ; KEY1            ;
+; SW17      ; KEY1       ; -0.283 ; -0.371 ; Rise       ; KEY1            ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; LEDG0     ; KEY1       ; 6.921 ; 6.991 ; Rise       ; KEY1            ;
+; LEDG1     ; KEY1       ; 5.622 ; 5.629 ; Rise       ; KEY1            ;
+; LEDG2     ; KEY1       ; 5.588 ; 5.572 ; Rise       ; KEY1            ;
+; LEDG5     ; KEY1       ; 6.410 ; 6.353 ; Rise       ; KEY1            ;
+; LEDG6     ; KEY1       ; 6.149 ; 6.113 ; Rise       ; KEY1            ;
+; LEDG7     ; KEY1       ; 6.429 ; 6.342 ; Rise       ; KEY1            ;
+; LEDR0     ; KEY1       ; 6.331 ; 6.329 ; Rise       ; KEY1            ;
+; LEDR1     ; KEY1       ; 6.356 ; 6.262 ; Rise       ; KEY1            ;
+; LEDR2     ; KEY1       ; 6.562 ; 6.447 ; Rise       ; KEY1            ;
+; LEDR5     ; KEY1       ; 5.654 ; 5.649 ; Rise       ; KEY1            ;
+; LEDR6     ; KEY1       ; 5.553 ; 5.539 ; Rise       ; KEY1            ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; LEDG0     ; KEY1       ; 6.742 ; 6.811 ; Rise       ; KEY1            ;
+; LEDG1     ; KEY1       ; 5.441 ; 5.447 ; Rise       ; KEY1            ;
+; LEDG2     ; KEY1       ; 5.411 ; 5.394 ; Rise       ; KEY1            ;
+; LEDG5     ; KEY1       ; 5.881 ; 5.937 ; Rise       ; KEY1            ;
+; LEDG6     ; KEY1       ; 5.630 ; 5.577 ; Rise       ; KEY1            ;
+; LEDG7     ; KEY1       ; 5.850 ; 5.818 ; Rise       ; KEY1            ;
+; LEDR0     ; KEY1       ; 5.823 ; 5.832 ; Rise       ; KEY1            ;
+; LEDR1     ; KEY1       ; 5.910 ; 5.799 ; Rise       ; KEY1            ;
+; LEDR2     ; KEY1       ; 6.027 ; 6.029 ; Rise       ; KEY1            ;
+; LEDR5     ; KEY1       ; 5.474 ; 5.468 ; Rise       ; KEY1            ;
+; LEDR6     ; KEY1       ; 5.378 ; 5.363 ; Rise       ; KEY1            ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------------+
+; Propagation Delay                                        ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; SW16       ; LEDR0       ; 7.015 ; 6.960 ; 7.463 ; 7.399 ;
+; SW16       ; LEDR1       ; 7.016 ;       ;       ; 7.400 ;
+; SW16       ; LEDR2       ;       ; 7.143 ; 7.660 ;       ;
+; SW16       ; LEDR16      ; 6.222 ;       ;       ; 6.569 ;
+; SW17       ; LEDR0       ; 5.469 ; 5.412 ; 5.539 ; 5.514 ;
+; SW17       ; LEDR1       ; 5.466 ; 5.407 ; 5.541 ; 5.515 ;
+; SW17       ; LEDR2       ; 5.665 ; 5.591 ; 5.740 ; 5.697 ;
+; SW17       ; LEDR17      ; 3.819 ;       ;       ; 3.980 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------+
+; Minimum Propagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; SW16       ; LEDR0       ; 6.782 ; 6.727 ; 7.219 ; 7.155 ;
+; SW16       ; LEDR1       ; 6.782 ;       ;       ; 7.157 ;
+; SW16       ; LEDR2       ;       ; 6.903 ; 7.408 ;       ;
+; SW16       ; LEDR16      ; 6.019 ;       ;       ; 6.359 ;
+; SW17       ; LEDR0       ; 5.306 ; 5.250 ; 5.380 ; 5.354 ;
+; SW17       ; LEDR1       ; 5.303 ; 5.245 ; 5.382 ; 5.355 ;
+; SW17       ; LEDR2       ; 5.493 ; 5.419 ; 5.570 ; 5.529 ;
+; SW17       ; LEDR17      ; 3.724 ;       ;       ; 3.883 ;
++------------+-------------+-------+-------+-------+-------+
+
+
+----------------------------------------------
+; Slow 1200mV 85C Model Metastability Report ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                                                                         ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; 784.93 MHz ; 250.0 MHz       ; KEY1       ; limit due to minimum period restriction (max I/O toggle rate) ;
++------------+-----------------+------------+---------------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++------------------------------------+
+; Slow 1200mV 0C Model Setup Summary ;
++-------+--------+-------------------+
+; Clock ; Slack  ; End Point TNS     ;
++-------+--------+-------------------+
+; KEY1  ; -0.274 ; -0.748            ;
++-------+--------+-------------------+
+
+
++-----------------------------------+
+; Slow 1200mV 0C Model Hold Summary ;
++-------+-------+-------------------+
+; Clock ; Slack ; End Point TNS     ;
++-------+-------+-------------------+
+; KEY1  ; 0.311 ; 0.000             ;
++-------+-------+-------------------+
+
+
+-----------------------------------------
+; Slow 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
++-------+--------+---------------------------------+
+; Clock ; Slack  ; End Point TNS                   ;
++-------+--------+---------------------------------+
+; KEY1  ; -3.000 ; -8.000                          ;
++-------+--------+---------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Setup: 'KEY1'                                                                                                   ;
++--------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                 ; To Node                   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
+; -0.274 ; avtomat_myra:inst1|inst8  ; avtomat_myra:inst1|inst62 ; KEY1         ; KEY1        ; 1.000        ; -0.056     ; 1.213      ;
+; -0.244 ; avtomat_myra:inst1|inst8  ; avtomat_myra:inst1|inst8  ; KEY1         ; KEY1        ; 1.000        ; -0.056     ; 1.183      ;
+; -0.230 ; avtomat_myra:inst1|inst8  ; avtomat_myra:inst1|inst   ; KEY1         ; KEY1        ; 1.000        ; -0.056     ; 1.169      ;
+; -0.148 ; avtomat_myra:inst1|inst62 ; avtomat_myra:inst1|inst8  ; KEY1         ; KEY1        ; 1.000        ; -0.056     ; 1.087      ;
+; -0.143 ; avtomat_myra:inst1|inst62 ; avtomat_myra:inst1|inst62 ; KEY1         ; KEY1        ; 1.000        ; -0.056     ; 1.082      ;
+; -0.109 ; avtomat_myra:inst1|inst   ; avtomat_myra:inst1|inst   ; KEY1         ; KEY1        ; 1.000        ; -0.056     ; 1.048      ;
+; -0.016 ; avtomat_myra:inst1|inst   ; avtomat_myra:inst1|inst8  ; KEY1         ; KEY1        ; 1.000        ; -0.056     ; 0.955      ;
+; -0.012 ; avtomat_myra:inst1|inst   ; avtomat_myra:inst1|inst62 ; KEY1         ; KEY1        ; 1.000        ; -0.056     ; 0.951      ;
+; 0.033  ; avtomat_myra:inst1|inst62 ; avtomat_myra:inst1|inst   ; KEY1         ; KEY1        ; 1.000        ; -0.056     ; 0.906      ;
+; 0.300  ; avtomat_mili:inst|inst8   ; avtomat_mili:inst|inst    ; KEY1         ; KEY1        ; 1.000        ; -0.056     ; 0.639      ;
+; 0.300  ; avtomat_mili:inst|inst    ; avtomat_mili:inst|inst8   ; KEY1         ; KEY1        ; 1.000        ; -0.056     ; 0.639      ;
+; 0.356  ; avtomat_mili:inst|inst8   ; avtomat_mili:inst|inst8   ; KEY1         ; KEY1        ; 1.000        ; -0.056     ; 0.583      ;
+; 0.356  ; avtomat_mili:inst|inst    ; avtomat_mili:inst|inst    ; KEY1         ; KEY1        ; 1.000        ; -0.056     ; 0.583      ;
++--------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Hold: 'KEY1'                                                                                                   ;
++-------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                 ; To Node                   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
+; 0.311 ; avtomat_myra:inst1|inst8  ; avtomat_myra:inst1|inst8  ; KEY1         ; KEY1        ; 0.000        ; 0.056      ; 0.511      ;
+; 0.311 ; avtomat_mili:inst|inst8   ; avtomat_mili:inst|inst8   ; KEY1         ; KEY1        ; 0.000        ; 0.056      ; 0.511      ;
+; 0.319 ; avtomat_mili:inst|inst    ; avtomat_mili:inst|inst    ; KEY1         ; KEY1        ; 0.000        ; 0.056      ; 0.519      ;
+; 0.348 ; avtomat_mili:inst|inst    ; avtomat_mili:inst|inst8   ; KEY1         ; KEY1        ; 0.000        ; 0.056      ; 0.548      ;
+; 0.348 ; avtomat_mili:inst|inst8   ; avtomat_mili:inst|inst    ; KEY1         ; KEY1        ; 0.000        ; 0.056      ; 0.548      ;
+; 0.542 ; avtomat_myra:inst1|inst   ; avtomat_myra:inst1|inst8  ; KEY1         ; KEY1        ; 0.000        ; 0.056      ; 0.742      ;
+; 0.594 ; avtomat_myra:inst1|inst   ; avtomat_myra:inst1|inst62 ; KEY1         ; KEY1        ; 0.000        ; 0.056      ; 0.794      ;
+; 0.600 ; avtomat_myra:inst1|inst62 ; avtomat_myra:inst1|inst   ; KEY1         ; KEY1        ; 0.000        ; 0.056      ; 0.800      ;
+; 0.641 ; avtomat_myra:inst1|inst   ; avtomat_myra:inst1|inst   ; KEY1         ; KEY1        ; 0.000        ; 0.056      ; 0.841      ;
+; 0.729 ; avtomat_myra:inst1|inst62 ; avtomat_myra:inst1|inst62 ; KEY1         ; KEY1        ; 0.000        ; 0.056      ; 0.929      ;
+; 0.730 ; avtomat_myra:inst1|inst8  ; avtomat_myra:inst1|inst   ; KEY1         ; KEY1        ; 0.000        ; 0.056      ; 0.930      ;
+; 0.732 ; avtomat_myra:inst1|inst62 ; avtomat_myra:inst1|inst8  ; KEY1         ; KEY1        ; 0.000        ; 0.056      ; 0.932      ;
+; 0.790 ; avtomat_myra:inst1|inst8  ; avtomat_myra:inst1|inst62 ; KEY1         ; KEY1        ; 0.000        ; 0.056      ; 0.990      ;
++-------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width: 'KEY1'                                                            ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                     ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------+
+; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; KEY1  ; Rise       ; KEY1                       ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; KEY1  ; Rise       ; avtomat_mili:inst|inst     ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; KEY1  ; Rise       ; avtomat_mili:inst|inst8    ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; KEY1  ; Rise       ; avtomat_myra:inst1|inst    ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; KEY1  ; Rise       ; avtomat_myra:inst1|inst62  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; KEY1  ; Rise       ; avtomat_myra:inst1|inst8   ;
+; 0.191  ; 0.375        ; 0.184          ; Low Pulse Width  ; KEY1  ; Rise       ; avtomat_mili:inst|inst     ;
+; 0.191  ; 0.375        ; 0.184          ; Low Pulse Width  ; KEY1  ; Rise       ; avtomat_mili:inst|inst8    ;
+; 0.191  ; 0.375        ; 0.184          ; Low Pulse Width  ; KEY1  ; Rise       ; avtomat_myra:inst1|inst    ;
+; 0.191  ; 0.375        ; 0.184          ; Low Pulse Width  ; KEY1  ; Rise       ; avtomat_myra:inst1|inst62  ;
+; 0.191  ; 0.375        ; 0.184          ; Low Pulse Width  ; KEY1  ; Rise       ; avtomat_myra:inst1|inst8   ;
+; 0.351  ; 0.351        ; 0.000          ; Low Pulse Width  ; KEY1  ; Rise       ; inst1|inst62|clk           ;
+; 0.351  ; 0.351        ; 0.000          ; Low Pulse Width  ; KEY1  ; Rise       ; inst1|inst8|clk            ;
+; 0.351  ; 0.351        ; 0.000          ; Low Pulse Width  ; KEY1  ; Rise       ; inst1|inst|clk             ;
+; 0.351  ; 0.351        ; 0.000          ; Low Pulse Width  ; KEY1  ; Rise       ; inst|inst8|clk             ;
+; 0.351  ; 0.351        ; 0.000          ; Low Pulse Width  ; KEY1  ; Rise       ; inst|inst|clk              ;
+; 0.358  ; 0.358        ; 0.000          ; Low Pulse Width  ; KEY1  ; Rise       ; KEY1~input|o               ;
+; 0.370  ; 0.370        ; 0.000          ; Low Pulse Width  ; KEY1  ; Rise       ; KEY1~inputclkctrl|inclk[0] ;
+; 0.370  ; 0.370        ; 0.000          ; Low Pulse Width  ; KEY1  ; Rise       ; KEY1~inputclkctrl|outclk   ;
+; 0.408  ; 0.624        ; 0.216          ; High Pulse Width ; KEY1  ; Rise       ; avtomat_mili:inst|inst     ;
+; 0.408  ; 0.624        ; 0.216          ; High Pulse Width ; KEY1  ; Rise       ; avtomat_mili:inst|inst8    ;
+; 0.408  ; 0.624        ; 0.216          ; High Pulse Width ; KEY1  ; Rise       ; avtomat_myra:inst1|inst    ;
+; 0.408  ; 0.624        ; 0.216          ; High Pulse Width ; KEY1  ; Rise       ; avtomat_myra:inst1|inst62  ;
+; 0.408  ; 0.624        ; 0.216          ; High Pulse Width ; KEY1  ; Rise       ; avtomat_myra:inst1|inst8   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY1  ; Rise       ; KEY1~input|i               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY1  ; Rise       ; KEY1~input|i               ;
+; 0.630  ; 0.630        ; 0.000          ; High Pulse Width ; KEY1  ; Rise       ; KEY1~inputclkctrl|inclk[0] ;
+; 0.630  ; 0.630        ; 0.000          ; High Pulse Width ; KEY1  ; Rise       ; KEY1~inputclkctrl|outclk   ;
+; 0.642  ; 0.642        ; 0.000          ; High Pulse Width ; KEY1  ; Rise       ; KEY1~input|o               ;
+; 0.648  ; 0.648        ; 0.000          ; High Pulse Width ; KEY1  ; Rise       ; inst1|inst62|clk           ;
+; 0.648  ; 0.648        ; 0.000          ; High Pulse Width ; KEY1  ; Rise       ; inst1|inst8|clk            ;
+; 0.648  ; 0.648        ; 0.000          ; High Pulse Width ; KEY1  ; Rise       ; inst1|inst|clk             ;
+; 0.648  ; 0.648        ; 0.000          ; High Pulse Width ; KEY1  ; Rise       ; inst|inst8|clk             ;
+; 0.648  ; 0.648        ; 0.000          ; High Pulse Width ; KEY1  ; Rise       ; inst|inst|clk              ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; SW0       ; KEY1       ; 1.677 ; 2.002 ; Rise       ; KEY1            ;
+; SW16      ; KEY1       ; 2.426 ; 2.741 ; Rise       ; KEY1            ;
+; SW17      ; KEY1       ; 1.036 ; 1.201 ; Rise       ; KEY1            ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; SW0       ; KEY1       ; -1.457 ; -1.773 ; Rise       ; KEY1            ;
+; SW16      ; KEY1       ; -1.612 ; -1.934 ; Rise       ; KEY1            ;
+; SW17      ; KEY1       ; -0.277 ; -0.384 ; Rise       ; KEY1            ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; LEDG0     ; KEY1       ; 6.202 ; 6.200 ; Rise       ; KEY1            ;
+; LEDG1     ; KEY1       ; 5.044 ; 5.030 ; Rise       ; KEY1            ;
+; LEDG2     ; KEY1       ; 5.010 ; 4.980 ; Rise       ; KEY1            ;
+; LEDG5     ; KEY1       ; 5.742 ; 5.670 ; Rise       ; KEY1            ;
+; LEDG6     ; KEY1       ; 5.495 ; 5.459 ; Rise       ; KEY1            ;
+; LEDG7     ; KEY1       ; 5.753 ; 5.675 ; Rise       ; KEY1            ;
+; LEDR0     ; KEY1       ; 5.660 ; 5.654 ; Rise       ; KEY1            ;
+; LEDR1     ; KEY1       ; 5.677 ; 5.617 ; Rise       ; KEY1            ;
+; LEDR2     ; KEY1       ; 5.875 ; 5.784 ; Rise       ; KEY1            ;
+; LEDR5     ; KEY1       ; 5.074 ; 5.054 ; Rise       ; KEY1            ;
+; LEDR6     ; KEY1       ; 4.980 ; 4.956 ; Rise       ; KEY1            ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; LEDG0     ; KEY1       ; 6.030 ; 6.028 ; Rise       ; KEY1            ;
+; LEDG1     ; KEY1       ; 4.870 ; 4.857 ; Rise       ; KEY1            ;
+; LEDG2     ; KEY1       ; 4.840 ; 4.811 ; Rise       ; KEY1            ;
+; LEDG5     ; KEY1       ; 5.261 ; 5.298 ; Rise       ; KEY1            ;
+; LEDG6     ; KEY1       ; 5.030 ; 4.977 ; Rise       ; KEY1            ;
+; LEDG7     ; KEY1       ; 5.236 ; 5.192 ; Rise       ; KEY1            ;
+; LEDR0     ; KEY1       ; 5.215 ; 5.216 ; Rise       ; KEY1            ;
+; LEDR1     ; KEY1       ; 5.271 ; 5.189 ; Rise       ; KEY1            ;
+; LEDR2     ; KEY1       ; 5.407 ; 5.378 ; Rise       ; KEY1            ;
+; LEDR5     ; KEY1       ; 4.901 ; 4.882 ; Rise       ; KEY1            ;
+; LEDR6     ; KEY1       ; 4.811 ; 4.787 ; Rise       ; KEY1            ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------------+
+; Propagation Delay                                        ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; SW16       ; LEDR0       ; 6.218 ; 6.163 ; 6.555 ; 6.492 ;
+; SW16       ; LEDR1       ; 6.211 ;       ;       ; 6.485 ;
+; SW16       ; LEDR2       ;       ; 6.323 ; 6.737 ;       ;
+; SW16       ; LEDR16      ; 5.482 ;       ;       ; 5.758 ;
+; SW17       ; LEDR0       ; 4.930 ; 4.873 ; 5.027 ; 5.000 ;
+; SW17       ; LEDR1       ; 4.923 ; 4.865 ; 5.027 ; 4.998 ;
+; SW17       ; LEDR2       ; 5.111 ; 5.031 ; 5.215 ; 5.163 ;
+; SW17       ; LEDR17      ; 3.451 ;       ;       ; 3.590 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------+
+; Minimum Propagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; SW16       ; LEDR0       ; 6.001 ; 5.948 ; 6.331 ; 6.272 ;
+; SW16       ; LEDR1       ; 5.996 ;       ;       ; 6.265 ;
+; SW16       ; LEDR2       ;       ; 6.103 ; 6.505 ;       ;
+; SW16       ; LEDR16      ; 5.296 ;       ;       ; 5.565 ;
+; SW17       ; LEDR0       ; 4.770 ; 4.715 ; 4.870 ; 4.843 ;
+; SW17       ; LEDR1       ; 4.764 ; 4.707 ; 4.870 ; 4.841 ;
+; SW17       ; LEDR2       ; 4.945 ; 4.866 ; 5.049 ; 5.000 ;
+; SW17       ; LEDR17      ; 3.354 ;       ;       ; 3.491 ;
++------------+-------------+-------+-------+-------+-------+
+
+
+---------------------------------------------
+; Slow 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++------------------------------------+
+; Fast 1200mV 0C Model Setup Summary ;
++-------+-------+--------------------+
+; Clock ; Slack ; End Point TNS      ;
++-------+-------+--------------------+
+; KEY1  ; 0.199 ; 0.000              ;
++-------+-------+--------------------+
+
+
++-----------------------------------+
+; Fast 1200mV 0C Model Hold Summary ;
++-------+-------+-------------------+
+; Clock ; Slack ; End Point TNS     ;
++-------+-------+-------------------+
+; KEY1  ; 0.187 ; 0.000             ;
++-------+-------+-------------------+
+
+
+-----------------------------------------
+; Fast 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
++-------+--------+---------------------------------+
+; Clock ; Slack  ; End Point TNS                   ;
++-------+--------+---------------------------------+
+; KEY1  ; -3.000 ; -8.320                          ;
++-------+--------+---------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Setup: 'KEY1'                                                                                                  ;
++-------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                 ; To Node                   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
+; 0.199 ; avtomat_myra:inst1|inst8  ; avtomat_myra:inst1|inst62 ; KEY1         ; KEY1        ; 1.000        ; -0.036     ; 0.752      ;
+; 0.222 ; avtomat_myra:inst1|inst8  ; avtomat_myra:inst1|inst8  ; KEY1         ; KEY1        ; 1.000        ; -0.036     ; 0.729      ;
+; 0.251 ; avtomat_myra:inst1|inst8  ; avtomat_myra:inst1|inst   ; KEY1         ; KEY1        ; 1.000        ; -0.036     ; 0.700      ;
+; 0.284 ; avtomat_myra:inst1|inst62 ; avtomat_myra:inst1|inst8  ; KEY1         ; KEY1        ; 1.000        ; -0.036     ; 0.667      ;
+; 0.289 ; avtomat_myra:inst1|inst62 ; avtomat_myra:inst1|inst62 ; KEY1         ; KEY1        ; 1.000        ; -0.036     ; 0.662      ;
+; 0.318 ; avtomat_myra:inst1|inst   ; avtomat_myra:inst1|inst   ; KEY1         ; KEY1        ; 1.000        ; -0.036     ; 0.633      ;
+; 0.368 ; avtomat_myra:inst1|inst   ; avtomat_myra:inst1|inst8  ; KEY1         ; KEY1        ; 1.000        ; -0.036     ; 0.583      ;
+; 0.377 ; avtomat_myra:inst1|inst   ; avtomat_myra:inst1|inst62 ; KEY1         ; KEY1        ; 1.000        ; -0.036     ; 0.574      ;
+; 0.392 ; avtomat_myra:inst1|inst62 ; avtomat_myra:inst1|inst   ; KEY1         ; KEY1        ; 1.000        ; -0.036     ; 0.559      ;
+; 0.566 ; avtomat_mili:inst|inst8   ; avtomat_mili:inst|inst    ; KEY1         ; KEY1        ; 1.000        ; -0.036     ; 0.385      ;
+; 0.570 ; avtomat_mili:inst|inst    ; avtomat_mili:inst|inst8   ; KEY1         ; KEY1        ; 1.000        ; -0.036     ; 0.381      ;
+; 0.592 ; avtomat_mili:inst|inst8   ; avtomat_mili:inst|inst8   ; KEY1         ; KEY1        ; 1.000        ; -0.036     ; 0.359      ;
+; 0.592 ; avtomat_mili:inst|inst    ; avtomat_mili:inst|inst    ; KEY1         ; KEY1        ; 1.000        ; -0.036     ; 0.359      ;
++-------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Hold: 'KEY1'                                                                                                   ;
++-------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                 ; To Node                   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
+; 0.187 ; avtomat_myra:inst1|inst8  ; avtomat_myra:inst1|inst8  ; KEY1         ; KEY1        ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; avtomat_mili:inst|inst8   ; avtomat_mili:inst|inst8   ; KEY1         ; KEY1        ; 0.000        ; 0.036      ; 0.307      ;
+; 0.194 ; avtomat_mili:inst|inst    ; avtomat_mili:inst|inst    ; KEY1         ; KEY1        ; 0.000        ; 0.036      ; 0.314      ;
+; 0.205 ; avtomat_mili:inst|inst8   ; avtomat_mili:inst|inst    ; KEY1         ; KEY1        ; 0.000        ; 0.036      ; 0.325      ;
+; 0.209 ; avtomat_mili:inst|inst    ; avtomat_mili:inst|inst8   ; KEY1         ; KEY1        ; 0.000        ; 0.036      ; 0.329      ;
+; 0.326 ; avtomat_myra:inst1|inst   ; avtomat_myra:inst1|inst8  ; KEY1         ; KEY1        ; 0.000        ; 0.036      ; 0.446      ;
+; 0.348 ; avtomat_myra:inst1|inst   ; avtomat_myra:inst1|inst62 ; KEY1         ; KEY1        ; 0.000        ; 0.036      ; 0.468      ;
+; 0.363 ; avtomat_myra:inst1|inst62 ; avtomat_myra:inst1|inst   ; KEY1         ; KEY1        ; 0.000        ; 0.036      ; 0.483      ;
+; 0.377 ; avtomat_myra:inst1|inst   ; avtomat_myra:inst1|inst   ; KEY1         ; KEY1        ; 0.000        ; 0.036      ; 0.497      ;
+; 0.437 ; avtomat_myra:inst1|inst62 ; avtomat_myra:inst1|inst62 ; KEY1         ; KEY1        ; 0.000        ; 0.036      ; 0.557      ;
+; 0.440 ; avtomat_myra:inst1|inst8  ; avtomat_myra:inst1|inst   ; KEY1         ; KEY1        ; 0.000        ; 0.036      ; 0.560      ;
+; 0.441 ; avtomat_myra:inst1|inst62 ; avtomat_myra:inst1|inst8  ; KEY1         ; KEY1        ; 0.000        ; 0.036      ; 0.561      ;
+; 0.477 ; avtomat_myra:inst1|inst8  ; avtomat_myra:inst1|inst62 ; KEY1         ; KEY1        ; 0.000        ; 0.036      ; 0.597      ;
++-------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width: 'KEY1'                                                            ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                     ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------+
+; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; KEY1  ; Rise       ; KEY1                       ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; KEY1  ; Rise       ; avtomat_mili:inst|inst     ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; KEY1  ; Rise       ; avtomat_mili:inst|inst8    ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; KEY1  ; Rise       ; avtomat_myra:inst1|inst    ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; KEY1  ; Rise       ; avtomat_myra:inst1|inst62  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; KEY1  ; Rise       ; avtomat_myra:inst1|inst8   ;
+; -0.064 ; 0.120        ; 0.184          ; Low Pulse Width  ; KEY1  ; Rise       ; avtomat_mili:inst|inst     ;
+; -0.064 ; 0.120        ; 0.184          ; Low Pulse Width  ; KEY1  ; Rise       ; avtomat_mili:inst|inst8    ;
+; -0.064 ; 0.120        ; 0.184          ; Low Pulse Width  ; KEY1  ; Rise       ; avtomat_myra:inst1|inst    ;
+; -0.064 ; 0.120        ; 0.184          ; Low Pulse Width  ; KEY1  ; Rise       ; avtomat_myra:inst1|inst62  ;
+; -0.064 ; 0.120        ; 0.184          ; Low Pulse Width  ; KEY1  ; Rise       ; avtomat_myra:inst1|inst8   ;
+; 0.116  ; 0.116        ; 0.000          ; Low Pulse Width  ; KEY1  ; Rise       ; inst1|inst62|clk           ;
+; 0.116  ; 0.116        ; 0.000          ; Low Pulse Width  ; KEY1  ; Rise       ; inst1|inst8|clk            ;
+; 0.116  ; 0.116        ; 0.000          ; Low Pulse Width  ; KEY1  ; Rise       ; inst1|inst|clk             ;
+; 0.116  ; 0.116        ; 0.000          ; Low Pulse Width  ; KEY1  ; Rise       ; inst|inst8|clk             ;
+; 0.116  ; 0.116        ; 0.000          ; Low Pulse Width  ; KEY1  ; Rise       ; inst|inst|clk              ;
+; 0.120  ; 0.120        ; 0.000          ; Low Pulse Width  ; KEY1  ; Rise       ; KEY1~input|o               ;
+; 0.139  ; 0.139        ; 0.000          ; Low Pulse Width  ; KEY1  ; Rise       ; KEY1~inputclkctrl|inclk[0] ;
+; 0.139  ; 0.139        ; 0.000          ; Low Pulse Width  ; KEY1  ; Rise       ; KEY1~inputclkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; KEY1  ; Rise       ; KEY1~input|i               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; KEY1  ; Rise       ; KEY1~input|i               ;
+; 0.661  ; 0.877        ; 0.216          ; High Pulse Width ; KEY1  ; Rise       ; avtomat_mili:inst|inst     ;
+; 0.661  ; 0.877        ; 0.216          ; High Pulse Width ; KEY1  ; Rise       ; avtomat_mili:inst|inst8    ;
+; 0.661  ; 0.877        ; 0.216          ; High Pulse Width ; KEY1  ; Rise       ; avtomat_myra:inst1|inst    ;
+; 0.661  ; 0.877        ; 0.216          ; High Pulse Width ; KEY1  ; Rise       ; avtomat_myra:inst1|inst62  ;
+; 0.661  ; 0.877        ; 0.216          ; High Pulse Width ; KEY1  ; Rise       ; avtomat_myra:inst1|inst8   ;
+; 0.861  ; 0.861        ; 0.000          ; High Pulse Width ; KEY1  ; Rise       ; KEY1~inputclkctrl|inclk[0] ;
+; 0.861  ; 0.861        ; 0.000          ; High Pulse Width ; KEY1  ; Rise       ; KEY1~inputclkctrl|outclk   ;
+; 0.880  ; 0.880        ; 0.000          ; High Pulse Width ; KEY1  ; Rise       ; KEY1~input|o               ;
+; 0.883  ; 0.883        ; 0.000          ; High Pulse Width ; KEY1  ; Rise       ; inst1|inst62|clk           ;
+; 0.883  ; 0.883        ; 0.000          ; High Pulse Width ; KEY1  ; Rise       ; inst1|inst8|clk            ;
+; 0.883  ; 0.883        ; 0.000          ; High Pulse Width ; KEY1  ; Rise       ; inst1|inst|clk             ;
+; 0.883  ; 0.883        ; 0.000          ; High Pulse Width ; KEY1  ; Rise       ; inst|inst8|clk             ;
+; 0.883  ; 0.883        ; 0.000          ; High Pulse Width ; KEY1  ; Rise       ; inst|inst|clk              ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; SW0       ; KEY1       ; 1.109 ; 1.663 ; Rise       ; KEY1            ;
+; SW16      ; KEY1       ; 1.560 ; 2.173 ; Rise       ; KEY1            ;
+; SW17      ; KEY1       ; 0.688 ; 0.948 ; Rise       ; KEY1            ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; SW0       ; KEY1       ; -0.967 ; -1.512 ; Rise       ; KEY1            ;
+; SW16      ; KEY1       ; -1.063 ; -1.667 ; Rise       ; KEY1            ;
+; SW17      ; KEY1       ; -0.217 ; -0.460 ; Rise       ; KEY1            ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; LEDG0     ; KEY1       ; 4.236 ; 4.345 ; Rise       ; KEY1            ;
+; LEDG1     ; KEY1       ; 3.302 ; 3.366 ; Rise       ; KEY1            ;
+; LEDG2     ; KEY1       ; 3.277 ; 3.325 ; Rise       ; KEY1            ;
+; LEDG5     ; KEY1       ; 3.744 ; 3.777 ; Rise       ; KEY1            ;
+; LEDG6     ; KEY1       ; 3.604 ; 3.629 ; Rise       ; KEY1            ;
+; LEDG7     ; KEY1       ; 3.770 ; 3.782 ; Rise       ; KEY1            ;
+; LEDR0     ; KEY1       ; 3.709 ; 3.750 ; Rise       ; KEY1            ;
+; LEDR1     ; KEY1       ; 3.723 ; 3.676 ; Rise       ; KEY1            ;
+; LEDR2     ; KEY1       ; 3.830 ; 3.788 ; Rise       ; KEY1            ;
+; LEDR5     ; KEY1       ; 3.326 ; 3.385 ; Rise       ; KEY1            ;
+; LEDR6     ; KEY1       ; 3.262 ; 3.308 ; Rise       ; KEY1            ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; LEDG0     ; KEY1       ; 4.131 ; 4.238 ; Rise       ; KEY1            ;
+; LEDG1     ; KEY1       ; 3.198 ; 3.259 ; Rise       ; KEY1            ;
+; LEDG2     ; KEY1       ; 3.173 ; 3.219 ; Rise       ; KEY1            ;
+; LEDG5     ; KEY1       ; 3.435 ; 3.533 ; Rise       ; KEY1            ;
+; LEDG6     ; KEY1       ; 3.295 ; 3.312 ; Rise       ; KEY1            ;
+; LEDG7     ; KEY1       ; 3.426 ; 3.466 ; Rise       ; KEY1            ;
+; LEDR0     ; KEY1       ; 3.394 ; 3.443 ; Rise       ; KEY1            ;
+; LEDR1     ; KEY1       ; 3.463 ; 3.424 ; Rise       ; KEY1            ;
+; LEDR2     ; KEY1       ; 3.499 ; 3.578 ; Rise       ; KEY1            ;
+; LEDR5     ; KEY1       ; 3.220 ; 3.276 ; Rise       ; KEY1            ;
+; LEDR6     ; KEY1       ; 3.158 ; 3.202 ; Rise       ; KEY1            ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------------+
+; Propagation Delay                                        ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; SW16       ; LEDR0       ; 4.105 ; 4.126 ; 4.709 ; 4.723 ;
+; SW16       ; LEDR1       ; 4.107 ;       ;       ; 4.723 ;
+; SW16       ; LEDR2       ;       ; 4.231 ; 4.808 ;       ;
+; SW16       ; LEDR16      ; 3.673 ;       ;       ; 4.230 ;
+; SW17       ; LEDR0       ; 3.272 ; 3.290 ; 3.508 ; 3.545 ;
+; SW17       ; LEDR1       ; 3.274 ; 3.290 ; 3.511 ; 3.546 ;
+; SW17       ; LEDR2       ; 3.372 ; 3.395 ; 3.609 ; 3.650 ;
+; SW17       ; LEDR17      ; 2.308 ;       ;       ; 2.682 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------+
+; Minimum Propagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; SW16       ; LEDR0       ; 3.970 ; 3.991 ; 4.564 ; 4.578 ;
+; SW16       ; LEDR1       ; 3.971 ;       ;       ; 4.579 ;
+; SW16       ; LEDR2       ;       ; 4.092 ; 4.660 ;       ;
+; SW16       ; LEDR16      ; 3.555 ;       ;       ; 4.105 ;
+; SW17       ; LEDR0       ; 3.174 ; 3.191 ; 3.415 ; 3.451 ;
+; SW17       ; LEDR1       ; 3.175 ; 3.190 ; 3.417 ; 3.451 ;
+; SW17       ; LEDR2       ; 3.269 ; 3.290 ; 3.511 ; 3.552 ;
+; SW17       ; LEDR17      ; 2.251 ;       ;       ; 2.627 ;
++------------+-------------+-------+-------+-------+-------+
+
+
+---------------------------------------------
+; Fast 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                          ;
++------------------+--------+-------+----------+---------+---------------------+
+; Clock            ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+--------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -0.425 ; 0.187 ; N/A      ; N/A     ; -3.000              ;
+;  KEY1            ; -0.425 ; 0.187 ; N/A      ; N/A     ; -3.000              ;
+; Design-wide TNS  ; -1.181 ; 0.0   ; 0.0      ; 0.0     ; -8.32               ;
+;  KEY1            ; -1.181 ; 0.000 ; N/A      ; N/A     ; -8.320              ;
++------------------+--------+-------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; SW0       ; KEY1       ; 1.955 ; 2.362 ; Rise       ; KEY1            ;
+; SW16      ; KEY1       ; 2.774 ; 3.213 ; Rise       ; KEY1            ;
+; SW17      ; KEY1       ; 1.124 ; 1.265 ; Rise       ; KEY1            ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; SW0       ; KEY1       ; -0.967 ; -1.512 ; Rise       ; KEY1            ;
+; SW16      ; KEY1       ; -1.063 ; -1.667 ; Rise       ; KEY1            ;
+; SW17      ; KEY1       ; -0.217 ; -0.371 ; Rise       ; KEY1            ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; LEDG0     ; KEY1       ; 6.921 ; 6.991 ; Rise       ; KEY1            ;
+; LEDG1     ; KEY1       ; 5.622 ; 5.629 ; Rise       ; KEY1            ;
+; LEDG2     ; KEY1       ; 5.588 ; 5.572 ; Rise       ; KEY1            ;
+; LEDG5     ; KEY1       ; 6.410 ; 6.353 ; Rise       ; KEY1            ;
+; LEDG6     ; KEY1       ; 6.149 ; 6.113 ; Rise       ; KEY1            ;
+; LEDG7     ; KEY1       ; 6.429 ; 6.342 ; Rise       ; KEY1            ;
+; LEDR0     ; KEY1       ; 6.331 ; 6.329 ; Rise       ; KEY1            ;
+; LEDR1     ; KEY1       ; 6.356 ; 6.262 ; Rise       ; KEY1            ;
+; LEDR2     ; KEY1       ; 6.562 ; 6.447 ; Rise       ; KEY1            ;
+; LEDR5     ; KEY1       ; 5.654 ; 5.649 ; Rise       ; KEY1            ;
+; LEDR6     ; KEY1       ; 5.553 ; 5.539 ; Rise       ; KEY1            ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; LEDG0     ; KEY1       ; 4.131 ; 4.238 ; Rise       ; KEY1            ;
+; LEDG1     ; KEY1       ; 3.198 ; 3.259 ; Rise       ; KEY1            ;
+; LEDG2     ; KEY1       ; 3.173 ; 3.219 ; Rise       ; KEY1            ;
+; LEDG5     ; KEY1       ; 3.435 ; 3.533 ; Rise       ; KEY1            ;
+; LEDG6     ; KEY1       ; 3.295 ; 3.312 ; Rise       ; KEY1            ;
+; LEDG7     ; KEY1       ; 3.426 ; 3.466 ; Rise       ; KEY1            ;
+; LEDR0     ; KEY1       ; 3.394 ; 3.443 ; Rise       ; KEY1            ;
+; LEDR1     ; KEY1       ; 3.463 ; 3.424 ; Rise       ; KEY1            ;
+; LEDR2     ; KEY1       ; 3.499 ; 3.578 ; Rise       ; KEY1            ;
+; LEDR5     ; KEY1       ; 3.220 ; 3.276 ; Rise       ; KEY1            ;
+; LEDR6     ; KEY1       ; 3.158 ; 3.202 ; Rise       ; KEY1            ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------------+
+; Propagation Delay                                        ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; SW16       ; LEDR0       ; 7.015 ; 6.960 ; 7.463 ; 7.399 ;
+; SW16       ; LEDR1       ; 7.016 ;       ;       ; 7.400 ;
+; SW16       ; LEDR2       ;       ; 7.143 ; 7.660 ;       ;
+; SW16       ; LEDR16      ; 6.222 ;       ;       ; 6.569 ;
+; SW17       ; LEDR0       ; 5.469 ; 5.412 ; 5.539 ; 5.514 ;
+; SW17       ; LEDR1       ; 5.466 ; 5.407 ; 5.541 ; 5.515 ;
+; SW17       ; LEDR2       ; 5.665 ; 5.591 ; 5.740 ; 5.697 ;
+; SW17       ; LEDR17      ; 3.819 ;       ;       ; 3.980 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------+
+; Minimum Propagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; SW16       ; LEDR0       ; 3.970 ; 3.991 ; 4.564 ; 4.578 ;
+; SW16       ; LEDR1       ; 3.971 ;       ;       ; 4.579 ;
+; SW16       ; LEDR2       ;       ; 4.092 ; 4.660 ;       ;
+; SW16       ; LEDR16      ; 3.555 ;       ;       ; 4.105 ;
+; SW17       ; LEDR0       ; 3.174 ; 3.191 ; 3.415 ; 3.451 ;
+; SW17       ; LEDR1       ; 3.175 ; 3.190 ; 3.417 ; 3.451 ;
+; SW17       ; LEDR2       ; 3.269 ; 3.290 ; 3.511 ; 3.552 ;
+; SW17       ; LEDR17      ; 2.251 ;       ;       ; 2.627 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                    ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin           ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; LEDG8         ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LEDG4         ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LEDG3         ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LEDR15        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LEDR14        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LEDR13        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LEDR12        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LEDR11        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LEDR10        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LEDR9         ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LEDR8         ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LEDR7         ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LEDR4         ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LEDR3         ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LEDR17        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LEDR16        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LEDR6         ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LEDR5         ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LEDR2         ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LEDR1         ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LEDR0         ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LEDG1         ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LEDG0         ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LEDG7         ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LEDG6         ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LEDG5         ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LEDG2         ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++----------------------------------------------------------------------------+
+; Input Transition Times                                                     ;
++-------------------------+--------------+-----------------+-----------------+
+; Pin                     ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++-------------------------+--------------+-----------------+-----------------+
+; SW17                    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; SW16                    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; KEY1                    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; KEY0                    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; SW0                     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_ASDO_DATA1~     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_FLASH_nCE_nCSO~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_DATA0~          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++-------------------------+--------------+-----------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; LEDG8         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; LEDG4         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; LEDG3         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; LEDR15        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; LEDR14        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; LEDR13        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.33 V              ; -0.00616 V          ; 0.191 V                              ; 0.099 V                              ; 2.83e-09 s                  ; 2.56e-09 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.33 V             ; -0.00616 V         ; 0.191 V                             ; 0.099 V                             ; 2.83e-09 s                 ; 2.56e-09 s                 ; No                        ; Yes                       ;
+; LEDR12        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.44e-09 V                   ; 2.39 V              ; -0.0265 V           ; 0.2 V                                ; 0.033 V                              ; 2.94e-10 s                  ; 3.12e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.44e-09 V                  ; 2.39 V             ; -0.0265 V          ; 0.2 V                               ; 0.033 V                             ; 2.94e-10 s                 ; 3.12e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR11        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.44e-09 V                   ; 2.39 V              ; -0.0265 V           ; 0.2 V                                ; 0.033 V                              ; 2.94e-10 s                  ; 3.12e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.44e-09 V                  ; 2.39 V             ; -0.0265 V          ; 0.2 V                               ; 0.033 V                             ; 2.94e-10 s                 ; 3.12e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR10        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; LEDR9         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; LEDR8         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; LEDR7         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.44e-09 V                   ; 2.38 V              ; -0.0145 V           ; 0.169 V                              ; 0.026 V                              ; 4.83e-10 s                  ; 4.71e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.44e-09 V                  ; 2.38 V             ; -0.0145 V          ; 0.169 V                             ; 0.026 V                             ; 4.83e-10 s                 ; 4.71e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR4         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; LEDR3         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; LEDR17        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.44e-09 V                   ; 2.38 V              ; -0.0145 V           ; 0.169 V                              ; 0.026 V                              ; 4.83e-10 s                  ; 4.71e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.44e-09 V                  ; 2.38 V             ; -0.0145 V          ; 0.169 V                             ; 0.026 V                             ; 4.83e-10 s                 ; 4.71e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR16        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; LEDR6         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; LEDR5         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; LEDR2         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; LEDR1         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; LEDR0         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; LEDG1         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.44e-09 V                   ; 2.39 V              ; -0.0265 V           ; 0.2 V                                ; 0.033 V                              ; 2.94e-10 s                  ; 3.12e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.44e-09 V                  ; 2.39 V             ; -0.0265 V          ; 0.2 V                               ; 0.033 V                             ; 2.94e-10 s                 ; 3.12e-10 s                 ; Yes                       ; Yes                       ;
+; LEDG0         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.33 V              ; -0.00616 V          ; 0.191 V                              ; 0.099 V                              ; 2.83e-09 s                  ; 2.56e-09 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.33 V             ; -0.00616 V         ; 0.191 V                             ; 0.099 V                             ; 2.83e-09 s                 ; 2.56e-09 s                 ; No                        ; Yes                       ;
+; LEDG7         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.44e-09 V                   ; 2.39 V              ; -0.0265 V           ; 0.2 V                                ; 0.033 V                              ; 2.94e-10 s                  ; 3.12e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.44e-09 V                  ; 2.39 V             ; -0.0265 V          ; 0.2 V                               ; 0.033 V                             ; 2.94e-10 s                 ; 3.12e-10 s                 ; Yes                       ; Yes                       ;
+; LEDG6         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; LEDG5         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.44e-09 V                   ; 2.39 V              ; -0.0265 V           ; 0.2 V                                ; 0.033 V                              ; 2.94e-10 s                  ; 3.12e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.44e-09 V                  ; 2.39 V             ; -0.0265 V          ; 0.2 V                               ; 0.033 V                             ; 2.94e-10 s                 ; 3.12e-10 s                 ; Yes                       ; Yes                       ;
+; LEDG2         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.45e-09 V                   ; 2.38 V              ; -0.0609 V           ; 0.148 V                              ; 0.095 V                              ; 2.82e-10 s                  ; 2.59e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.45e-09 V                  ; 2.38 V             ; -0.0609 V          ; 0.148 V                             ; 0.095 V                             ; 2.82e-10 s                 ; 2.59e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.61e-09 V                   ; 2.38 V              ; -0.00274 V          ; 0.141 V                              ; 0.006 V                              ; 4.7e-10 s                   ; 6.02e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 5.61e-09 V                  ; 2.38 V             ; -0.00274 V         ; 0.141 V                             ; 0.006 V                             ; 4.7e-10 s                  ; 6.02e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; LEDG8         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; LEDG4         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; LEDG3         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR15        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR14        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR13        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.33 V              ; -0.00344 V          ; 0.134 V                              ; 0.075 V                              ; 3.33e-09 s                  ; 3.16e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.33 V             ; -0.00344 V         ; 0.134 V                             ; 0.075 V                             ; 3.33e-09 s                 ; 3.16e-09 s                 ; Yes                       ; Yes                       ;
+; LEDR12        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.16e-07 V                   ; 2.36 V              ; -0.00476 V          ; 0.096 V                              ; 0.013 V                              ; 4.39e-10 s                  ; 4.15e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.16e-07 V                  ; 2.36 V             ; -0.00476 V         ; 0.096 V                             ; 0.013 V                             ; 4.39e-10 s                 ; 4.15e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR11        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.16e-07 V                   ; 2.36 V              ; -0.00476 V          ; 0.096 V                              ; 0.013 V                              ; 4.39e-10 s                  ; 4.15e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.16e-07 V                  ; 2.36 V             ; -0.00476 V         ; 0.096 V                             ; 0.013 V                             ; 4.39e-10 s                 ; 4.15e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR10        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR9         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR8         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR7         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.16e-07 V                   ; 2.35 V              ; -0.00832 V          ; 0.101 V                              ; 0.024 V                              ; 6.39e-10 s                  ; 6e-10 s                     ; Yes                        ; Yes                        ; 2.32 V                      ; 7.16e-07 V                  ; 2.35 V             ; -0.00832 V         ; 0.101 V                             ; 0.024 V                             ; 6.39e-10 s                 ; 6e-10 s                    ; Yes                       ; Yes                       ;
+; LEDR4         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR3         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR17        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.16e-07 V                   ; 2.35 V              ; -0.00832 V          ; 0.101 V                              ; 0.024 V                              ; 6.39e-10 s                  ; 6e-10 s                     ; Yes                        ; Yes                        ; 2.32 V                      ; 7.16e-07 V                  ; 2.35 V             ; -0.00832 V         ; 0.101 V                             ; 0.024 V                             ; 6.39e-10 s                 ; 6e-10 s                    ; Yes                       ; Yes                       ;
+; LEDR16        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR6         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR5         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR2         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR1         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR0         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; LEDG1         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.16e-07 V                   ; 2.36 V              ; -0.00476 V          ; 0.096 V                              ; 0.013 V                              ; 4.39e-10 s                  ; 4.15e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.16e-07 V                  ; 2.36 V             ; -0.00476 V         ; 0.096 V                             ; 0.013 V                             ; 4.39e-10 s                 ; 4.15e-10 s                 ; Yes                       ; Yes                       ;
+; LEDG0         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.33 V              ; -0.00344 V          ; 0.134 V                              ; 0.075 V                              ; 3.33e-09 s                  ; 3.16e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.33 V             ; -0.00344 V         ; 0.134 V                             ; 0.075 V                             ; 3.33e-09 s                 ; 3.16e-09 s                 ; Yes                       ; Yes                       ;
+; LEDG7         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.16e-07 V                   ; 2.36 V              ; -0.00476 V          ; 0.096 V                              ; 0.013 V                              ; 4.39e-10 s                  ; 4.15e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.16e-07 V                  ; 2.36 V             ; -0.00476 V         ; 0.096 V                             ; 0.013 V                             ; 4.39e-10 s                 ; 4.15e-10 s                 ; Yes                       ; Yes                       ;
+; LEDG6         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; LEDG5         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.16e-07 V                   ; 2.36 V              ; -0.00476 V          ; 0.096 V                              ; 0.013 V                              ; 4.39e-10 s                  ; 4.15e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.16e-07 V                  ; 2.36 V             ; -0.00476 V         ; 0.096 V                             ; 0.013 V                             ; 4.39e-10 s                 ; 4.15e-10 s                 ; Yes                       ; Yes                       ;
+; LEDG2         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.74e-07 V                   ; 2.36 V              ; -0.0201 V           ; 0.072 V                              ; 0.033 V                              ; 4.04e-10 s                  ; 3.29e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 5.74e-07 V                  ; 2.36 V             ; -0.0201 V          ; 0.072 V                             ; 0.033 V                             ; 4.04e-10 s                 ; 3.29e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.45e-07 V                   ; 2.35 V              ; -0.00643 V          ; 0.081 V                              ; 0.031 V                              ; 5.31e-10 s                  ; 7.59e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 9.45e-07 V                  ; 2.35 V             ; -0.00643 V         ; 0.081 V                             ; 0.031 V                             ; 5.31e-10 s                 ; 7.59e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; LEDG8         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; LEDG4         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; LEDG3         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR15        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR14        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR13        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.64 V              ; -0.0113 V           ; 0.208 V                              ; 0.179 V                              ; 2.38e-09 s                  ; 2.23e-09 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.64 V             ; -0.0113 V          ; 0.208 V                             ; 0.179 V                             ; 2.38e-09 s                 ; 2.23e-09 s                 ; No                        ; Yes                       ;
+; LEDR12        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.73 V              ; -0.0384 V           ; 0.169 V                              ; 0.089 V                              ; 2.7e-10 s                   ; 2.62e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.73 V             ; -0.0384 V          ; 0.169 V                             ; 0.089 V                             ; 2.7e-10 s                  ; 2.62e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR11        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.73 V              ; -0.0384 V           ; 0.169 V                              ; 0.089 V                              ; 2.7e-10 s                   ; 2.62e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.73 V             ; -0.0384 V          ; 0.169 V                             ; 0.089 V                             ; 2.7e-10 s                  ; 2.62e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR10        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR9         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR8         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR7         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.71 V              ; -0.0317 V           ; 0.148 V                              ; 0.064 V                              ; 4.51e-10 s                  ; 4.15e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.71 V             ; -0.0317 V          ; 0.148 V                             ; 0.064 V                             ; 4.51e-10 s                 ; 4.15e-10 s                 ; No                        ; Yes                       ;
+; LEDR4         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR3         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR17        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.71 V              ; -0.0317 V           ; 0.148 V                              ; 0.064 V                              ; 4.51e-10 s                  ; 4.15e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.71 V             ; -0.0317 V          ; 0.148 V                             ; 0.064 V                             ; 4.51e-10 s                 ; 4.15e-10 s                 ; No                        ; Yes                       ;
+; LEDR16        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR6         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR5         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR2         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR1         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; LEDR0         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; LEDG1         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.73 V              ; -0.0384 V           ; 0.169 V                              ; 0.089 V                              ; 2.7e-10 s                   ; 2.62e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.73 V             ; -0.0384 V          ; 0.169 V                             ; 0.089 V                             ; 2.7e-10 s                  ; 2.62e-10 s                 ; Yes                       ; Yes                       ;
+; LEDG0         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.64 V              ; -0.0113 V           ; 0.208 V                              ; 0.179 V                              ; 2.38e-09 s                  ; 2.23e-09 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.64 V             ; -0.0113 V          ; 0.208 V                             ; 0.179 V                             ; 2.38e-09 s                 ; 2.23e-09 s                 ; No                        ; Yes                       ;
+; LEDG7         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.73 V              ; -0.0384 V           ; 0.169 V                              ; 0.089 V                              ; 2.7e-10 s                   ; 2.62e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.73 V             ; -0.0384 V          ; 0.169 V                             ; 0.089 V                             ; 2.7e-10 s                  ; 2.62e-10 s                 ; Yes                       ; Yes                       ;
+; LEDG6         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; LEDG5         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.73 V              ; -0.0384 V           ; 0.169 V                              ; 0.089 V                              ; 2.7e-10 s                   ; 2.62e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.73 V             ; -0.0384 V          ; 0.169 V                             ; 0.089 V                             ; 2.7e-10 s                  ; 2.62e-10 s                 ; Yes                       ; Yes                       ;
+; LEDG2         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.22e-08 V                   ; 2.74 V              ; -0.06 V             ; 0.158 V                              ; 0.08 V                               ; 2.68e-10 s                  ; 2.19e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.22e-08 V                  ; 2.74 V             ; -0.06 V            ; 0.158 V                             ; 0.08 V                              ; 2.68e-10 s                 ; 2.19e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.54e-08 V                   ; 2.7 V               ; -0.00943 V          ; 0.276 V                              ; 0.035 V                              ; 3.19e-10 s                  ; 4.99e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.54e-08 V                  ; 2.7 V              ; -0.00943 V         ; 0.276 V                             ; 0.035 V                             ; 3.19e-10 s                 ; 4.99e-10 s                 ; No                        ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; KEY1       ; KEY1     ; 18       ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; KEY1       ; KEY1     ; 18       ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 4     ; 4    ;
+; Unconstrained Input Port Paths  ; 28    ; 28   ;
+; Unconstrained Output Ports      ; 13    ; 13   ;
+; Unconstrained Output Port Paths ; 28    ; 28   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Thu Jul 05 14:41:02 2018
+Info: Command: quartus_sta maket_avt -c maket_avt
+Info: qsta_default_script.tcl version: #1
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (21076): High junction temperature operating condition is not set. Assuming a default value of '85'.
+Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'maket_avt.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name KEY1 KEY1
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1200mV 85C Model
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -0.425
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.425              -1.181 KEY1 
+Info (332146): Worst-case hold slack is 0.357
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.357               0.000 KEY1 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000              -8.000 KEY1 
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -0.274
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.274              -0.748 KEY1 
+Info (332146): Worst-case hold slack is 0.311
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.311               0.000 KEY1 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000              -8.000 KEY1 
+Info: Analyzing Fast 1200mV 0C Model
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Info (332146): Worst-case setup slack is 0.199
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.199               0.000 KEY1 
+Info (332146): Worst-case hold slack is 0.187
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.187               0.000 KEY1 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000              -8.320 KEY1 
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 644 megabytes
+    Info: Processing ended: Thu Jul 05 14:41:16 2018
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:10
+
+

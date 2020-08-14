@@ -1,0 +1,555 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/necro/Desktop/STAND/simulation/modelsim
+Ecomp_s
+Z1 w1271858140
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8C:/Users/necro/Desktop/STAND/result.vhd
+Z7 FC:/Users/necro/Desktop/STAND/result.vhd
+l0
+L8
+V^;JhU=[2PEIONj6T90j4e3
+!s100 CfC:jb6Fia_WGgA=cK8gU1
+Z8 OV;C;10.5b;63
+31
+Z9 !s110 1496448123
+!i10b 1
+Z10 !s108 1496448123.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/necro/Desktop/STAND/result.vhd|
+Z12 !s107 C:/Users/necro/Desktop/STAND/result.vhd|
+!i113 1
+Z13 o-93 -work work
+Z14 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 6 comp_s 0 22 ^;JhU=[2PEIONj6T90j4e3
+l21
+L14
+VFDUH5=hQneO9DA;2>G6251
+!s100 RczJ5>c_jXQ57`[z9HOEb1
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Ecomp_y
+Z15 w1271601328
+R2
+R3
+R4
+R5
+R0
+Z16 8C:/Users/necro/Desktop/STAND/result_y.vhd
+Z17 FC:/Users/necro/Desktop/STAND/result_y.vhd
+l0
+L6
+VTf46ANWkH48m^7UC@kd530
+!s100 DSOLldH3W_KicE`CK<Na>1
+R8
+31
+Z18 !s110 1496448124
+!i10b 1
+R10
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/necro/Desktop/STAND/result_y.vhd|
+Z20 !s107 C:/Users/necro/Desktop/STAND/result_y.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 6 comp_y 0 22 Tf46ANWkH48m^7UC@kd530
+l16
+L12
+VlaVPSWRiTZlDhY7V;F:SQ3
+!s100 Mf3o=O]BEh6>H[h:P;Da_0
+R8
+31
+R18
+!i10b 1
+R10
+R19
+R20
+!i113 1
+R13
+R14
+Ecount_100
+Z21 w1268238806
+R4
+R5
+R0
+Z22 8C:/Users/necro/Desktop/STAND/count_100.vhd
+Z23 FC:/Users/necro/Desktop/STAND/count_100.vhd
+l0
+L42
+V5724C1DVb:bVbzzQ8NG@m3
+!s100 ?NBdPZNIl0TYzPmB_?hj;2
+R8
+31
+R9
+!i10b 1
+R10
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/necro/Desktop/STAND/count_100.vhd|
+Z25 !s107 C:/Users/necro/Desktop/STAND/count_100.vhd|
+!i113 1
+R13
+R14
+Asyn
+R4
+R5
+DEx4 work 9 count_100 0 22 5724C1DVb:bVbzzQ8NG@m3
+l70
+L51
+VO:CNABZKaMCU547=?V2j11
+!s100 7kTDCfKM9X90`A9o4Ll>I3
+R8
+31
+R9
+!i10b 1
+R10
+R24
+R25
+!i113 1
+R13
+R14
+Edel
+Z26 w1271004626
+R4
+R5
+R0
+Z27 8C:/Users/necro/Desktop/STAND/del.vhd
+Z28 FC:/Users/necro/Desktop/STAND/del.vhd
+l0
+L42
+V=PCFPYC[oj@PU2lT>aFV]1
+!s100 kaaDdG3DLG[?OZ`e:;7`B0
+R8
+31
+R18
+!i10b 1
+Z29 !s108 1496448124.000000
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/Users/necro/Desktop/STAND/del.vhd|
+Z31 !s107 C:/Users/necro/Desktop/STAND/del.vhd|
+!i113 1
+R13
+R14
+Asyn
+R4
+R5
+DEx4 work 3 del 0 22 =PCFPYC[oj@PU2lT>aFV]1
+l71
+L52
+V7;>Q?YXIMbIKHKX:lG58l1
+!s100 dUIBR]ieGEGVJFPJW=6QO1
+R8
+31
+R18
+!i10b 1
+R29
+R30
+R31
+!i113 1
+R13
+R14
+Ekodirovkamura
+Z32 w1275580840
+R2
+R3
+R4
+R5
+R0
+Z33 8C:/Users/necro/Desktop/STAND/KodirovkaMura.vhd
+Z34 FC:/Users/necro/Desktop/STAND/KodirovkaMura.vhd
+l0
+L6
+VIQf_=:MTaB1VZ8i4EW<751
+!s100 b@ac3J75HVd@]iG@<QT3o2
+R8
+31
+R18
+!i10b 1
+R29
+Z35 !s90 -reportprogress|300|-93|-work|work|C:/Users/necro/Desktop/STAND/KodirovkaMura.vhd|
+Z36 !s107 C:/Users/necro/Desktop/STAND/KodirovkaMura.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 13 kodirovkamura 0 22 IQf_=:MTaB1VZ8i4EW<751
+l11
+L10
+VIhbOO6a9:gl5=3dandmE82
+!s100 FM]G85Giakm65<_n:^ZBn3
+R8
+31
+R18
+!i10b 1
+R29
+R35
+R36
+!i113 1
+R13
+R14
+Ekodirovkas
+Z37 w1275576980
+R2
+R3
+R4
+R5
+R0
+Z38 8C:/Users/necro/Desktop/STAND/KodirovkaS.vhd
+Z39 FC:/Users/necro/Desktop/STAND/KodirovkaS.vhd
+l0
+L6
+VG_DZ5=m;SD3LFYR_YJ<QG3
+!s100 @0GT2mKen?_mbc5WLEP8_0
+R8
+31
+R18
+!i10b 1
+R29
+Z40 !s90 -reportprogress|300|-93|-work|work|C:/Users/necro/Desktop/STAND/KodirovkaS.vhd|
+Z41 !s107 C:/Users/necro/Desktop/STAND/KodirovkaS.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 10 kodirovkas 0 22 G_DZ5=m;SD3LFYR_YJ<QG3
+l11
+L10
+VnWHj[X:G:aP@M549hKTN90
+!s100 1H?caz8ZQ59ijaPdz9Hfh0
+R8
+31
+R18
+!i10b 1
+R29
+R40
+R41
+!i113 1
+R13
+R14
+Ekodirovkax
+Z42 w1275575422
+R2
+R3
+R4
+R5
+R0
+Z43 8C:/Users/necro/Desktop/STAND/KodirovkaX.vhd
+Z44 FC:/Users/necro/Desktop/STAND/KodirovkaX.vhd
+l0
+L6
+VMfdacbJZfg[Ch:L>fL=bB2
+!s100 T:;3G`QnM@R6hLK]12Sj50
+R8
+31
+R9
+!i10b 1
+R10
+Z45 !s90 -reportprogress|300|-93|-work|work|C:/Users/necro/Desktop/STAND/KodirovkaX.vhd|
+Z46 !s107 C:/Users/necro/Desktop/STAND/KodirovkaX.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 10 kodirovkax 0 22 MfdacbJZfg[Ch:L>fL=bB2
+l11
+L10
+VV_E:<]W^7ndAMRb?]N?911
+!s100 ]01ncP?Oannd>VX2R=bgX3
+R8
+31
+R9
+!i10b 1
+R10
+R45
+R46
+!i113 1
+R13
+R14
+Ekodirovkay
+Z47 w1275580730
+R2
+R3
+R4
+R5
+R0
+Z48 8C:/Users/necro/Desktop/STAND/kodirovkaY.vhd
+Z49 FC:/Users/necro/Desktop/STAND/kodirovkaY.vhd
+l0
+L6
+ViMT3HkNg3A83>G<m3Rh=F2
+!s100 EoMHjneb^;B^Z`IP]=DRc0
+R8
+31
+R18
+!i10b 1
+R29
+Z50 !s90 -reportprogress|300|-93|-work|work|C:/Users/necro/Desktop/STAND/kodirovkaY.vhd|
+Z51 !s107 C:/Users/necro/Desktop/STAND/kodirovkaY.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 10 kodirovkay 0 22 iMT3HkNg3A83>G<m3Rh=F2
+l11
+L10
+VY1;`bDlVeU^Pj3_Ic8S;X3
+!s100 :Qnh][A7kD`C?80?DVFdZ1
+R8
+31
+R18
+!i10b 1
+R29
+R50
+R51
+!i113 1
+R13
+R14
+Emura
+Z52 w1271601438
+R2
+R3
+R4
+R5
+R0
+Z53 8C:/Users/necro/Desktop/STAND/mura.vhd
+Z54 FC:/Users/necro/Desktop/STAND/mura.vhd
+l0
+L6
+VochAN@6E5f1QikfN94EW01
+!s100 cFKFo:oVDaUm4CB^hf_:z3
+R8
+31
+R18
+!i10b 1
+R29
+Z55 !s90 -reportprogress|300|-93|-work|work|C:/Users/necro/Desktop/STAND/mura.vhd|
+Z56 !s107 C:/Users/necro/Desktop/STAND/mura.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 4 mura 0 22 ochAN@6E5f1QikfN94EW01
+l16
+L12
+V]mUhnm]AY`B<gZh19K1Yf1
+!s100 JS]DjTe@C84HKn@5U1JK11
+R8
+31
+R18
+!i10b 1
+R29
+R55
+R56
+!i113 1
+R13
+R14
+Etest_sequence
+Z57 w1495873616
+Z58 DPx9 altera_mf 20 altera_mf_components 0 22 :YRc5<ojH^WgP]^Vezi9c1
+R4
+R5
+R0
+Z59 8C:/Users/necro/Desktop/STAND/test_sequence.vhd
+Z60 FC:/Users/necro/Desktop/STAND/test_sequence.vhd
+l0
+L42
+Vkj?cSHnWKgTXn0DdVzP_h0
+!s100 X?EZH>f2a^[dH2zRN4YVe0
+R8
+31
+R9
+!i10b 1
+R10
+Z61 !s90 -reportprogress|300|-93|-work|work|C:/Users/necro/Desktop/STAND/test_sequence.vhd|
+Z62 !s107 C:/Users/necro/Desktop/STAND/test_sequence.vhd|
+!i113 1
+R13
+R14
+Asyn
+R58
+R4
+R5
+DEx4 work 13 test_sequence 0 22 kj?cSHnWKgTXn0DdVzP_h0
+l56
+L52
+VO1mFK@UPbBJ4Ha52dKmQK3
+!s100 c4cTT17HbHWTSQ7>9^beA1
+R8
+31
+R9
+!i10b 1
+R10
+R61
+R62
+!i113 1
+R13
+R14
+Etrue_choice
+Z63 w1268837178
+Z64 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+R2
+R3
+Z65 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R4
+R5
+R0
+Z66 8C:/Users/necro/Desktop/STAND/true_choice.vhd
+Z67 FC:/Users/necro/Desktop/STAND/true_choice.vhd
+l0
+L8
+VELQiNDCGz3QHmCUZ4nEf:3
+!s100 mFHW9D1PDEW;XWF=g<:kK3
+R8
+31
+R9
+!i10b 1
+R10
+Z68 !s90 -reportprogress|300|-93|-work|work|C:/Users/necro/Desktop/STAND/true_choice.vhd|
+Z69 !s107 C:/Users/necro/Desktop/STAND/true_choice.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R64
+R2
+R3
+R65
+R4
+R5
+DEx4 work 11 true_choice 0 22 ELQiNDCGz3QHmCUZ4nEf:3
+l15
+L13
+Vad746jegPI`TZXI:[=V:m2
+!s100 WD5a?MhAThW]o^>>cNFk?1
+R8
+31
+R9
+!i10b 1
+R10
+R68
+R69
+!i113 1
+R13
+R14
+Etrue_s
+Z70 w1268844412
+R4
+R5
+R0
+Z71 8C:/Users/necro/Desktop/STAND/true_S.vhd
+Z72 FC:/Users/necro/Desktop/STAND/true_S.vhd
+l0
+L42
+VOZS?7KeUV;^7h?nJc8EKB1
+!s100 3XfA3H[ZFk[KI=`2a2Tc@0
+R8
+31
+R9
+!i10b 1
+R10
+Z73 !s90 -reportprogress|300|-93|-work|work|C:/Users/necro/Desktop/STAND/true_S.vhd|
+Z74 !s107 C:/Users/necro/Desktop/STAND/true_S.vhd|
+!i113 1
+R13
+R14
+Asyn
+R4
+R5
+DEx4 work 6 true_s 0 22 OZS?7KeUV;^7h?nJc8EKB1
+l83
+L53
+VgJE^2j2`CKM5@b]T4Z2oK3
+!s100 d>j:TeRGzk7m_ofbW6F]<2
+R8
+31
+R9
+!i10b 1
+R10
+R73
+R74
+!i113 1
+R13
+R14
+Etrue_y
+Z75 w1268844446
+R4
+R5
+R0
+Z76 8C:/Users/necro/Desktop/STAND/true_Y.vhd
+Z77 FC:/Users/necro/Desktop/STAND/true_Y.vhd
+l0
+L42
+VV^?`GL>DWO4EHXeLkYM[l3
+!s100 GQ7PM?E1eRR67k?4cNOY31
+R8
+31
+R9
+!i10b 1
+R10
+Z78 !s90 -reportprogress|300|-93|-work|work|C:/Users/necro/Desktop/STAND/true_Y.vhd|
+Z79 !s107 C:/Users/necro/Desktop/STAND/true_Y.vhd|
+!i113 1
+R13
+R14
+Asyn
+R4
+R5
+DEx4 work 6 true_y 0 22 V^?`GL>DWO4EHXeLkYM[l3
+l83
+L53
+VT^[0J7?DW8bll^>SWoU_R1
+!s100 jQ4zYjh9S[_1VLhM3FVa[3
+R8
+31
+R9
+!i10b 1
+R10
+R78
+R79
+!i113 1
+R13
+R14

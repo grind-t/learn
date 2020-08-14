@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sat Jun 03 02:28:05 2017
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Revision Name : begin
+Top-level Entity Name : tstand
+Family : Cyclone IV E
+Device : EP4CE6E22C6
+Timing Models : Final
+Total logic elements : 118 / 6,272 ( 2 % )
+    Total combinational functions : 118 / 6,272 ( 2 % )
+    Dedicated logic registers : 82 / 6,272 ( 1 % )
+Total registers : 82
+Total pins : 25 / 92 ( 27 % )
+Total virtual pins : 0
+Total memory bits : 336 / 276,480 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

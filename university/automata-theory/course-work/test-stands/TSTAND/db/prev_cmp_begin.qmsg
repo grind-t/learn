@@ -1,0 +1,12 @@
+{ "Info" "0" "" "qar.tcl version #1" {  } {  } 0 0 "qar.tcl version #1" 0 0 "0" 0 0 1496446163993 ""}
+{ "Info" "0" "" "Including '-use_file_set basic' by default" {  } {  } 0 0 "Including '-use_file_set basic' by default" 0 0 "0" 0 0 1496446164477 ""}
+{ "Info" "0" "" "All project revisions will be stored in common archive begin_tmp_archive.qar" {  } {  } 0 0 "All project revisions will be stored in common archive begin_tmp_archive.qar" 0 0 "0" 0 0 1496446164477 ""}
+{ "Info" "0" "" "Initializing files for 'begin' revision" {  } {  } 0 0 "Initializing files for 'begin' revision" 0 0 "0" 0 0 1496446164612 ""}
+{ "Info" "0" "" "File Set 'Source control' contains:" { { "Info" "0" "" "Project source and settings files" {  } {  } 0 0 "Project source and settings files" 0 0 "0" 0 0 1496446164612 ""} { "Info" "0" "" "Automatically detected source files" {  } {  } 0 0 "Automatically detected source files" 0 0 "0" 0 0 1496446164612 ""}  } {  } 0 0 "File Set 'Source control' contains:" 0 0 "0" 0 0 1496446164612 ""}
+{ "Info" "0" "" "Archive will store files relative to the closest common parent directory" {  } {  } 0 0 "Archive will store files relative to the closest common parent directory" 0 0 "0" 0 0 1496446164952 ""}
+{ "Info" "IPRJ_ARC_TCL_TCL_USING_COMMON_DIR" "C:/Users/necro/Desktop/STAND/ " "Using common directory C:/Users/necro/Desktop/STAND/" {  } {  } 0 13213 "Using common directory %1!s!" 0 0 "Design Software" 0 -1 1496446165061 ""}
+{ "Info" "0" "" "----------------------------------------------------------" {  } {  } 0 0 "----------------------------------------------------------" 0 0 "0" 0 0 1496446165092 ""}
+{ "Info" "0" "" "----------------------------------------------------------" {  } {  } 0 0 "----------------------------------------------------------" 0 0 "0" 0 0 1496446165092 ""}
+{ "Info" "0" "" "Generated archive 'begin_tmp_archive.qar'" {  } {  } 0 0 "Generated archive 'begin_tmp_archive.qar'" 0 0 "0" 0 0 1496446165092 ""}
+{ "Info" "0" "" "----------------------------------------------------------" {  } {  } 0 0 "----------------------------------------------------------" 0 0 "0" 0 0 1496446165092 ""}
+{ "Info" "0" "" "----------------------------------------------------------" {  } {  } 0 0 "----------------------------------------------------------" 0 0 "0" 0 0 1496446165092 ""}

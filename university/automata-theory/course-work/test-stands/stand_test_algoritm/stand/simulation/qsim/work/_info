@@ -1,0 +1,309 @@
+m255
+K3
+z0
+13
+cModel Technology
+Z0 dD:\AlteraProjects\stand_test_algoritm\Test4\simulation\qsim
+vBlock1
+IPDJL3MW>N=OO7_NSHdISY2
+Vc[6E[FSDk@Knk8E]jXh[a1
+R0
+w1545151093
+8test.vo
+Ftest.vo
+L0 31
+Z1 OV;L;10.1d;51
+r1
+31
+Z2 o-work work -O0
+n@block1
+!i10b 1
+!s100 1IEJBWk:BG0Gn;l8j<gH71
+!s85 0
+!s108 1545151095.585000
+!s107 test.vo|
+!s90 -work|work|test.vo|
+!s101 -O0
+vBlock1_vlg_check_tst
+!i10b 1
+!s100 on@m5?<5:PL34iRU<ifeo3
+I]EMNif7i2D]gSA[2XiiH30
+V6D<e3CYbJPaa^=P9YFW@61
+R0
+Z3 w1545151090
+Z4 8test.vwf.vt
+Z5 Ftest.vwf.vt
+L0 63
+R1
+r1
+!s85 0
+31
+Z6 !s108 1545151095.944000
+Z7 !s107 test.vwf.vt|
+Z8 !s90 -work|work|test.vwf.vt|
+!s101 -O0
+R2
+n@block1_vlg_check_tst
+vBlock1_vlg_sample_tst
+!i10b 1
+!s100 >7BKH:o;8V<^i4:X_emzP0
+I1CE_OLC5Kzf<XmzC8=ikX1
+VBCd:a^MdUjZP1M2<eG;5B2
+R0
+R3
+R4
+R5
+L0 29
+R1
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R2
+n@block1_vlg_sample_tst
+vBlock1_vlg_vec_tst
+!i10b 1
+!s100 aYo]R7<@4^gAD1>b_NSB03
+IS>b6M_NQ?FQnV`G2TmKZY3
+V8EbEX^g@9e0ZUXjTWSm=l2
+R0
+R3
+R4
+R5
+L0 3321
+R1
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R2
+n@block1_vlg_vec_tst
+Ehard_block
+Z9 w1592137138
+Z10 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z11 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 JX^YokbeM8:bL?Pj@;1Jd1
+Z12 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z13 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z14 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z15 DPx10 cycloneive 21 cycloneive_components 0 22 Lf2433zWNi5^RHNT=BHD60
+Z16 dC:/test-stands/stand_test_algoritm/stand/simulation/qsim
+Z17 8test.vho
+Z18 Ftest.vho
+l0
+L35
+VB]0;STalBkCB1_B4BXQDW2
+!s100 >mXi5[`cD`bFC`UBKA<om3
+Z19 OV;C;10.5b;63
+32
+Z20 !s110 1592137141
+!i10b 1
+Z21 !s108 1592137140.000000
+Z22 !s90 -work|work|test.vho|
+Z23 !s107 test.vho|
+!i113 1
+Z24 o-work work
+Z25 tExplicit 1 CvgOpt 0
+Astructure
+R10
+R11
+R12
+R13
+R14
+R15
+DEx4 work 10 hard_block 0 22 B]0;STalBkCB1_B4BXQDW2
+l65
+L51
+Via>5o7W??azG@W@@eFOTF0
+!s100 [5;Wd8QGQ>@2NGoJ1I]Y43
+R19
+32
+R20
+!i10b 1
+R21
+R22
+R23
+!i113 1
+R24
+R25
+Estudent_device
+Z26 w1561643814
+R10
+Z27 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 g8;l:a_bzlE?3R3d7zk3Z0
+R12
+R13
+R14
+Z28 DPx10 cycloneive 21 cycloneive_components 0 22 Yj^f[Ven<H;0LiK:6PWEg0
+Z29 dC:/intelFPGA_lite/18.1/stand_test_algoritm/Test4/simulation/qsim
+R17
+R18
+l0
+L77
+VlS>niQ;>VR`VfSUOihHeR1
+!s100 STj6GERRZDV:egC[H_1i<0
+R19
+32
+Z30 !s110 1561643816
+!i10b 1
+Z31 !s108 1561643816.000000
+R22
+R23
+!i113 1
+R24
+R25
+Astructure
+R10
+R27
+R12
+R13
+R14
+R28
+DEx4 work 14 student_device 0 22 lS>niQ;>VR`VfSUOihHeR1
+l306
+L104
+V<kbNm:?a?1AeNHZ:[AR<;1
+!s100 WbS>eYTa5B>:_b5V]66lS0
+R19
+32
+R30
+!i10b 1
+R31
+R22
+R23
+!i113 1
+R24
+R25
+Estudent_device_vhd_vec_tst
+Z32 w1561643812
+R13
+R14
+R29
+Z33 8Waveform1.vwf.vht
+Z34 FWaveform1.vwf.vht
+l0
+L31
+VUN;bDF[A@G9Dhaif5EKEX0
+!s100 f6>[M]V@EDzRWkX2ME?6o1
+R19
+32
+R30
+!i10b 1
+R31
+Z35 !s90 -work|work|Waveform1.vwf.vht|
+Z36 !s107 Waveform1.vwf.vht|
+!i113 1
+R24
+R25
+Astudent_device_arch
+R13
+R14
+DEx4 work 26 student_device_vhd_vec_tst 0 22 UN;bDF[A@G9Dhaif5EKEX0
+l46
+L33
+V9QD6E0PFCm?8>lLn@9@PY1
+!s100 ;1J[;]O21TPcWKHSA_G:n1
+R19
+32
+R30
+!i10b 1
+R31
+R35
+R36
+!i113 1
+R24
+R25
+Etest_alg
+R9
+R11
+R15
+R10
+Z37 DPx6 altera 11 dffeas_pack 0 22 dbC[kT^o8P[ggjb1if:RT1
+R12
+R13
+R14
+Z38 DPx6 altera 28 altera_primitives_components 0 22 PoC3B_7fao?IDTS[NR5Q62
+R16
+R17
+R18
+l0
+L80
+VYgGEP:kCn4`fkRLg49dlR0
+!s100 WAYQKLgN=F[l3NzkLn1Bh0
+R19
+32
+R20
+!i10b 1
+R21
+R22
+R23
+!i113 1
+R24
+R25
+Astructure
+R11
+R15
+R10
+R37
+R12
+R13
+R14
+R38
+DEx4 work 8 test_alg 0 22 YgGEP:kCn4`fkRLg49dlR0
+l335
+L126
+V[77Ah?c2HUOY1G;EG3LUG2
+!s100 1zkSC^4mkaHg?05[>`jZl0
+R19
+32
+R20
+!i10b 1
+R21
+R22
+R23
+!i113 1
+R24
+R25
+Etest_alg_vhd_vec_tst
+Z39 w1592137137
+R13
+R14
+R16
+Z40 8Waveform.vwf.vht
+Z41 FWaveform.vwf.vht
+l0
+L32
+Vn`:F?6lARU=C9]NRlT^<f2
+!s100 BQQLZhZ>E>EiALdi<R?]11
+R19
+32
+R20
+!i10b 1
+Z42 !s108 1592137141.000000
+Z43 !s90 -work|work|Waveform.vwf.vht|
+Z44 !s107 Waveform.vwf.vht|
+!i113 1
+R24
+R25
+Atest_alg_arch
+R13
+R14
+Z45 DEx4 work 20 test_alg_vhd_vec_tst 0 22 n`:F?6lARU=C9]NRlT^<f2
+l59
+L34
+Z46 VMZKm8a5PQKgAoLe=<fDNV2
+Z47 !s100 H^I4h[d3d23ABDS_ndaWb2
+R19
+32
+R20
+!i10b 1
+R42
+R43
+R44
+!i113 1
+R24
+R25

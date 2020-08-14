@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Jun 03 02:27:40 2017
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Revision Name : begin
+Top-level Entity Name : tstand
+Family : Cyclone IV E
+Total logic elements : 118
+    Total combinational functions : 118
+    Dedicated logic registers : 82
+Total registers : 82
+Total pins : 25
+Total virtual pins : 0
+Total memory bits : 336
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

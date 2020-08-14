@@ -1,0 +1,1060 @@
+Simulator report for begin
+Fri Jun 02 16:45:34 2017
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |begin|true_Y:inst51|altsyncram:altsyncram_component|altsyncram_2f81:auto_generated|ALTSYNCRAM
+  6. |begin|true_S:inst50|altsyncram:altsyncram_component|altsyncram_re81:auto_generated|ALTSYNCRAM
+  7. |begin|test_sequence:inst3|altsyncram:altsyncram_component|altsyncram_5ik3:auto_generated|ALTSYNCRAM
+  8. Coverage Summary
+  9. Complete 1/0-Value Coverage
+ 10. Missing 1-Value Coverage
+ 11. Missing 0-Value Coverage
+ 12. Simulator INI Usage
+ 13. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 4.0 us       ;
+; Simulation Netlist Size     ; 593 nodes    ;
+; Simulation Coverage         ;      35.80 % ;
+; Total Number of Transitions ; 14339        ;
+; Simulation Breakpoints      ; 3            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                         ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+; Option                                                                                     ; Setting       ; Default Value ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+; Simulation mode                                                                            ; Functional    ; Timing        ;
+; Start time                                                                                 ; 0 ns          ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF          ;               ;
+; Vector input source                                                                        ; Waveform1.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On            ; On            ;
+; Check outputs                                                                              ; Off           ; Off           ;
+; Report simulation coverage                                                                 ; On            ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On            ; On            ;
+; Display missing 1-value coverage report                                                    ; On            ; On            ;
+; Display missing 0-value coverage report                                                    ; On            ; On            ;
+; Detect setup and hold time violations                                                      ; Off           ; Off           ;
+; Detect glitches                                                                            ; Off           ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off           ; Off           ;
+; Generate Signal Activity File                                                              ; Off           ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off           ; Off           ;
+; Group bus channels in simulation results                                                   ; Off           ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On            ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE    ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off           ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off           ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto          ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport     ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport     ; Transport     ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++------------------------------------------------------------------------------------------------+
+; |begin|true_Y:inst51|altsyncram:altsyncram_component|altsyncram_2f81:auto_generated|ALTSYNCRAM ;
++------------------------------------------------------------------------------------------------+
+Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
+
+
++------------------------------------------------------------------------------------------------+
+; |begin|true_S:inst50|altsyncram:altsyncram_component|altsyncram_re81:auto_generated|ALTSYNCRAM ;
++------------------------------------------------------------------------------------------------+
+Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
+
+
++------------------------------------------------------------------------------------------------------+
+; |begin|test_sequence:inst3|altsyncram:altsyncram_component|altsyncram_5ik3:auto_generated|ALTSYNCRAM ;
++------------------------------------------------------------------------------------------------------+
+Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      35.80 % ;
+; Total nodes checked                                 ; 593          ;
+; Total output ports checked                          ; 595          ;
+; Total output ports with complete 1/0-value coverage ; 213          ;
+; Total output ports with no 1/0-value coverage       ; 281          ;
+; Total output ports with no 1-value coverage         ; 376          ;
+; Total output ports with no 0-value coverage         ; 287          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                           ;
++--------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                              ; Output Port Name                                                                                          ; Output Port Type ;
++--------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
+; |begin|x2                                                                                              ; |begin|x2                                                                                                 ; pin_out          ;
+; |begin|clk                                                                                             ; |begin|clk                                                                                                ; out              ;
+; |begin|x1                                                                                              ; |begin|x1                                                                                                 ; pin_out          ;
+; |begin|t2                                                                                              ; |begin|t2                                                                                                 ; pin_out          ;
+; |begin|t1                                                                                              ; |begin|t1                                                                                                 ; pin_out          ;
+; |begin|s_true[1]                                                                                       ; |begin|s_true[1]                                                                                          ; pin_out          ;
+; |begin|s_true[0]                                                                                       ; |begin|s_true[0]                                                                                          ; pin_out          ;
+; |begin|y3                                                                                              ; |begin|y3                                                                                                 ; pin_out          ;
+; |begin|y2                                                                                              ; |begin|y2                                                                                                 ; pin_out          ;
+; |begin|y1                                                                                              ; |begin|y1                                                                                                 ; pin_out          ;
+; |begin|y_true[2]                                                                                       ; |begin|y_true[2]                                                                                          ; pin_out          ;
+; |begin|y_true[1]                                                                                       ; |begin|y_true[1]                                                                                          ; pin_out          ;
+; |begin|y_true[0]                                                                                       ; |begin|y_true[0]                                                                                          ; pin_out          ;
+; |begin|m1                                                                                              ; |begin|m1                                                                                                 ; pin_out          ;
+; |begin|m2                                                                                              ; |begin|m2                                                                                                 ; pin_out          ;
+; |begin|m3                                                                                              ; |begin|m3                                                                                                 ; pin_out          ;
+; |begin|tt1                                                                                             ; |begin|tt1                                                                                                ; pin_out          ;
+; |begin|tt2                                                                                             ; |begin|tt2                                                                                                ; pin_out          ;
+; |begin|tt3                                                                                             ; |begin|tt3                                                                                                ; pin_out          ;
+; |begin|automat_myra:inst1|inst26                                                                       ; |begin|automat_myra:inst1|inst26                                                                          ; out0             ;
+; |begin|automat_myra:inst1|inst23                                                                       ; |begin|automat_myra:inst1|inst23                                                                          ; out0             ;
+; |begin|automat_myra:inst1|trigger_2                                                                    ; |begin|automat_myra:inst1|trigger_2                                                                       ; regout           ;
+; |begin|automat_myra:inst1|trigger_2~0                                                                  ; |begin|automat_myra:inst1|trigger_2~0                                                                     ; out0             ;
+; |begin|automat_myra:inst1|trigger_2~1                                                                  ; |begin|automat_myra:inst1|trigger_2~1                                                                     ; out0             ;
+; |begin|automat_myra:inst1|trigger_2~2                                                                  ; |begin|automat_myra:inst1|trigger_2~2                                                                     ; out0             ;
+; |begin|automat_myra:inst1|inst20                                                                       ; |begin|automat_myra:inst1|inst20                                                                          ; out0             ;
+; |begin|automat_myra:inst1|inst13                                                                       ; |begin|automat_myra:inst1|inst13                                                                          ; out0             ;
+; |begin|automat_myra:inst1|inst19                                                                       ; |begin|automat_myra:inst1|inst19                                                                          ; out0             ;
+; |begin|automat_myra:inst1|inst17                                                                       ; |begin|automat_myra:inst1|inst17                                                                          ; out0             ;
+; |begin|automat_myra:inst1|inst18                                                                       ; |begin|automat_myra:inst1|inst18                                                                          ; out0             ;
+; |begin|automat_myra:inst1|inst25                                                                       ; |begin|automat_myra:inst1|inst25                                                                          ; out0             ;
+; |begin|automat_myra:inst1|inst21                                                                       ; |begin|automat_myra:inst1|inst21                                                                          ; out0             ;
+; |begin|automat_myra:inst1|trigger_0                                                                    ; |begin|automat_myra:inst1|trigger_0                                                                       ; regout           ;
+; |begin|automat_myra:inst1|trigger_0~0                                                                  ; |begin|automat_myra:inst1|trigger_0~0                                                                     ; out0             ;
+; |begin|automat_myra:inst1|inst38                                                                       ; |begin|automat_myra:inst1|inst38                                                                          ; out0             ;
+; |begin|automat_myra:inst1|inst4                                                                        ; |begin|automat_myra:inst1|inst4                                                                           ; out0             ;
+; |begin|automat_myra:inst1|inst3                                                                        ; |begin|automat_myra:inst1|inst3                                                                           ; out0             ;
+; |begin|automat_myra:inst1|trigger_1                                                                    ; |begin|automat_myra:inst1|trigger_1                                                                       ; regout           ;
+; |begin|automat_myra:inst1|trigger_1~0                                                                  ; |begin|automat_myra:inst1|trigger_1~0                                                                     ; out0             ;
+; |begin|automat_myra:inst1|trigger_1~1                                                                  ; |begin|automat_myra:inst1|trigger_1~1                                                                     ; out0             ;
+; |begin|automat_myra:inst1|trigger_1~2                                                                  ; |begin|automat_myra:inst1|trigger_1~2                                                                     ; out0             ;
+; |begin|automat_myra:inst1|inst12                                                                       ; |begin|automat_myra:inst1|inst12                                                                          ; out0             ;
+; |begin|automat_myra:inst1|inst2                                                                        ; |begin|automat_myra:inst1|inst2                                                                           ; out0             ;
+; |begin|automat_myra:inst1|inst11                                                                       ; |begin|automat_myra:inst1|inst11                                                                          ; out0             ;
+; |begin|automat_myra:inst1|inst1                                                                        ; |begin|automat_myra:inst1|inst1                                                                           ; out0             ;
+; |begin|automat_myra:inst1|inst15                                                                       ; |begin|automat_myra:inst1|inst15                                                                          ; out0             ;
+; |begin|automat_myra:inst1|inst14                                                                       ; |begin|automat_myra:inst1|inst14                                                                          ; out0             ;
+; |begin|automat_myra:inst1|inst                                                                         ; |begin|automat_myra:inst1|inst                                                                            ; out0             ;
+; |begin|automat_myra:inst1|inst5                                                                        ; |begin|automat_myra:inst1|inst5                                                                           ; out0             ;
+; |begin|automat_myra:inst1|inst6                                                                        ; |begin|automat_myra:inst1|inst6                                                                           ; out0             ;
+; |begin|automat_myra:inst1|inst24                                                                       ; |begin|automat_myra:inst1|inst24                                                                          ; out0             ;
+; |begin|automat_myra:inst1|inst16                                                                       ; |begin|automat_myra:inst1|inst16                                                                          ; out0             ;
+; |begin|automat_myra:inst1|inst29                                                                       ; |begin|automat_myra:inst1|inst29                                                                          ; out0             ;
+; |begin|automat_myra:inst1|inst28                                                                       ; |begin|automat_myra:inst1|inst28                                                                          ; out0             ;
+; |begin|automat_myra:inst1|inst27                                                                       ; |begin|automat_myra:inst1|inst27                                                                          ; out0             ;
+; |begin|automat_myra:inst1|inst33                                                                       ; |begin|automat_myra:inst1|inst33                                                                          ; out0             ;
+; |begin|automat_myra:inst1|inst30                                                                       ; |begin|automat_myra:inst1|inst30                                                                          ; out0             ;
+; |begin|automat_myra:inst1|inst31                                                                       ; |begin|automat_myra:inst1|inst31                                                                          ; out0             ;
+; |begin|automat_myra:inst1|inst32                                                                       ; |begin|automat_myra:inst1|inst32                                                                          ; out0             ;
+; |begin|KodirovkaMura:inst93|Yq[0]~0                                                                    ; |begin|KodirovkaMura:inst93|Yq[0]~0                                                                       ; out              ;
+; |begin|KodirovkaMura:inst93|comb~0                                                                     ; |begin|KodirovkaMura:inst93|comb~0                                                                        ; out0             ;
+; |begin|KodirovkaMura:inst93|Yq[2]~1                                                                    ; |begin|KodirovkaMura:inst93|Yq[2]~1                                                                       ; out0             ;
+; |begin|KodirovkaMura:inst93|Yq[0]~2                                                                    ; |begin|KodirovkaMura:inst93|Yq[0]~2                                                                       ; out              ;
+; |begin|KodirovkaMura:inst93|comb~1                                                                     ; |begin|KodirovkaMura:inst93|comb~1                                                                        ; out0             ;
+; |begin|KodirovkaMura:inst93|Yq[2]~3                                                                    ; |begin|KodirovkaMura:inst93|Yq[2]~3                                                                       ; out0             ;
+; |begin|KodirovkaMura:inst93|Yq[0]~4                                                                    ; |begin|KodirovkaMura:inst93|Yq[0]~4                                                                       ; out              ;
+; |begin|KodirovkaMura:inst93|Yq[0]                                                                      ; |begin|KodirovkaMura:inst93|Yq[0]                                                                         ; out              ;
+; |begin|KodirovkaMura:inst93|Yq[2]~5                                                                    ; |begin|KodirovkaMura:inst93|Yq[2]~5                                                                       ; out0             ;
+; |begin|KodirovkaMura:inst93|comb~2                                                                     ; |begin|KodirovkaMura:inst93|comb~2                                                                        ; out0             ;
+; |begin|KodirovkaMura:inst93|Yq[1]~6                                                                    ; |begin|KodirovkaMura:inst93|Yq[1]~6                                                                       ; out              ;
+; |begin|KodirovkaMura:inst93|Yq[1]                                                                      ; |begin|KodirovkaMura:inst93|Yq[1]                                                                         ; out              ;
+; |begin|KodirovkaMura:inst93|Yq[2]~7                                                                    ; |begin|KodirovkaMura:inst93|Yq[2]~7                                                                       ; out0             ;
+; |begin|KodirovkaMura:inst93|Yq[0]~8                                                                    ; |begin|KodirovkaMura:inst93|Yq[0]~8                                                                       ; out              ;
+; |begin|KodirovkaMura:inst93|comb~3                                                                     ; |begin|KodirovkaMura:inst93|comb~3                                                                        ; out0             ;
+; |begin|KodirovkaMura:inst93|Yq[1]~9                                                                    ; |begin|KodirovkaMura:inst93|Yq[1]~9                                                                       ; out              ;
+; |begin|KodirovkaMura:inst93|Yq[1]~10                                                                   ; |begin|KodirovkaMura:inst93|Yq[1]~10                                                                      ; out              ;
+; |begin|KodirovkaMura:inst93|comb~4                                                                     ; |begin|KodirovkaMura:inst93|comb~4                                                                        ; out0             ;
+; |begin|KodirovkaMura:inst93|Yq[2]~11                                                                   ; |begin|KodirovkaMura:inst93|Yq[2]~11                                                                      ; out0             ;
+; |begin|KodirovkaMura:inst93|Yq[2]~12                                                                   ; |begin|KodirovkaMura:inst93|Yq[2]~12                                                                      ; out              ;
+; |begin|KodirovkaMura:inst93|comb~5                                                                     ; |begin|KodirovkaMura:inst93|comb~5                                                                        ; out0             ;
+; |begin|KodirovkaMura:inst93|Yq[2]                                                                      ; |begin|KodirovkaMura:inst93|Yq[2]                                                                         ; out              ;
+; |begin|mura:inst78|Result_mura~0                                                                       ; |begin|mura:inst78|Result_mura~0                                                                          ; out              ;
+; |begin|true_Y:inst51|altsyncram:altsyncram_component|altsyncram_2f81:auto_generated|ram_block1a0       ; |begin|true_Y:inst51|altsyncram:altsyncram_component|altsyncram_2f81:auto_generated|q_a[0]                ; portadataout0    ;
+; |begin|true_Y:inst51|altsyncram:altsyncram_component|altsyncram_2f81:auto_generated|ram_block1a1       ; |begin|true_Y:inst51|altsyncram:altsyncram_component|altsyncram_2f81:auto_generated|q_a[1]                ; portadataout0    ;
+; |begin|true_Y:inst51|altsyncram:altsyncram_component|altsyncram_2f81:auto_generated|ram_block1a2       ; |begin|true_Y:inst51|altsyncram:altsyncram_component|altsyncram_2f81:auto_generated|q_a[2]                ; portadataout0    ;
+; |begin|KodirovkaY:inst76|Yq[0]~0                                                                       ; |begin|KodirovkaY:inst76|Yq[0]~0                                                                          ; out              ;
+; |begin|KodirovkaY:inst76|comb~0                                                                        ; |begin|KodirovkaY:inst76|comb~0                                                                           ; out0             ;
+; |begin|KodirovkaY:inst76|Yq[2]~1                                                                       ; |begin|KodirovkaY:inst76|Yq[2]~1                                                                          ; out0             ;
+; |begin|KodirovkaY:inst76|Yq[0]~2                                                                       ; |begin|KodirovkaY:inst76|Yq[0]~2                                                                          ; out              ;
+; |begin|KodirovkaY:inst76|comb~1                                                                        ; |begin|KodirovkaY:inst76|comb~1                                                                           ; out0             ;
+; |begin|KodirovkaY:inst76|Yq[2]~3                                                                       ; |begin|KodirovkaY:inst76|Yq[2]~3                                                                          ; out0             ;
+; |begin|KodirovkaY:inst76|Yq[0]~4                                                                       ; |begin|KodirovkaY:inst76|Yq[0]~4                                                                          ; out              ;
+; |begin|KodirovkaY:inst76|Yq[0]                                                                         ; |begin|KodirovkaY:inst76|Yq[0]                                                                            ; out              ;
+; |begin|KodirovkaY:inst76|Yq[2]~5                                                                       ; |begin|KodirovkaY:inst76|Yq[2]~5                                                                          ; out0             ;
+; |begin|KodirovkaY:inst76|comb~2                                                                        ; |begin|KodirovkaY:inst76|comb~2                                                                           ; out0             ;
+; |begin|KodirovkaY:inst76|Yq[1]~6                                                                       ; |begin|KodirovkaY:inst76|Yq[1]~6                                                                          ; out              ;
+; |begin|KodirovkaY:inst76|Yq[1]                                                                         ; |begin|KodirovkaY:inst76|Yq[1]                                                                            ; out              ;
+; |begin|KodirovkaY:inst76|Yq[2]~7                                                                       ; |begin|KodirovkaY:inst76|Yq[2]~7                                                                          ; out0             ;
+; |begin|KodirovkaY:inst76|Yq[0]~8                                                                       ; |begin|KodirovkaY:inst76|Yq[0]~8                                                                          ; out              ;
+; |begin|KodirovkaY:inst76|comb~3                                                                        ; |begin|KodirovkaY:inst76|comb~3                                                                           ; out0             ;
+; |begin|KodirovkaY:inst76|Yq[1]~9                                                                       ; |begin|KodirovkaY:inst76|Yq[1]~9                                                                          ; out              ;
+; |begin|KodirovkaY:inst76|Yq[1]~10                                                                      ; |begin|KodirovkaY:inst76|Yq[1]~10                                                                         ; out              ;
+; |begin|KodirovkaY:inst76|comb~4                                                                        ; |begin|KodirovkaY:inst76|comb~4                                                                           ; out0             ;
+; |begin|KodirovkaY:inst76|Yq[2]~11                                                                      ; |begin|KodirovkaY:inst76|Yq[2]~11                                                                         ; out0             ;
+; |begin|KodirovkaY:inst76|Yq[2]~12                                                                      ; |begin|KodirovkaY:inst76|Yq[2]~12                                                                         ; out              ;
+; |begin|KodirovkaY:inst76|comb~5                                                                        ; |begin|KodirovkaY:inst76|comb~5                                                                           ; out0             ;
+; |begin|KodirovkaY:inst76|Yq[2]                                                                         ; |begin|KodirovkaY:inst76|Yq[2]                                                                            ; out              ;
+; |begin|del:inst41|lpm_ff:lpm_ff_component|dffs[2]                                                      ; |begin|del:inst41|lpm_ff:lpm_ff_component|dffs[2]                                                         ; regout           ;
+; |begin|del:inst41|lpm_ff:lpm_ff_component|dffs[1]                                                      ; |begin|del:inst41|lpm_ff:lpm_ff_component|dffs[1]                                                         ; regout           ;
+; |begin|del:inst41|lpm_ff:lpm_ff_component|dffs[0]                                                      ; |begin|del:inst41|lpm_ff:lpm_ff_component|dffs[0]                                                         ; regout           ;
+; |begin|comp_y:inst39|Result_y~0                                                                        ; |begin|comp_y:inst39|Result_y~0                                                                           ; out              ;
+; |begin|true_S:inst50|altsyncram:altsyncram_component|altsyncram_re81:auto_generated|ram_block1a0       ; |begin|true_S:inst50|altsyncram:altsyncram_component|altsyncram_re81:auto_generated|q_a[0]                ; portadataout0    ;
+; |begin|true_S:inst50|altsyncram:altsyncram_component|altsyncram_re81:auto_generated|ram_block1a1       ; |begin|true_S:inst50|altsyncram:altsyncram_component|altsyncram_re81:auto_generated|q_a[1]                ; portadataout0    ;
+; |begin|automat_mili:inst|inst20                                                                        ; |begin|automat_mili:inst|inst20                                                                           ; out0             ;
+; |begin|automat_mili:inst|inst25                                                                        ; |begin|automat_mili:inst|inst25                                                                           ; out0             ;
+; |begin|automat_mili:inst|trigger_0                                                                     ; |begin|automat_mili:inst|trigger_0                                                                        ; regout           ;
+; |begin|automat_mili:inst|trigger_0~0                                                                   ; |begin|automat_mili:inst|trigger_0~0                                                                      ; out0             ;
+; |begin|automat_mili:inst|inst9                                                                         ; |begin|automat_mili:inst|inst9                                                                            ; out0             ;
+; |begin|automat_mili:inst|inst19                                                                        ; |begin|automat_mili:inst|inst19                                                                           ; out0             ;
+; |begin|automat_mili:inst|inst24                                                                        ; |begin|automat_mili:inst|inst24                                                                           ; out0             ;
+; |begin|automat_mili:inst|inst26                                                                        ; |begin|automat_mili:inst|inst26                                                                           ; out0             ;
+; |begin|automat_mili:inst|trigger_1                                                                     ; |begin|automat_mili:inst|trigger_1                                                                        ; regout           ;
+; |begin|automat_mili:inst|trigger_1~0                                                                   ; |begin|automat_mili:inst|trigger_1~0                                                                      ; out0             ;
+; |begin|automat_mili:inst|trigger_1~1                                                                   ; |begin|automat_mili:inst|trigger_1~1                                                                      ; out0             ;
+; |begin|automat_mili:inst|trigger_1~2                                                                   ; |begin|automat_mili:inst|trigger_1~2                                                                      ; out0             ;
+; |begin|automat_mili:inst|inst29                                                                        ; |begin|automat_mili:inst|inst29                                                                           ; out0             ;
+; |begin|automat_mili:inst|inst11                                                                        ; |begin|automat_mili:inst|inst11                                                                           ; out0             ;
+; |begin|automat_mili:inst|inst27                                                                        ; |begin|automat_mili:inst|inst27                                                                           ; out0             ;
+; |begin|automat_mili:inst|inst18                                                                        ; |begin|automat_mili:inst|inst18                                                                           ; out0             ;
+; |begin|automat_mili:inst|inst17                                                                        ; |begin|automat_mili:inst|inst17                                                                           ; out0             ;
+; |begin|automat_mili:inst|inst1                                                                         ; |begin|automat_mili:inst|inst1                                                                            ; out0             ;
+; |begin|automat_mili:inst|inst2                                                                         ; |begin|automat_mili:inst|inst2                                                                            ; out0             ;
+; |begin|automat_mili:inst|inst12                                                                        ; |begin|automat_mili:inst|inst12                                                                           ; out0             ;
+; |begin|automat_mili:inst|inst22                                                                        ; |begin|automat_mili:inst|inst22                                                                           ; out0             ;
+; |begin|automat_mili:inst|inst3                                                                         ; |begin|automat_mili:inst|inst3                                                                            ; out0             ;
+; |begin|automat_mili:inst|inst6                                                                         ; |begin|automat_mili:inst|inst6                                                                            ; out0             ;
+; |begin|automat_mili:inst|inst4                                                                         ; |begin|automat_mili:inst|inst4                                                                            ; out0             ;
+; |begin|automat_mili:inst|inst5                                                                         ; |begin|automat_mili:inst|inst5                                                                            ; out0             ;
+; |begin|KodirovkaS:inst44|Sq[0]~0                                                                       ; |begin|KodirovkaS:inst44|Sq[0]~0                                                                          ; out              ;
+; |begin|KodirovkaS:inst44|comb~0                                                                        ; |begin|KodirovkaS:inst44|comb~0                                                                           ; out0             ;
+; |begin|KodirovkaS:inst44|Sq[1]~1                                                                       ; |begin|KodirovkaS:inst44|Sq[1]~1                                                                          ; out0             ;
+; |begin|KodirovkaS:inst44|Sq[0]~2                                                                       ; |begin|KodirovkaS:inst44|Sq[0]~2                                                                          ; out              ;
+; |begin|KodirovkaS:inst44|comb~1                                                                        ; |begin|KodirovkaS:inst44|comb~1                                                                           ; out0             ;
+; |begin|KodirovkaS:inst44|Sq[1]~3                                                                       ; |begin|KodirovkaS:inst44|Sq[1]~3                                                                          ; out0             ;
+; |begin|KodirovkaS:inst44|Sq[0]                                                                         ; |begin|KodirovkaS:inst44|Sq[0]                                                                            ; out              ;
+; |begin|KodirovkaS:inst44|Sq[1]~4                                                                       ; |begin|KodirovkaS:inst44|Sq[1]~4                                                                          ; out0             ;
+; |begin|KodirovkaS:inst44|comb~2                                                                        ; |begin|KodirovkaS:inst44|comb~2                                                                           ; out0             ;
+; |begin|KodirovkaS:inst44|Sq[1]~5                                                                       ; |begin|KodirovkaS:inst44|Sq[1]~5                                                                          ; out              ;
+; |begin|KodirovkaS:inst44|comb~3                                                                        ; |begin|KodirovkaS:inst44|comb~3                                                                           ; out0             ;
+; |begin|KodirovkaS:inst44|Sq[1]                                                                         ; |begin|KodirovkaS:inst44|Sq[1]                                                                            ; out              ;
+; |begin|comp_s:inst55|Result~0                                                                          ; |begin|comp_s:inst55|Result~0                                                                             ; out              ;
+; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita0   ; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita0      ; combout          ;
+; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita0   ; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita0~COUT ; cout             ;
+; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita1   ; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita1      ; combout          ;
+; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita1   ; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita1~COUT ; cout             ;
+; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita2   ; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita2      ; combout          ;
+; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita2   ; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita2~COUT ; cout             ;
+; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita3   ; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita3      ; combout          ;
+; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita3   ; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita3~COUT ; cout             ;
+; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita4   ; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita4      ; combout          ;
+; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita4   ; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita4~COUT ; cout             ;
+; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita5   ; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita5      ; combout          ;
+; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita5   ; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita5~COUT ; cout             ;
+; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita6   ; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita6      ; combout          ;
+; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_reg_bit[5]   ; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_reg_bit[5]      ; regout           ;
+; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_reg_bit[4]   ; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_reg_bit[4]      ; regout           ;
+; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_reg_bit[3]   ; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_reg_bit[3]      ; regout           ;
+; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_reg_bit[2]   ; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_reg_bit[2]      ; regout           ;
+; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_reg_bit[1]   ; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_reg_bit[1]      ; regout           ;
+; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_reg_bit[0]   ; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_reg_bit[0]      ; regout           ;
+; |begin|test_sequence:inst3|altsyncram:altsyncram_component|altsyncram_5ik3:auto_generated|ram_block1a0 ; |begin|test_sequence:inst3|altsyncram:altsyncram_component|altsyncram_5ik3:auto_generated|q_a[0]          ; portadataout0    ;
+; |begin|test_sequence:inst3|altsyncram:altsyncram_component|altsyncram_5ik3:auto_generated|ram_block1a1 ; |begin|test_sequence:inst3|altsyncram:altsyncram_component|altsyncram_5ik3:auto_generated|q_a[1]          ; portadataout0    ;
+; |begin|KodirovkaX:inst36|Xq[0]~0                                                                       ; |begin|KodirovkaX:inst36|Xq[0]~0                                                                          ; out              ;
+; |begin|KodirovkaX:inst36|comb~0                                                                        ; |begin|KodirovkaX:inst36|comb~0                                                                           ; out0             ;
+; |begin|KodirovkaX:inst36|Xq[1]~1                                                                       ; |begin|KodirovkaX:inst36|Xq[1]~1                                                                          ; out0             ;
+; |begin|KodirovkaX:inst36|comb~1                                                                        ; |begin|KodirovkaX:inst36|comb~1                                                                           ; out0             ;
+; |begin|KodirovkaX:inst36|Xq[1]~2                                                                       ; |begin|KodirovkaX:inst36|Xq[1]~2                                                                          ; out0             ;
+; |begin|KodirovkaX:inst36|Xq[0]                                                                         ; |begin|KodirovkaX:inst36|Xq[0]                                                                            ; out              ;
+; |begin|KodirovkaX:inst36|Xq[1]~3                                                                       ; |begin|KodirovkaX:inst36|Xq[1]~3                                                                          ; out              ;
+; |begin|KodirovkaX:inst36|Xq[1]~4                                                                       ; |begin|KodirovkaX:inst36|Xq[1]~4                                                                          ; out0             ;
+; |begin|KodirovkaX:inst36|comb~2                                                                        ; |begin|KodirovkaX:inst36|comb~2                                                                           ; out0             ;
+; |begin|KodirovkaX:inst36|Xq[1]~5                                                                       ; |begin|KodirovkaX:inst36|Xq[1]~5                                                                          ; out              ;
+; |begin|KodirovkaX:inst36|comb~3                                                                        ; |begin|KodirovkaX:inst36|comb~3                                                                           ; out0             ;
+; |begin|KodirovkaX:inst36|Xq[1]                                                                         ; |begin|KodirovkaX:inst36|Xq[1]                                                                            ; out              ;
+; |begin|KodirovkaMura:inst93|Equal0~0                                                                   ; |begin|KodirovkaMura:inst93|Equal0~0                                                                      ; out0             ;
+; |begin|KodirovkaMura:inst93|Equal1~0                                                                   ; |begin|KodirovkaMura:inst93|Equal1~0                                                                      ; out0             ;
+; |begin|KodirovkaMura:inst93|Equal2~0                                                                   ; |begin|KodirovkaMura:inst93|Equal2~0                                                                      ; out0             ;
+; |begin|KodirovkaMura:inst93|Equal3~0                                                                   ; |begin|KodirovkaMura:inst93|Equal3~0                                                                      ; out0             ;
+; |begin|KodirovkaMura:inst93|Equal5~0                                                                   ; |begin|KodirovkaMura:inst93|Equal5~0                                                                      ; out0             ;
+; |begin|mura:inst78|Equal0~0                                                                            ; |begin|mura:inst78|Equal0~0                                                                               ; out0             ;
+; |begin|mura:inst78|Equal0~1                                                                            ; |begin|mura:inst78|Equal0~1                                                                               ; out0             ;
+; |begin|mura:inst78|Equal0~2                                                                            ; |begin|mura:inst78|Equal0~2                                                                               ; out0             ;
+; |begin|mura:inst78|Equal0~3                                                                            ; |begin|mura:inst78|Equal0~3                                                                               ; out0             ;
+; |begin|KodirovkaY:inst76|Equal0~0                                                                      ; |begin|KodirovkaY:inst76|Equal0~0                                                                         ; out0             ;
+; |begin|KodirovkaY:inst76|Equal1~0                                                                      ; |begin|KodirovkaY:inst76|Equal1~0                                                                         ; out0             ;
+; |begin|KodirovkaY:inst76|Equal2~0                                                                      ; |begin|KodirovkaY:inst76|Equal2~0                                                                         ; out0             ;
+; |begin|KodirovkaY:inst76|Equal3~0                                                                      ; |begin|KodirovkaY:inst76|Equal3~0                                                                         ; out0             ;
+; |begin|KodirovkaY:inst76|Equal5~0                                                                      ; |begin|KodirovkaY:inst76|Equal5~0                                                                         ; out0             ;
+; |begin|comp_y:inst39|Equal0~0                                                                          ; |begin|comp_y:inst39|Equal0~0                                                                             ; out0             ;
+; |begin|comp_y:inst39|Equal0~1                                                                          ; |begin|comp_y:inst39|Equal0~1                                                                             ; out0             ;
+; |begin|comp_y:inst39|Equal0~2                                                                          ; |begin|comp_y:inst39|Equal0~2                                                                             ; out0             ;
+; |begin|comp_y:inst39|Equal0~3                                                                          ; |begin|comp_y:inst39|Equal0~3                                                                             ; out0             ;
+; |begin|KodirovkaS:inst44|Equal0~0                                                                      ; |begin|KodirovkaS:inst44|Equal0~0                                                                         ; out0             ;
+; |begin|KodirovkaS:inst44|Equal1~0                                                                      ; |begin|KodirovkaS:inst44|Equal1~0                                                                         ; out0             ;
+; |begin|KodirovkaS:inst44|Equal2~0                                                                      ; |begin|KodirovkaS:inst44|Equal2~0                                                                         ; out0             ;
+; |begin|KodirovkaS:inst44|Equal3~0                                                                      ; |begin|KodirovkaS:inst44|Equal3~0                                                                         ; out0             ;
+; |begin|comp_s:inst55|Equal0~0                                                                          ; |begin|comp_s:inst55|Equal0~0                                                                             ; out0             ;
+; |begin|comp_s:inst55|Equal0~1                                                                          ; |begin|comp_s:inst55|Equal0~1                                                                             ; out0             ;
+; |begin|comp_s:inst55|Equal0~2                                                                          ; |begin|comp_s:inst55|Equal0~2                                                                             ; out0             ;
+; |begin|KodirovkaX:inst36|Equal0~0                                                                      ; |begin|KodirovkaX:inst36|Equal0~0                                                                         ; out0             ;
+; |begin|KodirovkaX:inst36|Equal1~0                                                                      ; |begin|KodirovkaX:inst36|Equal1~0                                                                         ; out0             ;
+; |begin|KodirovkaX:inst36|Equal2~0                                                                      ; |begin|KodirovkaX:inst36|Equal2~0                                                                         ; out0             ;
+; |begin|KodirovkaX:inst36|Equal3~0                                                                      ; |begin|KodirovkaX:inst36|Equal3~0                                                                         ; out0             ;
++--------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                       ;
++--------------------------------------+--------------------------------------+------------------+
+; Node Name                            ; Output Port Name                     ; Output Port Type ;
++--------------------------------------+--------------------------------------+------------------+
+; |begin|rez                           ; |begin|rez                           ; pin_out          ;
+; |begin|clr                           ; |begin|clr                           ; out              ;
+; |begin|rez_y                         ; |begin|rez_y                         ; pin_out          ;
+; |begin|rez_mura                      ; |begin|rez_mura                      ; pin_out          ;
+; |begin|mura:inst78|count[8]          ; |begin|mura:inst78|count[8]          ; regout           ;
+; |begin|mura:inst78|count[7]          ; |begin|mura:inst78|count[7]          ; regout           ;
+; |begin|mura:inst78|count[6]          ; |begin|mura:inst78|count[6]          ; regout           ;
+; |begin|mura:inst78|count[5]          ; |begin|mura:inst78|count[5]          ; regout           ;
+; |begin|mura:inst78|count[4]          ; |begin|mura:inst78|count[4]          ; regout           ;
+; |begin|mura:inst78|count[3]          ; |begin|mura:inst78|count[3]          ; regout           ;
+; |begin|mura:inst78|count[2]          ; |begin|mura:inst78|count[2]          ; regout           ;
+; |begin|mura:inst78|count[1]          ; |begin|mura:inst78|count[1]          ; regout           ;
+; |begin|mura:inst78|count[9]          ; |begin|mura:inst78|count[9]          ; regout           ;
+; |begin|mura:inst78|count[10]         ; |begin|mura:inst78|count[10]         ; regout           ;
+; |begin|mura:inst78|count[11]         ; |begin|mura:inst78|count[11]         ; regout           ;
+; |begin|mura:inst78|count[12]         ; |begin|mura:inst78|count[12]         ; regout           ;
+; |begin|mura:inst78|count[13]         ; |begin|mura:inst78|count[13]         ; regout           ;
+; |begin|mura:inst78|count[14]         ; |begin|mura:inst78|count[14]         ; regout           ;
+; |begin|mura:inst78|count[15]         ; |begin|mura:inst78|count[15]         ; regout           ;
+; |begin|mura:inst78|count[16]         ; |begin|mura:inst78|count[16]         ; regout           ;
+; |begin|mura:inst78|count[17]         ; |begin|mura:inst78|count[17]         ; regout           ;
+; |begin|mura:inst78|count[18]         ; |begin|mura:inst78|count[18]         ; regout           ;
+; |begin|mura:inst78|count[19]         ; |begin|mura:inst78|count[19]         ; regout           ;
+; |begin|mura:inst78|count[20]         ; |begin|mura:inst78|count[20]         ; regout           ;
+; |begin|mura:inst78|count[21]         ; |begin|mura:inst78|count[21]         ; regout           ;
+; |begin|mura:inst78|count[22]         ; |begin|mura:inst78|count[22]         ; regout           ;
+; |begin|mura:inst78|count[23]         ; |begin|mura:inst78|count[23]         ; regout           ;
+; |begin|mura:inst78|count[24]         ; |begin|mura:inst78|count[24]         ; regout           ;
+; |begin|mura:inst78|count[25]         ; |begin|mura:inst78|count[25]         ; regout           ;
+; |begin|mura:inst78|count[26]         ; |begin|mura:inst78|count[26]         ; regout           ;
+; |begin|mura:inst78|count[27]         ; |begin|mura:inst78|count[27]         ; regout           ;
+; |begin|mura:inst78|count[28]         ; |begin|mura:inst78|count[28]         ; regout           ;
+; |begin|mura:inst78|count[29]         ; |begin|mura:inst78|count[29]         ; regout           ;
+; |begin|mura:inst78|count[30]         ; |begin|mura:inst78|count[30]         ; regout           ;
+; |begin|mura:inst78|count[31]         ; |begin|mura:inst78|count[31]         ; regout           ;
+; |begin|mura:inst78|Result_mura       ; |begin|mura:inst78|Result_mura       ; regout           ;
+; |begin|comp_y:inst39|count[8]        ; |begin|comp_y:inst39|count[8]        ; regout           ;
+; |begin|comp_y:inst39|count[7]        ; |begin|comp_y:inst39|count[7]        ; regout           ;
+; |begin|comp_y:inst39|count[6]        ; |begin|comp_y:inst39|count[6]        ; regout           ;
+; |begin|comp_y:inst39|count[5]        ; |begin|comp_y:inst39|count[5]        ; regout           ;
+; |begin|comp_y:inst39|count[4]        ; |begin|comp_y:inst39|count[4]        ; regout           ;
+; |begin|comp_y:inst39|count[3]        ; |begin|comp_y:inst39|count[3]        ; regout           ;
+; |begin|comp_y:inst39|count[2]        ; |begin|comp_y:inst39|count[2]        ; regout           ;
+; |begin|comp_y:inst39|count[9]        ; |begin|comp_y:inst39|count[9]        ; regout           ;
+; |begin|comp_y:inst39|count[10]       ; |begin|comp_y:inst39|count[10]       ; regout           ;
+; |begin|comp_y:inst39|count[11]       ; |begin|comp_y:inst39|count[11]       ; regout           ;
+; |begin|comp_y:inst39|count[12]       ; |begin|comp_y:inst39|count[12]       ; regout           ;
+; |begin|comp_y:inst39|count[13]       ; |begin|comp_y:inst39|count[13]       ; regout           ;
+; |begin|comp_y:inst39|count[14]       ; |begin|comp_y:inst39|count[14]       ; regout           ;
+; |begin|comp_y:inst39|count[15]       ; |begin|comp_y:inst39|count[15]       ; regout           ;
+; |begin|comp_y:inst39|count[16]       ; |begin|comp_y:inst39|count[16]       ; regout           ;
+; |begin|comp_y:inst39|count[17]       ; |begin|comp_y:inst39|count[17]       ; regout           ;
+; |begin|comp_y:inst39|count[18]       ; |begin|comp_y:inst39|count[18]       ; regout           ;
+; |begin|comp_y:inst39|count[19]       ; |begin|comp_y:inst39|count[19]       ; regout           ;
+; |begin|comp_y:inst39|count[20]       ; |begin|comp_y:inst39|count[20]       ; regout           ;
+; |begin|comp_y:inst39|count[21]       ; |begin|comp_y:inst39|count[21]       ; regout           ;
+; |begin|comp_y:inst39|count[22]       ; |begin|comp_y:inst39|count[22]       ; regout           ;
+; |begin|comp_y:inst39|count[23]       ; |begin|comp_y:inst39|count[23]       ; regout           ;
+; |begin|comp_y:inst39|count[24]       ; |begin|comp_y:inst39|count[24]       ; regout           ;
+; |begin|comp_y:inst39|count[25]       ; |begin|comp_y:inst39|count[25]       ; regout           ;
+; |begin|comp_y:inst39|count[26]       ; |begin|comp_y:inst39|count[26]       ; regout           ;
+; |begin|comp_y:inst39|count[27]       ; |begin|comp_y:inst39|count[27]       ; regout           ;
+; |begin|comp_y:inst39|count[28]       ; |begin|comp_y:inst39|count[28]       ; regout           ;
+; |begin|comp_y:inst39|count[29]       ; |begin|comp_y:inst39|count[29]       ; regout           ;
+; |begin|comp_y:inst39|count[30]       ; |begin|comp_y:inst39|count[30]       ; regout           ;
+; |begin|comp_y:inst39|count[31]       ; |begin|comp_y:inst39|count[31]       ; regout           ;
+; |begin|comp_y:inst39|Result_y        ; |begin|comp_y:inst39|Result_y        ; regout           ;
+; |begin|comp_s:inst55|count[8]        ; |begin|comp_s:inst55|count[8]        ; regout           ;
+; |begin|comp_s:inst55|count[7]        ; |begin|comp_s:inst55|count[7]        ; regout           ;
+; |begin|comp_s:inst55|count[6]        ; |begin|comp_s:inst55|count[6]        ; regout           ;
+; |begin|comp_s:inst55|count[5]        ; |begin|comp_s:inst55|count[5]        ; regout           ;
+; |begin|comp_s:inst55|count[4]        ; |begin|comp_s:inst55|count[4]        ; regout           ;
+; |begin|comp_s:inst55|count[3]        ; |begin|comp_s:inst55|count[3]        ; regout           ;
+; |begin|comp_s:inst55|count[2]        ; |begin|comp_s:inst55|count[2]        ; regout           ;
+; |begin|comp_s:inst55|count[1]        ; |begin|comp_s:inst55|count[1]        ; regout           ;
+; |begin|comp_s:inst55|count[9]        ; |begin|comp_s:inst55|count[9]        ; regout           ;
+; |begin|comp_s:inst55|count[10]       ; |begin|comp_s:inst55|count[10]       ; regout           ;
+; |begin|comp_s:inst55|count[11]       ; |begin|comp_s:inst55|count[11]       ; regout           ;
+; |begin|comp_s:inst55|count[12]       ; |begin|comp_s:inst55|count[12]       ; regout           ;
+; |begin|comp_s:inst55|count[13]       ; |begin|comp_s:inst55|count[13]       ; regout           ;
+; |begin|comp_s:inst55|count[14]       ; |begin|comp_s:inst55|count[14]       ; regout           ;
+; |begin|comp_s:inst55|count[15]       ; |begin|comp_s:inst55|count[15]       ; regout           ;
+; |begin|comp_s:inst55|count[16]       ; |begin|comp_s:inst55|count[16]       ; regout           ;
+; |begin|comp_s:inst55|count[17]       ; |begin|comp_s:inst55|count[17]       ; regout           ;
+; |begin|comp_s:inst55|count[18]       ; |begin|comp_s:inst55|count[18]       ; regout           ;
+; |begin|comp_s:inst55|count[19]       ; |begin|comp_s:inst55|count[19]       ; regout           ;
+; |begin|comp_s:inst55|count[20]       ; |begin|comp_s:inst55|count[20]       ; regout           ;
+; |begin|comp_s:inst55|count[21]       ; |begin|comp_s:inst55|count[21]       ; regout           ;
+; |begin|comp_s:inst55|count[22]       ; |begin|comp_s:inst55|count[22]       ; regout           ;
+; |begin|comp_s:inst55|count[23]       ; |begin|comp_s:inst55|count[23]       ; regout           ;
+; |begin|comp_s:inst55|count[24]       ; |begin|comp_s:inst55|count[24]       ; regout           ;
+; |begin|comp_s:inst55|count[25]       ; |begin|comp_s:inst55|count[25]       ; regout           ;
+; |begin|comp_s:inst55|count[26]       ; |begin|comp_s:inst55|count[26]       ; regout           ;
+; |begin|comp_s:inst55|count[27]       ; |begin|comp_s:inst55|count[27]       ; regout           ;
+; |begin|comp_s:inst55|count[28]       ; |begin|comp_s:inst55|count[28]       ; regout           ;
+; |begin|comp_s:inst55|count[29]       ; |begin|comp_s:inst55|count[29]       ; regout           ;
+; |begin|comp_s:inst55|count[30]       ; |begin|comp_s:inst55|count[30]       ; regout           ;
+; |begin|comp_s:inst55|count[31]       ; |begin|comp_s:inst55|count[31]       ; regout           ;
+; |begin|comp_s:inst55|Result          ; |begin|comp_s:inst55|Result          ; regout           ;
+; |begin|mura:inst78|LessThan0~0       ; |begin|mura:inst78|LessThan0~0       ; out0             ;
+; |begin|mura:inst78|LessThan0~1       ; |begin|mura:inst78|LessThan0~1       ; out0             ;
+; |begin|mura:inst78|LessThan0~2       ; |begin|mura:inst78|LessThan0~2       ; out0             ;
+; |begin|mura:inst78|LessThan0~3       ; |begin|mura:inst78|LessThan0~3       ; out0             ;
+; |begin|mura:inst78|LessThan0~4       ; |begin|mura:inst78|LessThan0~4       ; out0             ;
+; |begin|mura:inst78|LessThan0~5       ; |begin|mura:inst78|LessThan0~5       ; out0             ;
+; |begin|mura:inst78|LessThan0~6       ; |begin|mura:inst78|LessThan0~6       ; out0             ;
+; |begin|mura:inst78|LessThan0~7       ; |begin|mura:inst78|LessThan0~7       ; out0             ;
+; |begin|mura:inst78|LessThan0~8       ; |begin|mura:inst78|LessThan0~8       ; out0             ;
+; |begin|mura:inst78|LessThan0~9       ; |begin|mura:inst78|LessThan0~9       ; out0             ;
+; |begin|mura:inst78|LessThan0~10      ; |begin|mura:inst78|LessThan0~10      ; out0             ;
+; |begin|mura:inst78|LessThan0~11      ; |begin|mura:inst78|LessThan0~11      ; out0             ;
+; |begin|mura:inst78|LessThan0~12      ; |begin|mura:inst78|LessThan0~12      ; out0             ;
+; |begin|mura:inst78|LessThan0~13      ; |begin|mura:inst78|LessThan0~13      ; out0             ;
+; |begin|mura:inst78|LessThan0~14      ; |begin|mura:inst78|LessThan0~14      ; out0             ;
+; |begin|mura:inst78|LessThan0~15      ; |begin|mura:inst78|LessThan0~15      ; out0             ;
+; |begin|mura:inst78|LessThan0~16      ; |begin|mura:inst78|LessThan0~16      ; out0             ;
+; |begin|mura:inst78|LessThan0~17      ; |begin|mura:inst78|LessThan0~17      ; out0             ;
+; |begin|mura:inst78|LessThan0~18      ; |begin|mura:inst78|LessThan0~18      ; out0             ;
+; |begin|mura:inst78|LessThan0~19      ; |begin|mura:inst78|LessThan0~19      ; out0             ;
+; |begin|mura:inst78|LessThan0~20      ; |begin|mura:inst78|LessThan0~20      ; out0             ;
+; |begin|mura:inst78|LessThan0~21      ; |begin|mura:inst78|LessThan0~21      ; out0             ;
+; |begin|mura:inst78|LessThan0~22      ; |begin|mura:inst78|LessThan0~22      ; out0             ;
+; |begin|mura:inst78|LessThan0~23      ; |begin|mura:inst78|LessThan0~23      ; out0             ;
+; |begin|mura:inst78|LessThan0~24      ; |begin|mura:inst78|LessThan0~24      ; out0             ;
+; |begin|mura:inst78|LessThan0~25      ; |begin|mura:inst78|LessThan0~25      ; out0             ;
+; |begin|mura:inst78|LessThan0~26      ; |begin|mura:inst78|LessThan0~26      ; out0             ;
+; |begin|mura:inst78|LessThan0~27      ; |begin|mura:inst78|LessThan0~27      ; out0             ;
+; |begin|mura:inst78|LessThan0~28      ; |begin|mura:inst78|LessThan0~28      ; out0             ;
+; |begin|mura:inst78|LessThan0~29      ; |begin|mura:inst78|LessThan0~29      ; out0             ;
+; |begin|mura:inst78|LessThan0~30      ; |begin|mura:inst78|LessThan0~30      ; out0             ;
+; |begin|mura:inst78|LessThan0~31      ; |begin|mura:inst78|LessThan0~31      ; out0             ;
+; |begin|comp_y:inst39|LessThan0~0     ; |begin|comp_y:inst39|LessThan0~0     ; out0             ;
+; |begin|comp_y:inst39|LessThan0~1     ; |begin|comp_y:inst39|LessThan0~1     ; out0             ;
+; |begin|comp_y:inst39|LessThan0~2     ; |begin|comp_y:inst39|LessThan0~2     ; out0             ;
+; |begin|comp_y:inst39|LessThan0~3     ; |begin|comp_y:inst39|LessThan0~3     ; out0             ;
+; |begin|comp_y:inst39|LessThan0~4     ; |begin|comp_y:inst39|LessThan0~4     ; out0             ;
+; |begin|comp_y:inst39|LessThan0~5     ; |begin|comp_y:inst39|LessThan0~5     ; out0             ;
+; |begin|comp_y:inst39|LessThan0~6     ; |begin|comp_y:inst39|LessThan0~6     ; out0             ;
+; |begin|comp_y:inst39|LessThan0~7     ; |begin|comp_y:inst39|LessThan0~7     ; out0             ;
+; |begin|comp_y:inst39|LessThan0~8     ; |begin|comp_y:inst39|LessThan0~8     ; out0             ;
+; |begin|comp_y:inst39|LessThan0~9     ; |begin|comp_y:inst39|LessThan0~9     ; out0             ;
+; |begin|comp_y:inst39|LessThan0~10    ; |begin|comp_y:inst39|LessThan0~10    ; out0             ;
+; |begin|comp_y:inst39|LessThan0~11    ; |begin|comp_y:inst39|LessThan0~11    ; out0             ;
+; |begin|comp_y:inst39|LessThan0~12    ; |begin|comp_y:inst39|LessThan0~12    ; out0             ;
+; |begin|comp_y:inst39|LessThan0~13    ; |begin|comp_y:inst39|LessThan0~13    ; out0             ;
+; |begin|comp_y:inst39|LessThan0~14    ; |begin|comp_y:inst39|LessThan0~14    ; out0             ;
+; |begin|comp_y:inst39|LessThan0~15    ; |begin|comp_y:inst39|LessThan0~15    ; out0             ;
+; |begin|comp_y:inst39|LessThan0~16    ; |begin|comp_y:inst39|LessThan0~16    ; out0             ;
+; |begin|comp_y:inst39|LessThan0~17    ; |begin|comp_y:inst39|LessThan0~17    ; out0             ;
+; |begin|comp_y:inst39|LessThan0~18    ; |begin|comp_y:inst39|LessThan0~18    ; out0             ;
+; |begin|comp_y:inst39|LessThan0~19    ; |begin|comp_y:inst39|LessThan0~19    ; out0             ;
+; |begin|comp_y:inst39|LessThan0~20    ; |begin|comp_y:inst39|LessThan0~20    ; out0             ;
+; |begin|comp_y:inst39|LessThan0~21    ; |begin|comp_y:inst39|LessThan0~21    ; out0             ;
+; |begin|comp_y:inst39|LessThan0~22    ; |begin|comp_y:inst39|LessThan0~22    ; out0             ;
+; |begin|comp_y:inst39|LessThan0~23    ; |begin|comp_y:inst39|LessThan0~23    ; out0             ;
+; |begin|comp_y:inst39|LessThan0~24    ; |begin|comp_y:inst39|LessThan0~24    ; out0             ;
+; |begin|comp_y:inst39|LessThan0~25    ; |begin|comp_y:inst39|LessThan0~25    ; out0             ;
+; |begin|comp_y:inst39|LessThan0~26    ; |begin|comp_y:inst39|LessThan0~26    ; out0             ;
+; |begin|comp_y:inst39|LessThan0~27    ; |begin|comp_y:inst39|LessThan0~27    ; out0             ;
+; |begin|comp_y:inst39|LessThan0~28    ; |begin|comp_y:inst39|LessThan0~28    ; out0             ;
+; |begin|comp_y:inst39|LessThan0~29    ; |begin|comp_y:inst39|LessThan0~29    ; out0             ;
+; |begin|comp_y:inst39|LessThan0~30    ; |begin|comp_y:inst39|LessThan0~30    ; out0             ;
+; |begin|comp_s:inst55|LessThan0~0     ; |begin|comp_s:inst55|LessThan0~0     ; out0             ;
+; |begin|comp_s:inst55|LessThan0~1     ; |begin|comp_s:inst55|LessThan0~1     ; out0             ;
+; |begin|comp_s:inst55|LessThan0~2     ; |begin|comp_s:inst55|LessThan0~2     ; out0             ;
+; |begin|comp_s:inst55|LessThan0~3     ; |begin|comp_s:inst55|LessThan0~3     ; out0             ;
+; |begin|comp_s:inst55|LessThan0~4     ; |begin|comp_s:inst55|LessThan0~4     ; out0             ;
+; |begin|comp_s:inst55|LessThan0~5     ; |begin|comp_s:inst55|LessThan0~5     ; out0             ;
+; |begin|comp_s:inst55|LessThan0~6     ; |begin|comp_s:inst55|LessThan0~6     ; out0             ;
+; |begin|comp_s:inst55|LessThan0~7     ; |begin|comp_s:inst55|LessThan0~7     ; out0             ;
+; |begin|comp_s:inst55|LessThan0~8     ; |begin|comp_s:inst55|LessThan0~8     ; out0             ;
+; |begin|comp_s:inst55|LessThan0~9     ; |begin|comp_s:inst55|LessThan0~9     ; out0             ;
+; |begin|comp_s:inst55|LessThan0~10    ; |begin|comp_s:inst55|LessThan0~10    ; out0             ;
+; |begin|comp_s:inst55|LessThan0~11    ; |begin|comp_s:inst55|LessThan0~11    ; out0             ;
+; |begin|comp_s:inst55|LessThan0~12    ; |begin|comp_s:inst55|LessThan0~12    ; out0             ;
+; |begin|comp_s:inst55|LessThan0~13    ; |begin|comp_s:inst55|LessThan0~13    ; out0             ;
+; |begin|comp_s:inst55|LessThan0~14    ; |begin|comp_s:inst55|LessThan0~14    ; out0             ;
+; |begin|comp_s:inst55|LessThan0~15    ; |begin|comp_s:inst55|LessThan0~15    ; out0             ;
+; |begin|comp_s:inst55|LessThan0~16    ; |begin|comp_s:inst55|LessThan0~16    ; out0             ;
+; |begin|comp_s:inst55|LessThan0~17    ; |begin|comp_s:inst55|LessThan0~17    ; out0             ;
+; |begin|comp_s:inst55|LessThan0~18    ; |begin|comp_s:inst55|LessThan0~18    ; out0             ;
+; |begin|comp_s:inst55|LessThan0~19    ; |begin|comp_s:inst55|LessThan0~19    ; out0             ;
+; |begin|comp_s:inst55|LessThan0~20    ; |begin|comp_s:inst55|LessThan0~20    ; out0             ;
+; |begin|comp_s:inst55|LessThan0~21    ; |begin|comp_s:inst55|LessThan0~21    ; out0             ;
+; |begin|comp_s:inst55|LessThan0~22    ; |begin|comp_s:inst55|LessThan0~22    ; out0             ;
+; |begin|comp_s:inst55|LessThan0~23    ; |begin|comp_s:inst55|LessThan0~23    ; out0             ;
+; |begin|comp_s:inst55|LessThan0~24    ; |begin|comp_s:inst55|LessThan0~24    ; out0             ;
+; |begin|comp_s:inst55|LessThan0~25    ; |begin|comp_s:inst55|LessThan0~25    ; out0             ;
+; |begin|comp_s:inst55|LessThan0~26    ; |begin|comp_s:inst55|LessThan0~26    ; out0             ;
+; |begin|comp_s:inst55|LessThan0~27    ; |begin|comp_s:inst55|LessThan0~27    ; out0             ;
+; |begin|comp_s:inst55|LessThan0~28    ; |begin|comp_s:inst55|LessThan0~28    ; out0             ;
+; |begin|comp_s:inst55|LessThan0~29    ; |begin|comp_s:inst55|LessThan0~29    ; out0             ;
+; |begin|comp_s:inst55|LessThan0~30    ; |begin|comp_s:inst55|LessThan0~30    ; out0             ;
+; |begin|comp_s:inst55|LessThan0~31    ; |begin|comp_s:inst55|LessThan0~31    ; out0             ;
+; |begin|mura:inst78|Add0~1            ; |begin|mura:inst78|Add0~1            ; out0             ;
+; |begin|mura:inst78|Add0~2            ; |begin|mura:inst78|Add0~2            ; out0             ;
+; |begin|mura:inst78|Add0~3            ; |begin|mura:inst78|Add0~3            ; out0             ;
+; |begin|mura:inst78|Add0~4            ; |begin|mura:inst78|Add0~4            ; out0             ;
+; |begin|mura:inst78|Add0~5            ; |begin|mura:inst78|Add0~5            ; out0             ;
+; |begin|mura:inst78|Add0~6            ; |begin|mura:inst78|Add0~6            ; out0             ;
+; |begin|mura:inst78|Add0~7            ; |begin|mura:inst78|Add0~7            ; out0             ;
+; |begin|mura:inst78|Add0~8            ; |begin|mura:inst78|Add0~8            ; out0             ;
+; |begin|mura:inst78|Add0~9            ; |begin|mura:inst78|Add0~9            ; out0             ;
+; |begin|mura:inst78|Add0~10           ; |begin|mura:inst78|Add0~10           ; out0             ;
+; |begin|mura:inst78|Add0~11           ; |begin|mura:inst78|Add0~11           ; out0             ;
+; |begin|mura:inst78|Add0~12           ; |begin|mura:inst78|Add0~12           ; out0             ;
+; |begin|mura:inst78|Add0~13           ; |begin|mura:inst78|Add0~13           ; out0             ;
+; |begin|mura:inst78|Add0~14           ; |begin|mura:inst78|Add0~14           ; out0             ;
+; |begin|mura:inst78|Add0~15           ; |begin|mura:inst78|Add0~15           ; out0             ;
+; |begin|mura:inst78|Add0~16           ; |begin|mura:inst78|Add0~16           ; out0             ;
+; |begin|mura:inst78|Add0~17           ; |begin|mura:inst78|Add0~17           ; out0             ;
+; |begin|mura:inst78|Add0~18           ; |begin|mura:inst78|Add0~18           ; out0             ;
+; |begin|mura:inst78|Add0~19           ; |begin|mura:inst78|Add0~19           ; out0             ;
+; |begin|mura:inst78|Add0~20           ; |begin|mura:inst78|Add0~20           ; out0             ;
+; |begin|mura:inst78|Add0~21           ; |begin|mura:inst78|Add0~21           ; out0             ;
+; |begin|mura:inst78|Add0~22           ; |begin|mura:inst78|Add0~22           ; out0             ;
+; |begin|mura:inst78|Add0~23           ; |begin|mura:inst78|Add0~23           ; out0             ;
+; |begin|mura:inst78|Add0~24           ; |begin|mura:inst78|Add0~24           ; out0             ;
+; |begin|mura:inst78|Add0~25           ; |begin|mura:inst78|Add0~25           ; out0             ;
+; |begin|mura:inst78|Add0~26           ; |begin|mura:inst78|Add0~26           ; out0             ;
+; |begin|mura:inst78|Add0~27           ; |begin|mura:inst78|Add0~27           ; out0             ;
+; |begin|mura:inst78|Add0~28           ; |begin|mura:inst78|Add0~28           ; out0             ;
+; |begin|mura:inst78|Add0~29           ; |begin|mura:inst78|Add0~29           ; out0             ;
+; |begin|mura:inst78|Add0~30           ; |begin|mura:inst78|Add0~30           ; out0             ;
+; |begin|mura:inst78|Add0~31           ; |begin|mura:inst78|Add0~31           ; out0             ;
+; |begin|mura:inst78|Add0~32           ; |begin|mura:inst78|Add0~32           ; out0             ;
+; |begin|mura:inst78|Add0~33           ; |begin|mura:inst78|Add0~33           ; out0             ;
+; |begin|mura:inst78|Add0~34           ; |begin|mura:inst78|Add0~34           ; out0             ;
+; |begin|mura:inst78|Add0~35           ; |begin|mura:inst78|Add0~35           ; out0             ;
+; |begin|mura:inst78|Add0~36           ; |begin|mura:inst78|Add0~36           ; out0             ;
+; |begin|mura:inst78|Add0~37           ; |begin|mura:inst78|Add0~37           ; out0             ;
+; |begin|mura:inst78|Add0~38           ; |begin|mura:inst78|Add0~38           ; out0             ;
+; |begin|mura:inst78|Add0~39           ; |begin|mura:inst78|Add0~39           ; out0             ;
+; |begin|mura:inst78|Add0~40           ; |begin|mura:inst78|Add0~40           ; out0             ;
+; |begin|mura:inst78|Add0~41           ; |begin|mura:inst78|Add0~41           ; out0             ;
+; |begin|mura:inst78|Add0~42           ; |begin|mura:inst78|Add0~42           ; out0             ;
+; |begin|mura:inst78|Add0~43           ; |begin|mura:inst78|Add0~43           ; out0             ;
+; |begin|mura:inst78|Add0~44           ; |begin|mura:inst78|Add0~44           ; out0             ;
+; |begin|mura:inst78|Add0~45           ; |begin|mura:inst78|Add0~45           ; out0             ;
+; |begin|mura:inst78|Add0~46           ; |begin|mura:inst78|Add0~46           ; out0             ;
+; |begin|mura:inst78|Add0~47           ; |begin|mura:inst78|Add0~47           ; out0             ;
+; |begin|mura:inst78|Add0~48           ; |begin|mura:inst78|Add0~48           ; out0             ;
+; |begin|mura:inst78|Add0~49           ; |begin|mura:inst78|Add0~49           ; out0             ;
+; |begin|mura:inst78|Add0~50           ; |begin|mura:inst78|Add0~50           ; out0             ;
+; |begin|mura:inst78|Add0~51           ; |begin|mura:inst78|Add0~51           ; out0             ;
+; |begin|mura:inst78|Add0~52           ; |begin|mura:inst78|Add0~52           ; out0             ;
+; |begin|mura:inst78|Add0~53           ; |begin|mura:inst78|Add0~53           ; out0             ;
+; |begin|mura:inst78|Add0~54           ; |begin|mura:inst78|Add0~54           ; out0             ;
+; |begin|mura:inst78|Add0~55           ; |begin|mura:inst78|Add0~55           ; out0             ;
+; |begin|mura:inst78|Add0~56           ; |begin|mura:inst78|Add0~56           ; out0             ;
+; |begin|mura:inst78|Add0~57           ; |begin|mura:inst78|Add0~57           ; out0             ;
+; |begin|mura:inst78|Add0~58           ; |begin|mura:inst78|Add0~58           ; out0             ;
+; |begin|mura:inst78|Add0~59           ; |begin|mura:inst78|Add0~59           ; out0             ;
+; |begin|mura:inst78|Add0~60           ; |begin|mura:inst78|Add0~60           ; out0             ;
+; |begin|comp_y:inst39|Add0~1          ; |begin|comp_y:inst39|Add0~1          ; out0             ;
+; |begin|comp_y:inst39|Add0~2          ; |begin|comp_y:inst39|Add0~2          ; out0             ;
+; |begin|comp_y:inst39|Add0~3          ; |begin|comp_y:inst39|Add0~3          ; out0             ;
+; |begin|comp_y:inst39|Add0~4          ; |begin|comp_y:inst39|Add0~4          ; out0             ;
+; |begin|comp_y:inst39|Add0~5          ; |begin|comp_y:inst39|Add0~5          ; out0             ;
+; |begin|comp_y:inst39|Add0~6          ; |begin|comp_y:inst39|Add0~6          ; out0             ;
+; |begin|comp_y:inst39|Add0~7          ; |begin|comp_y:inst39|Add0~7          ; out0             ;
+; |begin|comp_y:inst39|Add0~8          ; |begin|comp_y:inst39|Add0~8          ; out0             ;
+; |begin|comp_y:inst39|Add0~9          ; |begin|comp_y:inst39|Add0~9          ; out0             ;
+; |begin|comp_y:inst39|Add0~10         ; |begin|comp_y:inst39|Add0~10         ; out0             ;
+; |begin|comp_y:inst39|Add0~11         ; |begin|comp_y:inst39|Add0~11         ; out0             ;
+; |begin|comp_y:inst39|Add0~12         ; |begin|comp_y:inst39|Add0~12         ; out0             ;
+; |begin|comp_y:inst39|Add0~13         ; |begin|comp_y:inst39|Add0~13         ; out0             ;
+; |begin|comp_y:inst39|Add0~14         ; |begin|comp_y:inst39|Add0~14         ; out0             ;
+; |begin|comp_y:inst39|Add0~15         ; |begin|comp_y:inst39|Add0~15         ; out0             ;
+; |begin|comp_y:inst39|Add0~16         ; |begin|comp_y:inst39|Add0~16         ; out0             ;
+; |begin|comp_y:inst39|Add0~17         ; |begin|comp_y:inst39|Add0~17         ; out0             ;
+; |begin|comp_y:inst39|Add0~18         ; |begin|comp_y:inst39|Add0~18         ; out0             ;
+; |begin|comp_y:inst39|Add0~19         ; |begin|comp_y:inst39|Add0~19         ; out0             ;
+; |begin|comp_y:inst39|Add0~20         ; |begin|comp_y:inst39|Add0~20         ; out0             ;
+; |begin|comp_y:inst39|Add0~21         ; |begin|comp_y:inst39|Add0~21         ; out0             ;
+; |begin|comp_y:inst39|Add0~22         ; |begin|comp_y:inst39|Add0~22         ; out0             ;
+; |begin|comp_y:inst39|Add0~23         ; |begin|comp_y:inst39|Add0~23         ; out0             ;
+; |begin|comp_y:inst39|Add0~24         ; |begin|comp_y:inst39|Add0~24         ; out0             ;
+; |begin|comp_y:inst39|Add0~25         ; |begin|comp_y:inst39|Add0~25         ; out0             ;
+; |begin|comp_y:inst39|Add0~26         ; |begin|comp_y:inst39|Add0~26         ; out0             ;
+; |begin|comp_y:inst39|Add0~27         ; |begin|comp_y:inst39|Add0~27         ; out0             ;
+; |begin|comp_y:inst39|Add0~28         ; |begin|comp_y:inst39|Add0~28         ; out0             ;
+; |begin|comp_y:inst39|Add0~29         ; |begin|comp_y:inst39|Add0~29         ; out0             ;
+; |begin|comp_y:inst39|Add0~30         ; |begin|comp_y:inst39|Add0~30         ; out0             ;
+; |begin|comp_y:inst39|Add0~31         ; |begin|comp_y:inst39|Add0~31         ; out0             ;
+; |begin|comp_y:inst39|Add0~32         ; |begin|comp_y:inst39|Add0~32         ; out0             ;
+; |begin|comp_y:inst39|Add0~33         ; |begin|comp_y:inst39|Add0~33         ; out0             ;
+; |begin|comp_y:inst39|Add0~34         ; |begin|comp_y:inst39|Add0~34         ; out0             ;
+; |begin|comp_y:inst39|Add0~35         ; |begin|comp_y:inst39|Add0~35         ; out0             ;
+; |begin|comp_y:inst39|Add0~36         ; |begin|comp_y:inst39|Add0~36         ; out0             ;
+; |begin|comp_y:inst39|Add0~37         ; |begin|comp_y:inst39|Add0~37         ; out0             ;
+; |begin|comp_y:inst39|Add0~38         ; |begin|comp_y:inst39|Add0~38         ; out0             ;
+; |begin|comp_y:inst39|Add0~39         ; |begin|comp_y:inst39|Add0~39         ; out0             ;
+; |begin|comp_y:inst39|Add0~40         ; |begin|comp_y:inst39|Add0~40         ; out0             ;
+; |begin|comp_y:inst39|Add0~41         ; |begin|comp_y:inst39|Add0~41         ; out0             ;
+; |begin|comp_y:inst39|Add0~42         ; |begin|comp_y:inst39|Add0~42         ; out0             ;
+; |begin|comp_y:inst39|Add0~43         ; |begin|comp_y:inst39|Add0~43         ; out0             ;
+; |begin|comp_y:inst39|Add0~44         ; |begin|comp_y:inst39|Add0~44         ; out0             ;
+; |begin|comp_y:inst39|Add0~45         ; |begin|comp_y:inst39|Add0~45         ; out0             ;
+; |begin|comp_y:inst39|Add0~46         ; |begin|comp_y:inst39|Add0~46         ; out0             ;
+; |begin|comp_y:inst39|Add0~47         ; |begin|comp_y:inst39|Add0~47         ; out0             ;
+; |begin|comp_y:inst39|Add0~48         ; |begin|comp_y:inst39|Add0~48         ; out0             ;
+; |begin|comp_y:inst39|Add0~49         ; |begin|comp_y:inst39|Add0~49         ; out0             ;
+; |begin|comp_y:inst39|Add0~50         ; |begin|comp_y:inst39|Add0~50         ; out0             ;
+; |begin|comp_y:inst39|Add0~51         ; |begin|comp_y:inst39|Add0~51         ; out0             ;
+; |begin|comp_y:inst39|Add0~52         ; |begin|comp_y:inst39|Add0~52         ; out0             ;
+; |begin|comp_y:inst39|Add0~53         ; |begin|comp_y:inst39|Add0~53         ; out0             ;
+; |begin|comp_y:inst39|Add0~54         ; |begin|comp_y:inst39|Add0~54         ; out0             ;
+; |begin|comp_y:inst39|Add0~55         ; |begin|comp_y:inst39|Add0~55         ; out0             ;
+; |begin|comp_y:inst39|Add0~56         ; |begin|comp_y:inst39|Add0~56         ; out0             ;
+; |begin|comp_y:inst39|Add0~57         ; |begin|comp_y:inst39|Add0~57         ; out0             ;
+; |begin|comp_y:inst39|Add0~58         ; |begin|comp_y:inst39|Add0~58         ; out0             ;
+; |begin|comp_y:inst39|Add0~59         ; |begin|comp_y:inst39|Add0~59         ; out0             ;
+; |begin|comp_y:inst39|Add0~60         ; |begin|comp_y:inst39|Add0~60         ; out0             ;
+; |begin|comp_s:inst55|Add0~1          ; |begin|comp_s:inst55|Add0~1          ; out0             ;
+; |begin|comp_s:inst55|Add0~2          ; |begin|comp_s:inst55|Add0~2          ; out0             ;
+; |begin|comp_s:inst55|Add0~3          ; |begin|comp_s:inst55|Add0~3          ; out0             ;
+; |begin|comp_s:inst55|Add0~4          ; |begin|comp_s:inst55|Add0~4          ; out0             ;
+; |begin|comp_s:inst55|Add0~5          ; |begin|comp_s:inst55|Add0~5          ; out0             ;
+; |begin|comp_s:inst55|Add0~6          ; |begin|comp_s:inst55|Add0~6          ; out0             ;
+; |begin|comp_s:inst55|Add0~7          ; |begin|comp_s:inst55|Add0~7          ; out0             ;
+; |begin|comp_s:inst55|Add0~8          ; |begin|comp_s:inst55|Add0~8          ; out0             ;
+; |begin|comp_s:inst55|Add0~9          ; |begin|comp_s:inst55|Add0~9          ; out0             ;
+; |begin|comp_s:inst55|Add0~10         ; |begin|comp_s:inst55|Add0~10         ; out0             ;
+; |begin|comp_s:inst55|Add0~11         ; |begin|comp_s:inst55|Add0~11         ; out0             ;
+; |begin|comp_s:inst55|Add0~12         ; |begin|comp_s:inst55|Add0~12         ; out0             ;
+; |begin|comp_s:inst55|Add0~13         ; |begin|comp_s:inst55|Add0~13         ; out0             ;
+; |begin|comp_s:inst55|Add0~14         ; |begin|comp_s:inst55|Add0~14         ; out0             ;
+; |begin|comp_s:inst55|Add0~15         ; |begin|comp_s:inst55|Add0~15         ; out0             ;
+; |begin|comp_s:inst55|Add0~16         ; |begin|comp_s:inst55|Add0~16         ; out0             ;
+; |begin|comp_s:inst55|Add0~17         ; |begin|comp_s:inst55|Add0~17         ; out0             ;
+; |begin|comp_s:inst55|Add0~18         ; |begin|comp_s:inst55|Add0~18         ; out0             ;
+; |begin|comp_s:inst55|Add0~19         ; |begin|comp_s:inst55|Add0~19         ; out0             ;
+; |begin|comp_s:inst55|Add0~20         ; |begin|comp_s:inst55|Add0~20         ; out0             ;
+; |begin|comp_s:inst55|Add0~21         ; |begin|comp_s:inst55|Add0~21         ; out0             ;
+; |begin|comp_s:inst55|Add0~22         ; |begin|comp_s:inst55|Add0~22         ; out0             ;
+; |begin|comp_s:inst55|Add0~23         ; |begin|comp_s:inst55|Add0~23         ; out0             ;
+; |begin|comp_s:inst55|Add0~24         ; |begin|comp_s:inst55|Add0~24         ; out0             ;
+; |begin|comp_s:inst55|Add0~25         ; |begin|comp_s:inst55|Add0~25         ; out0             ;
+; |begin|comp_s:inst55|Add0~26         ; |begin|comp_s:inst55|Add0~26         ; out0             ;
+; |begin|comp_s:inst55|Add0~27         ; |begin|comp_s:inst55|Add0~27         ; out0             ;
+; |begin|comp_s:inst55|Add0~28         ; |begin|comp_s:inst55|Add0~28         ; out0             ;
+; |begin|comp_s:inst55|Add0~29         ; |begin|comp_s:inst55|Add0~29         ; out0             ;
+; |begin|comp_s:inst55|Add0~30         ; |begin|comp_s:inst55|Add0~30         ; out0             ;
+; |begin|comp_s:inst55|Add0~31         ; |begin|comp_s:inst55|Add0~31         ; out0             ;
+; |begin|comp_s:inst55|Add0~32         ; |begin|comp_s:inst55|Add0~32         ; out0             ;
+; |begin|comp_s:inst55|Add0~33         ; |begin|comp_s:inst55|Add0~33         ; out0             ;
+; |begin|comp_s:inst55|Add0~34         ; |begin|comp_s:inst55|Add0~34         ; out0             ;
+; |begin|comp_s:inst55|Add0~35         ; |begin|comp_s:inst55|Add0~35         ; out0             ;
+; |begin|comp_s:inst55|Add0~36         ; |begin|comp_s:inst55|Add0~36         ; out0             ;
+; |begin|comp_s:inst55|Add0~37         ; |begin|comp_s:inst55|Add0~37         ; out0             ;
+; |begin|comp_s:inst55|Add0~38         ; |begin|comp_s:inst55|Add0~38         ; out0             ;
+; |begin|comp_s:inst55|Add0~39         ; |begin|comp_s:inst55|Add0~39         ; out0             ;
+; |begin|comp_s:inst55|Add0~40         ; |begin|comp_s:inst55|Add0~40         ; out0             ;
+; |begin|comp_s:inst55|Add0~41         ; |begin|comp_s:inst55|Add0~41         ; out0             ;
+; |begin|comp_s:inst55|Add0~42         ; |begin|comp_s:inst55|Add0~42         ; out0             ;
+; |begin|comp_s:inst55|Add0~43         ; |begin|comp_s:inst55|Add0~43         ; out0             ;
+; |begin|comp_s:inst55|Add0~44         ; |begin|comp_s:inst55|Add0~44         ; out0             ;
+; |begin|comp_s:inst55|Add0~45         ; |begin|comp_s:inst55|Add0~45         ; out0             ;
+; |begin|comp_s:inst55|Add0~46         ; |begin|comp_s:inst55|Add0~46         ; out0             ;
+; |begin|comp_s:inst55|Add0~47         ; |begin|comp_s:inst55|Add0~47         ; out0             ;
+; |begin|comp_s:inst55|Add0~48         ; |begin|comp_s:inst55|Add0~48         ; out0             ;
+; |begin|comp_s:inst55|Add0~49         ; |begin|comp_s:inst55|Add0~49         ; out0             ;
+; |begin|comp_s:inst55|Add0~50         ; |begin|comp_s:inst55|Add0~50         ; out0             ;
+; |begin|comp_s:inst55|Add0~51         ; |begin|comp_s:inst55|Add0~51         ; out0             ;
+; |begin|comp_s:inst55|Add0~52         ; |begin|comp_s:inst55|Add0~52         ; out0             ;
+; |begin|comp_s:inst55|Add0~53         ; |begin|comp_s:inst55|Add0~53         ; out0             ;
+; |begin|comp_s:inst55|Add0~54         ; |begin|comp_s:inst55|Add0~54         ; out0             ;
+; |begin|comp_s:inst55|Add0~55         ; |begin|comp_s:inst55|Add0~55         ; out0             ;
+; |begin|comp_s:inst55|Add0~56         ; |begin|comp_s:inst55|Add0~56         ; out0             ;
+; |begin|comp_s:inst55|Add0~57         ; |begin|comp_s:inst55|Add0~57         ; out0             ;
+; |begin|comp_s:inst55|Add0~58         ; |begin|comp_s:inst55|Add0~58         ; out0             ;
+; |begin|comp_s:inst55|Add0~59         ; |begin|comp_s:inst55|Add0~59         ; out0             ;
+; |begin|comp_s:inst55|Add0~60         ; |begin|comp_s:inst55|Add0~60         ; out0             ;
+; |begin|KodirovkaMura:inst93|Equal4~0 ; |begin|KodirovkaMura:inst93|Equal4~0 ; out0             ;
+; |begin|KodirovkaY:inst76|Equal4~0    ; |begin|KodirovkaY:inst76|Equal4~0    ; out0             ;
++--------------------------------------+--------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                       ;
++------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                            ; Output Port Name                                                                                     ; Output Port Type ;
++------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+------------------+
+; |begin|rez                                                                                           ; |begin|rez                                                                                           ; pin_out          ;
+; |begin|clr                                                                                           ; |begin|clr                                                                                           ; out              ;
+; |begin|en                                                                                            ; |begin|en                                                                                            ; out              ;
+; |begin|rez_y                                                                                         ; |begin|rez_y                                                                                         ; pin_out          ;
+; |begin|rez_mura                                                                                      ; |begin|rez_mura                                                                                      ; pin_out          ;
+; |begin|mura:inst78|count[8]                                                                          ; |begin|mura:inst78|count[8]                                                                          ; regout           ;
+; |begin|mura:inst78|count[7]                                                                          ; |begin|mura:inst78|count[7]                                                                          ; regout           ;
+; |begin|mura:inst78|count[6]                                                                          ; |begin|mura:inst78|count[6]                                                                          ; regout           ;
+; |begin|mura:inst78|count[5]                                                                          ; |begin|mura:inst78|count[5]                                                                          ; regout           ;
+; |begin|mura:inst78|count[4]                                                                          ; |begin|mura:inst78|count[4]                                                                          ; regout           ;
+; |begin|mura:inst78|count[3]                                                                          ; |begin|mura:inst78|count[3]                                                                          ; regout           ;
+; |begin|mura:inst78|count[2]                                                                          ; |begin|mura:inst78|count[2]                                                                          ; regout           ;
+; |begin|mura:inst78|count[1]                                                                          ; |begin|mura:inst78|count[1]                                                                          ; regout           ;
+; |begin|mura:inst78|count[9]                                                                          ; |begin|mura:inst78|count[9]                                                                          ; regout           ;
+; |begin|mura:inst78|count[10]                                                                         ; |begin|mura:inst78|count[10]                                                                         ; regout           ;
+; |begin|mura:inst78|count[11]                                                                         ; |begin|mura:inst78|count[11]                                                                         ; regout           ;
+; |begin|mura:inst78|count[12]                                                                         ; |begin|mura:inst78|count[12]                                                                         ; regout           ;
+; |begin|mura:inst78|count[13]                                                                         ; |begin|mura:inst78|count[13]                                                                         ; regout           ;
+; |begin|mura:inst78|count[14]                                                                         ; |begin|mura:inst78|count[14]                                                                         ; regout           ;
+; |begin|mura:inst78|count[15]                                                                         ; |begin|mura:inst78|count[15]                                                                         ; regout           ;
+; |begin|mura:inst78|count[16]                                                                         ; |begin|mura:inst78|count[16]                                                                         ; regout           ;
+; |begin|mura:inst78|count[17]                                                                         ; |begin|mura:inst78|count[17]                                                                         ; regout           ;
+; |begin|mura:inst78|count[18]                                                                         ; |begin|mura:inst78|count[18]                                                                         ; regout           ;
+; |begin|mura:inst78|count[19]                                                                         ; |begin|mura:inst78|count[19]                                                                         ; regout           ;
+; |begin|mura:inst78|count[20]                                                                         ; |begin|mura:inst78|count[20]                                                                         ; regout           ;
+; |begin|mura:inst78|count[21]                                                                         ; |begin|mura:inst78|count[21]                                                                         ; regout           ;
+; |begin|mura:inst78|count[22]                                                                         ; |begin|mura:inst78|count[22]                                                                         ; regout           ;
+; |begin|mura:inst78|count[23]                                                                         ; |begin|mura:inst78|count[23]                                                                         ; regout           ;
+; |begin|mura:inst78|count[24]                                                                         ; |begin|mura:inst78|count[24]                                                                         ; regout           ;
+; |begin|mura:inst78|count[25]                                                                         ; |begin|mura:inst78|count[25]                                                                         ; regout           ;
+; |begin|mura:inst78|count[26]                                                                         ; |begin|mura:inst78|count[26]                                                                         ; regout           ;
+; |begin|mura:inst78|count[27]                                                                         ; |begin|mura:inst78|count[27]                                                                         ; regout           ;
+; |begin|mura:inst78|count[28]                                                                         ; |begin|mura:inst78|count[28]                                                                         ; regout           ;
+; |begin|mura:inst78|count[29]                                                                         ; |begin|mura:inst78|count[29]                                                                         ; regout           ;
+; |begin|mura:inst78|count[30]                                                                         ; |begin|mura:inst78|count[30]                                                                         ; regout           ;
+; |begin|mura:inst78|count[31]                                                                         ; |begin|mura:inst78|count[31]                                                                         ; regout           ;
+; |begin|mura:inst78|Result_mura                                                                       ; |begin|mura:inst78|Result_mura                                                                       ; regout           ;
+; |begin|comp_y:inst39|count[8]                                                                        ; |begin|comp_y:inst39|count[8]                                                                        ; regout           ;
+; |begin|comp_y:inst39|count[7]                                                                        ; |begin|comp_y:inst39|count[7]                                                                        ; regout           ;
+; |begin|comp_y:inst39|count[6]                                                                        ; |begin|comp_y:inst39|count[6]                                                                        ; regout           ;
+; |begin|comp_y:inst39|count[5]                                                                        ; |begin|comp_y:inst39|count[5]                                                                        ; regout           ;
+; |begin|comp_y:inst39|count[4]                                                                        ; |begin|comp_y:inst39|count[4]                                                                        ; regout           ;
+; |begin|comp_y:inst39|count[3]                                                                        ; |begin|comp_y:inst39|count[3]                                                                        ; regout           ;
+; |begin|comp_y:inst39|count[2]                                                                        ; |begin|comp_y:inst39|count[2]                                                                        ; regout           ;
+; |begin|comp_y:inst39|count[1]                                                                        ; |begin|comp_y:inst39|count[1]                                                                        ; regout           ;
+; |begin|comp_y:inst39|count[9]                                                                        ; |begin|comp_y:inst39|count[9]                                                                        ; regout           ;
+; |begin|comp_y:inst39|count[10]                                                                       ; |begin|comp_y:inst39|count[10]                                                                       ; regout           ;
+; |begin|comp_y:inst39|count[11]                                                                       ; |begin|comp_y:inst39|count[11]                                                                       ; regout           ;
+; |begin|comp_y:inst39|count[12]                                                                       ; |begin|comp_y:inst39|count[12]                                                                       ; regout           ;
+; |begin|comp_y:inst39|count[13]                                                                       ; |begin|comp_y:inst39|count[13]                                                                       ; regout           ;
+; |begin|comp_y:inst39|count[14]                                                                       ; |begin|comp_y:inst39|count[14]                                                                       ; regout           ;
+; |begin|comp_y:inst39|count[15]                                                                       ; |begin|comp_y:inst39|count[15]                                                                       ; regout           ;
+; |begin|comp_y:inst39|count[16]                                                                       ; |begin|comp_y:inst39|count[16]                                                                       ; regout           ;
+; |begin|comp_y:inst39|count[17]                                                                       ; |begin|comp_y:inst39|count[17]                                                                       ; regout           ;
+; |begin|comp_y:inst39|count[18]                                                                       ; |begin|comp_y:inst39|count[18]                                                                       ; regout           ;
+; |begin|comp_y:inst39|count[19]                                                                       ; |begin|comp_y:inst39|count[19]                                                                       ; regout           ;
+; |begin|comp_y:inst39|count[20]                                                                       ; |begin|comp_y:inst39|count[20]                                                                       ; regout           ;
+; |begin|comp_y:inst39|count[21]                                                                       ; |begin|comp_y:inst39|count[21]                                                                       ; regout           ;
+; |begin|comp_y:inst39|count[22]                                                                       ; |begin|comp_y:inst39|count[22]                                                                       ; regout           ;
+; |begin|comp_y:inst39|count[23]                                                                       ; |begin|comp_y:inst39|count[23]                                                                       ; regout           ;
+; |begin|comp_y:inst39|count[24]                                                                       ; |begin|comp_y:inst39|count[24]                                                                       ; regout           ;
+; |begin|comp_y:inst39|count[25]                                                                       ; |begin|comp_y:inst39|count[25]                                                                       ; regout           ;
+; |begin|comp_y:inst39|count[26]                                                                       ; |begin|comp_y:inst39|count[26]                                                                       ; regout           ;
+; |begin|comp_y:inst39|count[27]                                                                       ; |begin|comp_y:inst39|count[27]                                                                       ; regout           ;
+; |begin|comp_y:inst39|count[28]                                                                       ; |begin|comp_y:inst39|count[28]                                                                       ; regout           ;
+; |begin|comp_y:inst39|count[29]                                                                       ; |begin|comp_y:inst39|count[29]                                                                       ; regout           ;
+; |begin|comp_y:inst39|count[30]                                                                       ; |begin|comp_y:inst39|count[30]                                                                       ; regout           ;
+; |begin|comp_y:inst39|count[31]                                                                       ; |begin|comp_y:inst39|count[31]                                                                       ; regout           ;
+; |begin|comp_y:inst39|Result_y                                                                        ; |begin|comp_y:inst39|Result_y                                                                        ; regout           ;
+; |begin|comp_s:inst55|count[8]                                                                        ; |begin|comp_s:inst55|count[8]                                                                        ; regout           ;
+; |begin|comp_s:inst55|count[7]                                                                        ; |begin|comp_s:inst55|count[7]                                                                        ; regout           ;
+; |begin|comp_s:inst55|count[6]                                                                        ; |begin|comp_s:inst55|count[6]                                                                        ; regout           ;
+; |begin|comp_s:inst55|count[5]                                                                        ; |begin|comp_s:inst55|count[5]                                                                        ; regout           ;
+; |begin|comp_s:inst55|count[4]                                                                        ; |begin|comp_s:inst55|count[4]                                                                        ; regout           ;
+; |begin|comp_s:inst55|count[3]                                                                        ; |begin|comp_s:inst55|count[3]                                                                        ; regout           ;
+; |begin|comp_s:inst55|count[2]                                                                        ; |begin|comp_s:inst55|count[2]                                                                        ; regout           ;
+; |begin|comp_s:inst55|count[1]                                                                        ; |begin|comp_s:inst55|count[1]                                                                        ; regout           ;
+; |begin|comp_s:inst55|count[9]                                                                        ; |begin|comp_s:inst55|count[9]                                                                        ; regout           ;
+; |begin|comp_s:inst55|count[10]                                                                       ; |begin|comp_s:inst55|count[10]                                                                       ; regout           ;
+; |begin|comp_s:inst55|count[11]                                                                       ; |begin|comp_s:inst55|count[11]                                                                       ; regout           ;
+; |begin|comp_s:inst55|count[12]                                                                       ; |begin|comp_s:inst55|count[12]                                                                       ; regout           ;
+; |begin|comp_s:inst55|count[13]                                                                       ; |begin|comp_s:inst55|count[13]                                                                       ; regout           ;
+; |begin|comp_s:inst55|count[14]                                                                       ; |begin|comp_s:inst55|count[14]                                                                       ; regout           ;
+; |begin|comp_s:inst55|count[15]                                                                       ; |begin|comp_s:inst55|count[15]                                                                       ; regout           ;
+; |begin|comp_s:inst55|count[16]                                                                       ; |begin|comp_s:inst55|count[16]                                                                       ; regout           ;
+; |begin|comp_s:inst55|count[17]                                                                       ; |begin|comp_s:inst55|count[17]                                                                       ; regout           ;
+; |begin|comp_s:inst55|count[18]                                                                       ; |begin|comp_s:inst55|count[18]                                                                       ; regout           ;
+; |begin|comp_s:inst55|count[19]                                                                       ; |begin|comp_s:inst55|count[19]                                                                       ; regout           ;
+; |begin|comp_s:inst55|count[20]                                                                       ; |begin|comp_s:inst55|count[20]                                                                       ; regout           ;
+; |begin|comp_s:inst55|count[21]                                                                       ; |begin|comp_s:inst55|count[21]                                                                       ; regout           ;
+; |begin|comp_s:inst55|count[22]                                                                       ; |begin|comp_s:inst55|count[22]                                                                       ; regout           ;
+; |begin|comp_s:inst55|count[23]                                                                       ; |begin|comp_s:inst55|count[23]                                                                       ; regout           ;
+; |begin|comp_s:inst55|count[24]                                                                       ; |begin|comp_s:inst55|count[24]                                                                       ; regout           ;
+; |begin|comp_s:inst55|count[25]                                                                       ; |begin|comp_s:inst55|count[25]                                                                       ; regout           ;
+; |begin|comp_s:inst55|count[26]                                                                       ; |begin|comp_s:inst55|count[26]                                                                       ; regout           ;
+; |begin|comp_s:inst55|count[27]                                                                       ; |begin|comp_s:inst55|count[27]                                                                       ; regout           ;
+; |begin|comp_s:inst55|count[28]                                                                       ; |begin|comp_s:inst55|count[28]                                                                       ; regout           ;
+; |begin|comp_s:inst55|count[29]                                                                       ; |begin|comp_s:inst55|count[29]                                                                       ; regout           ;
+; |begin|comp_s:inst55|count[30]                                                                       ; |begin|comp_s:inst55|count[30]                                                                       ; regout           ;
+; |begin|comp_s:inst55|count[31]                                                                       ; |begin|comp_s:inst55|count[31]                                                                       ; regout           ;
+; |begin|comp_s:inst55|Result                                                                          ; |begin|comp_s:inst55|Result                                                                          ; regout           ;
+; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_reg_bit[6] ; |begin|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_reg_bit[6] ; regout           ;
+; |begin|mura:inst78|Add0~0                                                                            ; |begin|mura:inst78|Add0~0                                                                            ; out0             ;
+; |begin|mura:inst78|Add0~1                                                                            ; |begin|mura:inst78|Add0~1                                                                            ; out0             ;
+; |begin|mura:inst78|Add0~2                                                                            ; |begin|mura:inst78|Add0~2                                                                            ; out0             ;
+; |begin|mura:inst78|Add0~3                                                                            ; |begin|mura:inst78|Add0~3                                                                            ; out0             ;
+; |begin|mura:inst78|Add0~4                                                                            ; |begin|mura:inst78|Add0~4                                                                            ; out0             ;
+; |begin|mura:inst78|Add0~5                                                                            ; |begin|mura:inst78|Add0~5                                                                            ; out0             ;
+; |begin|mura:inst78|Add0~6                                                                            ; |begin|mura:inst78|Add0~6                                                                            ; out0             ;
+; |begin|mura:inst78|Add0~7                                                                            ; |begin|mura:inst78|Add0~7                                                                            ; out0             ;
+; |begin|mura:inst78|Add0~8                                                                            ; |begin|mura:inst78|Add0~8                                                                            ; out0             ;
+; |begin|mura:inst78|Add0~9                                                                            ; |begin|mura:inst78|Add0~9                                                                            ; out0             ;
+; |begin|mura:inst78|Add0~10                                                                           ; |begin|mura:inst78|Add0~10                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~11                                                                           ; |begin|mura:inst78|Add0~11                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~12                                                                           ; |begin|mura:inst78|Add0~12                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~13                                                                           ; |begin|mura:inst78|Add0~13                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~14                                                                           ; |begin|mura:inst78|Add0~14                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~15                                                                           ; |begin|mura:inst78|Add0~15                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~16                                                                           ; |begin|mura:inst78|Add0~16                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~17                                                                           ; |begin|mura:inst78|Add0~17                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~18                                                                           ; |begin|mura:inst78|Add0~18                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~19                                                                           ; |begin|mura:inst78|Add0~19                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~20                                                                           ; |begin|mura:inst78|Add0~20                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~21                                                                           ; |begin|mura:inst78|Add0~21                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~22                                                                           ; |begin|mura:inst78|Add0~22                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~23                                                                           ; |begin|mura:inst78|Add0~23                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~24                                                                           ; |begin|mura:inst78|Add0~24                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~25                                                                           ; |begin|mura:inst78|Add0~25                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~26                                                                           ; |begin|mura:inst78|Add0~26                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~27                                                                           ; |begin|mura:inst78|Add0~27                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~28                                                                           ; |begin|mura:inst78|Add0~28                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~29                                                                           ; |begin|mura:inst78|Add0~29                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~30                                                                           ; |begin|mura:inst78|Add0~30                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~31                                                                           ; |begin|mura:inst78|Add0~31                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~32                                                                           ; |begin|mura:inst78|Add0~32                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~33                                                                           ; |begin|mura:inst78|Add0~33                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~34                                                                           ; |begin|mura:inst78|Add0~34                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~35                                                                           ; |begin|mura:inst78|Add0~35                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~36                                                                           ; |begin|mura:inst78|Add0~36                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~37                                                                           ; |begin|mura:inst78|Add0~37                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~38                                                                           ; |begin|mura:inst78|Add0~38                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~39                                                                           ; |begin|mura:inst78|Add0~39                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~40                                                                           ; |begin|mura:inst78|Add0~40                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~41                                                                           ; |begin|mura:inst78|Add0~41                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~42                                                                           ; |begin|mura:inst78|Add0~42                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~43                                                                           ; |begin|mura:inst78|Add0~43                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~44                                                                           ; |begin|mura:inst78|Add0~44                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~45                                                                           ; |begin|mura:inst78|Add0~45                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~46                                                                           ; |begin|mura:inst78|Add0~46                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~47                                                                           ; |begin|mura:inst78|Add0~47                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~48                                                                           ; |begin|mura:inst78|Add0~48                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~49                                                                           ; |begin|mura:inst78|Add0~49                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~50                                                                           ; |begin|mura:inst78|Add0~50                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~51                                                                           ; |begin|mura:inst78|Add0~51                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~52                                                                           ; |begin|mura:inst78|Add0~52                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~53                                                                           ; |begin|mura:inst78|Add0~53                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~54                                                                           ; |begin|mura:inst78|Add0~54                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~55                                                                           ; |begin|mura:inst78|Add0~55                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~56                                                                           ; |begin|mura:inst78|Add0~56                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~57                                                                           ; |begin|mura:inst78|Add0~57                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~58                                                                           ; |begin|mura:inst78|Add0~58                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~59                                                                           ; |begin|mura:inst78|Add0~59                                                                           ; out0             ;
+; |begin|mura:inst78|Add0~60                                                                           ; |begin|mura:inst78|Add0~60                                                                           ; out0             ;
+; |begin|comp_y:inst39|Add0~0                                                                          ; |begin|comp_y:inst39|Add0~0                                                                          ; out0             ;
+; |begin|comp_y:inst39|Add0~1                                                                          ; |begin|comp_y:inst39|Add0~1                                                                          ; out0             ;
+; |begin|comp_y:inst39|Add0~2                                                                          ; |begin|comp_y:inst39|Add0~2                                                                          ; out0             ;
+; |begin|comp_y:inst39|Add0~3                                                                          ; |begin|comp_y:inst39|Add0~3                                                                          ; out0             ;
+; |begin|comp_y:inst39|Add0~4                                                                          ; |begin|comp_y:inst39|Add0~4                                                                          ; out0             ;
+; |begin|comp_y:inst39|Add0~5                                                                          ; |begin|comp_y:inst39|Add0~5                                                                          ; out0             ;
+; |begin|comp_y:inst39|Add0~6                                                                          ; |begin|comp_y:inst39|Add0~6                                                                          ; out0             ;
+; |begin|comp_y:inst39|Add0~7                                                                          ; |begin|comp_y:inst39|Add0~7                                                                          ; out0             ;
+; |begin|comp_y:inst39|Add0~8                                                                          ; |begin|comp_y:inst39|Add0~8                                                                          ; out0             ;
+; |begin|comp_y:inst39|Add0~9                                                                          ; |begin|comp_y:inst39|Add0~9                                                                          ; out0             ;
+; |begin|comp_y:inst39|Add0~10                                                                         ; |begin|comp_y:inst39|Add0~10                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~11                                                                         ; |begin|comp_y:inst39|Add0~11                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~12                                                                         ; |begin|comp_y:inst39|Add0~12                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~13                                                                         ; |begin|comp_y:inst39|Add0~13                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~14                                                                         ; |begin|comp_y:inst39|Add0~14                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~15                                                                         ; |begin|comp_y:inst39|Add0~15                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~16                                                                         ; |begin|comp_y:inst39|Add0~16                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~17                                                                         ; |begin|comp_y:inst39|Add0~17                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~18                                                                         ; |begin|comp_y:inst39|Add0~18                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~19                                                                         ; |begin|comp_y:inst39|Add0~19                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~20                                                                         ; |begin|comp_y:inst39|Add0~20                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~21                                                                         ; |begin|comp_y:inst39|Add0~21                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~22                                                                         ; |begin|comp_y:inst39|Add0~22                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~23                                                                         ; |begin|comp_y:inst39|Add0~23                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~24                                                                         ; |begin|comp_y:inst39|Add0~24                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~25                                                                         ; |begin|comp_y:inst39|Add0~25                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~26                                                                         ; |begin|comp_y:inst39|Add0~26                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~27                                                                         ; |begin|comp_y:inst39|Add0~27                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~28                                                                         ; |begin|comp_y:inst39|Add0~28                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~29                                                                         ; |begin|comp_y:inst39|Add0~29                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~30                                                                         ; |begin|comp_y:inst39|Add0~30                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~31                                                                         ; |begin|comp_y:inst39|Add0~31                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~32                                                                         ; |begin|comp_y:inst39|Add0~32                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~33                                                                         ; |begin|comp_y:inst39|Add0~33                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~34                                                                         ; |begin|comp_y:inst39|Add0~34                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~35                                                                         ; |begin|comp_y:inst39|Add0~35                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~36                                                                         ; |begin|comp_y:inst39|Add0~36                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~37                                                                         ; |begin|comp_y:inst39|Add0~37                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~38                                                                         ; |begin|comp_y:inst39|Add0~38                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~39                                                                         ; |begin|comp_y:inst39|Add0~39                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~40                                                                         ; |begin|comp_y:inst39|Add0~40                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~41                                                                         ; |begin|comp_y:inst39|Add0~41                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~42                                                                         ; |begin|comp_y:inst39|Add0~42                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~43                                                                         ; |begin|comp_y:inst39|Add0~43                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~44                                                                         ; |begin|comp_y:inst39|Add0~44                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~45                                                                         ; |begin|comp_y:inst39|Add0~45                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~46                                                                         ; |begin|comp_y:inst39|Add0~46                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~47                                                                         ; |begin|comp_y:inst39|Add0~47                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~48                                                                         ; |begin|comp_y:inst39|Add0~48                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~49                                                                         ; |begin|comp_y:inst39|Add0~49                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~50                                                                         ; |begin|comp_y:inst39|Add0~50                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~51                                                                         ; |begin|comp_y:inst39|Add0~51                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~52                                                                         ; |begin|comp_y:inst39|Add0~52                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~53                                                                         ; |begin|comp_y:inst39|Add0~53                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~54                                                                         ; |begin|comp_y:inst39|Add0~54                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~55                                                                         ; |begin|comp_y:inst39|Add0~55                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~56                                                                         ; |begin|comp_y:inst39|Add0~56                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~57                                                                         ; |begin|comp_y:inst39|Add0~57                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~58                                                                         ; |begin|comp_y:inst39|Add0~58                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~59                                                                         ; |begin|comp_y:inst39|Add0~59                                                                         ; out0             ;
+; |begin|comp_y:inst39|Add0~60                                                                         ; |begin|comp_y:inst39|Add0~60                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~0                                                                          ; |begin|comp_s:inst55|Add0~0                                                                          ; out0             ;
+; |begin|comp_s:inst55|Add0~1                                                                          ; |begin|comp_s:inst55|Add0~1                                                                          ; out0             ;
+; |begin|comp_s:inst55|Add0~2                                                                          ; |begin|comp_s:inst55|Add0~2                                                                          ; out0             ;
+; |begin|comp_s:inst55|Add0~3                                                                          ; |begin|comp_s:inst55|Add0~3                                                                          ; out0             ;
+; |begin|comp_s:inst55|Add0~4                                                                          ; |begin|comp_s:inst55|Add0~4                                                                          ; out0             ;
+; |begin|comp_s:inst55|Add0~5                                                                          ; |begin|comp_s:inst55|Add0~5                                                                          ; out0             ;
+; |begin|comp_s:inst55|Add0~6                                                                          ; |begin|comp_s:inst55|Add0~6                                                                          ; out0             ;
+; |begin|comp_s:inst55|Add0~7                                                                          ; |begin|comp_s:inst55|Add0~7                                                                          ; out0             ;
+; |begin|comp_s:inst55|Add0~8                                                                          ; |begin|comp_s:inst55|Add0~8                                                                          ; out0             ;
+; |begin|comp_s:inst55|Add0~9                                                                          ; |begin|comp_s:inst55|Add0~9                                                                          ; out0             ;
+; |begin|comp_s:inst55|Add0~10                                                                         ; |begin|comp_s:inst55|Add0~10                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~11                                                                         ; |begin|comp_s:inst55|Add0~11                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~12                                                                         ; |begin|comp_s:inst55|Add0~12                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~13                                                                         ; |begin|comp_s:inst55|Add0~13                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~14                                                                         ; |begin|comp_s:inst55|Add0~14                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~15                                                                         ; |begin|comp_s:inst55|Add0~15                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~16                                                                         ; |begin|comp_s:inst55|Add0~16                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~17                                                                         ; |begin|comp_s:inst55|Add0~17                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~18                                                                         ; |begin|comp_s:inst55|Add0~18                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~19                                                                         ; |begin|comp_s:inst55|Add0~19                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~20                                                                         ; |begin|comp_s:inst55|Add0~20                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~21                                                                         ; |begin|comp_s:inst55|Add0~21                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~22                                                                         ; |begin|comp_s:inst55|Add0~22                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~23                                                                         ; |begin|comp_s:inst55|Add0~23                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~24                                                                         ; |begin|comp_s:inst55|Add0~24                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~25                                                                         ; |begin|comp_s:inst55|Add0~25                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~26                                                                         ; |begin|comp_s:inst55|Add0~26                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~27                                                                         ; |begin|comp_s:inst55|Add0~27                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~28                                                                         ; |begin|comp_s:inst55|Add0~28                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~29                                                                         ; |begin|comp_s:inst55|Add0~29                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~30                                                                         ; |begin|comp_s:inst55|Add0~30                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~31                                                                         ; |begin|comp_s:inst55|Add0~31                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~32                                                                         ; |begin|comp_s:inst55|Add0~32                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~33                                                                         ; |begin|comp_s:inst55|Add0~33                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~34                                                                         ; |begin|comp_s:inst55|Add0~34                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~35                                                                         ; |begin|comp_s:inst55|Add0~35                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~36                                                                         ; |begin|comp_s:inst55|Add0~36                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~37                                                                         ; |begin|comp_s:inst55|Add0~37                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~38                                                                         ; |begin|comp_s:inst55|Add0~38                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~39                                                                         ; |begin|comp_s:inst55|Add0~39                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~40                                                                         ; |begin|comp_s:inst55|Add0~40                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~41                                                                         ; |begin|comp_s:inst55|Add0~41                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~42                                                                         ; |begin|comp_s:inst55|Add0~42                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~43                                                                         ; |begin|comp_s:inst55|Add0~43                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~44                                                                         ; |begin|comp_s:inst55|Add0~44                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~45                                                                         ; |begin|comp_s:inst55|Add0~45                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~46                                                                         ; |begin|comp_s:inst55|Add0~46                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~47                                                                         ; |begin|comp_s:inst55|Add0~47                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~48                                                                         ; |begin|comp_s:inst55|Add0~48                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~49                                                                         ; |begin|comp_s:inst55|Add0~49                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~50                                                                         ; |begin|comp_s:inst55|Add0~50                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~51                                                                         ; |begin|comp_s:inst55|Add0~51                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~52                                                                         ; |begin|comp_s:inst55|Add0~52                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~53                                                                         ; |begin|comp_s:inst55|Add0~53                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~54                                                                         ; |begin|comp_s:inst55|Add0~54                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~55                                                                         ; |begin|comp_s:inst55|Add0~55                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~56                                                                         ; |begin|comp_s:inst55|Add0~56                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~57                                                                         ; |begin|comp_s:inst55|Add0~57                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~58                                                                         ; |begin|comp_s:inst55|Add0~58                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~59                                                                         ; |begin|comp_s:inst55|Add0~59                                                                         ; out0             ;
+; |begin|comp_s:inst55|Add0~60                                                                         ; |begin|comp_s:inst55|Add0~60                                                                         ; out0             ;
+; |begin|KodirovkaMura:inst93|Equal4~0                                                                 ; |begin|KodirovkaMura:inst93|Equal4~0                                                                 ; out0             ;
+; |begin|KodirovkaY:inst76|Equal4~0                                                                    ; |begin|KodirovkaY:inst76|Equal4~0                                                                    ; out0             ;
++------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri Jun 02 16:45:33 2017
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off begin -c begin
+Info: Using vector source file "C:/Users/necro/Desktop/STAND/Waveform1.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      35.80 %
+Info: Number of transitions in simulation is 14339
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 157 megabytes
+    Info: Processing ended: Fri Jun 02 16:45:34 2017
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

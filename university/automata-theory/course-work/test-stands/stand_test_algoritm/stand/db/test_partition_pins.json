@@ -1,0 +1,125 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "defect",
+					"strict" : false
+				},
+				{
+					"name" : "okey",
+					"strict" : false
+				},
+				{
+					"name" : "finish",
+					"strict" : false
+				},
+				{
+					"name" : "rez_test[7]",
+					"strict" : false
+				},
+				{
+					"name" : "rez_test[6]",
+					"strict" : false
+				},
+				{
+					"name" : "rez_test[5]",
+					"strict" : false
+				},
+				{
+					"name" : "rez_test[4]",
+					"strict" : false
+				},
+				{
+					"name" : "rez_test[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rez_test[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rez_test[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rez_test[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rez_true[7]",
+					"strict" : false
+				},
+				{
+					"name" : "rez_true[6]",
+					"strict" : false
+				},
+				{
+					"name" : "rez_true[5]",
+					"strict" : false
+				},
+				{
+					"name" : "rez_true[4]",
+					"strict" : false
+				},
+				{
+					"name" : "rez_true[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rez_true[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rez_true[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rez_true[0]",
+					"strict" : false
+				},
+				{
+					"name" : "x[3]",
+					"strict" : false
+				},
+				{
+					"name" : "x[2]",
+					"strict" : false
+				},
+				{
+					"name" : "x[1]",
+					"strict" : false
+				},
+				{
+					"name" : "x[0]",
+					"strict" : false
+				},
+				{
+					"name" : "y[3]",
+					"strict" : false
+				},
+				{
+					"name" : "y[2]",
+					"strict" : false
+				},
+				{
+					"name" : "y[1]",
+					"strict" : false
+				},
+				{
+					"name" : "y[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,133 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "sko",
+					"strict" : false
+				},
+				{
+					"name" : "sno",
+					"strict" : false
+				},
+				{
+					"name" : "okey",
+					"strict" : false
+				},
+				{
+					"name" : "defect",
+					"strict" : false
+				},
+				{
+					"name" : "finish",
+					"strict" : false
+				},
+				{
+					"name" : "real_rez[0]",
+					"strict" : false
+				},
+				{
+					"name" : "real_rez[1]",
+					"strict" : false
+				},
+				{
+					"name" : "real_rez[2]",
+					"strict" : false
+				},
+				{
+					"name" : "real_rez[3]",
+					"strict" : false
+				},
+				{
+					"name" : "real_rez[4]",
+					"strict" : false
+				},
+				{
+					"name" : "real_rez[5]",
+					"strict" : false
+				},
+				{
+					"name" : "real_rez[6]",
+					"strict" : false
+				},
+				{
+					"name" : "real_rez[7]",
+					"strict" : false
+				},
+				{
+					"name" : "true_rez[0]",
+					"strict" : false
+				},
+				{
+					"name" : "true_rez[1]",
+					"strict" : false
+				},
+				{
+					"name" : "true_rez[2]",
+					"strict" : false
+				},
+				{
+					"name" : "true_rez[3]",
+					"strict" : false
+				},
+				{
+					"name" : "true_rez[4]",
+					"strict" : false
+				},
+				{
+					"name" : "true_rez[5]",
+					"strict" : false
+				},
+				{
+					"name" : "true_rez[6]",
+					"strict" : false
+				},
+				{
+					"name" : "true_rez[7]",
+					"strict" : false
+				},
+				{
+					"name" : "x[0]",
+					"strict" : false
+				},
+				{
+					"name" : "x[1]",
+					"strict" : false
+				},
+				{
+					"name" : "x[2]",
+					"strict" : false
+				},
+				{
+					"name" : "x[3]",
+					"strict" : false
+				},
+				{
+					"name" : "y[0]",
+					"strict" : false
+				},
+				{
+					"name" : "y[1]",
+					"strict" : false
+				},
+				{
+					"name" : "y[2]",
+					"strict" : false
+				},
+				{
+					"name" : "y[3]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

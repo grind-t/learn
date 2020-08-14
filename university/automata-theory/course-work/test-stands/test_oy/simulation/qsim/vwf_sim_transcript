@@ -1,0 +1,196 @@
+Determining the location of the ModelSim executable...
+
+Using: C:\intelFPGA\19.1\modelsim_ase\win32aloem
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off TEST_OY -c TEST_OY --vector_source="C:/test-stands/test_oy/MY_OY/test_for_stand.vwf" --testbench_file="C:/test-stands/test_oy/simulation/qsim/MY_OY/test_for_stand.vwf.vht"
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+    Info: Copyright (C) 2019  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details, at
+    Info: https://fpgasoftware.intel.com/eula.
+    Info: Processing started: Tue Jun 23 22:07:58 2020
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off TEST_OY -c TEST_OY --vector_source=C:/test-stands/test_oy/MY_OY/test_for_stand.vwf --testbench_file=C:/test-stands/test_oy/simulation/qsim/MY_OY/test_for_stand.vwf.vht
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+in vector source file when writing test bench files
+
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/test-stands/test_oy/simulation/qsim/" TEST_OY -c TEST_OY
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+    Info: Copyright (C) 2019  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details, at
+    Info: https://fpgasoftware.intel.com/eula.
+    Info: Processing started: Tue Jun 23 22:07:59 2020
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/test-stands/test_oy/simulation/qsim/ TEST_OY -c TEST_OY
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file TEST_OY.vho in folder "C:/test-stands/test_oy/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4709 megabytes
+    Info: Processing ended: Tue Jun 23 22:08:00 2020
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+C:/test-stands/test_oy/simulation/qsim/TEST_OY.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+C:/intelFPGA/19.1/modelsim_ase/win32aloem/vsim -c -do TEST_OY.do
+
+Reading C:/intelFPGA/19.1/modelsim_ase/tcl/vsim/pref.tcl
+
+
+# 10.5b
+
+
+# do TEST_OY.do
+
+# ** Warning: (vlib-34) Library already exists at "work".
+
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:08:03 on Jun 23,2020
+# vcom -work work TEST_OY.vho 
+
+# -- Loading package STANDARD
+
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneiv_atom_pack
+# -- Loading package cycloneiv_components
+# -- Compiling entity hard_block
+# -- Compiling architecture structure of hard_block
+
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Compiling entity TEST_OY
+# -- Compiling architecture structure of TEST_OY
+# End time: 22:08:03 on Jun 23,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:08:03 on Jun 23,2020
+# vcom -work work MY_OY/test_for_stand.vwf.vht 
+# -- Loading package STANDARD
+
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity TEST_OY_vhd_vec_tst
+# -- Compiling architecture TEST_OY_arch of TEST_OY_vhd_vec_tst
+# End time: 22:08:04 on Jun 23,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+
+# vsim -novopt -c -t 1ps -L cycloneiv -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.TEST_OY_vhd_vec_tst 
+# Start time: 22:08:05 on Jun 23,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.test_oy_vhd_vec_tst(test_oy_arch)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading cycloneiv.cycloneiv_atom_pack(body)
+# Loading cycloneiv.cycloneiv_components
+# Loading work.test_oy(structure)
+# Loading work.hard_block(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneiv.cycloneiv_io_obuf(arch)
+# Loading cycloneiv.cycloneiv_io_ibuf(arch)
+# Loading cycloneiv.cycloneiv_clkctrl(vital_clkctrl)
+# Loading cycloneiv.cycloneiv_ena_reg(behave)
+# Loading cycloneiv.cycloneiv_lcell_comb(vital_lcell_comb)
+# Loading altera.dffeas(vital_dffeas)
+# ** Warning: Design size of 22849 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# after#35
+
+# Simulation time: 21850 ps
+
+# Simulation time: 21850 ps
+
+# Simulation time: 21850 ps
+
+# Simulation time: 21850 ps
+
+# Simulation time: 21850 ps
+
+# Simulation time: 21850 ps
+
+# Simulation time: 21850 ps
+
+# Simulation time: 21850 ps
+
+# Simulation time: 530375 ps
+
+# Simulation time: 530375 ps
+
+# Simulation time: 530375 ps
+
+# Simulation time: 530375 ps
+
+# Simulation time: 530375 ps
+
+# Simulation time: 530375 ps
+
+# End time: 22:08:42 on Jun 23,2020, Elapsed time: 0:00:37
+# Errors: 0, Warnings: 1
+
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading C:/test-stands/test_oy/MY_OY/test_for_stand.vwf...
+
+Reading C:/test-stands/test_oy/simulation/qsim/TEST_OY.msim.vcd...
+
+Processing channel transitions... 
+
+Writing the resulting VWF to C:/test-stands/test_oy/simulation/qsim/TEST_OY_20200623220842.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.

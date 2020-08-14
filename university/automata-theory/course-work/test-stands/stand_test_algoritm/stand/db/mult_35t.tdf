@@ -1,0 +1,73 @@
+--lpm_mult CBX_DECLARE_ALL_CONNECTED_PORTS="OFF" DEVICE_FAMILY="Stratix II" DSP_BLOCK_BALANCING="Auto" INPUT_A_IS_CONSTANT="NO" INPUT_B_IS_CONSTANT="NO" LPM_REPRESENTATION="UNSIGNED" LPM_WIDTHA=4 LPM_WIDTHB=4 LPM_WIDTHP=8 LPM_WIDTHS=1 MAXIMIZE_SPEED=5 dataa datab result CARRY_CHAIN="MANUAL" CARRY_CHAIN_LENGTH=48
+--VERSION_BEGIN 9.1SP2 cbx_cycloneii 2010:03:24:20:43:43:SJ cbx_lpm_add_sub 2010:03:24:20:43:43:SJ cbx_lpm_mult 2010:03:24:20:43:43:SJ cbx_mgl 2010:03:24:21:01:05:SJ cbx_padd 2010:03:24:20:43:43:SJ cbx_stratix 2010:03:24:20:43:43:SJ cbx_stratixii 2010:03:24:20:43:43:SJ cbx_util_mgl 2010:03:24:20:43:43:SJ  VERSION_END
+
+
+-- Copyright (C) 1991-2010 Altera Corporation
+--  Your use of Altera Corporation's design tools, logic functions 
+--  and other software and tools, and its AMPP partner logic 
+--  functions, and any output files from any of the foregoing 
+--  (including device programming or simulation files), and any 
+--  associated documentation or information are expressly subject 
+--  to the terms and conditions of the Altera Program License 
+--  Subscription Agreement, Altera MegaCore Function License 
+--  Agreement, or other applicable license agreement, including, 
+--  without limitation, that your use is for the sole purpose of 
+--  programming logic devices manufactured by Altera and sold by 
+--  Altera or its authorized distributors.  Please refer to the 
+--  applicable agreement for further details.
+
+
+FUNCTION soft (in)
+RETURNS ( out);
+
+--synthesis_resources = lut 24 
+SUBDESIGN mult_35t
+( 
+	dataa[3..0]	:	input;
+	datab[3..0]	:	input;
+	result[7..0]	:	output;
+) 
+VARIABLE
+	add2_result[6..0]	:	WIRE;
+	sum_adder1aa_0_dataa[4..0]	:	WIRE;
+	sum_adder1aa_0_datab[4..0]	:	WIRE;
+	sum_adder1aa_0_result[4..0]	:	WIRE;
+	sum_adder1aa_1_dataa[4..0]	:	WIRE;
+	sum_adder1aa_1_datab[4..0]	:	WIRE;
+	sum_adder1aa_1_result[4..0]	:	WIRE;
+	sft3a[6..0] : soft;
+	sft4a[6..0] : soft;
+	sft5a[6..0] : soft;
+	sft6a[6..0] : soft;
+	dataa_node[3..0]	: WIRE;
+	datab_node[3..0]	: WIRE;
+	final_result_node[7..0]	: WIRE;
+	w110w[8..0]	: WIRE;
+	w80w	: WIRE;
+	w_decoder_node9w[15..0]	: WIRE;
+	w_le_datab_node8w[3..0]	: WIRE;
+	w_sum_node10w[11..0]	: WIRE;
+
+BEGIN 
+	add2_result[] = sft3a[].out + sft4a[].out + sft5a[].out;
+	sum_adder1aa_0_result[] = sum_adder1aa_0_dataa[] + sum_adder1aa_0_datab[];
+	sum_adder1aa_0_dataa[] = ( B"0", w_decoder_node9w[7..4]);
+	sum_adder1aa_0_datab[] = ( B"0", B"0", w_decoder_node9w[3..1]);
+	sum_adder1aa_1_result[] = sum_adder1aa_1_dataa[] + sum_adder1aa_1_datab[];
+	sum_adder1aa_1_dataa[] = ( B"0", w_decoder_node9w[15..12]);
+	sum_adder1aa_1_datab[] = ( B"0", B"0", w_decoder_node9w[11..9]);
+	sft3a[].in = ( w80w, ( w_sum_node10w[11..11], ( w_sum_node10w[10..10], ( w_sum_node10w[5..5], ( w_sum_node10w[4..4], ( w_sum_node10w[3..2]))))));
+	sft4a[].in = ( w80w, ( w80w, ( w80w, ( w_sum_node10w[9..9], ( w_sum_node10w[8..8], ( w_sum_node10w[7..6]))))));
+	sft5a[].in = ( w80w, ( w80w, ( w80w, ( w80w, ( w80w, ( w80w, w80w))))));
+	sft6a[].in = add2_result[];
+	dataa_node[] = ( dataa[3..0]);
+	datab_node[] = ( datab[3..0]);
+	final_result_node[] = ( w110w[7..0]);
+	result[] = ( final_result_node[7..0]);
+	w110w[] = ( sft6a[6..5].out, sft6a[4..3].out, sft6a[2..1].out, sft6a[0..0].out, w_sum_node10w[1..1], w_sum_node10w[0..0]);
+	w80w = B"0";
+	w_decoder_node9w[] = ( (( dataa_node[3..0]) & w_le_datab_node8w[3..3]), (( dataa_node[3..0]) & w_le_datab_node8w[2..2]), (( dataa_node[3..0]) & w_le_datab_node8w[1..1]), (( dataa_node[3..0]) & w_le_datab_node8w[0..0]));
+	w_le_datab_node8w[] = ( datab_node[3..0]);
+	w_sum_node10w[] = ( sum_adder1aa_1_result[], w_decoder_node9w[8..8], sum_adder1aa_0_result[], w_decoder_node9w[0..0]);
+END;
+--VALID FILE

@@ -1,0 +1,45 @@
+<internal_error>
+	<executable>quartus_map.exe</executable>
+	<sub_system>AMERGE</sub_system>
+	<file>/quartus/atm/amerge/amerge_kpt_op.cpp</file>
+	<line>220</line>
+	<callstack>
+	0x090bd9b7:
+	</callstack>
+	<error>cmp_merge_kpt_db</error>
+	<date>Thu Jun 09 19:52:18 2011</date>
+	<version>Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition</version>
+	<full_error>cmp_merge_kpt_db
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_map.exe</executable>
+	<sub_system>AMERGE</sub_system>
+	<file>/quartus/atm/amerge/amerge_kpt_op.cpp</file>
+	<line>220</line>
+	<callstack>
+	0x0912d9b7:
+	</callstack>
+	<error>cmp_merge_kpt_db</error>
+	<date>Thu Jun 09 20:03:00 2011</date>
+	<version>Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition</version>
+	<full_error>cmp_merge_kpt_db
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_map.exe</executable>
+	<sub_system>AMERGE</sub_system>
+	<file>/quartus/atm/amerge/amerge_kpt_op.cpp</file>
+	<line>220</line>
+	<callstack>
+	0x0912d9b7:
+	</callstack>
+	<error>cmp_merge_kpt_db</error>
+	<date>Thu Jun 09 20:05:30 2011</date>
+	<version>Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition</version>
+	<full_error>cmp_merge_kpt_db
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition </full_error>
+</internal_error>
+

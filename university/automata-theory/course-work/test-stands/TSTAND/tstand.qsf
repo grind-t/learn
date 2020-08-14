@@ -1,0 +1,101 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.0 Build 132 02/25/2009 SJ Web Edition
+# Date created = 13:40:53  March 09, 2010
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		begin_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV GX"
+set_global_assignment -name DEVICE AUTO
+set_global_assignment -name TOP_LEVEL_ENTITY tstand
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:40:53  MARCH 09, 2010"
+set_global_assignment -name LAST_QUARTUS_VERSION "19.1.0 Lite Edition"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name TRIGGER_EQUATION "|tstand|rez = 0" -section_id "Error Mili state"
+set_global_assignment -name ACTION STOP -section_id "Error Mili state"
+set_global_assignment -name USER_MESSAGE "Mili Error" -section_id "Error Mili state"
+set_global_assignment -name BREAKPOINT_STATE DISABLED -section_id "Error Mili state"
+set_global_assignment -name TRIGGER_EQUATION "|tstand|rez_y = 0" -section_id "Error Mili out"
+set_global_assignment -name ACTION "GIVE ERROR" -section_id "Error Mili out"
+set_global_assignment -name USER_MESSAGE "Mili out error" -section_id "Error Mili out"
+set_global_assignment -name BREAKPOINT_STATE DISABLED -section_id "Error Mili out"
+set_global_assignment -name TRIGGER_EQUATION "|tstand|rez_mura = 0" -section_id "Error Mura"
+set_global_assignment -name ACTION "GIVE ERROR" -section_id "Error Mura"
+set_global_assignment -name USER_MESSAGE "Mura error" -section_id "Error Mura"
+set_global_assignment -name BREAKPOINT_STATE DISABLED -section_id "Error Mura"
+set_global_assignment -name MISC_FILE "G:/AVT/Стенд_мили_мура_block/tstand.dpf"
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS NOT_USED -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testing
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "1 us" -section_id testing
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testing -section_id testing
+set_global_assignment -name EDA_TEST_BENCH_FILE Waveform1.vwf -section_id testing
+set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "D:/AlteraProjects/Bondarenko/TSTAND/simulation/qsim/" -section_id eda_simulation
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE qwe123.vwf
+set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS ON
+set_global_assignment -name TIMEQUEST_DO_CCPP_REMOVAL ON
+set_global_assignment -name VHDL_FILE MYAVT/mealy_vozbuzh.vhd
+set_global_assignment -name VHDL_FILE MYAVT/mealy_output.vhd
+set_global_assignment -name VHDL_FILE MYAVT/mealy_memory.vhd
+set_global_assignment -name BDF_FILE MYAVT/mealy_decompose.bdf
+set_global_assignment -name BDF_FILE MYAVT/avtomat_myra.bdf
+set_global_assignment -name BDF_FILE MYAVT/avtomat_mili.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE MYAVT/test.vwf
+set_global_assignment -name BDF_FILE tstand.bdf
+set_global_assignment -name VHDL_FILE mura.vhd
+set_global_assignment -name QIP_FILE test_sequence.qip
+set_global_assignment -name QIP_FILE x_choice.qip
+set_global_assignment -name QIP_FILE count_100.qip
+set_global_assignment -name QIP_FILE true_S.qip
+set_global_assignment -name QIP_FILE true_Y.qip
+set_global_assignment -name VHDL_FILE true_choice.vhd
+set_global_assignment -name VHDL_FILE result.vhd
+set_global_assignment -name VHDL_FILE result_y.vhd
+set_global_assignment -name QIP_FILE del.qip
+set_global_assignment -name VHDL_FILE KodirovkaX.vhd
+set_global_assignment -name VHDL_FILE KodirovkaS.vhd
+set_global_assignment -name VHDL_FILE KodirovkaMura.vhd
+set_global_assignment -name VHDL_FILE kodirovkaY.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

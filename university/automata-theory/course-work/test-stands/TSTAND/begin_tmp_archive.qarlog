@@ -1,0 +1,81 @@
+Quartus Prime Archive log --	C:/Users/necro/Desktop/STAND/begin_tmp_archive.qarlog
+
+Archive:	C:/Users/necro/Desktop/STAND/begin_tmp_archive.qar
+Date:		Sat Jun 03 02:29:25 2017
+Quartus Prime		17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/necro/Desktop/STAND/D.vhd
+C:/Users/necro/Desktop/STAND/KodirovkaMura.vhd
+C:/Users/necro/Desktop/STAND/KodirovkaS.vhd
+C:/Users/necro/Desktop/STAND/KodirovkaX.vhd
+C:/Users/necro/Desktop/STAND/T_trig.vhd
+C:/Users/necro/Desktop/STAND/Waveform1.vwf
+C:/Users/necro/Desktop/STAND/Waveform2.vwf
+C:/Users/necro/Desktop/STAND/automat_mili.bdf
+C:/Users/necro/Desktop/STAND/automat_myra.bdf
+C:/Users/necro/Desktop/STAND/begin.bdf
+C:/Users/necro/Desktop/STAND/begin.qpf
+C:/Users/necro/Desktop/STAND/begin.qsf
+C:/Users/necro/Desktop/STAND/begin_assignment_defaults.qdf
+C:/Users/necro/Desktop/STAND/count_100.bsf
+C:/Users/necro/Desktop/STAND/count_100.cmp
+C:/Users/necro/Desktop/STAND/count_100.inc
+C:/Users/necro/Desktop/STAND/count_100.qip
+C:/Users/necro/Desktop/STAND/count_100.vhd
+C:/Users/necro/Desktop/STAND/count_100_inst.vhd
+C:/Users/necro/Desktop/STAND/db/begin.sim.cvwf
+C:/Users/necro/Desktop/STAND/del.bsf
+C:/Users/necro/Desktop/STAND/del.cmp
+C:/Users/necro/Desktop/STAND/del.inc
+C:/Users/necro/Desktop/STAND/del.qip
+C:/Users/necro/Desktop/STAND/del.vhd
+C:/Users/necro/Desktop/STAND/del_inst.vhd
+C:/Users/necro/Desktop/STAND/kodirovkaY.vhd
+C:/Users/necro/Desktop/STAND/mura.vhd
+C:/Users/necro/Desktop/STAND/result.vhd
+C:/Users/necro/Desktop/STAND/result_y.vhd
+C:/Users/necro/Desktop/STAND/rom.mif
+C:/Users/necro/Desktop/STAND/roms.mif
+C:/Users/necro/Desktop/STAND/romy.mif
+C:/Users/necro/Desktop/STAND/rs.vhd
+C:/Users/necro/Desktop/STAND/test1.bdf
+C:/Users/necro/Desktop/STAND/test_avt.vwf
+C:/Users/necro/Desktop/STAND/test_avt1.vwf
+C:/Users/necro/Desktop/STAND/test_sequence.bsf
+C:/Users/necro/Desktop/STAND/test_sequence.cmp
+C:/Users/necro/Desktop/STAND/test_sequence.inc
+C:/Users/necro/Desktop/STAND/test_sequence.qip
+C:/Users/necro/Desktop/STAND/test_sequence.vhd
+C:/Users/necro/Desktop/STAND/test_sequence_inst.vhd
+C:/Users/necro/Desktop/STAND/true_S.bsf
+C:/Users/necro/Desktop/STAND/true_S.cmp
+C:/Users/necro/Desktop/STAND/true_S.inc
+C:/Users/necro/Desktop/STAND/true_S.qip
+C:/Users/necro/Desktop/STAND/true_S.vhd
+C:/Users/necro/Desktop/STAND/true_S_inst.vhd
+C:/Users/necro/Desktop/STAND/true_Y.bsf
+C:/Users/necro/Desktop/STAND/true_Y.cmp
+C:/Users/necro/Desktop/STAND/true_Y.inc
+C:/Users/necro/Desktop/STAND/true_Y.qip
+C:/Users/necro/Desktop/STAND/true_Y.vhd
+C:/Users/necro/Desktop/STAND/true_Y_inst.vhd
+C:/Users/necro/Desktop/STAND/true_choice.vhd
+C:/Users/necro/Desktop/STAND/tstand.bdf
+C:/Users/necro/Desktop/STAND/waiting.vhd
+C:/Users/necro/Desktop/STAND/x_choice.bsf
+C:/Users/necro/Desktop/STAND/x_choice.cmp
+C:/Users/necro/Desktop/STAND/x_choice.inc
+C:/Users/necro/Desktop/STAND/x_choice.qip
+C:/Users/necro/Desktop/STAND/x_choice.vhd
+C:/Users/necro/Desktop/STAND/x_choice_inst.vhd
+	======= Total: 64 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Sat Jun 03 02:29:27 2017
+Source archive file:	C:/Users/necro/Desktop/STAND/begin_tmp_archive.qar
+Archive was extracted into	C:/Users/necro/Desktop/STANDG/
+		 - successfully.

@@ -1,0 +1,427 @@
+variant
+1
+s3 s4 s2 sx  y4 y2 y2 yx
+s3 s2 s4 sx  y3 y1 y1 yx
+s1 sx s1 s3  y6 yx y6 y3
+s2 s1 s3 s4  y2 y5 y3 y2
+    8 состояний
+variant
+2
+s4 s2 s2 s1  y3 y2 y5 y6
+sx s4 s1 s3  yx y3 y6 y2
+s4 sx s2 s2  y6 yx y5 y2
+s3 sx s3 s3  y3 yx y4 y3
+    8 состояний
+variant
+3
+s4 s2 s1 sx  y6 y1 y5 yx
+s3 s3 s1 s2  y3 y3 y6 y2
+sx s2 sx s4  yx y2 yx y6
+s4 s2 sx s3  y6 y1 yx y4
+    8 состояний
+variant
+4
+s4 s3 s4 s4  y3 y2 y3 y3
+sx sx sx s1  yx yx yx y4
+s4 s2 s1 s4  y3 y2 y4 y6
+s2 s2 sx s3  y5 y5 yx y5
+    7 состояний
+variant
+5
+sx s1 s2 s2  yx y5 y2 y2
+s2 s1 sx s1  y2 y3 yx y5
+s4 sx s3 s4  y3 yx y5 y5
+s3 s4 s2 sx  y4 y6 y2 yx
+    8 состояний
+variant
+6
+s1 sx s2 s1  y6 yx y5 y6
+s2 s1 s3 s3  y1 y6 y4 y4
+s3 s3 sx sx  y3 y2 yx yx
+s3 sx s4 s2  y6 yx y2 y5
+    8 состояний
+variant
+7
+sx sx s4 s3  yx yx y4 y3
+s2 s4 s2 s2  y1 y6 y5 y5
+s1 s4 s1 sx  y5 y4 y5 yx
+s1 s4 sx s4  y2 y6 yx y4
+    7 состояний
+variant
+8
+sx s1 s2 s2  yx y1 y4 y6
+s3 s3 s1 sx  y3 y6 y1 yx
+s4 sx s2 s4  y4 yx y4 y2
+s3 sx s4 s4  y3 yx y4 y3
+    8 состояний
+variant
+9
+sx s1 s4 s3  yx y5 y2 y3
+s2 s3 s1 s2  y4 y3 y5 y4
+sx s4 s4 s1  yx y6 y6 y5
+sx sx s2 s4  yx yx y4 y1
+    6 состояний
+variant
+10
+s4 s1 s4 s1  y1 y3 y3 y3
+s4 s4 sx s2  y5 y6 yx y2
+sx s1 s3 sx  yx y3 y3 yx
+sx s3 s4 s4  yx y3 y4 y6
+    8 состояний
+variant
+11
+s3 s2 sx s2  y4 y2 yx y2
+s4 s3 sx s2  y6 y4 yx y2
+s3 sx s2 s3  y3 yx y1 y5
+sx s1 s1 s3  yx y3 y3 y6
+    8 состояний
+variant
+12
+s4 s2 s3 sx  y2 y6 y5 yx
+s1 s3 s2 sx  y6 y4 y5 yx
+s3 s4 s1 sx  y2 y2 y3 yx
+sx s4 s2 s3  yx y2 y5 y2
+    8 состояний
+variant
+13
+s2 sx s4 s1  y3 yx y4 y5
+s2 s3 s1 s4  y2 y2 y5 y4
+s1 sx s2 s1  y6 yx y1 y5
+s4 s4 s1 sx  y4 y2 y6 yx
+    8 состояний
+variant
+14
+s3 s3 s4 s1  y5 y5 y4 y1
+s1 s4 s4 s2  y2 y2 y2 y2
+sx sx s3 s2  yx yx y6 y6
+s3 s2 sx sx  y5 y2 yx yx
+    8 состояний
+variant
+15
+s3 s2 s4 s2  y5 y4 y6 y4
+s1 s3 s2 sx  y3 y6 y3 yx
+s1 sx sx s4  y2 yx yx y6
+s1 s1 s3 sx  y3 y3 y2 yx
+    8 состояний
+variant
+16
+sx s3 s1 sx  yx y3 y1 yx
+s3 s1 s4 s1  y4 y1 y5 y6
+s3 sx s2 s2  y4 yx y2 y6
+s4 s4 s4 sx  y5 y6 y5 yx
+    8 состояний
+variant
+17
+s4 sx s3 s3  y6 yx y5 y6
+s3 sx s4 s3  y5 yx y4 y5
+s3 s1 s4 sx  y5 y1 y1 yx
+s3 s3 sx s2  y5 y4 yx y3
+    8 состояний
+variant
+18
+s2 s3 s3 s1  y2 y1 y1 y4
+sx sx s3 s2  yx yx y1 y3
+s1 s4 s3 sx  y1 y3 y1 yx
+sx s2 s1 s4  yx y5 y4 y2
+    8 состояний
+variant
+19
+s4 s4 s4 s1  y5 y3 y3 y1
+s2 s4 s4 sx  y6 y3 y3 yx
+s4 s2 s4 sx  y3 y6 y3 yx
+s1 s4 s2 s3  y5 y5 y4 y2
+    7 состояний
+variant
+20
+s2 sx s2 s1  y5 yx y3 y1 
+s3 s4 s4 sx  y2 y1 y3 yx
+sx s4 sx s4  yx y3 yx y6
+s3 s4 s1 s3  y2 y2 y1 y2
+    8 состояний
+variant
+21
+s2 sx s4 s1  y2 yx y4 y3
+s2 s3 s1 s4  y2 y2 y5 y4
+s1 sx s2 s1  y6 yx y2 y6
+sx s4 s3 sx  yx y2 y4 yx
+    8 состояний
+variant
+22
+sx s1 s2 s2  yx y6 y4 y4
+s2 s3 s1 sx  y4 y6 y1 yx
+s4 sx s2 s4  y4 yx y4 y2
+s3 sx s3 s4  y3 yx y6 y3
+    8 состояний
+variant
+23
+s2 s3 s4 s2  y5 y5 y6 y4
+s2 s4 s1 sx  y4 y2 y3 yx
+sx sx s2 s2  yx yx y4 y4
+s3 s3 s3 s3  y5 y5 y6 y5
+    7 состояний
+variant
+24
+s1 s2 s4 s1  y5 y2 y1 y5
+s2 s3 sx s3  y4 y4 yx y4
+s3 sx s3 s2  y4 yx y4 y3
+s2 s3 s4 sx  y6 y4 y6 yx
+    8 состояний
+variant
+25
+sx s1 s3 s2  yx y6 y2 y2
+s3 s2 sx s2  y6 y2 yx y4
+s2 sx s4 s4  y4 yx y5 y5
+s1 s3 s4 s2  y6 y6 y1 y3
+    8 состояний
+variant
+26
+s1 s1 s3 s2  y1 y1 y6 y6
+s2 s4 s2 sx  y6 y4 y6 yx
+s3 s3 sx s1  y1 y3 yx y1
+s1 s4 s3 s1  y1 y4 y5 y2
+    8 состояний
+variant
+27
+sx sx s1 s3  yx yx y2 y1
+s4 s4 s1 s2  y3 y5 y2 y6
+s2 s3 sx s4  y6 y2 yx y5
+s4 s2 sx s3  y5 y6 yx y4
+    7 состояний
+variant
+28
+s1 s3 s1 s4  y6 y5 y1 y4
+s4 s4 s2 sx  y4 y4 y2 yx
+s2 s3 sx s3  y5 y5 yx y3
+s1 s4 sx s2  y1 y3 yx y2
+    8 состояний
+variant
+29
+s4 sx s1 sx  y6 yx y4 yx
+s4 s3 sx s2  y6 y1 yx y1
+s4 s3 s2 s2  y6 y1 y2 y2
+s4 s4 s2 s4  y2 y2 y3 y1
+    8 состояний
+variant
+30
+s1 sx s3 s3  y3 yx y5 y4
+s3 s1 s2 s3  y4 y3 y6 y5
+s2 s2 s2 sx  y2 y1 y1 yx
+sx s2 s4 sx  yx y3 y2 yx
+    8 состояний
+variant
+31
+s2 s4 s4 s3  y6 y3 y3 y4
+s4 s1 sx sx  y3 y4 yx yx
+s1 sx s3 s4  y5 yx y4 y3
+s3 s2 s3 s2  y2 y6 y4 y1
+    7 состояний
+variant
+32
+s4 s4 s1 s2  y2 y1 y5 y4
+s2 sx s4 s3  y4 yx y3 y6
+s2 sx s3 s4  y4 yx y5 y1
+sx s2 s2 s3  yx y4 y4 y4
+    8 состояний
+variant
+33
+s2 s2 s2 s4  y6 y6 y6 y2
+s3 s3 s4 s1  y1 y5 y1 y3
+s2 s1 s1 sx  y6 y3 y3 yx
+s1 s3 sx s3  y2 y5 yx y5
+    7 состояний
+variant
+34
+s3 s4 sx s4  y4 y4 yx y3
+s2 sx s4 s3  y2 yx y3 y1
+sx s3 s1 s3  yx y1 y5 y1
+s3 s2 sx s1  y1 y2 yx y6
+    8 состояний
+variant
+35
+s1 s4 sx s2  y5 y3 yx y4
+s1 s4 sx s1  y5 y3 yx y1
+s2 sx s4 s4  y2 yx y3 y5
+s3 s4 s3 sx  y6 y3 y2 yx
+    8 состояний
+variant
+36
+sx s2 s2 s4  yx y5 y3 y5
+s3 s3 s3 sx  y6 y6 y6 yx
+s4 sx s1 s1  y1 yx y3 y3
+s2 s2 s2 s4  y3 y3 y1 y1
+    7 состояний
+variant
+37
+s2 s3 sx s2  y5 y5 yx y4 
+s3 s3 s1 sx  y5 y2 y2 yx
+s3 s2 s2 s2  y5 y4 y4 y4
+s1 s4 sx s1  y4 y6 yx y3
+    8 состояний
+variant
+38
+s1 s2 sx s4  y4 y2 yx y6
+s2 s1 s3 s1  y4 y4 y4 y2
+sx s4 s4 s4  yx y6 y6 y6
+sx sx s1 s3  yx yx y2 y5
+    7 состояний
+variant
+39
+s3 s2 s2 sx  y1 y6 y6 yx
+s4 sx s3 s3  y2 yx y6 y3
+sx s3 s4 s1  yx y1 y2 y6
+s1 s3 sx s3  y2 y1 yx y4
+    8 состояний
+variant
+40
+s2 s3 s4 s2  y2 y4 y4 y2
+s2 sx s4 s3  y2 yx y4 y5
+sx s3 s3 s1  yx y1 y3 y2
+s3 s4 s3 s2  y4 y4 y3 y6
+    8 состояний
+variant
+41
+s3 s4 s4 sx  y3 y4 y3 yx
+s3 s1 s2 s2  y3 y1 y1 y2
+s4 sx sx s1  y5 yx yx y1
+s3 s2 sx s3  y3 y3 yx y3
+    8 состояний
+variant
+42
+s4 s1 s1 s4  y3 y4 y4 y1
+sx s2 s1 s3  yx y5 y4 y6
+s4 s4 s2 s3  y3 y3 y5 y6
+s2 s2 sx sx  y6 y4 yx yx
+    8 состояний
+variant
+43
+s4 s4 s2 s1  y6 y1 y2 y1
+s3 sx sx s3  y3 yx yx y5
+s3 s4 s4 sx  y5 y4 y4 yx
+s2 s3 s4 s2  y2 y5 y5 y2
+    7 состояний
+variant
+44
+s4 sx sx s4  y5 yx yx y6
+s2 s3 s2 s2  y2 y4 y2 y4
+s4 s1 s2 sx  y5 y6 y5 yx
+sx s4 s4 s2  yx y6 y2 y5
+    8 состояний
+variant
+45
+s2 s3 s3 sx  y1 y4 y4 yx
+sx s4 s1 s4  yx y6 y5 y6
+s4 s1 s4 s4  y6 y3 y2 y6
+sx s2 s1 s2  yx y1 y4 y3
+    7 состояний
+variant
+46
+s4 s3 s1 s1  y2 y1 y5 y5
+s1 s1 s1 s1  y5 y5 y5 y5
+sx sx s4 sx  yx yx y5 yx
+s3 s2 s3 s2  y2 y3 y3 y6
+    8 состояний
+variant
+47
+s4 sx sx s4  y5 yx yx y6
+s2 s3 s2 s2  y2 y4 y2 y4
+s4 s1 s2 sx  y5 y6 y5 yx
+sx s4 s4 s2  yx y6 y2 y5
+    8 состояний
+variant
+48
+s2 s3 s3 sx  y1 y4 y4 yx
+sx s4 s1 s4  yx y6 y5 y6
+s4 s1 s4 s4  y6 y3 y2 y6
+sx s2 s1 s2  yx y1 y4 y3
+    8 состояний
+variant
+49
+s1 s1 sx sx  y4 y4 yx yx
+s2 s1 s3 s2  y3 y4 y5 y3
+s1 sx s4 s3  y6 yx y1 y2
+s2 sx s4 s1  y4 yx y1 y1
+    8 состояний
+variant
+50
+s4 s3 s1 s1  y2 y1 y5 y5
+s1 s1 s1 s1  y5 y5 y5 y5
+sx sx s4 sx  yx yx y5 yx
+s3 s2 s3 s2  y2 y3 y3 y6
+    8 состояний
+variant
+51
+s1 s3 s1 s4  y6 y5 y4 y4
+s4 s4 s2 sx  y4 y4 y2 yx
+s2 s3 sx s3  y5 y5 yx y3
+s1 s4 sx s2  y3 y3 yx y2
+    9 состояний
+variant
+52
+s4 s3 s1 s4  y3 y1 y3 y4
+s4 s2 s3 s3  y5 y5 y2 y2
+sx sx sx s1  yx yx yx y2
+s1 sx s2 s2  y5 yx y4 y6
+    11 состояний
+variant
+53
+s2 s1 s4 s4  y2 y3 y4 y5
+sx sx s4 s3  yx yx y3 y6
+s4 s2 s1 s2  y1 y5 y3 y1
+s4 sx s4 s1  y1 yx y5 y1
+    10 состояний
+variant
+54
+s4 sx s2 s3  y6 yx y3 y5
+s4 s1 s2 s2  y1 y5 y6 y6
+s3 s4 s1 s2  y2 y6 y4 y1
+s4 s3 sx s3  y5 y3 yx y2
+    11 состояний
+variant
+55
+s2 sx s3 s1  y3 yx y4 y3
+s2 sx s1 s2  y6 yx y6 y1
+s4 s3 s1 s4  y3 y2 y1 y2
+s4 sx s4 s2  y2 yx y5 y3
+    11 состояний
+variant
+56
+s4 s1 s4 s1  y6 y3 y1 y2
+sx s2 sx s3  yx y3 yx y6
+s4 s1 s1 s3  y4 y3 y3 y6
+s2 s1 s2 sx  y1 y4 y4 yx
+    10 состояний
+variant
+57
+s3 sx s2 s2  y2 yx y6 y1
+sx s4 s4 s3  yx y4 y3 y6
+s2 s2 sx s1  y4 y3 yx y3
+sx s4 s3 s1  yx y6 y4 y6
+    12 состояний
+variant
+58
+s2 s2 s3 s2  y1 y6 y3 y1
+s2 s4 s1 s4  y2 y1 y5 y5
+s1 s3 s1 s4  y4 y5 y5 y2
+sx s2 s2 s3  yx y2 y6 y4
+    11 состояний
+variant
+60
+s4 s2 s3 sx  y2 y6 y5 yx
+s1 s3 s2 sx  y6 y4 y5 yx
+s3 s4 s1 sx  y2 y2 y3 yx
+sx s4 s2 s3  yx y2 y5 y2
+    8 состояний
+variant
+61
+s2 sx s4 s1  y3 yx y4 y3
+s2 s3 s1 s4  y2 y2 y5 y4
+s1 sx s2 s1  y6 yx y1 y4
+s4 s4 s1 sx  y3 y2 y4 yx
+    11 состояний
+variant
+62
+sx s1 s2 s2  yx y6 y4 y6
+s3 s3 s1 sx  y3 y6 y1 yx
+s4 sx s2 s4  y4 yx y4 y2
+s3 sx s4 s4  y3 yx y4 y3
+    9 состояний

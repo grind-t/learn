@@ -1,0 +1,961 @@
+Simulator report for tstand
+Tue Jul 03 14:20:34 2018
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |tstand|true_Y:inst51|altsyncram:altsyncram_component|altsyncram_2f81:auto_generated|ALTSYNCRAM
+  6. |tstand|true_S:inst50|altsyncram:altsyncram_component|altsyncram_re81:auto_generated|ALTSYNCRAM
+  7. |tstand|test_sequence:inst3|altsyncram:altsyncram_component|altsyncram_5ik3:auto_generated|ALTSYNCRAM
+  8. Coverage Summary
+  9. Complete 1/0-Value Coverage
+ 10. Missing 1-Value Coverage
+ 11. Missing 0-Value Coverage
+ 12. Simulator INI Usage
+ 13. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 4.0 us       ;
+; Simulation Netlist Size     ; 496 nodes    ;
+; Simulation Coverage         ;      23.85 % ;
+; Total Number of Transitions ; 7398         ;
+; Simulation Breakpoints      ; 3            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; qwe123.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++-------------------------------------------------------------------------------------------------+
+; |tstand|true_Y:inst51|altsyncram:altsyncram_component|altsyncram_2f81:auto_generated|ALTSYNCRAM ;
++-------------------------------------------------------------------------------------------------+
+Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
+
+
++-------------------------------------------------------------------------------------------------+
+; |tstand|true_S:inst50|altsyncram:altsyncram_component|altsyncram_re81:auto_generated|ALTSYNCRAM ;
++-------------------------------------------------------------------------------------------------+
+Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
+
+
++-------------------------------------------------------------------------------------------------------+
+; |tstand|test_sequence:inst3|altsyncram:altsyncram_component|altsyncram_5ik3:auto_generated|ALTSYNCRAM ;
++-------------------------------------------------------------------------------------------------------+
+Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      23.85 % ;
+; Total nodes checked                                 ; 496          ;
+; Total output ports checked                          ; 499          ;
+; Total output ports with complete 1/0-value coverage ; 119          ;
+; Total output ports with no 1/0-value coverage       ; 278          ;
+; Total output ports with no 1-value coverage         ; 373          ;
+; Total output ports with no 0-value coverage         ; 285          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                             ;
++---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                               ; Output Port Name                                                                                           ; Output Port Type ;
++---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+------------------+
+; |tstand|clk                                                                                             ; |tstand|clk                                                                                                ; out              ;
+; |tstand|t1                                                                                              ; |tstand|t1                                                                                                 ; pin_out          ;
+; |tstand|x1                                                                                              ; |tstand|x1                                                                                                 ; pin_out          ;
+; |tstand|x2                                                                                              ; |tstand|x2                                                                                                 ; pin_out          ;
+; |tstand|t2                                                                                              ; |tstand|t2                                                                                                 ; pin_out          ;
+; |tstand|s_true[1]                                                                                       ; |tstand|s_true[1]                                                                                          ; pin_out          ;
+; |tstand|s_true[0]                                                                                       ; |tstand|s_true[0]                                                                                          ; pin_out          ;
+; |tstand|y1                                                                                              ; |tstand|y1                                                                                                 ; pin_out          ;
+; |tstand|y2                                                                                              ; |tstand|y2                                                                                                 ; pin_out          ;
+; |tstand|y3                                                                                              ; |tstand|y3                                                                                                 ; pin_out          ;
+; |tstand|y_true[2]                                                                                       ; |tstand|y_true[2]                                                                                          ; pin_out          ;
+; |tstand|y_true[1]                                                                                       ; |tstand|y_true[1]                                                                                          ; pin_out          ;
+; |tstand|y_true[0]                                                                                       ; |tstand|y_true[0]                                                                                          ; pin_out          ;
+; |tstand|yy1                                                                                             ; |tstand|yy1                                                                                                ; pin_out          ;
+; |tstand|yy2                                                                                             ; |tstand|yy2                                                                                                ; pin_out          ;
+; |tstand|yy3                                                                                             ; |tstand|yy3                                                                                                ; pin_out          ;
+; |tstand|tt1                                                                                             ; |tstand|tt1                                                                                                ; pin_out          ;
+; |tstand|tt2                                                                                             ; |tstand|tt2                                                                                                ; pin_out          ;
+; |tstand|tt3                                                                                             ; |tstand|tt3                                                                                                ; pin_out          ;
+; |tstand|avtomat_myra:inst1|inst                                                                         ; |tstand|avtomat_myra:inst1|inst                                                                            ; regout           ;
+; |tstand|avtomat_myra:inst1|inst~0                                                                       ; |tstand|avtomat_myra:inst1|inst~0                                                                          ; out0             ;
+; |tstand|avtomat_myra:inst1|inst~1                                                                       ; |tstand|avtomat_myra:inst1|inst~1                                                                          ; out0             ;
+; |tstand|avtomat_myra:inst1|inst~2                                                                       ; |tstand|avtomat_myra:inst1|inst~2                                                                          ; out0             ;
+; |tstand|avtomat_myra:inst1|inst18                                                                       ; |tstand|avtomat_myra:inst1|inst18                                                                          ; out0             ;
+; |tstand|avtomat_myra:inst1|inst20                                                                       ; |tstand|avtomat_myra:inst1|inst20                                                                          ; out0             ;
+; |tstand|avtomat_myra:inst1|inst1                                                                        ; |tstand|avtomat_myra:inst1|inst1                                                                           ; regout           ;
+; |tstand|avtomat_myra:inst1|inst21                                                                       ; |tstand|avtomat_myra:inst1|inst21                                                                          ; out0             ;
+; |tstand|avtomat_myra:inst1|inst23                                                                       ; |tstand|avtomat_myra:inst1|inst23                                                                          ; out0             ;
+; |tstand|avtomat_myra:inst1|inst2                                                                        ; |tstand|avtomat_myra:inst1|inst2                                                                           ; regout           ;
+; |tstand|avtomat_myra:inst1|inst22                                                                       ; |tstand|avtomat_myra:inst1|inst22                                                                          ; out0             ;
+; |tstand|avtomat_myra:inst1|inst29                                                                       ; |tstand|avtomat_myra:inst1|inst29                                                                          ; out0             ;
+; |tstand|avtomat_myra:inst1|inst31                                                                       ; |tstand|avtomat_myra:inst1|inst31                                                                          ; out0             ;
+; |tstand|avtomat_myra:inst1|inst30                                                                       ; |tstand|avtomat_myra:inst1|inst30                                                                          ; out0             ;
+; |tstand|avtomat_myra:inst1|inst32                                                                       ; |tstand|avtomat_myra:inst1|inst32                                                                          ; out0             ;
+; |tstand|avtomat_myra:inst1|inst33                                                                       ; |tstand|avtomat_myra:inst1|inst33                                                                          ; out0             ;
+; |tstand|avtomat_myra:inst1|inst34                                                                       ; |tstand|avtomat_myra:inst1|inst34                                                                          ; out0             ;
+; |tstand|avtomat_myra:inst1|inst27                                                                       ; |tstand|avtomat_myra:inst1|inst27                                                                          ; out0             ;
+; |tstand|avtomat_myra:inst1|inst24                                                                       ; |tstand|avtomat_myra:inst1|inst24                                                                          ; out0             ;
+; |tstand|avtomat_myra:inst1|inst28                                                                       ; |tstand|avtomat_myra:inst1|inst28                                                                          ; out0             ;
+; |tstand|avtomat_myra:inst1|inst26                                                                       ; |tstand|avtomat_myra:inst1|inst26                                                                          ; out0             ;
+; |tstand|avtomat_myra:inst1|inst25                                                                       ; |tstand|avtomat_myra:inst1|inst25                                                                          ; out0             ;
+; |tstand|avtomat_myra:inst1|inst19                                                                       ; |tstand|avtomat_myra:inst1|inst19                                                                          ; out0             ;
+; |tstand|avtomat_myra:inst1|inst6                                                                        ; |tstand|avtomat_myra:inst1|inst6                                                                           ; out0             ;
+; |tstand|avtomat_myra:inst1|inst10                                                                       ; |tstand|avtomat_myra:inst1|inst10                                                                          ; out0             ;
+; |tstand|avtomat_myra:inst1|inst7                                                                        ; |tstand|avtomat_myra:inst1|inst7                                                                           ; out0             ;
+; |tstand|avtomat_myra:inst1|inst11                                                                       ; |tstand|avtomat_myra:inst1|inst11                                                                          ; out0             ;
+; |tstand|avtomat_myra:inst1|inst12                                                                       ; |tstand|avtomat_myra:inst1|inst12                                                                          ; out0             ;
+; |tstand|avtomat_myra:inst1|inst14                                                                       ; |tstand|avtomat_myra:inst1|inst14                                                                          ; out0             ;
+; |tstand|avtomat_myra:inst1|inst13                                                                       ; |tstand|avtomat_myra:inst1|inst13                                                                          ; out0             ;
+; |tstand|mura:inst78|Result_mura~0                                                                       ; |tstand|mura:inst78|Result_mura~0                                                                          ; out              ;
+; |tstand|true_Y:inst51|altsyncram:altsyncram_component|altsyncram_2f81:auto_generated|ram_block1a0       ; |tstand|true_Y:inst51|altsyncram:altsyncram_component|altsyncram_2f81:auto_generated|q_a[0]                ; portadataout0    ;
+; |tstand|true_Y:inst51|altsyncram:altsyncram_component|altsyncram_2f81:auto_generated|ram_block1a1       ; |tstand|true_Y:inst51|altsyncram:altsyncram_component|altsyncram_2f81:auto_generated|q_a[1]                ; portadataout0    ;
+; |tstand|true_Y:inst51|altsyncram:altsyncram_component|altsyncram_2f81:auto_generated|ram_block1a2       ; |tstand|true_Y:inst51|altsyncram:altsyncram_component|altsyncram_2f81:auto_generated|q_a[2]                ; portadataout0    ;
+; |tstand|del:inst41|lpm_ff:lpm_ff_component|dffs[2]                                                      ; |tstand|del:inst41|lpm_ff:lpm_ff_component|dffs[2]                                                         ; regout           ;
+; |tstand|del:inst41|lpm_ff:lpm_ff_component|dffs[1]                                                      ; |tstand|del:inst41|lpm_ff:lpm_ff_component|dffs[1]                                                         ; regout           ;
+; |tstand|del:inst41|lpm_ff:lpm_ff_component|dffs[0]                                                      ; |tstand|del:inst41|lpm_ff:lpm_ff_component|dffs[0]                                                         ; regout           ;
+; |tstand|comp_y:inst39|Result_y~0                                                                        ; |tstand|comp_y:inst39|Result_y~0                                                                           ; out              ;
+; |tstand|true_S:inst50|altsyncram:altsyncram_component|altsyncram_re81:auto_generated|ram_block1a0       ; |tstand|true_S:inst50|altsyncram:altsyncram_component|altsyncram_re81:auto_generated|q_a[0]                ; portadataout0    ;
+; |tstand|true_S:inst50|altsyncram:altsyncram_component|altsyncram_re81:auto_generated|ram_block1a1       ; |tstand|true_S:inst50|altsyncram:altsyncram_component|altsyncram_re81:auto_generated|q_a[1]                ; portadataout0    ;
+; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita0   ; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita0      ; combout          ;
+; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita0   ; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita0~COUT ; cout             ;
+; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita1   ; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita1      ; combout          ;
+; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita1   ; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita1~COUT ; cout             ;
+; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita2   ; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita2      ; combout          ;
+; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita2   ; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita2~COUT ; cout             ;
+; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita3   ; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita3      ; combout          ;
+; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita3   ; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita3~COUT ; cout             ;
+; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita4   ; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita4      ; combout          ;
+; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita4   ; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita4~COUT ; cout             ;
+; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita5   ; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita5      ; combout          ;
+; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita5   ; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita5~COUT ; cout             ;
+; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita6   ; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_comb_bita6      ; combout          ;
+; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_reg_bit[5]   ; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_reg_bit[5]      ; regout           ;
+; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_reg_bit[4]   ; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_reg_bit[4]      ; regout           ;
+; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_reg_bit[3]   ; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_reg_bit[3]      ; regout           ;
+; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_reg_bit[2]   ; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_reg_bit[2]      ; regout           ;
+; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_reg_bit[1]   ; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_reg_bit[1]      ; regout           ;
+; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_reg_bit[0]   ; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_reg_bit[0]      ; regout           ;
+; |tstand|test_sequence:inst3|altsyncram:altsyncram_component|altsyncram_5ik3:auto_generated|ram_block1a0 ; |tstand|test_sequence:inst3|altsyncram:altsyncram_component|altsyncram_5ik3:auto_generated|q_a[0]          ; portadataout0    ;
+; |tstand|test_sequence:inst3|altsyncram:altsyncram_component|altsyncram_5ik3:auto_generated|ram_block1a1 ; |tstand|test_sequence:inst3|altsyncram:altsyncram_component|altsyncram_5ik3:auto_generated|q_a[1]          ; portadataout0    ;
+; |tstand|avtomat_mili:inst|inst16                                                                        ; |tstand|avtomat_mili:inst|inst16                                                                           ; out0             ;
+; |tstand|avtomat_mili:inst|inst19                                                                        ; |tstand|avtomat_mili:inst|inst19                                                                           ; out0             ;
+; |tstand|avtomat_mili:inst|inst                                                                          ; |tstand|avtomat_mili:inst|inst                                                                             ; regout           ;
+; |tstand|avtomat_mili:inst|inst11                                                                        ; |tstand|avtomat_mili:inst|inst11                                                                           ; out0             ;
+; |tstand|avtomat_mili:inst|inst12                                                                        ; |tstand|avtomat_mili:inst|inst12                                                                           ; out0             ;
+; |tstand|avtomat_mili:inst|inst1                                                                         ; |tstand|avtomat_mili:inst|inst1                                                                            ; regout           ;
+; |tstand|avtomat_mili:inst|inst1~0                                                                       ; |tstand|avtomat_mili:inst|inst1~0                                                                          ; out0             ;
+; |tstand|avtomat_mili:inst|inst1~1                                                                       ; |tstand|avtomat_mili:inst|inst1~1                                                                          ; out0             ;
+; |tstand|avtomat_mili:inst|inst1~2                                                                       ; |tstand|avtomat_mili:inst|inst1~2                                                                          ; out0             ;
+; |tstand|avtomat_mili:inst|inst4                                                                         ; |tstand|avtomat_mili:inst|inst4                                                                            ; out0             ;
+; |tstand|avtomat_mili:inst|inst5                                                                         ; |tstand|avtomat_mili:inst|inst5                                                                            ; out0             ;
+; |tstand|avtomat_mili:inst|inst6                                                                         ; |tstand|avtomat_mili:inst|inst6                                                                            ; out0             ;
+; |tstand|avtomat_mili:inst|inst7                                                                         ; |tstand|avtomat_mili:inst|inst7                                                                            ; out0             ;
+; |tstand|avtomat_mili:inst|inst10                                                                        ; |tstand|avtomat_mili:inst|inst10                                                                           ; out0             ;
+; |tstand|avtomat_mili:inst|inst14                                                                        ; |tstand|avtomat_mili:inst|inst14                                                                           ; out0             ;
+; |tstand|avtomat_mili:inst|inst15                                                                        ; |tstand|avtomat_mili:inst|inst15                                                                           ; out0             ;
+; |tstand|avtomat_mili:inst|inst13                                                                        ; |tstand|avtomat_mili:inst|inst13                                                                           ; out0             ;
+; |tstand|avtomat_mili:inst|inst21                                                                        ; |tstand|avtomat_mili:inst|inst21                                                                           ; out0             ;
+; |tstand|avtomat_mili:inst|inst22                                                                        ; |tstand|avtomat_mili:inst|inst22                                                                           ; out0             ;
+; |tstand|avtomat_mili:inst|inst20                                                                        ; |tstand|avtomat_mili:inst|inst20                                                                           ; out0             ;
+; |tstand|avtomat_mili:inst|inst17                                                                        ; |tstand|avtomat_mili:inst|inst17                                                                           ; out0             ;
+; |tstand|avtomat_mili:inst|inst24                                                                        ; |tstand|avtomat_mili:inst|inst24                                                                           ; out0             ;
+; |tstand|avtomat_mili:inst|inst23                                                                        ; |tstand|avtomat_mili:inst|inst23                                                                           ; out0             ;
+; |tstand|avtomat_mili:inst|inst18                                                                        ; |tstand|avtomat_mili:inst|inst18                                                                           ; out0             ;
+; |tstand|avtomat_mili:inst|inst26                                                                        ; |tstand|avtomat_mili:inst|inst26                                                                           ; out0             ;
+; |tstand|avtomat_mili:inst|inst27                                                                        ; |tstand|avtomat_mili:inst|inst27                                                                           ; out0             ;
+; |tstand|avtomat_mili:inst|inst25                                                                        ; |tstand|avtomat_mili:inst|inst25                                                                           ; out0             ;
+; |tstand|comp_s:inst55|Result~0                                                                          ; |tstand|comp_s:inst55|Result~0                                                                             ; out              ;
+; |tstand|mura:inst78|Equal0~0                                                                            ; |tstand|mura:inst78|Equal0~0                                                                               ; out0             ;
+; |tstand|mura:inst78|Equal0~1                                                                            ; |tstand|mura:inst78|Equal0~1                                                                               ; out0             ;
+; |tstand|mura:inst78|Equal0~2                                                                            ; |tstand|mura:inst78|Equal0~2                                                                               ; out0             ;
+; |tstand|mura:inst78|Equal0~3                                                                            ; |tstand|mura:inst78|Equal0~3                                                                               ; out0             ;
+; |tstand|comp_y:inst39|Equal0~0                                                                          ; |tstand|comp_y:inst39|Equal0~0                                                                             ; out0             ;
+; |tstand|comp_y:inst39|Equal0~1                                                                          ; |tstand|comp_y:inst39|Equal0~1                                                                             ; out0             ;
+; |tstand|comp_y:inst39|Equal0~2                                                                          ; |tstand|comp_y:inst39|Equal0~2                                                                             ; out0             ;
+; |tstand|comp_y:inst39|Equal0~3                                                                          ; |tstand|comp_y:inst39|Equal0~3                                                                             ; out0             ;
+; |tstand|comp_s:inst55|Equal0~0                                                                          ; |tstand|comp_s:inst55|Equal0~0                                                                             ; out0             ;
+; |tstand|comp_s:inst55|Equal0~1                                                                          ; |tstand|comp_s:inst55|Equal0~1                                                                             ; out0             ;
+; |tstand|comp_s:inst55|Equal0~2                                                                          ; |tstand|comp_s:inst55|Equal0~2                                                                             ; out0             ;
++---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                   ;
++------------------------------------+------------------------------------+------------------+
+; Node Name                          ; Output Port Name                   ; Output Port Type ;
++------------------------------------+------------------------------------+------------------+
+; |tstand|rez                        ; |tstand|rez                        ; pin_out          ;
+; |tstand|rez_y                      ; |tstand|rez_y                      ; pin_out          ;
+; |tstand|rez_mura                   ; |tstand|rez_mura                   ; pin_out          ;
+; |tstand|mura:inst78|count[8]       ; |tstand|mura:inst78|count[8]       ; regout           ;
+; |tstand|mura:inst78|count[7]       ; |tstand|mura:inst78|count[7]       ; regout           ;
+; |tstand|mura:inst78|count[6]       ; |tstand|mura:inst78|count[6]       ; regout           ;
+; |tstand|mura:inst78|count[5]       ; |tstand|mura:inst78|count[5]       ; regout           ;
+; |tstand|mura:inst78|count[4]       ; |tstand|mura:inst78|count[4]       ; regout           ;
+; |tstand|mura:inst78|count[3]       ; |tstand|mura:inst78|count[3]       ; regout           ;
+; |tstand|mura:inst78|count[2]       ; |tstand|mura:inst78|count[2]       ; regout           ;
+; |tstand|mura:inst78|count[1]       ; |tstand|mura:inst78|count[1]       ; regout           ;
+; |tstand|mura:inst78|count[9]       ; |tstand|mura:inst78|count[9]       ; regout           ;
+; |tstand|mura:inst78|count[10]      ; |tstand|mura:inst78|count[10]      ; regout           ;
+; |tstand|mura:inst78|count[11]      ; |tstand|mura:inst78|count[11]      ; regout           ;
+; |tstand|mura:inst78|count[12]      ; |tstand|mura:inst78|count[12]      ; regout           ;
+; |tstand|mura:inst78|count[13]      ; |tstand|mura:inst78|count[13]      ; regout           ;
+; |tstand|mura:inst78|count[14]      ; |tstand|mura:inst78|count[14]      ; regout           ;
+; |tstand|mura:inst78|count[15]      ; |tstand|mura:inst78|count[15]      ; regout           ;
+; |tstand|mura:inst78|count[16]      ; |tstand|mura:inst78|count[16]      ; regout           ;
+; |tstand|mura:inst78|count[17]      ; |tstand|mura:inst78|count[17]      ; regout           ;
+; |tstand|mura:inst78|count[18]      ; |tstand|mura:inst78|count[18]      ; regout           ;
+; |tstand|mura:inst78|count[19]      ; |tstand|mura:inst78|count[19]      ; regout           ;
+; |tstand|mura:inst78|count[20]      ; |tstand|mura:inst78|count[20]      ; regout           ;
+; |tstand|mura:inst78|count[21]      ; |tstand|mura:inst78|count[21]      ; regout           ;
+; |tstand|mura:inst78|count[22]      ; |tstand|mura:inst78|count[22]      ; regout           ;
+; |tstand|mura:inst78|count[23]      ; |tstand|mura:inst78|count[23]      ; regout           ;
+; |tstand|mura:inst78|count[24]      ; |tstand|mura:inst78|count[24]      ; regout           ;
+; |tstand|mura:inst78|count[25]      ; |tstand|mura:inst78|count[25]      ; regout           ;
+; |tstand|mura:inst78|count[26]      ; |tstand|mura:inst78|count[26]      ; regout           ;
+; |tstand|mura:inst78|count[27]      ; |tstand|mura:inst78|count[27]      ; regout           ;
+; |tstand|mura:inst78|count[28]      ; |tstand|mura:inst78|count[28]      ; regout           ;
+; |tstand|mura:inst78|count[29]      ; |tstand|mura:inst78|count[29]      ; regout           ;
+; |tstand|mura:inst78|count[30]      ; |tstand|mura:inst78|count[30]      ; regout           ;
+; |tstand|mura:inst78|count[31]      ; |tstand|mura:inst78|count[31]      ; regout           ;
+; |tstand|mura:inst78|Result_mura    ; |tstand|mura:inst78|Result_mura    ; regout           ;
+; |tstand|comp_y:inst39|count[8]     ; |tstand|comp_y:inst39|count[8]     ; regout           ;
+; |tstand|comp_y:inst39|count[7]     ; |tstand|comp_y:inst39|count[7]     ; regout           ;
+; |tstand|comp_y:inst39|count[6]     ; |tstand|comp_y:inst39|count[6]     ; regout           ;
+; |tstand|comp_y:inst39|count[5]     ; |tstand|comp_y:inst39|count[5]     ; regout           ;
+; |tstand|comp_y:inst39|count[4]     ; |tstand|comp_y:inst39|count[4]     ; regout           ;
+; |tstand|comp_y:inst39|count[3]     ; |tstand|comp_y:inst39|count[3]     ; regout           ;
+; |tstand|comp_y:inst39|count[2]     ; |tstand|comp_y:inst39|count[2]     ; regout           ;
+; |tstand|comp_y:inst39|count[9]     ; |tstand|comp_y:inst39|count[9]     ; regout           ;
+; |tstand|comp_y:inst39|count[10]    ; |tstand|comp_y:inst39|count[10]    ; regout           ;
+; |tstand|comp_y:inst39|count[11]    ; |tstand|comp_y:inst39|count[11]    ; regout           ;
+; |tstand|comp_y:inst39|count[12]    ; |tstand|comp_y:inst39|count[12]    ; regout           ;
+; |tstand|comp_y:inst39|count[13]    ; |tstand|comp_y:inst39|count[13]    ; regout           ;
+; |tstand|comp_y:inst39|count[14]    ; |tstand|comp_y:inst39|count[14]    ; regout           ;
+; |tstand|comp_y:inst39|count[15]    ; |tstand|comp_y:inst39|count[15]    ; regout           ;
+; |tstand|comp_y:inst39|count[16]    ; |tstand|comp_y:inst39|count[16]    ; regout           ;
+; |tstand|comp_y:inst39|count[17]    ; |tstand|comp_y:inst39|count[17]    ; regout           ;
+; |tstand|comp_y:inst39|count[18]    ; |tstand|comp_y:inst39|count[18]    ; regout           ;
+; |tstand|comp_y:inst39|count[19]    ; |tstand|comp_y:inst39|count[19]    ; regout           ;
+; |tstand|comp_y:inst39|count[20]    ; |tstand|comp_y:inst39|count[20]    ; regout           ;
+; |tstand|comp_y:inst39|count[21]    ; |tstand|comp_y:inst39|count[21]    ; regout           ;
+; |tstand|comp_y:inst39|count[22]    ; |tstand|comp_y:inst39|count[22]    ; regout           ;
+; |tstand|comp_y:inst39|count[23]    ; |tstand|comp_y:inst39|count[23]    ; regout           ;
+; |tstand|comp_y:inst39|count[24]    ; |tstand|comp_y:inst39|count[24]    ; regout           ;
+; |tstand|comp_y:inst39|count[25]    ; |tstand|comp_y:inst39|count[25]    ; regout           ;
+; |tstand|comp_y:inst39|count[26]    ; |tstand|comp_y:inst39|count[26]    ; regout           ;
+; |tstand|comp_y:inst39|count[27]    ; |tstand|comp_y:inst39|count[27]    ; regout           ;
+; |tstand|comp_y:inst39|count[28]    ; |tstand|comp_y:inst39|count[28]    ; regout           ;
+; |tstand|comp_y:inst39|count[29]    ; |tstand|comp_y:inst39|count[29]    ; regout           ;
+; |tstand|comp_y:inst39|count[30]    ; |tstand|comp_y:inst39|count[30]    ; regout           ;
+; |tstand|comp_y:inst39|count[31]    ; |tstand|comp_y:inst39|count[31]    ; regout           ;
+; |tstand|comp_y:inst39|Result_y     ; |tstand|comp_y:inst39|Result_y     ; regout           ;
+; |tstand|comp_s:inst55|count[8]     ; |tstand|comp_s:inst55|count[8]     ; regout           ;
+; |tstand|comp_s:inst55|count[7]     ; |tstand|comp_s:inst55|count[7]     ; regout           ;
+; |tstand|comp_s:inst55|count[6]     ; |tstand|comp_s:inst55|count[6]     ; regout           ;
+; |tstand|comp_s:inst55|count[5]     ; |tstand|comp_s:inst55|count[5]     ; regout           ;
+; |tstand|comp_s:inst55|count[4]     ; |tstand|comp_s:inst55|count[4]     ; regout           ;
+; |tstand|comp_s:inst55|count[3]     ; |tstand|comp_s:inst55|count[3]     ; regout           ;
+; |tstand|comp_s:inst55|count[2]     ; |tstand|comp_s:inst55|count[2]     ; regout           ;
+; |tstand|comp_s:inst55|count[1]     ; |tstand|comp_s:inst55|count[1]     ; regout           ;
+; |tstand|comp_s:inst55|count[9]     ; |tstand|comp_s:inst55|count[9]     ; regout           ;
+; |tstand|comp_s:inst55|count[10]    ; |tstand|comp_s:inst55|count[10]    ; regout           ;
+; |tstand|comp_s:inst55|count[11]    ; |tstand|comp_s:inst55|count[11]    ; regout           ;
+; |tstand|comp_s:inst55|count[12]    ; |tstand|comp_s:inst55|count[12]    ; regout           ;
+; |tstand|comp_s:inst55|count[13]    ; |tstand|comp_s:inst55|count[13]    ; regout           ;
+; |tstand|comp_s:inst55|count[14]    ; |tstand|comp_s:inst55|count[14]    ; regout           ;
+; |tstand|comp_s:inst55|count[15]    ; |tstand|comp_s:inst55|count[15]    ; regout           ;
+; |tstand|comp_s:inst55|count[16]    ; |tstand|comp_s:inst55|count[16]    ; regout           ;
+; |tstand|comp_s:inst55|count[17]    ; |tstand|comp_s:inst55|count[17]    ; regout           ;
+; |tstand|comp_s:inst55|count[18]    ; |tstand|comp_s:inst55|count[18]    ; regout           ;
+; |tstand|comp_s:inst55|count[19]    ; |tstand|comp_s:inst55|count[19]    ; regout           ;
+; |tstand|comp_s:inst55|count[20]    ; |tstand|comp_s:inst55|count[20]    ; regout           ;
+; |tstand|comp_s:inst55|count[21]    ; |tstand|comp_s:inst55|count[21]    ; regout           ;
+; |tstand|comp_s:inst55|count[22]    ; |tstand|comp_s:inst55|count[22]    ; regout           ;
+; |tstand|comp_s:inst55|count[23]    ; |tstand|comp_s:inst55|count[23]    ; regout           ;
+; |tstand|comp_s:inst55|count[24]    ; |tstand|comp_s:inst55|count[24]    ; regout           ;
+; |tstand|comp_s:inst55|count[25]    ; |tstand|comp_s:inst55|count[25]    ; regout           ;
+; |tstand|comp_s:inst55|count[26]    ; |tstand|comp_s:inst55|count[26]    ; regout           ;
+; |tstand|comp_s:inst55|count[27]    ; |tstand|comp_s:inst55|count[27]    ; regout           ;
+; |tstand|comp_s:inst55|count[28]    ; |tstand|comp_s:inst55|count[28]    ; regout           ;
+; |tstand|comp_s:inst55|count[29]    ; |tstand|comp_s:inst55|count[29]    ; regout           ;
+; |tstand|comp_s:inst55|count[30]    ; |tstand|comp_s:inst55|count[30]    ; regout           ;
+; |tstand|comp_s:inst55|count[31]    ; |tstand|comp_s:inst55|count[31]    ; regout           ;
+; |tstand|comp_s:inst55|Result       ; |tstand|comp_s:inst55|Result       ; regout           ;
+; |tstand|mura:inst78|LessThan0~0    ; |tstand|mura:inst78|LessThan0~0    ; out0             ;
+; |tstand|mura:inst78|LessThan0~1    ; |tstand|mura:inst78|LessThan0~1    ; out0             ;
+; |tstand|mura:inst78|LessThan0~2    ; |tstand|mura:inst78|LessThan0~2    ; out0             ;
+; |tstand|mura:inst78|LessThan0~3    ; |tstand|mura:inst78|LessThan0~3    ; out0             ;
+; |tstand|mura:inst78|LessThan0~4    ; |tstand|mura:inst78|LessThan0~4    ; out0             ;
+; |tstand|mura:inst78|LessThan0~5    ; |tstand|mura:inst78|LessThan0~5    ; out0             ;
+; |tstand|mura:inst78|LessThan0~6    ; |tstand|mura:inst78|LessThan0~6    ; out0             ;
+; |tstand|mura:inst78|LessThan0~7    ; |tstand|mura:inst78|LessThan0~7    ; out0             ;
+; |tstand|mura:inst78|LessThan0~8    ; |tstand|mura:inst78|LessThan0~8    ; out0             ;
+; |tstand|mura:inst78|LessThan0~9    ; |tstand|mura:inst78|LessThan0~9    ; out0             ;
+; |tstand|mura:inst78|LessThan0~10   ; |tstand|mura:inst78|LessThan0~10   ; out0             ;
+; |tstand|mura:inst78|LessThan0~11   ; |tstand|mura:inst78|LessThan0~11   ; out0             ;
+; |tstand|mura:inst78|LessThan0~12   ; |tstand|mura:inst78|LessThan0~12   ; out0             ;
+; |tstand|mura:inst78|LessThan0~13   ; |tstand|mura:inst78|LessThan0~13   ; out0             ;
+; |tstand|mura:inst78|LessThan0~14   ; |tstand|mura:inst78|LessThan0~14   ; out0             ;
+; |tstand|mura:inst78|LessThan0~15   ; |tstand|mura:inst78|LessThan0~15   ; out0             ;
+; |tstand|mura:inst78|LessThan0~16   ; |tstand|mura:inst78|LessThan0~16   ; out0             ;
+; |tstand|mura:inst78|LessThan0~17   ; |tstand|mura:inst78|LessThan0~17   ; out0             ;
+; |tstand|mura:inst78|LessThan0~18   ; |tstand|mura:inst78|LessThan0~18   ; out0             ;
+; |tstand|mura:inst78|LessThan0~19   ; |tstand|mura:inst78|LessThan0~19   ; out0             ;
+; |tstand|mura:inst78|LessThan0~20   ; |tstand|mura:inst78|LessThan0~20   ; out0             ;
+; |tstand|mura:inst78|LessThan0~21   ; |tstand|mura:inst78|LessThan0~21   ; out0             ;
+; |tstand|mura:inst78|LessThan0~22   ; |tstand|mura:inst78|LessThan0~22   ; out0             ;
+; |tstand|mura:inst78|LessThan0~23   ; |tstand|mura:inst78|LessThan0~23   ; out0             ;
+; |tstand|mura:inst78|LessThan0~24   ; |tstand|mura:inst78|LessThan0~24   ; out0             ;
+; |tstand|mura:inst78|LessThan0~25   ; |tstand|mura:inst78|LessThan0~25   ; out0             ;
+; |tstand|mura:inst78|LessThan0~26   ; |tstand|mura:inst78|LessThan0~26   ; out0             ;
+; |tstand|mura:inst78|LessThan0~27   ; |tstand|mura:inst78|LessThan0~27   ; out0             ;
+; |tstand|mura:inst78|LessThan0~28   ; |tstand|mura:inst78|LessThan0~28   ; out0             ;
+; |tstand|mura:inst78|LessThan0~29   ; |tstand|mura:inst78|LessThan0~29   ; out0             ;
+; |tstand|mura:inst78|LessThan0~30   ; |tstand|mura:inst78|LessThan0~30   ; out0             ;
+; |tstand|mura:inst78|LessThan0~31   ; |tstand|mura:inst78|LessThan0~31   ; out0             ;
+; |tstand|comp_y:inst39|LessThan0~0  ; |tstand|comp_y:inst39|LessThan0~0  ; out0             ;
+; |tstand|comp_y:inst39|LessThan0~1  ; |tstand|comp_y:inst39|LessThan0~1  ; out0             ;
+; |tstand|comp_y:inst39|LessThan0~2  ; |tstand|comp_y:inst39|LessThan0~2  ; out0             ;
+; |tstand|comp_y:inst39|LessThan0~3  ; |tstand|comp_y:inst39|LessThan0~3  ; out0             ;
+; |tstand|comp_y:inst39|LessThan0~4  ; |tstand|comp_y:inst39|LessThan0~4  ; out0             ;
+; |tstand|comp_y:inst39|LessThan0~5  ; |tstand|comp_y:inst39|LessThan0~5  ; out0             ;
+; |tstand|comp_y:inst39|LessThan0~6  ; |tstand|comp_y:inst39|LessThan0~6  ; out0             ;
+; |tstand|comp_y:inst39|LessThan0~7  ; |tstand|comp_y:inst39|LessThan0~7  ; out0             ;
+; |tstand|comp_y:inst39|LessThan0~8  ; |tstand|comp_y:inst39|LessThan0~8  ; out0             ;
+; |tstand|comp_y:inst39|LessThan0~9  ; |tstand|comp_y:inst39|LessThan0~9  ; out0             ;
+; |tstand|comp_y:inst39|LessThan0~10 ; |tstand|comp_y:inst39|LessThan0~10 ; out0             ;
+; |tstand|comp_y:inst39|LessThan0~11 ; |tstand|comp_y:inst39|LessThan0~11 ; out0             ;
+; |tstand|comp_y:inst39|LessThan0~12 ; |tstand|comp_y:inst39|LessThan0~12 ; out0             ;
+; |tstand|comp_y:inst39|LessThan0~13 ; |tstand|comp_y:inst39|LessThan0~13 ; out0             ;
+; |tstand|comp_y:inst39|LessThan0~14 ; |tstand|comp_y:inst39|LessThan0~14 ; out0             ;
+; |tstand|comp_y:inst39|LessThan0~15 ; |tstand|comp_y:inst39|LessThan0~15 ; out0             ;
+; |tstand|comp_y:inst39|LessThan0~16 ; |tstand|comp_y:inst39|LessThan0~16 ; out0             ;
+; |tstand|comp_y:inst39|LessThan0~17 ; |tstand|comp_y:inst39|LessThan0~17 ; out0             ;
+; |tstand|comp_y:inst39|LessThan0~18 ; |tstand|comp_y:inst39|LessThan0~18 ; out0             ;
+; |tstand|comp_y:inst39|LessThan0~19 ; |tstand|comp_y:inst39|LessThan0~19 ; out0             ;
+; |tstand|comp_y:inst39|LessThan0~20 ; |tstand|comp_y:inst39|LessThan0~20 ; out0             ;
+; |tstand|comp_y:inst39|LessThan0~21 ; |tstand|comp_y:inst39|LessThan0~21 ; out0             ;
+; |tstand|comp_y:inst39|LessThan0~22 ; |tstand|comp_y:inst39|LessThan0~22 ; out0             ;
+; |tstand|comp_y:inst39|LessThan0~23 ; |tstand|comp_y:inst39|LessThan0~23 ; out0             ;
+; |tstand|comp_y:inst39|LessThan0~24 ; |tstand|comp_y:inst39|LessThan0~24 ; out0             ;
+; |tstand|comp_y:inst39|LessThan0~25 ; |tstand|comp_y:inst39|LessThan0~25 ; out0             ;
+; |tstand|comp_y:inst39|LessThan0~26 ; |tstand|comp_y:inst39|LessThan0~26 ; out0             ;
+; |tstand|comp_y:inst39|LessThan0~27 ; |tstand|comp_y:inst39|LessThan0~27 ; out0             ;
+; |tstand|comp_y:inst39|LessThan0~28 ; |tstand|comp_y:inst39|LessThan0~28 ; out0             ;
+; |tstand|comp_y:inst39|LessThan0~29 ; |tstand|comp_y:inst39|LessThan0~29 ; out0             ;
+; |tstand|comp_y:inst39|LessThan0~30 ; |tstand|comp_y:inst39|LessThan0~30 ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~0  ; |tstand|comp_s:inst55|LessThan0~0  ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~1  ; |tstand|comp_s:inst55|LessThan0~1  ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~2  ; |tstand|comp_s:inst55|LessThan0~2  ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~3  ; |tstand|comp_s:inst55|LessThan0~3  ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~4  ; |tstand|comp_s:inst55|LessThan0~4  ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~5  ; |tstand|comp_s:inst55|LessThan0~5  ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~6  ; |tstand|comp_s:inst55|LessThan0~6  ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~7  ; |tstand|comp_s:inst55|LessThan0~7  ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~8  ; |tstand|comp_s:inst55|LessThan0~8  ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~9  ; |tstand|comp_s:inst55|LessThan0~9  ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~10 ; |tstand|comp_s:inst55|LessThan0~10 ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~11 ; |tstand|comp_s:inst55|LessThan0~11 ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~12 ; |tstand|comp_s:inst55|LessThan0~12 ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~13 ; |tstand|comp_s:inst55|LessThan0~13 ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~14 ; |tstand|comp_s:inst55|LessThan0~14 ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~15 ; |tstand|comp_s:inst55|LessThan0~15 ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~16 ; |tstand|comp_s:inst55|LessThan0~16 ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~17 ; |tstand|comp_s:inst55|LessThan0~17 ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~18 ; |tstand|comp_s:inst55|LessThan0~18 ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~19 ; |tstand|comp_s:inst55|LessThan0~19 ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~20 ; |tstand|comp_s:inst55|LessThan0~20 ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~21 ; |tstand|comp_s:inst55|LessThan0~21 ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~22 ; |tstand|comp_s:inst55|LessThan0~22 ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~23 ; |tstand|comp_s:inst55|LessThan0~23 ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~24 ; |tstand|comp_s:inst55|LessThan0~24 ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~25 ; |tstand|comp_s:inst55|LessThan0~25 ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~26 ; |tstand|comp_s:inst55|LessThan0~26 ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~27 ; |tstand|comp_s:inst55|LessThan0~27 ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~28 ; |tstand|comp_s:inst55|LessThan0~28 ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~29 ; |tstand|comp_s:inst55|LessThan0~29 ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~30 ; |tstand|comp_s:inst55|LessThan0~30 ; out0             ;
+; |tstand|comp_s:inst55|LessThan0~31 ; |tstand|comp_s:inst55|LessThan0~31 ; out0             ;
+; |tstand|mura:inst78|Add0~1         ; |tstand|mura:inst78|Add0~1         ; out0             ;
+; |tstand|mura:inst78|Add0~2         ; |tstand|mura:inst78|Add0~2         ; out0             ;
+; |tstand|mura:inst78|Add0~3         ; |tstand|mura:inst78|Add0~3         ; out0             ;
+; |tstand|mura:inst78|Add0~4         ; |tstand|mura:inst78|Add0~4         ; out0             ;
+; |tstand|mura:inst78|Add0~5         ; |tstand|mura:inst78|Add0~5         ; out0             ;
+; |tstand|mura:inst78|Add0~6         ; |tstand|mura:inst78|Add0~6         ; out0             ;
+; |tstand|mura:inst78|Add0~7         ; |tstand|mura:inst78|Add0~7         ; out0             ;
+; |tstand|mura:inst78|Add0~8         ; |tstand|mura:inst78|Add0~8         ; out0             ;
+; |tstand|mura:inst78|Add0~9         ; |tstand|mura:inst78|Add0~9         ; out0             ;
+; |tstand|mura:inst78|Add0~10        ; |tstand|mura:inst78|Add0~10        ; out0             ;
+; |tstand|mura:inst78|Add0~11        ; |tstand|mura:inst78|Add0~11        ; out0             ;
+; |tstand|mura:inst78|Add0~12        ; |tstand|mura:inst78|Add0~12        ; out0             ;
+; |tstand|mura:inst78|Add0~13        ; |tstand|mura:inst78|Add0~13        ; out0             ;
+; |tstand|mura:inst78|Add0~14        ; |tstand|mura:inst78|Add0~14        ; out0             ;
+; |tstand|mura:inst78|Add0~15        ; |tstand|mura:inst78|Add0~15        ; out0             ;
+; |tstand|mura:inst78|Add0~16        ; |tstand|mura:inst78|Add0~16        ; out0             ;
+; |tstand|mura:inst78|Add0~17        ; |tstand|mura:inst78|Add0~17        ; out0             ;
+; |tstand|mura:inst78|Add0~18        ; |tstand|mura:inst78|Add0~18        ; out0             ;
+; |tstand|mura:inst78|Add0~19        ; |tstand|mura:inst78|Add0~19        ; out0             ;
+; |tstand|mura:inst78|Add0~20        ; |tstand|mura:inst78|Add0~20        ; out0             ;
+; |tstand|mura:inst78|Add0~21        ; |tstand|mura:inst78|Add0~21        ; out0             ;
+; |tstand|mura:inst78|Add0~22        ; |tstand|mura:inst78|Add0~22        ; out0             ;
+; |tstand|mura:inst78|Add0~23        ; |tstand|mura:inst78|Add0~23        ; out0             ;
+; |tstand|mura:inst78|Add0~24        ; |tstand|mura:inst78|Add0~24        ; out0             ;
+; |tstand|mura:inst78|Add0~25        ; |tstand|mura:inst78|Add0~25        ; out0             ;
+; |tstand|mura:inst78|Add0~26        ; |tstand|mura:inst78|Add0~26        ; out0             ;
+; |tstand|mura:inst78|Add0~27        ; |tstand|mura:inst78|Add0~27        ; out0             ;
+; |tstand|mura:inst78|Add0~28        ; |tstand|mura:inst78|Add0~28        ; out0             ;
+; |tstand|mura:inst78|Add0~29        ; |tstand|mura:inst78|Add0~29        ; out0             ;
+; |tstand|mura:inst78|Add0~30        ; |tstand|mura:inst78|Add0~30        ; out0             ;
+; |tstand|mura:inst78|Add0~31        ; |tstand|mura:inst78|Add0~31        ; out0             ;
+; |tstand|mura:inst78|Add0~32        ; |tstand|mura:inst78|Add0~32        ; out0             ;
+; |tstand|mura:inst78|Add0~33        ; |tstand|mura:inst78|Add0~33        ; out0             ;
+; |tstand|mura:inst78|Add0~34        ; |tstand|mura:inst78|Add0~34        ; out0             ;
+; |tstand|mura:inst78|Add0~35        ; |tstand|mura:inst78|Add0~35        ; out0             ;
+; |tstand|mura:inst78|Add0~36        ; |tstand|mura:inst78|Add0~36        ; out0             ;
+; |tstand|mura:inst78|Add0~37        ; |tstand|mura:inst78|Add0~37        ; out0             ;
+; |tstand|mura:inst78|Add0~38        ; |tstand|mura:inst78|Add0~38        ; out0             ;
+; |tstand|mura:inst78|Add0~39        ; |tstand|mura:inst78|Add0~39        ; out0             ;
+; |tstand|mura:inst78|Add0~40        ; |tstand|mura:inst78|Add0~40        ; out0             ;
+; |tstand|mura:inst78|Add0~41        ; |tstand|mura:inst78|Add0~41        ; out0             ;
+; |tstand|mura:inst78|Add0~42        ; |tstand|mura:inst78|Add0~42        ; out0             ;
+; |tstand|mura:inst78|Add0~43        ; |tstand|mura:inst78|Add0~43        ; out0             ;
+; |tstand|mura:inst78|Add0~44        ; |tstand|mura:inst78|Add0~44        ; out0             ;
+; |tstand|mura:inst78|Add0~45        ; |tstand|mura:inst78|Add0~45        ; out0             ;
+; |tstand|mura:inst78|Add0~46        ; |tstand|mura:inst78|Add0~46        ; out0             ;
+; |tstand|mura:inst78|Add0~47        ; |tstand|mura:inst78|Add0~47        ; out0             ;
+; |tstand|mura:inst78|Add0~48        ; |tstand|mura:inst78|Add0~48        ; out0             ;
+; |tstand|mura:inst78|Add0~49        ; |tstand|mura:inst78|Add0~49        ; out0             ;
+; |tstand|mura:inst78|Add0~50        ; |tstand|mura:inst78|Add0~50        ; out0             ;
+; |tstand|mura:inst78|Add0~51        ; |tstand|mura:inst78|Add0~51        ; out0             ;
+; |tstand|mura:inst78|Add0~52        ; |tstand|mura:inst78|Add0~52        ; out0             ;
+; |tstand|mura:inst78|Add0~53        ; |tstand|mura:inst78|Add0~53        ; out0             ;
+; |tstand|mura:inst78|Add0~54        ; |tstand|mura:inst78|Add0~54        ; out0             ;
+; |tstand|mura:inst78|Add0~55        ; |tstand|mura:inst78|Add0~55        ; out0             ;
+; |tstand|mura:inst78|Add0~56        ; |tstand|mura:inst78|Add0~56        ; out0             ;
+; |tstand|mura:inst78|Add0~57        ; |tstand|mura:inst78|Add0~57        ; out0             ;
+; |tstand|mura:inst78|Add0~58        ; |tstand|mura:inst78|Add0~58        ; out0             ;
+; |tstand|mura:inst78|Add0~59        ; |tstand|mura:inst78|Add0~59        ; out0             ;
+; |tstand|mura:inst78|Add0~60        ; |tstand|mura:inst78|Add0~60        ; out0             ;
+; |tstand|comp_y:inst39|Add0~1       ; |tstand|comp_y:inst39|Add0~1       ; out0             ;
+; |tstand|comp_y:inst39|Add0~2       ; |tstand|comp_y:inst39|Add0~2       ; out0             ;
+; |tstand|comp_y:inst39|Add0~3       ; |tstand|comp_y:inst39|Add0~3       ; out0             ;
+; |tstand|comp_y:inst39|Add0~4       ; |tstand|comp_y:inst39|Add0~4       ; out0             ;
+; |tstand|comp_y:inst39|Add0~5       ; |tstand|comp_y:inst39|Add0~5       ; out0             ;
+; |tstand|comp_y:inst39|Add0~6       ; |tstand|comp_y:inst39|Add0~6       ; out0             ;
+; |tstand|comp_y:inst39|Add0~7       ; |tstand|comp_y:inst39|Add0~7       ; out0             ;
+; |tstand|comp_y:inst39|Add0~8       ; |tstand|comp_y:inst39|Add0~8       ; out0             ;
+; |tstand|comp_y:inst39|Add0~9       ; |tstand|comp_y:inst39|Add0~9       ; out0             ;
+; |tstand|comp_y:inst39|Add0~10      ; |tstand|comp_y:inst39|Add0~10      ; out0             ;
+; |tstand|comp_y:inst39|Add0~11      ; |tstand|comp_y:inst39|Add0~11      ; out0             ;
+; |tstand|comp_y:inst39|Add0~12      ; |tstand|comp_y:inst39|Add0~12      ; out0             ;
+; |tstand|comp_y:inst39|Add0~13      ; |tstand|comp_y:inst39|Add0~13      ; out0             ;
+; |tstand|comp_y:inst39|Add0~14      ; |tstand|comp_y:inst39|Add0~14      ; out0             ;
+; |tstand|comp_y:inst39|Add0~15      ; |tstand|comp_y:inst39|Add0~15      ; out0             ;
+; |tstand|comp_y:inst39|Add0~16      ; |tstand|comp_y:inst39|Add0~16      ; out0             ;
+; |tstand|comp_y:inst39|Add0~17      ; |tstand|comp_y:inst39|Add0~17      ; out0             ;
+; |tstand|comp_y:inst39|Add0~18      ; |tstand|comp_y:inst39|Add0~18      ; out0             ;
+; |tstand|comp_y:inst39|Add0~19      ; |tstand|comp_y:inst39|Add0~19      ; out0             ;
+; |tstand|comp_y:inst39|Add0~20      ; |tstand|comp_y:inst39|Add0~20      ; out0             ;
+; |tstand|comp_y:inst39|Add0~21      ; |tstand|comp_y:inst39|Add0~21      ; out0             ;
+; |tstand|comp_y:inst39|Add0~22      ; |tstand|comp_y:inst39|Add0~22      ; out0             ;
+; |tstand|comp_y:inst39|Add0~23      ; |tstand|comp_y:inst39|Add0~23      ; out0             ;
+; |tstand|comp_y:inst39|Add0~24      ; |tstand|comp_y:inst39|Add0~24      ; out0             ;
+; |tstand|comp_y:inst39|Add0~25      ; |tstand|comp_y:inst39|Add0~25      ; out0             ;
+; |tstand|comp_y:inst39|Add0~26      ; |tstand|comp_y:inst39|Add0~26      ; out0             ;
+; |tstand|comp_y:inst39|Add0~27      ; |tstand|comp_y:inst39|Add0~27      ; out0             ;
+; |tstand|comp_y:inst39|Add0~28      ; |tstand|comp_y:inst39|Add0~28      ; out0             ;
+; |tstand|comp_y:inst39|Add0~29      ; |tstand|comp_y:inst39|Add0~29      ; out0             ;
+; |tstand|comp_y:inst39|Add0~30      ; |tstand|comp_y:inst39|Add0~30      ; out0             ;
+; |tstand|comp_y:inst39|Add0~31      ; |tstand|comp_y:inst39|Add0~31      ; out0             ;
+; |tstand|comp_y:inst39|Add0~32      ; |tstand|comp_y:inst39|Add0~32      ; out0             ;
+; |tstand|comp_y:inst39|Add0~33      ; |tstand|comp_y:inst39|Add0~33      ; out0             ;
+; |tstand|comp_y:inst39|Add0~34      ; |tstand|comp_y:inst39|Add0~34      ; out0             ;
+; |tstand|comp_y:inst39|Add0~35      ; |tstand|comp_y:inst39|Add0~35      ; out0             ;
+; |tstand|comp_y:inst39|Add0~36      ; |tstand|comp_y:inst39|Add0~36      ; out0             ;
+; |tstand|comp_y:inst39|Add0~37      ; |tstand|comp_y:inst39|Add0~37      ; out0             ;
+; |tstand|comp_y:inst39|Add0~38      ; |tstand|comp_y:inst39|Add0~38      ; out0             ;
+; |tstand|comp_y:inst39|Add0~39      ; |tstand|comp_y:inst39|Add0~39      ; out0             ;
+; |tstand|comp_y:inst39|Add0~40      ; |tstand|comp_y:inst39|Add0~40      ; out0             ;
+; |tstand|comp_y:inst39|Add0~41      ; |tstand|comp_y:inst39|Add0~41      ; out0             ;
+; |tstand|comp_y:inst39|Add0~42      ; |tstand|comp_y:inst39|Add0~42      ; out0             ;
+; |tstand|comp_y:inst39|Add0~43      ; |tstand|comp_y:inst39|Add0~43      ; out0             ;
+; |tstand|comp_y:inst39|Add0~44      ; |tstand|comp_y:inst39|Add0~44      ; out0             ;
+; |tstand|comp_y:inst39|Add0~45      ; |tstand|comp_y:inst39|Add0~45      ; out0             ;
+; |tstand|comp_y:inst39|Add0~46      ; |tstand|comp_y:inst39|Add0~46      ; out0             ;
+; |tstand|comp_y:inst39|Add0~47      ; |tstand|comp_y:inst39|Add0~47      ; out0             ;
+; |tstand|comp_y:inst39|Add0~48      ; |tstand|comp_y:inst39|Add0~48      ; out0             ;
+; |tstand|comp_y:inst39|Add0~49      ; |tstand|comp_y:inst39|Add0~49      ; out0             ;
+; |tstand|comp_y:inst39|Add0~50      ; |tstand|comp_y:inst39|Add0~50      ; out0             ;
+; |tstand|comp_y:inst39|Add0~51      ; |tstand|comp_y:inst39|Add0~51      ; out0             ;
+; |tstand|comp_y:inst39|Add0~52      ; |tstand|comp_y:inst39|Add0~52      ; out0             ;
+; |tstand|comp_y:inst39|Add0~53      ; |tstand|comp_y:inst39|Add0~53      ; out0             ;
+; |tstand|comp_y:inst39|Add0~54      ; |tstand|comp_y:inst39|Add0~54      ; out0             ;
+; |tstand|comp_y:inst39|Add0~55      ; |tstand|comp_y:inst39|Add0~55      ; out0             ;
+; |tstand|comp_y:inst39|Add0~56      ; |tstand|comp_y:inst39|Add0~56      ; out0             ;
+; |tstand|comp_y:inst39|Add0~57      ; |tstand|comp_y:inst39|Add0~57      ; out0             ;
+; |tstand|comp_y:inst39|Add0~58      ; |tstand|comp_y:inst39|Add0~58      ; out0             ;
+; |tstand|comp_y:inst39|Add0~59      ; |tstand|comp_y:inst39|Add0~59      ; out0             ;
+; |tstand|comp_y:inst39|Add0~60      ; |tstand|comp_y:inst39|Add0~60      ; out0             ;
+; |tstand|comp_s:inst55|Add0~1       ; |tstand|comp_s:inst55|Add0~1       ; out0             ;
+; |tstand|comp_s:inst55|Add0~2       ; |tstand|comp_s:inst55|Add0~2       ; out0             ;
+; |tstand|comp_s:inst55|Add0~3       ; |tstand|comp_s:inst55|Add0~3       ; out0             ;
+; |tstand|comp_s:inst55|Add0~4       ; |tstand|comp_s:inst55|Add0~4       ; out0             ;
+; |tstand|comp_s:inst55|Add0~5       ; |tstand|comp_s:inst55|Add0~5       ; out0             ;
+; |tstand|comp_s:inst55|Add0~6       ; |tstand|comp_s:inst55|Add0~6       ; out0             ;
+; |tstand|comp_s:inst55|Add0~7       ; |tstand|comp_s:inst55|Add0~7       ; out0             ;
+; |tstand|comp_s:inst55|Add0~8       ; |tstand|comp_s:inst55|Add0~8       ; out0             ;
+; |tstand|comp_s:inst55|Add0~9       ; |tstand|comp_s:inst55|Add0~9       ; out0             ;
+; |tstand|comp_s:inst55|Add0~10      ; |tstand|comp_s:inst55|Add0~10      ; out0             ;
+; |tstand|comp_s:inst55|Add0~11      ; |tstand|comp_s:inst55|Add0~11      ; out0             ;
+; |tstand|comp_s:inst55|Add0~12      ; |tstand|comp_s:inst55|Add0~12      ; out0             ;
+; |tstand|comp_s:inst55|Add0~13      ; |tstand|comp_s:inst55|Add0~13      ; out0             ;
+; |tstand|comp_s:inst55|Add0~14      ; |tstand|comp_s:inst55|Add0~14      ; out0             ;
+; |tstand|comp_s:inst55|Add0~15      ; |tstand|comp_s:inst55|Add0~15      ; out0             ;
+; |tstand|comp_s:inst55|Add0~16      ; |tstand|comp_s:inst55|Add0~16      ; out0             ;
+; |tstand|comp_s:inst55|Add0~17      ; |tstand|comp_s:inst55|Add0~17      ; out0             ;
+; |tstand|comp_s:inst55|Add0~18      ; |tstand|comp_s:inst55|Add0~18      ; out0             ;
+; |tstand|comp_s:inst55|Add0~19      ; |tstand|comp_s:inst55|Add0~19      ; out0             ;
+; |tstand|comp_s:inst55|Add0~20      ; |tstand|comp_s:inst55|Add0~20      ; out0             ;
+; |tstand|comp_s:inst55|Add0~21      ; |tstand|comp_s:inst55|Add0~21      ; out0             ;
+; |tstand|comp_s:inst55|Add0~22      ; |tstand|comp_s:inst55|Add0~22      ; out0             ;
+; |tstand|comp_s:inst55|Add0~23      ; |tstand|comp_s:inst55|Add0~23      ; out0             ;
+; |tstand|comp_s:inst55|Add0~24      ; |tstand|comp_s:inst55|Add0~24      ; out0             ;
+; |tstand|comp_s:inst55|Add0~25      ; |tstand|comp_s:inst55|Add0~25      ; out0             ;
+; |tstand|comp_s:inst55|Add0~26      ; |tstand|comp_s:inst55|Add0~26      ; out0             ;
+; |tstand|comp_s:inst55|Add0~27      ; |tstand|comp_s:inst55|Add0~27      ; out0             ;
+; |tstand|comp_s:inst55|Add0~28      ; |tstand|comp_s:inst55|Add0~28      ; out0             ;
+; |tstand|comp_s:inst55|Add0~29      ; |tstand|comp_s:inst55|Add0~29      ; out0             ;
+; |tstand|comp_s:inst55|Add0~30      ; |tstand|comp_s:inst55|Add0~30      ; out0             ;
+; |tstand|comp_s:inst55|Add0~31      ; |tstand|comp_s:inst55|Add0~31      ; out0             ;
+; |tstand|comp_s:inst55|Add0~32      ; |tstand|comp_s:inst55|Add0~32      ; out0             ;
+; |tstand|comp_s:inst55|Add0~33      ; |tstand|comp_s:inst55|Add0~33      ; out0             ;
+; |tstand|comp_s:inst55|Add0~34      ; |tstand|comp_s:inst55|Add0~34      ; out0             ;
+; |tstand|comp_s:inst55|Add0~35      ; |tstand|comp_s:inst55|Add0~35      ; out0             ;
+; |tstand|comp_s:inst55|Add0~36      ; |tstand|comp_s:inst55|Add0~36      ; out0             ;
+; |tstand|comp_s:inst55|Add0~37      ; |tstand|comp_s:inst55|Add0~37      ; out0             ;
+; |tstand|comp_s:inst55|Add0~38      ; |tstand|comp_s:inst55|Add0~38      ; out0             ;
+; |tstand|comp_s:inst55|Add0~39      ; |tstand|comp_s:inst55|Add0~39      ; out0             ;
+; |tstand|comp_s:inst55|Add0~40      ; |tstand|comp_s:inst55|Add0~40      ; out0             ;
+; |tstand|comp_s:inst55|Add0~41      ; |tstand|comp_s:inst55|Add0~41      ; out0             ;
+; |tstand|comp_s:inst55|Add0~42      ; |tstand|comp_s:inst55|Add0~42      ; out0             ;
+; |tstand|comp_s:inst55|Add0~43      ; |tstand|comp_s:inst55|Add0~43      ; out0             ;
+; |tstand|comp_s:inst55|Add0~44      ; |tstand|comp_s:inst55|Add0~44      ; out0             ;
+; |tstand|comp_s:inst55|Add0~45      ; |tstand|comp_s:inst55|Add0~45      ; out0             ;
+; |tstand|comp_s:inst55|Add0~46      ; |tstand|comp_s:inst55|Add0~46      ; out0             ;
+; |tstand|comp_s:inst55|Add0~47      ; |tstand|comp_s:inst55|Add0~47      ; out0             ;
+; |tstand|comp_s:inst55|Add0~48      ; |tstand|comp_s:inst55|Add0~48      ; out0             ;
+; |tstand|comp_s:inst55|Add0~49      ; |tstand|comp_s:inst55|Add0~49      ; out0             ;
+; |tstand|comp_s:inst55|Add0~50      ; |tstand|comp_s:inst55|Add0~50      ; out0             ;
+; |tstand|comp_s:inst55|Add0~51      ; |tstand|comp_s:inst55|Add0~51      ; out0             ;
+; |tstand|comp_s:inst55|Add0~52      ; |tstand|comp_s:inst55|Add0~52      ; out0             ;
+; |tstand|comp_s:inst55|Add0~53      ; |tstand|comp_s:inst55|Add0~53      ; out0             ;
+; |tstand|comp_s:inst55|Add0~54      ; |tstand|comp_s:inst55|Add0~54      ; out0             ;
+; |tstand|comp_s:inst55|Add0~55      ; |tstand|comp_s:inst55|Add0~55      ; out0             ;
+; |tstand|comp_s:inst55|Add0~56      ; |tstand|comp_s:inst55|Add0~56      ; out0             ;
+; |tstand|comp_s:inst55|Add0~57      ; |tstand|comp_s:inst55|Add0~57      ; out0             ;
+; |tstand|comp_s:inst55|Add0~58      ; |tstand|comp_s:inst55|Add0~58      ; out0             ;
+; |tstand|comp_s:inst55|Add0~59      ; |tstand|comp_s:inst55|Add0~59      ; out0             ;
+; |tstand|comp_s:inst55|Add0~60      ; |tstand|comp_s:inst55|Add0~60      ; out0             ;
++------------------------------------+------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                         ;
++-------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                             ; Output Port Name                                                                                      ; Output Port Type ;
++-------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+------------------+
+; |tstand|rez                                                                                           ; |tstand|rez                                                                                           ; pin_out          ;
+; |tstand|en                                                                                            ; |tstand|en                                                                                            ; out              ;
+; |tstand|clr                                                                                           ; |tstand|clr                                                                                           ; out              ;
+; |tstand|rez_y                                                                                         ; |tstand|rez_y                                                                                         ; pin_out          ;
+; |tstand|rez_mura                                                                                      ; |tstand|rez_mura                                                                                      ; pin_out          ;
+; |tstand|mura:inst78|count[8]                                                                          ; |tstand|mura:inst78|count[8]                                                                          ; regout           ;
+; |tstand|mura:inst78|count[7]                                                                          ; |tstand|mura:inst78|count[7]                                                                          ; regout           ;
+; |tstand|mura:inst78|count[6]                                                                          ; |tstand|mura:inst78|count[6]                                                                          ; regout           ;
+; |tstand|mura:inst78|count[5]                                                                          ; |tstand|mura:inst78|count[5]                                                                          ; regout           ;
+; |tstand|mura:inst78|count[4]                                                                          ; |tstand|mura:inst78|count[4]                                                                          ; regout           ;
+; |tstand|mura:inst78|count[3]                                                                          ; |tstand|mura:inst78|count[3]                                                                          ; regout           ;
+; |tstand|mura:inst78|count[2]                                                                          ; |tstand|mura:inst78|count[2]                                                                          ; regout           ;
+; |tstand|mura:inst78|count[1]                                                                          ; |tstand|mura:inst78|count[1]                                                                          ; regout           ;
+; |tstand|mura:inst78|count[9]                                                                          ; |tstand|mura:inst78|count[9]                                                                          ; regout           ;
+; |tstand|mura:inst78|count[10]                                                                         ; |tstand|mura:inst78|count[10]                                                                         ; regout           ;
+; |tstand|mura:inst78|count[11]                                                                         ; |tstand|mura:inst78|count[11]                                                                         ; regout           ;
+; |tstand|mura:inst78|count[12]                                                                         ; |tstand|mura:inst78|count[12]                                                                         ; regout           ;
+; |tstand|mura:inst78|count[13]                                                                         ; |tstand|mura:inst78|count[13]                                                                         ; regout           ;
+; |tstand|mura:inst78|count[14]                                                                         ; |tstand|mura:inst78|count[14]                                                                         ; regout           ;
+; |tstand|mura:inst78|count[15]                                                                         ; |tstand|mura:inst78|count[15]                                                                         ; regout           ;
+; |tstand|mura:inst78|count[16]                                                                         ; |tstand|mura:inst78|count[16]                                                                         ; regout           ;
+; |tstand|mura:inst78|count[17]                                                                         ; |tstand|mura:inst78|count[17]                                                                         ; regout           ;
+; |tstand|mura:inst78|count[18]                                                                         ; |tstand|mura:inst78|count[18]                                                                         ; regout           ;
+; |tstand|mura:inst78|count[19]                                                                         ; |tstand|mura:inst78|count[19]                                                                         ; regout           ;
+; |tstand|mura:inst78|count[20]                                                                         ; |tstand|mura:inst78|count[20]                                                                         ; regout           ;
+; |tstand|mura:inst78|count[21]                                                                         ; |tstand|mura:inst78|count[21]                                                                         ; regout           ;
+; |tstand|mura:inst78|count[22]                                                                         ; |tstand|mura:inst78|count[22]                                                                         ; regout           ;
+; |tstand|mura:inst78|count[23]                                                                         ; |tstand|mura:inst78|count[23]                                                                         ; regout           ;
+; |tstand|mura:inst78|count[24]                                                                         ; |tstand|mura:inst78|count[24]                                                                         ; regout           ;
+; |tstand|mura:inst78|count[25]                                                                         ; |tstand|mura:inst78|count[25]                                                                         ; regout           ;
+; |tstand|mura:inst78|count[26]                                                                         ; |tstand|mura:inst78|count[26]                                                                         ; regout           ;
+; |tstand|mura:inst78|count[27]                                                                         ; |tstand|mura:inst78|count[27]                                                                         ; regout           ;
+; |tstand|mura:inst78|count[28]                                                                         ; |tstand|mura:inst78|count[28]                                                                         ; regout           ;
+; |tstand|mura:inst78|count[29]                                                                         ; |tstand|mura:inst78|count[29]                                                                         ; regout           ;
+; |tstand|mura:inst78|count[30]                                                                         ; |tstand|mura:inst78|count[30]                                                                         ; regout           ;
+; |tstand|mura:inst78|count[31]                                                                         ; |tstand|mura:inst78|count[31]                                                                         ; regout           ;
+; |tstand|mura:inst78|Result_mura                                                                       ; |tstand|mura:inst78|Result_mura                                                                       ; regout           ;
+; |tstand|comp_y:inst39|count[8]                                                                        ; |tstand|comp_y:inst39|count[8]                                                                        ; regout           ;
+; |tstand|comp_y:inst39|count[7]                                                                        ; |tstand|comp_y:inst39|count[7]                                                                        ; regout           ;
+; |tstand|comp_y:inst39|count[6]                                                                        ; |tstand|comp_y:inst39|count[6]                                                                        ; regout           ;
+; |tstand|comp_y:inst39|count[5]                                                                        ; |tstand|comp_y:inst39|count[5]                                                                        ; regout           ;
+; |tstand|comp_y:inst39|count[4]                                                                        ; |tstand|comp_y:inst39|count[4]                                                                        ; regout           ;
+; |tstand|comp_y:inst39|count[3]                                                                        ; |tstand|comp_y:inst39|count[3]                                                                        ; regout           ;
+; |tstand|comp_y:inst39|count[2]                                                                        ; |tstand|comp_y:inst39|count[2]                                                                        ; regout           ;
+; |tstand|comp_y:inst39|count[1]                                                                        ; |tstand|comp_y:inst39|count[1]                                                                        ; regout           ;
+; |tstand|comp_y:inst39|count[9]                                                                        ; |tstand|comp_y:inst39|count[9]                                                                        ; regout           ;
+; |tstand|comp_y:inst39|count[10]                                                                       ; |tstand|comp_y:inst39|count[10]                                                                       ; regout           ;
+; |tstand|comp_y:inst39|count[11]                                                                       ; |tstand|comp_y:inst39|count[11]                                                                       ; regout           ;
+; |tstand|comp_y:inst39|count[12]                                                                       ; |tstand|comp_y:inst39|count[12]                                                                       ; regout           ;
+; |tstand|comp_y:inst39|count[13]                                                                       ; |tstand|comp_y:inst39|count[13]                                                                       ; regout           ;
+; |tstand|comp_y:inst39|count[14]                                                                       ; |tstand|comp_y:inst39|count[14]                                                                       ; regout           ;
+; |tstand|comp_y:inst39|count[15]                                                                       ; |tstand|comp_y:inst39|count[15]                                                                       ; regout           ;
+; |tstand|comp_y:inst39|count[16]                                                                       ; |tstand|comp_y:inst39|count[16]                                                                       ; regout           ;
+; |tstand|comp_y:inst39|count[17]                                                                       ; |tstand|comp_y:inst39|count[17]                                                                       ; regout           ;
+; |tstand|comp_y:inst39|count[18]                                                                       ; |tstand|comp_y:inst39|count[18]                                                                       ; regout           ;
+; |tstand|comp_y:inst39|count[19]                                                                       ; |tstand|comp_y:inst39|count[19]                                                                       ; regout           ;
+; |tstand|comp_y:inst39|count[20]                                                                       ; |tstand|comp_y:inst39|count[20]                                                                       ; regout           ;
+; |tstand|comp_y:inst39|count[21]                                                                       ; |tstand|comp_y:inst39|count[21]                                                                       ; regout           ;
+; |tstand|comp_y:inst39|count[22]                                                                       ; |tstand|comp_y:inst39|count[22]                                                                       ; regout           ;
+; |tstand|comp_y:inst39|count[23]                                                                       ; |tstand|comp_y:inst39|count[23]                                                                       ; regout           ;
+; |tstand|comp_y:inst39|count[24]                                                                       ; |tstand|comp_y:inst39|count[24]                                                                       ; regout           ;
+; |tstand|comp_y:inst39|count[25]                                                                       ; |tstand|comp_y:inst39|count[25]                                                                       ; regout           ;
+; |tstand|comp_y:inst39|count[26]                                                                       ; |tstand|comp_y:inst39|count[26]                                                                       ; regout           ;
+; |tstand|comp_y:inst39|count[27]                                                                       ; |tstand|comp_y:inst39|count[27]                                                                       ; regout           ;
+; |tstand|comp_y:inst39|count[28]                                                                       ; |tstand|comp_y:inst39|count[28]                                                                       ; regout           ;
+; |tstand|comp_y:inst39|count[29]                                                                       ; |tstand|comp_y:inst39|count[29]                                                                       ; regout           ;
+; |tstand|comp_y:inst39|count[30]                                                                       ; |tstand|comp_y:inst39|count[30]                                                                       ; regout           ;
+; |tstand|comp_y:inst39|count[31]                                                                       ; |tstand|comp_y:inst39|count[31]                                                                       ; regout           ;
+; |tstand|comp_y:inst39|Result_y                                                                        ; |tstand|comp_y:inst39|Result_y                                                                        ; regout           ;
+; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_reg_bit[6] ; |tstand|count_100:inst37|lpm_counter:lpm_counter_component|cntr_4oh:auto_generated|counter_reg_bit[6] ; regout           ;
+; |tstand|comp_s:inst55|count[8]                                                                        ; |tstand|comp_s:inst55|count[8]                                                                        ; regout           ;
+; |tstand|comp_s:inst55|count[7]                                                                        ; |tstand|comp_s:inst55|count[7]                                                                        ; regout           ;
+; |tstand|comp_s:inst55|count[6]                                                                        ; |tstand|comp_s:inst55|count[6]                                                                        ; regout           ;
+; |tstand|comp_s:inst55|count[5]                                                                        ; |tstand|comp_s:inst55|count[5]                                                                        ; regout           ;
+; |tstand|comp_s:inst55|count[4]                                                                        ; |tstand|comp_s:inst55|count[4]                                                                        ; regout           ;
+; |tstand|comp_s:inst55|count[3]                                                                        ; |tstand|comp_s:inst55|count[3]                                                                        ; regout           ;
+; |tstand|comp_s:inst55|count[2]                                                                        ; |tstand|comp_s:inst55|count[2]                                                                        ; regout           ;
+; |tstand|comp_s:inst55|count[1]                                                                        ; |tstand|comp_s:inst55|count[1]                                                                        ; regout           ;
+; |tstand|comp_s:inst55|count[9]                                                                        ; |tstand|comp_s:inst55|count[9]                                                                        ; regout           ;
+; |tstand|comp_s:inst55|count[10]                                                                       ; |tstand|comp_s:inst55|count[10]                                                                       ; regout           ;
+; |tstand|comp_s:inst55|count[11]                                                                       ; |tstand|comp_s:inst55|count[11]                                                                       ; regout           ;
+; |tstand|comp_s:inst55|count[12]                                                                       ; |tstand|comp_s:inst55|count[12]                                                                       ; regout           ;
+; |tstand|comp_s:inst55|count[13]                                                                       ; |tstand|comp_s:inst55|count[13]                                                                       ; regout           ;
+; |tstand|comp_s:inst55|count[14]                                                                       ; |tstand|comp_s:inst55|count[14]                                                                       ; regout           ;
+; |tstand|comp_s:inst55|count[15]                                                                       ; |tstand|comp_s:inst55|count[15]                                                                       ; regout           ;
+; |tstand|comp_s:inst55|count[16]                                                                       ; |tstand|comp_s:inst55|count[16]                                                                       ; regout           ;
+; |tstand|comp_s:inst55|count[17]                                                                       ; |tstand|comp_s:inst55|count[17]                                                                       ; regout           ;
+; |tstand|comp_s:inst55|count[18]                                                                       ; |tstand|comp_s:inst55|count[18]                                                                       ; regout           ;
+; |tstand|comp_s:inst55|count[19]                                                                       ; |tstand|comp_s:inst55|count[19]                                                                       ; regout           ;
+; |tstand|comp_s:inst55|count[20]                                                                       ; |tstand|comp_s:inst55|count[20]                                                                       ; regout           ;
+; |tstand|comp_s:inst55|count[21]                                                                       ; |tstand|comp_s:inst55|count[21]                                                                       ; regout           ;
+; |tstand|comp_s:inst55|count[22]                                                                       ; |tstand|comp_s:inst55|count[22]                                                                       ; regout           ;
+; |tstand|comp_s:inst55|count[23]                                                                       ; |tstand|comp_s:inst55|count[23]                                                                       ; regout           ;
+; |tstand|comp_s:inst55|count[24]                                                                       ; |tstand|comp_s:inst55|count[24]                                                                       ; regout           ;
+; |tstand|comp_s:inst55|count[25]                                                                       ; |tstand|comp_s:inst55|count[25]                                                                       ; regout           ;
+; |tstand|comp_s:inst55|count[26]                                                                       ; |tstand|comp_s:inst55|count[26]                                                                       ; regout           ;
+; |tstand|comp_s:inst55|count[27]                                                                       ; |tstand|comp_s:inst55|count[27]                                                                       ; regout           ;
+; |tstand|comp_s:inst55|count[28]                                                                       ; |tstand|comp_s:inst55|count[28]                                                                       ; regout           ;
+; |tstand|comp_s:inst55|count[29]                                                                       ; |tstand|comp_s:inst55|count[29]                                                                       ; regout           ;
+; |tstand|comp_s:inst55|count[30]                                                                       ; |tstand|comp_s:inst55|count[30]                                                                       ; regout           ;
+; |tstand|comp_s:inst55|count[31]                                                                       ; |tstand|comp_s:inst55|count[31]                                                                       ; regout           ;
+; |tstand|comp_s:inst55|Result                                                                          ; |tstand|comp_s:inst55|Result                                                                          ; regout           ;
+; |tstand|mura:inst78|Add0~0                                                                            ; |tstand|mura:inst78|Add0~0                                                                            ; out0             ;
+; |tstand|mura:inst78|Add0~1                                                                            ; |tstand|mura:inst78|Add0~1                                                                            ; out0             ;
+; |tstand|mura:inst78|Add0~2                                                                            ; |tstand|mura:inst78|Add0~2                                                                            ; out0             ;
+; |tstand|mura:inst78|Add0~3                                                                            ; |tstand|mura:inst78|Add0~3                                                                            ; out0             ;
+; |tstand|mura:inst78|Add0~4                                                                            ; |tstand|mura:inst78|Add0~4                                                                            ; out0             ;
+; |tstand|mura:inst78|Add0~5                                                                            ; |tstand|mura:inst78|Add0~5                                                                            ; out0             ;
+; |tstand|mura:inst78|Add0~6                                                                            ; |tstand|mura:inst78|Add0~6                                                                            ; out0             ;
+; |tstand|mura:inst78|Add0~7                                                                            ; |tstand|mura:inst78|Add0~7                                                                            ; out0             ;
+; |tstand|mura:inst78|Add0~8                                                                            ; |tstand|mura:inst78|Add0~8                                                                            ; out0             ;
+; |tstand|mura:inst78|Add0~9                                                                            ; |tstand|mura:inst78|Add0~9                                                                            ; out0             ;
+; |tstand|mura:inst78|Add0~10                                                                           ; |tstand|mura:inst78|Add0~10                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~11                                                                           ; |tstand|mura:inst78|Add0~11                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~12                                                                           ; |tstand|mura:inst78|Add0~12                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~13                                                                           ; |tstand|mura:inst78|Add0~13                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~14                                                                           ; |tstand|mura:inst78|Add0~14                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~15                                                                           ; |tstand|mura:inst78|Add0~15                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~16                                                                           ; |tstand|mura:inst78|Add0~16                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~17                                                                           ; |tstand|mura:inst78|Add0~17                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~18                                                                           ; |tstand|mura:inst78|Add0~18                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~19                                                                           ; |tstand|mura:inst78|Add0~19                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~20                                                                           ; |tstand|mura:inst78|Add0~20                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~21                                                                           ; |tstand|mura:inst78|Add0~21                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~22                                                                           ; |tstand|mura:inst78|Add0~22                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~23                                                                           ; |tstand|mura:inst78|Add0~23                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~24                                                                           ; |tstand|mura:inst78|Add0~24                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~25                                                                           ; |tstand|mura:inst78|Add0~25                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~26                                                                           ; |tstand|mura:inst78|Add0~26                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~27                                                                           ; |tstand|mura:inst78|Add0~27                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~28                                                                           ; |tstand|mura:inst78|Add0~28                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~29                                                                           ; |tstand|mura:inst78|Add0~29                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~30                                                                           ; |tstand|mura:inst78|Add0~30                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~31                                                                           ; |tstand|mura:inst78|Add0~31                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~32                                                                           ; |tstand|mura:inst78|Add0~32                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~33                                                                           ; |tstand|mura:inst78|Add0~33                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~34                                                                           ; |tstand|mura:inst78|Add0~34                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~35                                                                           ; |tstand|mura:inst78|Add0~35                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~36                                                                           ; |tstand|mura:inst78|Add0~36                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~37                                                                           ; |tstand|mura:inst78|Add0~37                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~38                                                                           ; |tstand|mura:inst78|Add0~38                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~39                                                                           ; |tstand|mura:inst78|Add0~39                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~40                                                                           ; |tstand|mura:inst78|Add0~40                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~41                                                                           ; |tstand|mura:inst78|Add0~41                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~42                                                                           ; |tstand|mura:inst78|Add0~42                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~43                                                                           ; |tstand|mura:inst78|Add0~43                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~44                                                                           ; |tstand|mura:inst78|Add0~44                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~45                                                                           ; |tstand|mura:inst78|Add0~45                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~46                                                                           ; |tstand|mura:inst78|Add0~46                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~47                                                                           ; |tstand|mura:inst78|Add0~47                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~48                                                                           ; |tstand|mura:inst78|Add0~48                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~49                                                                           ; |tstand|mura:inst78|Add0~49                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~50                                                                           ; |tstand|mura:inst78|Add0~50                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~51                                                                           ; |tstand|mura:inst78|Add0~51                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~52                                                                           ; |tstand|mura:inst78|Add0~52                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~53                                                                           ; |tstand|mura:inst78|Add0~53                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~54                                                                           ; |tstand|mura:inst78|Add0~54                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~55                                                                           ; |tstand|mura:inst78|Add0~55                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~56                                                                           ; |tstand|mura:inst78|Add0~56                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~57                                                                           ; |tstand|mura:inst78|Add0~57                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~58                                                                           ; |tstand|mura:inst78|Add0~58                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~59                                                                           ; |tstand|mura:inst78|Add0~59                                                                           ; out0             ;
+; |tstand|mura:inst78|Add0~60                                                                           ; |tstand|mura:inst78|Add0~60                                                                           ; out0             ;
+; |tstand|comp_y:inst39|Add0~0                                                                          ; |tstand|comp_y:inst39|Add0~0                                                                          ; out0             ;
+; |tstand|comp_y:inst39|Add0~1                                                                          ; |tstand|comp_y:inst39|Add0~1                                                                          ; out0             ;
+; |tstand|comp_y:inst39|Add0~2                                                                          ; |tstand|comp_y:inst39|Add0~2                                                                          ; out0             ;
+; |tstand|comp_y:inst39|Add0~3                                                                          ; |tstand|comp_y:inst39|Add0~3                                                                          ; out0             ;
+; |tstand|comp_y:inst39|Add0~4                                                                          ; |tstand|comp_y:inst39|Add0~4                                                                          ; out0             ;
+; |tstand|comp_y:inst39|Add0~5                                                                          ; |tstand|comp_y:inst39|Add0~5                                                                          ; out0             ;
+; |tstand|comp_y:inst39|Add0~6                                                                          ; |tstand|comp_y:inst39|Add0~6                                                                          ; out0             ;
+; |tstand|comp_y:inst39|Add0~7                                                                          ; |tstand|comp_y:inst39|Add0~7                                                                          ; out0             ;
+; |tstand|comp_y:inst39|Add0~8                                                                          ; |tstand|comp_y:inst39|Add0~8                                                                          ; out0             ;
+; |tstand|comp_y:inst39|Add0~9                                                                          ; |tstand|comp_y:inst39|Add0~9                                                                          ; out0             ;
+; |tstand|comp_y:inst39|Add0~10                                                                         ; |tstand|comp_y:inst39|Add0~10                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~11                                                                         ; |tstand|comp_y:inst39|Add0~11                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~12                                                                         ; |tstand|comp_y:inst39|Add0~12                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~13                                                                         ; |tstand|comp_y:inst39|Add0~13                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~14                                                                         ; |tstand|comp_y:inst39|Add0~14                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~15                                                                         ; |tstand|comp_y:inst39|Add0~15                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~16                                                                         ; |tstand|comp_y:inst39|Add0~16                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~17                                                                         ; |tstand|comp_y:inst39|Add0~17                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~18                                                                         ; |tstand|comp_y:inst39|Add0~18                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~19                                                                         ; |tstand|comp_y:inst39|Add0~19                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~20                                                                         ; |tstand|comp_y:inst39|Add0~20                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~21                                                                         ; |tstand|comp_y:inst39|Add0~21                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~22                                                                         ; |tstand|comp_y:inst39|Add0~22                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~23                                                                         ; |tstand|comp_y:inst39|Add0~23                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~24                                                                         ; |tstand|comp_y:inst39|Add0~24                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~25                                                                         ; |tstand|comp_y:inst39|Add0~25                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~26                                                                         ; |tstand|comp_y:inst39|Add0~26                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~27                                                                         ; |tstand|comp_y:inst39|Add0~27                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~28                                                                         ; |tstand|comp_y:inst39|Add0~28                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~29                                                                         ; |tstand|comp_y:inst39|Add0~29                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~30                                                                         ; |tstand|comp_y:inst39|Add0~30                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~31                                                                         ; |tstand|comp_y:inst39|Add0~31                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~32                                                                         ; |tstand|comp_y:inst39|Add0~32                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~33                                                                         ; |tstand|comp_y:inst39|Add0~33                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~34                                                                         ; |tstand|comp_y:inst39|Add0~34                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~35                                                                         ; |tstand|comp_y:inst39|Add0~35                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~36                                                                         ; |tstand|comp_y:inst39|Add0~36                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~37                                                                         ; |tstand|comp_y:inst39|Add0~37                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~38                                                                         ; |tstand|comp_y:inst39|Add0~38                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~39                                                                         ; |tstand|comp_y:inst39|Add0~39                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~40                                                                         ; |tstand|comp_y:inst39|Add0~40                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~41                                                                         ; |tstand|comp_y:inst39|Add0~41                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~42                                                                         ; |tstand|comp_y:inst39|Add0~42                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~43                                                                         ; |tstand|comp_y:inst39|Add0~43                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~44                                                                         ; |tstand|comp_y:inst39|Add0~44                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~45                                                                         ; |tstand|comp_y:inst39|Add0~45                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~46                                                                         ; |tstand|comp_y:inst39|Add0~46                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~47                                                                         ; |tstand|comp_y:inst39|Add0~47                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~48                                                                         ; |tstand|comp_y:inst39|Add0~48                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~49                                                                         ; |tstand|comp_y:inst39|Add0~49                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~50                                                                         ; |tstand|comp_y:inst39|Add0~50                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~51                                                                         ; |tstand|comp_y:inst39|Add0~51                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~52                                                                         ; |tstand|comp_y:inst39|Add0~52                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~53                                                                         ; |tstand|comp_y:inst39|Add0~53                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~54                                                                         ; |tstand|comp_y:inst39|Add0~54                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~55                                                                         ; |tstand|comp_y:inst39|Add0~55                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~56                                                                         ; |tstand|comp_y:inst39|Add0~56                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~57                                                                         ; |tstand|comp_y:inst39|Add0~57                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~58                                                                         ; |tstand|comp_y:inst39|Add0~58                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~59                                                                         ; |tstand|comp_y:inst39|Add0~59                                                                         ; out0             ;
+; |tstand|comp_y:inst39|Add0~60                                                                         ; |tstand|comp_y:inst39|Add0~60                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~0                                                                          ; |tstand|comp_s:inst55|Add0~0                                                                          ; out0             ;
+; |tstand|comp_s:inst55|Add0~1                                                                          ; |tstand|comp_s:inst55|Add0~1                                                                          ; out0             ;
+; |tstand|comp_s:inst55|Add0~2                                                                          ; |tstand|comp_s:inst55|Add0~2                                                                          ; out0             ;
+; |tstand|comp_s:inst55|Add0~3                                                                          ; |tstand|comp_s:inst55|Add0~3                                                                          ; out0             ;
+; |tstand|comp_s:inst55|Add0~4                                                                          ; |tstand|comp_s:inst55|Add0~4                                                                          ; out0             ;
+; |tstand|comp_s:inst55|Add0~5                                                                          ; |tstand|comp_s:inst55|Add0~5                                                                          ; out0             ;
+; |tstand|comp_s:inst55|Add0~6                                                                          ; |tstand|comp_s:inst55|Add0~6                                                                          ; out0             ;
+; |tstand|comp_s:inst55|Add0~7                                                                          ; |tstand|comp_s:inst55|Add0~7                                                                          ; out0             ;
+; |tstand|comp_s:inst55|Add0~8                                                                          ; |tstand|comp_s:inst55|Add0~8                                                                          ; out0             ;
+; |tstand|comp_s:inst55|Add0~9                                                                          ; |tstand|comp_s:inst55|Add0~9                                                                          ; out0             ;
+; |tstand|comp_s:inst55|Add0~10                                                                         ; |tstand|comp_s:inst55|Add0~10                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~11                                                                         ; |tstand|comp_s:inst55|Add0~11                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~12                                                                         ; |tstand|comp_s:inst55|Add0~12                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~13                                                                         ; |tstand|comp_s:inst55|Add0~13                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~14                                                                         ; |tstand|comp_s:inst55|Add0~14                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~15                                                                         ; |tstand|comp_s:inst55|Add0~15                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~16                                                                         ; |tstand|comp_s:inst55|Add0~16                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~17                                                                         ; |tstand|comp_s:inst55|Add0~17                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~18                                                                         ; |tstand|comp_s:inst55|Add0~18                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~19                                                                         ; |tstand|comp_s:inst55|Add0~19                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~20                                                                         ; |tstand|comp_s:inst55|Add0~20                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~21                                                                         ; |tstand|comp_s:inst55|Add0~21                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~22                                                                         ; |tstand|comp_s:inst55|Add0~22                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~23                                                                         ; |tstand|comp_s:inst55|Add0~23                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~24                                                                         ; |tstand|comp_s:inst55|Add0~24                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~25                                                                         ; |tstand|comp_s:inst55|Add0~25                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~26                                                                         ; |tstand|comp_s:inst55|Add0~26                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~27                                                                         ; |tstand|comp_s:inst55|Add0~27                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~28                                                                         ; |tstand|comp_s:inst55|Add0~28                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~29                                                                         ; |tstand|comp_s:inst55|Add0~29                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~30                                                                         ; |tstand|comp_s:inst55|Add0~30                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~31                                                                         ; |tstand|comp_s:inst55|Add0~31                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~32                                                                         ; |tstand|comp_s:inst55|Add0~32                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~33                                                                         ; |tstand|comp_s:inst55|Add0~33                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~34                                                                         ; |tstand|comp_s:inst55|Add0~34                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~35                                                                         ; |tstand|comp_s:inst55|Add0~35                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~36                                                                         ; |tstand|comp_s:inst55|Add0~36                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~37                                                                         ; |tstand|comp_s:inst55|Add0~37                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~38                                                                         ; |tstand|comp_s:inst55|Add0~38                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~39                                                                         ; |tstand|comp_s:inst55|Add0~39                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~40                                                                         ; |tstand|comp_s:inst55|Add0~40                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~41                                                                         ; |tstand|comp_s:inst55|Add0~41                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~42                                                                         ; |tstand|comp_s:inst55|Add0~42                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~43                                                                         ; |tstand|comp_s:inst55|Add0~43                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~44                                                                         ; |tstand|comp_s:inst55|Add0~44                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~45                                                                         ; |tstand|comp_s:inst55|Add0~45                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~46                                                                         ; |tstand|comp_s:inst55|Add0~46                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~47                                                                         ; |tstand|comp_s:inst55|Add0~47                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~48                                                                         ; |tstand|comp_s:inst55|Add0~48                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~49                                                                         ; |tstand|comp_s:inst55|Add0~49                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~50                                                                         ; |tstand|comp_s:inst55|Add0~50                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~51                                                                         ; |tstand|comp_s:inst55|Add0~51                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~52                                                                         ; |tstand|comp_s:inst55|Add0~52                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~53                                                                         ; |tstand|comp_s:inst55|Add0~53                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~54                                                                         ; |tstand|comp_s:inst55|Add0~54                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~55                                                                         ; |tstand|comp_s:inst55|Add0~55                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~56                                                                         ; |tstand|comp_s:inst55|Add0~56                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~57                                                                         ; |tstand|comp_s:inst55|Add0~57                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~58                                                                         ; |tstand|comp_s:inst55|Add0~58                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~59                                                                         ; |tstand|comp_s:inst55|Add0~59                                                                         ; out0             ;
+; |tstand|comp_s:inst55|Add0~60                                                                         ; |tstand|comp_s:inst55|Add0~60                                                                         ; out0             ;
++-------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Tue Jul 03 14:20:33 2018
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off tstand -c tstand
+Info: Using vector source file "D:/TSTAND/qwe123.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      23.85 %
+Info: Number of transitions in simulation is 7398
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 166 megabytes
+    Info: Processing ended: Tue Jul 03 14:20:34 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

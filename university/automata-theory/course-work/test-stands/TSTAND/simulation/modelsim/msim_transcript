@@ -1,0 +1,176 @@
+# Reading E:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do tstand_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying E:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/necro/Desktop/STAND/KodirovkaX.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:02:03 on Jun 03,2017
+# vcom -reportprogress 300 -93 -work work C:/Users/necro/Desktop/STAND/KodirovkaX.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity KodirovkaX
+# -- Compiling architecture Behavioral of KodirovkaX
+# End time: 03:02:03 on Jun 03,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/necro/Desktop/STAND/test_sequence.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:02:03 on Jun 03,2017
+# vcom -reportprogress 300 -93 -work work C:/Users/necro/Desktop/STAND/test_sequence.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity test_sequence
+# -- Compiling architecture SYN of test_sequence
+# End time: 03:02:03 on Jun 03,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/necro/Desktop/STAND/count_100.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:02:03 on Jun 03,2017
+# vcom -reportprogress 300 -93 -work work C:/Users/necro/Desktop/STAND/count_100.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity count_100
+# -- Compiling architecture SYN of count_100
+# End time: 03:02:03 on Jun 03,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/necro/Desktop/STAND/true_S.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:02:03 on Jun 03,2017
+# vcom -reportprogress 300 -93 -work work C:/Users/necro/Desktop/STAND/true_S.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity true_S
+# -- Compiling architecture SYN of true_s
+# End time: 03:02:03 on Jun 03,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/necro/Desktop/STAND/true_Y.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:02:03 on Jun 03,2017
+# vcom -reportprogress 300 -93 -work work C:/Users/necro/Desktop/STAND/true_Y.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity true_Y
+# -- Compiling architecture SYN of true_y
+# End time: 03:02:03 on Jun 03,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/necro/Desktop/STAND/true_choice.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:02:03 on Jun 03,2017
+# vcom -reportprogress 300 -93 -work work C:/Users/necro/Desktop/STAND/true_choice.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package MATH_REAL
+# -- Compiling entity true_choice
+# -- Compiling architecture Behavioral of true_choice
+# End time: 03:02:03 on Jun 03,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/necro/Desktop/STAND/result.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:02:03 on Jun 03,2017
+# vcom -reportprogress 300 -93 -work work C:/Users/necro/Desktop/STAND/result.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity comp_s
+# -- Compiling architecture Behavioral of comp_s
+# End time: 03:02:03 on Jun 03,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/necro/Desktop/STAND/result_y.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:02:03 on Jun 03,2017
+# vcom -reportprogress 300 -93 -work work C:/Users/necro/Desktop/STAND/result_y.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity comp_y
+# -- Compiling architecture Behavioral of comp_y
+# End time: 03:02:04 on Jun 03,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/necro/Desktop/STAND/del.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:02:04 on Jun 03,2017
+# vcom -reportprogress 300 -93 -work work C:/Users/necro/Desktop/STAND/del.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity del
+# -- Compiling architecture SYN of del
+# End time: 03:02:04 on Jun 03,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/necro/Desktop/STAND/mura.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:02:04 on Jun 03,2017
+# vcom -reportprogress 300 -93 -work work C:/Users/necro/Desktop/STAND/mura.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity mura
+# -- Compiling architecture Behavioral of mura
+# End time: 03:02:04 on Jun 03,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/necro/Desktop/STAND/KodirovkaS.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:02:04 on Jun 03,2017
+# vcom -reportprogress 300 -93 -work work C:/Users/necro/Desktop/STAND/KodirovkaS.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity KodirovkaS
+# -- Compiling architecture Behavioral of KodirovkaS
+# End time: 03:02:04 on Jun 03,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/necro/Desktop/STAND/kodirovkaY.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:02:04 on Jun 03,2017
+# vcom -reportprogress 300 -93 -work work C:/Users/necro/Desktop/STAND/kodirovkaY.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity KodirovkaY
+# -- Compiling architecture Behavioral of KodirovkaY
+# End time: 03:02:04 on Jun 03,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/necro/Desktop/STAND/KodirovkaMura.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:02:04 on Jun 03,2017
+# vcom -reportprogress 300 -93 -work work C:/Users/necro/Desktop/STAND/KodirovkaMura.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity KodirovkaMura
+# -- Compiling architecture Behavioral of KodirovkaMura
+# End time: 03:02:04 on Jun 03,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# Load canceled
