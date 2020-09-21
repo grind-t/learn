@@ -1,0 +1,8 @@
+C:\Users\GD\source\repos\University\Exercises\RGR4\RGR4\bin\Debug\RGR4.dll
+C:\Users\GD\source\repos\University\Exercises\RGR4\RGR4\bin\Debug\RGR4.pdb
+C:\Users\GD\source\repos\University\Exercises\RGR4\RGR4\obj\Debug\RGR4.csproj.CoreCompileInputs.cache
+C:\Users\GD\source\repos\University\Exercises\RGR4\RGR4\obj\Debug\RGR4.dll
+C:\Users\GD\source\repos\University\Exercises\RGR4\RGR4\obj\Debug\RGR4.pdb
+C:\Users\GD\source\repos\University\Exercises\RGR4\RGR4\obj\Debug\RGR4.Properties.Resources.resources
+C:\Users\GD\source\repos\University\Exercises\RGR4\RGR4\obj\Debug\RGR4.csproj.GenerateResource.cache
+C:\Users\GD\source\repos\University\Exercises\RGR4\RGR4\obj\Debug\RGR4.csprojAssemblyReference.cache
