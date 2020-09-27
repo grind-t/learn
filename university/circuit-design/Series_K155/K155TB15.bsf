@@ -1,0 +1,161 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 56 64 232 408)
+	(text "K155TB15" (rect 61 0 121 12)(font "Arial" (font_size 8)))
+	(text "inst" (rect 16 306 33 316)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "1nS" (rect 0 0 22 12)(font "Arial" (font_size 8)))
+		(text "1nS" (rect 37 27 59 39)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 24 32)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "1J" (rect 0 0 14 12)(font "Arial" (font_size 8)))
+		(text "1J" (rect 37 59 51 71)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 24 64)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "1nR" (rect 0 0 23 12)(font "Arial" (font_size 8)))
+		(text "1nR" (rect 37 139 60 151)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 24 144)(line_width 1))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "1C" (rect 0 0 16 12)(font "Arial" (font_size 8)))
+		(text "1C" (rect 37 83 53 95)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 24 88)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "1nK" (rect 0 0 22 12)(font "Arial" (font_size 8)))
+		(text "1nK" (rect 37 107 59 119)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 24 112)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "2nS" (rect 0 0 22 12)(font "Arial" (font_size 8)))
+		(text "2nS" (rect 37 171 59 183)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 24 176)(line_width 1))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "2J" (rect 0 0 14 12)(font "Arial" (font_size 8)))
+		(text "2J" (rect 37 203 51 215)(font "Arial" (font_size 8)))
+		(line (pt 0 208)(pt 24 208)(line_width 1))
+	)
+	(port
+		(pt 0 288)
+		(input)
+		(text "2nR" (rect 0 0 23 12)(font "Arial" (font_size 8)))
+		(text "2nR" (rect 37 283 60 295)(font "Arial" (font_size 8)))
+		(line (pt 0 288)(pt 24 288)(line_width 1))
+	)
+	(port
+		(pt 0 232)
+		(input)
+		(text "2C" (rect 0 0 16 12)(font "Arial" (font_size 8)))
+		(text "2C" (rect 37 227 53 239)(font "Arial" (font_size 8)))
+		(line (pt 0 232)(pt 24 232)(line_width 1))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "2nK" (rect 0 0 22 12)(font "Arial" (font_size 8)))
+		(text "2nK" (rect 37 251 59 263)(font "Arial" (font_size 8)))
+		(line (pt 0 256)(pt 24 256)(line_width 1))
+	)
+	(port
+		(pt 176 48)
+		(output)
+		(text "1Q" (rect 80 0 97 12)(font "Arial" (font_size 8)))
+		(text "1Q" (rect 130 43 147 55)(font "Arial" (font_size 8)))
+		(line (pt 176 48)(pt 152 48)(line_width 1))
+	)
+	(port
+		(pt 176 128)
+		(output)
+		(text "1nQ" (rect 80 0 104 12)(font "Arial" (font_size 8)))
+		(text "1nQ" (rect 123 123 147 135)(font "Arial" (font_size 8)))
+		(line (pt 176 128)(pt 152 128)(line_width 1))
+	)
+	(port
+		(pt 176 192)
+		(output)
+		(text "2Q" (rect 80 0 97 12)(font "Arial" (font_size 8)))
+		(text "2Q" (rect 130 187 147 199)(font "Arial" (font_size 8)))
+		(line (pt 176 192)(pt 152 192)(line_width 1))
+	)
+	(port
+		(pt 176 272)
+		(output)
+		(text "2nQ" (rect 80 0 104 12)(font "Arial" (font_size 8)))
+		(text "2nQ" (rect 123 267 147 279)(font "Arial" (font_size 8)))
+		(line (pt 176 272)(pt 152 272)(line_width 1))
+	)
+	(drawing
+		(text "Два JK-триггера" (rect 40 320 136 332)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "05" (rect 8 16 22 28)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "02" (rect 8 48 22 60)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "04" (rect 8 72 22 84)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "03" (rect 8 96 22 108)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "01" (rect 8 128 22 140)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "11" (rect 8 160 22 172)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "14" (rect 8 192 22 204)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "12" (rect 8 216 22 228)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "13" (rect 8 240 22 252)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "15" (rect 8 272 22 284)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "06" (rect 160 32 174 44)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "07" (rect 160 112 174 124)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "10" (rect 160 176 174 188)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "09" (rect 160 256 174 268)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "T" (rect 88 40 96 52)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "T" (rect 88 176 96 188)(font "Arial" (color 0 0 0)(font_size 8)))
+		(line (pt 24 48)(pt 64 48)(line_width 1))
+		(line (pt 24 128)(pt 64 128)(line_width 1))
+		(line (pt 24 192)(pt 64 192)(line_width 1))
+		(line (pt 24 272)(pt 64 272)(line_width 1))
+		(line (pt 24 160)(pt 152 160)(line_width 1))
+		(line (pt 32 224)(pt 16 240)(line_width 1))
+		(line (pt 32 80)(pt 16 96)(line_width 1))
+		(line (pt 64 16)(pt 64 304)(line_width 1))
+		(line (pt 112 16)(pt 112 304)(line_width 1))
+		(rectangle (rect 24 16 152 304)(line_width 1))
+		(circle (rect 16 24 33 41))
+		(circle (rect 16 104 33 121))
+		(circle (rect 16 136 33 153))
+		(circle (rect 16 168 33 185))
+		(circle (rect 16 248 33 265))
+		(circle (rect 16 280 33 297))
+		(circle (rect 144 264 161 281))
+		(circle (rect 144 120 161 137))
+	)
+)
