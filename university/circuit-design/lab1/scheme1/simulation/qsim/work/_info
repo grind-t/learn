@@ -11,23 +11,23 @@ z2
 cModel Technology
 Z0 dC:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab1/scheme1/simulation/qsim
 vhard_block
-Z1 !s110 1601204951
+Z1 !s110 1601220646
 !i10b 1
 !s100 _8R6c=J7cDeGjPJChR>892
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
 If2a2ffMWz>5aA^1[]Vh8R1
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z4 w1601204949
+Z4 w1601220645
 Z5 8lab1_scheme1.vo
 Z6 Flab1_scheme1.vo
-!i122 26
+!i122 30
 L0 154 34
 Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1601204951.000000
+Z8 !s108 1601220646.000000
 Z9 !s107 lab1_scheme1.vo|
 Z10 !s90 -work|work|lab1_scheme1.vo|
 !i113 1
@@ -44,7 +44,7 @@ R0
 R4
 R5
 R6
-!i122 26
+!i122 30
 L0 32 121
 R7
 r1
@@ -105,10 +105,10 @@ R2
 IkHXG6nHUSlfVkUKWPN7QM3
 R3
 R0
-w1601204948
+w1601220644
 8Waveform.vwf.vt
 FWaveform.vwf.vt
-!i122 27
+!i122 31
 L0 30 78
 R7
 r1

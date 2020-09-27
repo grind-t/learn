@@ -1,5 +1,5 @@
 Flow report for lab1_scheme1
-Sun Sep 27 14:09:09 2020
+Sun Sep 27 18:30:45 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Sep 27 14:09:09 2020       ;
+; Flow Status                        ; Successful - Sun Sep 27 18:30:45 2020       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; lab1_scheme1                                ;
 ; Top-level Entity Name              ; lab1_scheme1                                ;
@@ -125,7 +125,11 @@ https://fpgasoftware.intel.com/eula.
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4721 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4712 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4721 MB             ; 00:00:01                           ;
-; Total                ; 00:00:34     ; --                      ; --                  ; 00:00:59                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4712 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4717 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4712 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4721 MB             ; 00:00:01                           ;
+; Total                ; 00:00:36     ; --                      ; --                  ; 00:01:03                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -138,6 +142,10 @@ https://fpgasoftware.intel.com/eula.
 ; Fitter               ; DESKTOP-4TNSBQF  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Assembler            ; DESKTOP-4TNSBQF  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Timing Analyzer      ; DESKTOP-4TNSBQF  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-4TNSBQF  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-4TNSBQF  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-4TNSBQF  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-4TNSBQF  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-4TNSBQF  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-4TNSBQF  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-4TNSBQF  ; Windows 10 ; 10.0       ; x86_64         ;
@@ -203,6 +211,10 @@ quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_setting
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab1/scheme1/simulation/qsim/ lab1_scheme1 -c lab1_scheme1
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab1_scheme1 -c lab1_scheme1 --vector_source=C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab1/scheme1/Waveform.vwf --testbench_file=C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab1/scheme1/simulation/qsim/Waveform.vwf.vt
 quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory=C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab1/scheme1/simulation/qsim/ lab1_scheme1 -c lab1_scheme1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab1_scheme1 -c lab1_scheme1 --vector_source=C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab1/scheme1/Waveform.vwf --testbench_file=C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab1/scheme1/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory=C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab1/scheme1/simulation/qsim/ lab1_scheme1 -c lab1_scheme1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab1_scheme1 -c lab1_scheme1 --vector_source=C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab1/scheme1/Waveform.vwf --testbench_file=C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab1/scheme1/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab1/scheme1/simulation/qsim/ lab1_scheme1 -c lab1_scheme1
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab1_scheme1 -c lab1_scheme1 --vector_source=C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab1/scheme1/Waveform.vwf --testbench_file=C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab1/scheme1/simulation/qsim/Waveform.vwf.vt
 quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory=C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab1/scheme1/simulation/qsim/ lab1_scheme1 -c lab1_scheme1
 
