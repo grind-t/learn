@@ -1,0 +1,26 @@
+; Demonstrationsdatei 3
+; nur fr QMC Version 1.8 und h”her !
+
+
+.EING In1 In2 In3 In4  ; 4 Eing„nge
+.AUSG Out1             ; 1 Ausgang
+.FORM DNF              ; disjunktive Normalform berechnen
+
+.RESULTAT SCHEMA GLEICHUNG TABELLE ; Resultat als Schema ausgeben
+
+.REST D       ; nicht aufgelistete Eintr„ge sind don't care Eintr„ge
+
+; Die Wahrheitstabelle :
+
+0000 -> 0
+0010 -> 1
+0011 -> 0
+0100 -> 1
+0101 -> 1
+100X -> 0
+1100 -> 0
+1101 -> 1
+1110 -> 1
+1111 -> D
+
+

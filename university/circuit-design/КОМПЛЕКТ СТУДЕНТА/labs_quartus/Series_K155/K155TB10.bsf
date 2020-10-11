@@ -1,0 +1,139 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 56 64 200 360)
+	(text "K155TB10" (rect 45 0 105 12)(font "Arial" (font_size 8)))
+	(text "inst" (rect 16 242 33 252)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "nS1" (rect 0 0 22 12)(font "Arial" (font_size 8)))
+		(text "nS1" (rect 37 27 59 39)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 24 32)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "J1" (rect 0 0 14 12)(font "Arial" (font_size 8)))
+		(text "J1" (rect 37 59 51 71)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 24 64)(line_width 1))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "C1" (rect 0 0 16 12)(font "Arial" (font_size 8)))
+		(text "C1" (rect 37 83 53 95)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 24 88)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "K1" (rect 0 0 15 12)(font "Arial" (font_size 8)))
+		(text "K1" (rect 37 107 52 119)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 24 112)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "nS2" (rect 0 0 22 12)(font "Arial" (font_size 8)))
+		(text "nS2" (rect 37 139 59 151)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 24 144)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "J2" (rect 0 0 14 12)(font "Arial" (font_size 8)))
+		(text "J2" (rect 37 171 51 183)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 24 176)(line_width 1))
+	)
+	(port
+		(pt 0 200)
+		(input)
+		(text "C2" (rect 0 0 16 12)(font "Arial" (font_size 8)))
+		(text "C2" (rect 37 195 53 207)(font "Arial" (font_size 8)))
+		(line (pt 0 200)(pt 24 200)(line_width 1))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "K2" (rect 0 0 15 12)(font "Arial" (font_size 8)))
+		(text "K2" (rect 37 219 52 231)(font "Arial" (font_size 8)))
+		(line (pt 0 224)(pt 24 224)(line_width 1))
+	)
+	(port
+		(pt 144 48)
+		(output)
+		(text "1Q" (rect 48 0 65 12)(font "Arial" (font_size 8)))
+		(text "1Q" (rect 98 43 115 55)(font "Arial" (font_size 8)))
+		(line (pt 144 48)(pt 120 48)(line_width 1))
+	)
+	(port
+		(pt 144 96)
+		(output)
+		(text "1nQ" (rect 48 0 72 12)(font "Arial" (font_size 8)))
+		(text "1nQ" (rect 91 91 115 103)(font "Arial" (font_size 8)))
+		(line (pt 144 96)(pt 120 96)(line_width 1))
+	)
+	(port
+		(pt 144 160)
+		(output)
+		(text "2Q" (rect 48 0 65 12)(font "Arial" (font_size 8)))
+		(text "2Q" (rect 98 155 115 167)(font "Arial" (font_size 8)))
+		(line (pt 144 160)(pt 120 160)(line_width 1))
+	)
+	(port
+		(pt 144 208)
+		(output)
+		(text "2nQ" (rect 48 0 72 12)(font "Arial" (font_size 8)))
+		(text "2nQ" (rect 91 203 115 215)(font "Arial" (font_size 8)))
+		(line (pt 144 208)(pt 120 208)(line_width 1))
+	)
+	(drawing
+		(text "T1" (rect 72 24 87 36)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "T2" (rect 72 136 87 148)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "Два JK-триггера" (rect 32 256 128 268)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "с установкой" (rect 40 272 119 284)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "04" (rect 8 16 22 28)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "03" (rect 8 48 22 60)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "01" (rect 8 72 22 84)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "02" (rect 8 96 22 108)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "10" (rect 8 128 22 140)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "11" (rect 8 160 22 172)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "13" (rect 8 184 22 196)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "12" (rect 8 208 22 220)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "05" (rect 128 32 142 44)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "06" (rect 128 80 142 92)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "09" (rect 128 144 142 156)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "08" (rect 128 192 142 204)(font "Arial" (color 0 0 0)(font_size 8)))
+		(line (pt 24 160)(pt 64 160)(line_width 1))
+		(line (pt 24 48)(pt 64 48)(line_width 1))
+		(line (pt 24 128)(pt 120 128)(line_width 1))
+		(line (pt 16 80)(pt 32 96)(line_width 1))
+		(line (pt 16 192)(pt 32 208)(line_width 1))
+		(line (pt 64 16)(pt 64 240)(line_width 1))
+		(rectangle (rect 24 16 120 240)(line_width 1))
+		(circle (rect 16 24 33 41))
+		(circle (rect 16 136 33 153))
+		(circle (rect 112 200 129 217))
+		(circle (rect 112 88 129 105))
+	)
+)

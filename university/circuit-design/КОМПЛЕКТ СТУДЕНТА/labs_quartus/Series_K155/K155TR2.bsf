@@ -1,0 +1,165 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 56 64 248 432)
+	(text "K155TR2" (rect 77 0 131 12)(font "Arial" (font_size 8)))
+	(text "inst" (rect 16 330 33 340)(font "Arial" ))
+	(port
+		(pt 0 96)
+		(input)
+		(text "1nR" (rect 0 0 23 12)(font "Arial" (font_size 8)))
+		(text "1nR" (rect 37 91 60 103)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 24 96)(line_width 1))
+	)
+	(port
+		(pt 0 40)
+		(input)
+		(text "1nS1" (rect 0 0 29 12)(font "Arial" (font_size 8)))
+		(text "1nS1" (rect 37 35 66 47)(font "Arial" (font_size 8)))
+		(line (pt 0 40)(pt 24 40)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "1nS2" (rect 0 0 29 12)(font "Arial" (font_size 8)))
+		(text "1nS2" (rect 37 59 66 71)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 24 64)(line_width 1))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "2nS" (rect 0 0 22 12)(font "Arial" (font_size 8)))
+		(text "2nS" (rect 37 123 59 135)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 24 128)(line_width 1))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "2nR" (rect 0 0 23 12)(font "Arial" (font_size 8)))
+		(text "2nR" (rect 37 147 60 159)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 24 152)(line_width 1))
+	)
+	(port
+		(pt 0 248)
+		(input)
+		(text "3nR" (rect 0 0 23 12)(font "Arial" (font_size 8)))
+		(text "3nR" (rect 37 243 60 255)(font "Arial" (font_size 8)))
+		(line (pt 0 248)(pt 24 248)(line_width 1))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "3nS1" (rect 0 0 29 12)(font "Arial" (font_size 8)))
+		(text "3nS1" (rect 37 187 66 199)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 24 192)(line_width 1))
+	)
+	(port
+		(pt 0 216)
+		(input)
+		(text "3nS2" (rect 0 0 29 12)(font "Arial" (font_size 8)))
+		(text "3nS2" (rect 37 211 66 223)(font "Arial" (font_size 8)))
+		(line (pt 0 216)(pt 24 216)(line_width 1))
+	)
+	(port
+		(pt 0 312)
+		(input)
+		(text "4nS" (rect 0 0 22 12)(font "Arial" (font_size 8)))
+		(text "4nS" (rect 37 307 59 319)(font "Arial" (font_size 8)))
+		(line (pt 0 312)(pt 24 312)(line_width 1))
+	)
+	(port
+		(pt 0 288)
+		(input)
+		(text "4nR" (rect 0 0 23 12)(font "Arial" (font_size 8)))
+		(text "4nR" (rect 37 283 60 295)(font "Arial" (font_size 8)))
+		(line (pt 0 288)(pt 24 288)(line_width 1))
+	)
+	(port
+		(pt 192 64)
+		(output)
+		(text "1Q" (rect 96 0 113 12)(font "Arial" (font_size 8)))
+		(text "1Q" (rect 146 59 163 71)(font "Arial" (font_size 8)))
+		(line (pt 192 64)(pt 168 64)(line_width 1))
+	)
+	(port
+		(pt 192 136)
+		(output)
+		(text "2Q" (rect 96 0 113 12)(font "Arial" (font_size 8)))
+		(text "2Q" (rect 146 131 163 143)(font "Arial" (font_size 8)))
+		(line (pt 192 136)(pt 168 136)(line_width 1))
+	)
+	(port
+		(pt 192 216)
+		(output)
+		(text "3Q" (rect 96 0 113 12)(font "Arial" (font_size 8)))
+		(text "3Q" (rect 146 211 163 223)(font "Arial" (font_size 8)))
+		(line (pt 192 216)(pt 168 216)(line_width 1))
+	)
+	(port
+		(pt 192 296)
+		(output)
+		(text "4Q" (rect 96 0 113 12)(font "Arial" (font_size 8)))
+		(text "4Q" (rect 146 291 163 303)(font "Arial" (font_size 8)))
+		(line (pt 192 296)(pt 168 296)(line_width 1))
+	)
+	(drawing
+		(text "02" (rect 8 24 22 36)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "03" (rect 8 48 22 60)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "01" (rect 8 80 22 92)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "06" (rect 8 112 22 124)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "05" (rect 8 136 22 148)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "&" (rect 40 16 48 28)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "&" (rect 40 168 48 180)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "04" (rect 176 48 190 60)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "07" (rect 176 120 190 132)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "T" (rect 96 32 104 44)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "T" (rect 96 120 104 132)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "T" (rect 96 272 104 284)(font "Arial" (font_size 8)))
+		(text "11" (rect 8 176 22 188)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "12" (rect 8 200 22 212)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "10" (rect 8 232 22 244)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "15" (rect 8 272 22 284)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "14" (rect 8 296 22 308)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "09" (rect 176 200 190 212)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "T" (rect 96 176 104 188)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "4 RS-ענטדדונא" (rect 64 344 147 356)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "13" (rect 176 280 190 292)(font "Arial" (color 0 0 0)(font_size 8)))
+		(line (pt 24 264)(pt 168 264)(line_width 1))
+		(line (pt 24 232)(pt 72 232)(line_width 1))
+		(line (pt 24 80)(pt 72 80)(line_width 1))
+		(line (pt 24 112)(pt 168 112)(line_width 1))
+		(line (pt 24 168)(pt 168 168)(line_width 1))
+		(line (pt 72 16)(pt 72 328)(line_width 1))
+		(line (pt 128 16)(pt 128 328)(line_width 1))
+		(rectangle (rect 24 16 168 328)(line_width 1))
+		(circle (rect 16 32 33 49))
+		(circle (rect 16 56 33 73))
+		(circle (rect 16 88 33 105))
+		(circle (rect 16 120 33 137))
+		(circle (rect 16 144 33 161))
+		(circle (rect 16 184 33 201))
+		(circle (rect 16 208 33 225))
+		(circle (rect 16 240 32 256))
+		(circle (rect 16 280 33 297))
+		(circle (rect 16 304 33 321))
+	)
+)

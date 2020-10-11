@@ -1,0 +1,207 @@
+Quine Mc Cluskey 3.24    (c)89-08 by http://www.iapetus.ch/software
+-----------------------------------------------------------------------
+Started at 18.05.2008 17:40:28
+
+
+Start of source file D:\recieved\Quine Mc Cluskey 3.10\demo\demo5.qmc
+-----------------------------------------------------------------------
+
+
+; DEMO5.QMC                                              20.11.2000  M.Wieser
+; Demonstration der M”glichkeiten des Programms
+
+.EING notReset A0                 ; 2 Eingangsvariablen
+.AUSG F1 F2 F3 F4 F5 F6 F7 F8     ; 8 Ausgangsvariablen
+.FORM ANF                        ; konjunktive Normalform 
+
+
+.resultat tabelle schema
+
+; Definitionen fuer die Ausgaenge: alle Grundfunktionen im Test
+
+.gleichung F1 = notReset * A0
+.gleichung F2 = /notReset + A0 
+.gleichung F3 =   notReset xor /A0 
+.gleichung F4 =  /notReset or /A0 
+.gleichung F5 =   notReset and A0 
+.gleichung F6 =  /notReset xnor  A0 
+.gleichung F7 =   notReset nor /A0 
+.gleichung F8 =  /notReset * /A0 
+.gleichung F8 = (notReset) + (A0)
+;Wahrheitstabelle ist hier nicht noetig
+
+
+;
+;Definition der Ausgaenge mit einer Formel:
+;Die Variablennamen muessen mit den den Namensdefinitionen uebereinstimmen!
+;
+
+-----------------------------------------------------------------------
+End of source file D:\recieved\Quine Mc Cluskey 3.10\demo\demo5.qmc
+
+
+Quine Mc Cluskey 3.24    (c)89-08 by http://www.iapetus.ch/software
+-----------------------------------------------------------------------
+Calculated minimized alternative forms for output number 1:
+
+şnotReset
+³ şA0
+³ ³    ÚÄÄÄÄÄ¿   
+³ ÀÄÄÄÄ´  &  ÃÄÄÄÄÄÄşF1
+ÀÄÄÄÄÄÄ´     ³   
+       ÀÄÄÄÄÄÙ   
+
+
+No other solutions for output number 1.
+-----------------------------------------------------------------------
+
+
+Quine Mc Cluskey 3.24    (c)89-08 by http://www.iapetus.ch/software
+-----------------------------------------------------------------------
+Calculated minimized alternative forms for output number 2:
+
+şlog.1
+³ şnotReset
+³ ³ şA0
+ÀÄÅÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿ ÚÄÄÄÄÄ¿  
+  ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿ÀÄ´  =1 ³  
+  ³ ³    ÚÄÄÄÄÄ¿   ÀÄÄ´     ÃÄÄÄÄşF2
+  ³ ÀÄÄÄÄ´  &  ÃÄÄÄÄÄÄ´     ³  
+  ÀÄÄÄÄÄÄ´     ³      ÀÄÄÄÄÄÙ  
+         ÀÄÄÄÄÄÙ     
+
+
+No other solutions for output number 2.
+-----------------------------------------------------------------------
+
+
+Quine Mc Cluskey 3.24    (c)89-08 by http://www.iapetus.ch/software
+-----------------------------------------------------------------------
+Calculated minimized alternative forms for output number 3:
+
+şlog.1
+³ şnotReset
+³ ³ şA0
+³ ³ ³                 ÚÄÄÄÄÄ¿  
+ÀÄÅÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´  =1 ³  
+  ³ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´     ÃÄÄÄÄşF3
+  ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´     ³  
+                      ÀÄÄÄÄÄÙ  
+
+
+No other solutions for output number 3.
+-----------------------------------------------------------------------
+
+
+Quine Mc Cluskey 3.24    (c)89-08 by http://www.iapetus.ch/software
+-----------------------------------------------------------------------
+Calculated minimized alternative forms for output number 4:
+
+şlog.1
+³ şnotReset
+³ ³ şA0
+ÀÄÅÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+  ³ ³    ÚÄÄÄÄÄ¿   ³ ÚÄÄÄÄÄ¿  
+  ³ ÀÄÄÄÄ´  &  ÃÄÄ¿ÀÄ´  =1 ÃÄÄÄÄşF4
+  ÀÄÄÄÄÄÄ´     ³  ÀÄÄ´     ³  
+         ÀÄÄÄÄÄÙ     ÀÄÄÄÄÄÙ  
+
+
+No other solutions for output number 4.
+-----------------------------------------------------------------------
+
+
+Quine Mc Cluskey 3.24    (c)89-08 by http://www.iapetus.ch/software
+-----------------------------------------------------------------------
+Calculated minimized alternative forms for output number 5:
+
+şnotReset
+³ şA0
+³ ³    ÚÄÄÄÄÄ¿   
+³ ÀÄÄÄÄ´  &  ÃÄÄÄÄÄÄşF5
+ÀÄÄÄÄÄÄ´     ³   
+       ÀÄÄÄÄÄÙ   
+
+
+No other solutions for output number 5.
+-----------------------------------------------------------------------
+
+
+Quine Mc Cluskey 3.24    (c)89-08 by http://www.iapetus.ch/software
+-----------------------------------------------------------------------
+Calculated minimized alternative forms for output number 6:
+
+şnotReset
+³ şA0
+³ ³                ÚÄÄÄÄÄ¿  
+³ ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´  =1 ÃÄÄÄÄşF6
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´     ³  
+                   ÀÄÄÄÄÄÙ  
+
+
+No other solutions for output number 6.
+-----------------------------------------------------------------------
+
+
+Quine Mc Cluskey 3.24    (c)89-08 by http://www.iapetus.ch/software
+-----------------------------------------------------------------------
+Calculated minimized alternative forms for output number 7:
+
+şnotReset
+³ şA0
+³ ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ ³    ÚÄÄÄÄÄ¿   ³ ÚÄÄÄÄÄ¿  
+³ ÀÄÄÄÄ´  &  ÃÄÄ¿ÀÄ´  =1 ÃÄÄÄÄşF7
+ÀÄÄÄÄÄÄ´     ³  ÀÄÄ´     ³  
+       ÀÄÄÄÄÄÙ     ÀÄÄÄÄÄÙ  
+
+
+No other solutions for output number 7.
+-----------------------------------------------------------------------
+
+
+Quine Mc Cluskey 3.24    (c)89-08 by http://www.iapetus.ch/software
+-----------------------------------------------------------------------
+Calculated minimized alternative forms for output number 8:
+
+şnotReset
+³ şA0
+³ ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿ ÚÄÄÄÄÄ¿  
+ÃÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿ÀÄ´  =1 ³  
+³ ³    ÚÄÄÄÄÄ¿   ÀÄÄ´     ÃÄÄÄÄşF8
+³ ÀÄÄÄÄ´  &  ÃÄÄÄÄÄÄ´     ³  
+ÀÄÄÄÄÄÄ´     ³      ÀÄÄÄÄÄÙ  
+       ÀÄÄÄÄÄÙ     
+
+
+No other solutions for output number 8.
+-----------------------------------------------------------------------
+
+
+Quine Mc Cluskey 3.24    (c)89-08 by http://www.iapetus.ch/software
+-----------------------------------------------------------------------
+
+Expanding truth table for all outputs:
+
+ şnotReset
+ ³ şA0
+ ³ ³ 
+ ³ ³   şF1
+ ³ ³   ³ şF2
+ ³ ³   ³ ³ şF3
+ ³ ³   ³ ³ ³ şF4
+ ³ ³   ³ ³ ³ ³ şF5
+ ³ ³   ³ ³ ³ ³ ³ şF6
+ ³ ³   ³ ³ ³ ³ ³ ³ şF7
+ ³ ³   ³ ³ ³ ³ ³ ³ ³ şF8
+ ³ ³   ³ ³ ³ ³ ³ ³ ³ ³ 
+ÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ 0 0 ³ 0 1 1 1 0 0 0 0 
+ 0 1 ³ 0 1 0 1 0 1 1 1 
+ 1 0 ³ 0 0 0 1 0 1 0 1 
+ 1 1 ³ 1 1 1 0 1 0 0 1 
+
+
+
+Calculation successfully terminated. Time elapsed: 0:00:01
+

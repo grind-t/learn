@@ -1,0 +1,24 @@
+; Demonstrationsdatei 2
+; ---------------------
+
+.eing notReset En WR A0                    ; 4 Eingangsvariablen
+.ausg Freigabe Flag                        ; 2 Ausgangsvariable ist Default
+
+ 00X1 -> 11                  ; Eingangskombination welche '1' ergeben soll
+ 1001 -> dd                  ; Don't care Kombination
+ 110X -> d0                  ; X steht fr einen beliebigen Zustand
+ 1010 -> 11
+
+; Demonstration der M”glichkeiten des Programms          24.2.90  M.Wieser
+
+.form dnf                    ; konjunktive Normalform  (warum nicht?)
+            
+								     ; Variablennamen
+.resultat
+$schema
+$tabelle
+$gleichung
+ 
+
+; Damit ist alles definiert, um eine Berechnung zu starten...
+

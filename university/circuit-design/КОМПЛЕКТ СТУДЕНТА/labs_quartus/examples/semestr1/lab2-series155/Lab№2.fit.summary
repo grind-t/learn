@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Nov 01 11:21:05 2010
+Quartus II Version : 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition
+Revision Name : Lab¹2
+Top-level Entity Name : 2_MUX_with_3_adress_input
+Family : Cyclone II
+Device : EP2C8F256C8
+Timing Models : Final
+Total logic elements : 2 / 8,256 ( < 1 % )
+    Total combinational functions : 2 / 8,256 ( < 1 % )
+    Dedicated logic registers : 0 / 8,256 ( 0 % )
+Total registers : 0
+Total pins : 6 / 182 ( 3 % )
+Total virtual pins : 0
+Total memory bits : 0 / 165,888 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 36 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

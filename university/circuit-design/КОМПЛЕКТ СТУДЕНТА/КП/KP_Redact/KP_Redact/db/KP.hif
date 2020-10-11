@@ -1,0 +1,108 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+10
+767
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+KP1533TB9
+# storage
+db|KP.(1).cnf
+db|KP.(1).cnf
+# case_insensitive
+# source_file
+|altera|лабработы на altera quartus ii|series  kp1533|kp1533tb9.bdf
+7c236f4439a344c3f9738948f9bfb0
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+kp1533tb9:inst
+kp1533tb9:inst3
+kp1533tb9:inst2
+kp1533tb9:inst16
+kp1533tb9:inst5
+kp1533tb9:inst4
+}
+# macro_sequence
+
+# end
+# entity
+KP1533LA24
+# storage
+db|KP.(2).cnf
+db|KP.(2).cnf
+# case_insensitive
+# source_file
+|altera|лабработы на altera quartus ii|series  kp1533|kp1533la24.bdf
+435638c56f0821f77152a485a6d5b3
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+kp1533la24:inst15
+}
+# macro_sequence
+
+# end
+# entity
+KP1533LN8
+# storage
+db|KP.(3).cnf
+db|KP.(3).cnf
+# case_insensitive
+# source_file
+|altera|лабработы на altera quartus ii|series  kp1533|kp1533ln8.bdf
+b268f25f1ce2ba7f0cfb9a1c45fa3a6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+kp1533ln8:inst13
+}
+# macro_sequence
+
+# end
+# entity
+KYRS_sxem
+# storage
+db|KP.(0).cnf
+db|KP.(0).cnf
+# case_insensitive
+# source_file
+kyrs_sxem.bdf
+a456fd52b4c4688bc2fcbb591f8c753
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

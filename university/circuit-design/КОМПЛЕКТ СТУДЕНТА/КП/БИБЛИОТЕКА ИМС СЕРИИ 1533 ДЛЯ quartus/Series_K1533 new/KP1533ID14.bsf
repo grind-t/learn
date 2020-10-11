@@ -1,0 +1,160 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 64 64 216 328)
+	(text "KP1533ID14" (rect 40 0 108 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 24 176 41 188)(font "Arial" ))
+	(port
+		(pt 0 48)
+		(input)
+		(text "1nE" (rect 0 0 21 14)(font "Arial" (font_size 8)))
+		(text "1nE" (rect 32 40 53 54)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "1A" (rect 0 0 16 14)(font "Arial" (font_size 8)))
+		(text "1A" (rect 32 56 48 70)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 24 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "1B" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "1B" (rect 32 72 47 86)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 24 80)(line_width 1))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "2nE" (rect 0 0 21 14)(font "Arial" (font_size 8)))
+		(text "2nE" (rect 32 120 53 134)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "2A" (rect 0 0 16 14)(font "Arial" (font_size 8)))
+		(text "2A" (rect 32 136 48 150)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 24 144)(line_width 1))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "2B" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "2B" (rect 32 152 47 166)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 24 160)(line_width 1))
+	)
+	(port
+		(pt 152 32)
+		(output)
+		(text "n1Y0" (rect 56 0 86 14)(font "Arial" (font_size 8)))
+		(text "n1Y0" (rect 96 24 126 38)(font "Arial" (font_size 8)))
+		(line (pt 152 32)(pt 128 32)(line_width 1))
+	)
+	(port
+		(pt 152 48)
+		(output)
+		(text "n1Y1" (rect 56 0 86 14)(font "Arial" (font_size 8)))
+		(text "n1Y1" (rect 96 40 126 54)(font "Arial" (font_size 8)))
+		(line (pt 152 48)(pt 128 48)(line_width 1))
+	)
+	(port
+		(pt 152 64)
+		(output)
+		(text "n1Y2" (rect 56 0 86 14)(font "Arial" (font_size 8)))
+		(text "n1Y2" (rect 96 56 126 70)(font "Arial" (font_size 8)))
+		(line (pt 152 64)(pt 128 64)(line_width 1))
+	)
+	(port
+		(pt 152 80)
+		(output)
+		(text "n1Y3" (rect 56 0 86 14)(font "Arial" (font_size 8)))
+		(text "n1Y3" (rect 96 72 126 86)(font "Arial" (font_size 8)))
+		(line (pt 152 80)(pt 128 80)(line_width 1))
+	)
+	(port
+		(pt 152 112)
+		(output)
+		(text "n2Y0" (rect 56 0 86 14)(font "Arial" (font_size 8)))
+		(text "n2Y0" (rect 96 104 126 118)(font "Arial" (font_size 8)))
+		(line (pt 152 112)(pt 128 112)(line_width 1))
+	)
+	(port
+		(pt 152 128)
+		(output)
+		(text "n2Y1" (rect 56 0 86 14)(font "Arial" (font_size 8)))
+		(text "n2Y1" (rect 96 120 126 134)(font "Arial" (font_size 8)))
+		(line (pt 152 128)(pt 128 128)(line_width 1))
+	)
+	(port
+		(pt 152 144)
+		(output)
+		(text "n2Y2" (rect 56 0 86 14)(font "Arial" (font_size 8)))
+		(text "n2Y2" (rect 96 136 126 150)(font "Arial" (font_size 8)))
+		(line (pt 152 144)(pt 128 144)(line_width 1))
+	)
+	(port
+		(pt 152 160)
+		(output)
+		(text "n2Y3" (rect 56 0 86 14)(font "Arial" (font_size 8)))
+		(text "n2Y3" (rect 96 152 126 166)(font "Arial" (font_size 8)))
+		(line (pt 152 160)(pt 128 160)(line_width 1))
+	)
+	(drawing
+		(text "DC" (rect 64 32 80 46)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "DC" (rect 64 104 80 118)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "04" (rect 136 16 150 30)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "05" (rect 136 32 150 46)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "06" (rect 136 48 150 62)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "07" (rect 136 64 150 78)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "12" (rect 136 96 150 110)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "11" (rect 136 112 150 126)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "10" (rect 136 128 150 142)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "09" (rect 136 144 150 158)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "01" (rect 8 32 22 46)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "02" (rect 8 48 22 62)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "03" (rect 8 64 22 78)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "15" (rect 8 112 22 126)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "14" (rect 8 128 22 142)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "13" (rect 8 144 22 158)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "Сдвоенный дешифратор" (rect 16 192 163 206)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "демультиплексор с" (rect 16 208 134 222)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "индивидуальным входом" (rect 0 224 154 238)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "выбора и разрешения" (rect 24 240 156 254)(font "Arial" (color 0 0 0)(font_size 8)))
+		(line (pt 24 96)(pt 128 96)(line_width 1))
+		(line (pt 88 16)(pt 88 176)(line_width 1))
+		(line (pt 56 16)(pt 56 176)(line_width 1))
+		(rectangle (rect 24 16 128 176)(line_width 1))
+		(circle (rect 16 40 34 58))
+		(circle (rect 16 120 34 138))
+		(circle (rect 120 24 138 42))
+		(circle (rect 120 40 138 58))
+		(circle (rect 120 56 138 74))
+		(circle (rect 120 72 138 90))
+		(circle (rect 120 104 138 122))
+		(circle (rect 120 120 138 138))
+		(circle (rect 120 136 138 154))
+		(circle (rect 120 152 138 170))
+	)
+)

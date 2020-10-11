@@ -1,0 +1,28 @@
+; DEMO5.QMC                                              20.11.2000  M.Wieser
+; Demonstration der M”glichkeiten des Programms
+
+.EING notReset A0                 ; 2 Eingangsvariablen
+.AUSG F1 F2 F3 F4 F5 F6 F7 F8     ; 8 Ausgangsvariablen
+.FORM ANF                        ; konjunktive Normalform 
+
+
+.resultat tabelle schema
+
+; Definitionen fuer die Ausgaenge: alle Grundfunktionen im Test
+
+.gleichung F1 = notReset * A0
+.gleichung F2 = /notReset + A0 
+.gleichung F3 =   notReset xor /A0 
+.gleichung F4 =  /notReset or /A0 
+.gleichung F5 =   notReset and A0 
+.gleichung F6 =  /notReset xnor  A0 
+.gleichung F7 =   notReset nor /A0 
+.gleichung F8 =  /notReset * /A0 
+.gleichung F8 = (notReset) + (A0)
+;Wahrheitstabelle ist hier nicht noetig
+
+
+;
+;Definition der Ausgaenge mit einer Formel:
+;Die Variablennamen muessen mit den den Namensdefinitionen uebereinstimmen!
+;

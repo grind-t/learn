@@ -1,0 +1,105 @@
+Quine Mc Cluskey 3.24    (c)89-08 by http://www.iapetus.ch/software
+-----------------------------------------------------------------------
+Started at 19.05.2008 15:18:12
+
+
+Start of source file D:\recieved\Quine Mc Cluskey 3.10\demo\demo3a.qmc
+-----------------------------------------------------------------------
+
+
+; Demonstrationsdatei 3
+; nur fr QMC Version 1.8 und hher !
+
+
+.EING In1 In2 In3 In4  ; 4 Eingnge
+.AUSG Out1             ; 1 Ausgang
+.FORM DNF              ; disjunktive Normalform berechnen
+
+.RESULTAT SCHEMA GLEICHUNG TABELLE ; Resultat als Schema ausgeben
+
+.REST D       ; nicht aufgelistete Eintrge sind don't care Eintrge
+
+; Die Wahrheitstabelle :
+
+0000 -> 0
+0010 -> 1
+0011 -> 0
+0100 -> 1
+0101 -> 1
+100X -> 0
+1100 -> 0
+1101 -> 1
+1110 -> 1
+1111 -> D
+
+
+-----------------------------------------------------------------------
+End of source file D:\recieved\Quine Mc Cluskey 3.10\demo\demo3a.qmc
+
+
+Quine Mc Cluskey 3.24    (c)89-08 by http://www.iapetus.ch/software
+-----------------------------------------------------------------------
+Calculated minimized disjunktive forms for output number 1:
+
+Out1     =  (/In1 *  In2 ) +
+            ( In2 *  In4 ) +
+            ( In3 * /In4 ) 
+
+şIn1
+³ şIn2
+³ ³ şIn3
+³ ³ ³ şIn4
+³ ³ ³ ³    ÚÄÄÄÄÄ¿     
+³ ÃÄÅÄÅÄÄÄÄ´  &  ÃÄÄÄÄ¿
+ÀÄÅÄÅÄÅÄÄÄo³     ³    ³
+  ³ ³ ³    ÀÄÄÄÄÄÙ    ³ ÚÄÄÄÄÄ¿  
+  ³ ³ ³    ÚÄÄÄÄÄ¿    ÀÄ´ ò1  ³  
+  ³ ³ ÃÄÄÄÄ´  &  ÃÄÄÄÄÄÄ´     ÃÄÄÄÄşOut1
+  ÀÄÅÄÅÄÄÄÄ´     ³    ÚÄ´     ³  
+    ³ ³    ÀÄÄÄÄÄÙ    ³ ÀÄÄÄÄÄÙ  
+    ³ ³    ÚÄÄÄÄÄ¿    ³
+    ³ ÀÄÄÄo³  &  ÃÄÄÄÄÙ
+    ÀÄÄÄÄÄÄ´     ³     
+           ÀÄÄÄÄÄÙ     
+
+
+
+
+No other solutions for output number 1.
+-----------------------------------------------------------------------
+
+
+Quine Mc Cluskey 3.24    (c)89-08 by http://www.iapetus.ch/software
+-----------------------------------------------------------------------
+
+Expanding truth table for all outputs:
+
+ şIn1
+ ³ şIn2
+ ³ ³ şIn3
+ ³ ³ ³ şIn4
+ ³ ³ ³ ³ 
+ ³ ³ ³ ³   şOut1
+ ³ ³ ³ ³   ³ 
+ÄÄÄÄÄÄÄÄÄÅÄÄÄ
+ 0 0 0 0 ³ 0 
+ 0 0 0 1 ³ D 
+ 0 0 1 0 ³ 1 
+ 0 0 1 1 ³ 0 
+ 0 1 0 0 ³ 1 
+ 0 1 0 1 ³ 1 
+ 0 1 1 0 ³ D 
+ 0 1 1 1 ³ D 
+ 1 0 0 0 ³ 0 
+ 1 0 0 1 ³ 0 
+ 1 0 1 0 ³ D 
+ 1 0 1 1 ³ D 
+ 1 1 0 0 ³ 0 
+ 1 1 0 1 ³ 1 
+ 1 1 1 0 ³ 1 
+ 1 1 1 1 ³ D 
+
+
+
+Calculation successfully terminated. Time elapsed: 0:00:01
+

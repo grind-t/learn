@@ -1,0 +1,16 @@
+; Aufgaben Digitaltechnik 1
+; Aufgabe 5
+; 04.05.95 M.Wieser
+
+.eing Te Tr G G2
+.ausg P_ E_ R_
+
+.form dnf knf anf
+.rest 011
+.resultat gleichung schema tabelle
+
+
+1100 -> 000
+001X -> 110
+1110 -> 101
+

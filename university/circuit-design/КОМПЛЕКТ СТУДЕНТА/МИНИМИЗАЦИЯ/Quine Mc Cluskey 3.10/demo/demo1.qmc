@@ -1,0 +1,29 @@
+; Demonstarationsdatei 1
+
+;Parity - Check Logik
+;
+;14.06.90 MWI
+
+.ausg Q
+.eing D0 D1 D2 D3 D4       ; 5 Eing„nge
+.form DNF                  ; disjunktive Normalform
+.rest 0                    ; nicht angegebene Kombinationen -> log.0
+
+; Wahrheitstabelle :
+
+00001 -> 1   ; 1 am Schluss angegeben -> Eintrag wird am Ausgang
+00010 -> 1   ; log. 1 ergeben
+00100 -> 1
+01000 -> 1
+10000 -> 1
+11100 -> 1
+11001 -> 1
+10011 -> 1
+00111 -> 1
+11010 -> 1
+10110 -> 1
+01110 -> 1
+10101 -> 1
+01101 -> 1
+01011 -> 1
+11111 -> 1

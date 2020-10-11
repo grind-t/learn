@@ -1,0 +1,159 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 64 64 296 448)
+	(text "KP1533TB9" (rect 88 0 156 12)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 312 25 322)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "n_S1" (rect 0 0 29 12)(font "Arial" (font_size 8)))
+		(text "n_S1" (rect 37 27 66 39)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 24 32)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "J1" (rect 0 0 14 12)(font "Arial" (font_size 8)))
+		(text "J1" (rect 37 59 51 71)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 24 64)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "n_R1" (rect 0 0 30 12)(font "Arial" (font_size 8)))
+		(text "n_R1" (rect 37 139 67 151)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 24 144)(line_width 1))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "C1" (rect 0 0 16 12)(font "Arial" (font_size 8)))
+		(text "C1" (rect 37 83 53 95)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 24 88)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "K1" (rect 0 0 15 12)(font "Arial" (font_size 8)))
+		(text "K1" (rect 37 107 52 119)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 24 112)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "n_S2" (rect 0 0 29 12)(font "Arial" (font_size 8)))
+		(text "n_S2" (rect 37 171 66 183)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 24 176)(line_width 1))
+	)
+	(port
+		(pt 0 216)
+		(input)
+		(text "J2" (rect 0 0 14 12)(font "Arial" (font_size 8)))
+		(text "J2" (rect 37 211 51 223)(font "Arial" (font_size 8)))
+		(line (pt 0 216)(pt 24 216)(line_width 1))
+	)
+	(port
+		(pt 0 296)
+		(input)
+		(text "n_R2" (rect 0 0 30 12)(font "Arial" (font_size 8)))
+		(text "n_R2" (rect 37 291 67 303)(font "Arial" (font_size 8)))
+		(line (pt 0 296)(pt 24 296)(line_width 1))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "C2" (rect 0 0 16 12)(font "Arial" (font_size 8)))
+		(text "C2" (rect 37 235 53 247)(font "Arial" (font_size 8)))
+		(line (pt 0 240)(pt 24 240)(line_width 1))
+	)
+	(port
+		(pt 0 264)
+		(input)
+		(text "K2" (rect 0 0 15 12)(font "Arial" (font_size 8)))
+		(text "K2" (rect 37 259 52 271)(font "Arial" (font_size 8)))
+		(line (pt 0 264)(pt 24 264)(line_width 1))
+	)
+	(port
+		(pt 232 64)
+		(output)
+		(text "1Q" (rect 136 0 153 12)(font "Arial" (font_size 8)))
+		(text "1Q" (rect 178 59 195 71)(font "Arial" (font_size 8)))
+		(line (pt 232 64)(pt 208 64)(line_width 1))
+	)
+	(port
+		(pt 232 96)
+		(output)
+		(text "1nQ" (rect 136 0 160 12)(font "Arial" (font_size 8)))
+		(text "1nQ" (rect 171 91 195 103)(font "Arial" (font_size 8)))
+		(line (pt 232 96)(pt 208 96)(line_width 1))
+	)
+	(port
+		(pt 232 208)
+		(output)
+		(text "2Q" (rect 136 0 153 12)(font "Arial" (font_size 8)))
+		(text "2Q" (rect 178 203 195 215)(font "Arial" (font_size 8)))
+		(line (pt 232 208)(pt 208 208)(line_width 1))
+	)
+	(port
+		(pt 232 248)
+		(output)
+		(text "2nQ" (rect 136 0 160 12)(font "Arial" (font_size 8)))
+		(text "2nQ" (rect 171 243 195 255)(font "Arial" (font_size 8)))
+		(line (pt 232 248)(pt 208 248)(line_width 1))
+	)
+	(drawing
+		(text "T1" (rect 88 32 103 44)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "T2" (rect 88 168 103 180)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "04" (rect 8 16 22 28)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "03" (rect 8 48 22 60)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "01" (rect 8 72 22 84)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "02" (rect 8 96 22 108)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "15" (rect 8 128 22 140)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "10" (rect 8 160 22 172)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "11" (rect 8 200 22 212)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "13" (rect 8 224 22 236)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "12" (rect 8 248 22 260)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "14" (rect 8 280 22 292)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "05" (rect 216 48 230 60)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "06" (rect 216 80 230 92)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "09" (rect 216 192 230 204)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "07" (rect 216 232 230 244)(font "Arial" (color 0 0 0)(font_size 8)))
+		(text "Два JK-триггера со сбросом" (rect 32 336 233 351)(font "Arial" (color 0 0 0)(font_size 10)))
+		(text "и установкой" (rect 80 352 173 367)(font "Arial" (color 0 0 0)(font_size 10)))
+		(line (pt 24 48)(pt 72 48)(line_width 1))
+		(line (pt 24 128)(pt 72 128)(line_width 1))
+		(line (pt 24 192)(pt 72 192)(line_width 1))
+		(line (pt 24 280)(pt 72 280)(line_width 1))
+		(line (pt 72 16)(pt 72 312)(line_width 1))
+		(line (pt 24 160)(pt 208 160)(line_width 1))
+		(line (pt 16 80)(pt 32 96)(line_width 1))
+		(line (pt 16 232)(pt 32 248)(line_width 1))
+		(rectangle (rect 24 16 208 312)(line_width 1))
+		(circle (rect 16 24 33 41))
+		(circle (rect 16 136 35 155))
+		(circle (rect 16 168 35 187))
+		(circle (rect 16 288 35 307))
+		(circle (rect 200 88 218 106))
+		(circle (rect 200 240 217 257))
+	)
+)

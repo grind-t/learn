@@ -1,0 +1,1583 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Quine Mc Cluskey Dokumentation</title>
+</head>
+
+<body>
+
+<h1 ALIGN="left">Quine Mc Cluskey 3.10 Dokumentation</h1>
+
+<hr noshade>
+
+<h1><a name="_Toc">Inhaltsverzeichnis</a></h1>
+
+<p><b><a href="#_Toc350757149">Dank</a></b></p>
+
+<p><a href="#_Toc350757117"><b>1. Einf&uuml;hrung </b></a>
+
+<dir>
+  <p><a href="#_Toc350757118">1.1. Was leistet das Programm?</a> <br>
+  <a href="#_Toc350757120">1.2. Warum das Programm entstand </a><br>
+  <a href="#_Toc350757121">1.3. Quellen </a></p>
+</dir>
+<b>
+
+<p><a href="#handhabung">2. Programmhandhabung</a></p>
+
+<blockquote>
+  <p></b><a href="#installation">2.1. Installation</a> <br>
+  <a href="#programmstart">2.2. Programmstart </a><font color="#FF0000"><strong>&lt;-- NEU </strong></font><br>
+  <a href="#kurzbeschrieb">2.3. Kurzbeschrieb der Oberfl&auml;che </a><font color="#FF0000"><strong>&lt;--
+  NEU </strong></font><br>
+  <a href="#neuerungen">2.4. Neuerungen in dieser Version </a><font color="#FF0000"><strong>&lt;--
+  NEU </strong></font></p>
+</blockquote>
+
+<p><b><a href="#_Toc350757123">3. Quellcode </a>
+
+<dir>
+  </b><p><a href="#_Toc350757124">3.1. Gliederung <br>
+  </a><a href="#_Toc350757125">3.2. Darstellung der Befehle <br>
+  </a><a href="#_Toc350757126">3.3. Der Kommentar <br>
+  </a><a href="#_Toc350757127">3.4. Das $-Zeichen <br>
+  </a><a href="#_Toc350757128">3.5. .FORM Befehl <br>
+  </a><a href="#_Toc350757129">3.6. .EING Befehl <br>
+  </a><a href="#_Toc350757130">3.7. .AUSG Befehl <br>
+  </a><a href="#_Toc350757131">3.8. .RESULTAT Befehl <br>
+  </a><a href="#_Toc350757132">3.9. Der Wertetabelleneintrag <br>
+  </a><a href="#_Toc350757133">3.10. .REST Befehl <br>
+  </a><a href="#_Toc350757134">3.11. .GLEICHUNG Befehl <br>
+  </a><a href="#_Toc350757135">3.12. .PI Befehl </a></p>
+</dir>
+<b>
+
+<p><a href="#_Toc3507571351">4. Resultate </a>
+
+<dir>
+  </b><p><a href="#_Toc350757136">4.1. Berechnung der Resultate <br>
+  </a><a href="#_Toc350757137">4.2. Ablauf der Berechnung <br>
+  </a><a href="#_Toc350757138">4.3. Grenzen </a></p>
+</dir>
+<b>
+
+<p><a href="#_Toc350757139">5. Wenn es nicht funktioniert </a>
+
+<dir>
+  </b><p><a href="#_Toc350757140">5.1. Fehlermeldungen <br>
+  </a><a href="#_Toc350757141">5.2. Fehler im Quelltext <br>
+  </a><a href="#_Toc350757142">5.3. Fehler w&auml;hrend der Berechnung <br>
+  </a><a href="#_Toc350757143">5.4. Tips und Tricks </a></p>
+</dir>
+<b>
+
+<p><a href="#_Toc350757144">6. Anwendungsbeispiele </a>
+
+<ul>
+  <p></b><a href="#_Toc350757145">6.1. Beispiel 1 <br>
+  </a><a href="#_Toc350757146">6.2. Beispiel 2 </a><b></p>
+</ul>
+
+<p><a href="#_Toc350757147">7. Lizenzierung</a></p>
+
+<p><a href="#_Toc350757148">8. Gew&auml;hrleistung</a></p>
+
+<hr>
+</b>
+
+<h1><a NAME="_Toc350757149">Dank</a></h1>
+
+<p>Folgende Personen haben bei der Erstellung und Weiterentwicklung dieses Programmes
+wertvolle Unterst&uuml;tzung und Hinweise geliefert: </p>
+
+<p><i>R. Z&uuml;rcher</i><br>
+Gfeller Telecommunications, Bern CH <br>
+f&uuml;r den Anstoss zu diesem Programm.</p>
+
+<p><i>H. Pfahlbusch</i> <br>
+Hochschule Mittweida, Mittweida / Sachsen D <br>
+f&uuml;r den Algorithmus der &quot;Alternativen Normalform&quot; und f&uuml;r detaillierte
+Fehleranalysen.</p>
+
+<p>&nbsp;</p>
+
+<p><strong><a href="#_Toc">Inhalt</a></strong></p>
+
+<h1>1. <a NAME="_Toc350757117">Einf&uuml;hrung</a></h1>
+
+<h2>1.1. <a NAME="_Toc350757118">Was leistet das Programm?</a></h2>
+
+<p>Das Programm berechnet zu einer in einer Datei vorgegebenen Wertetabelle die
+konjunktive oder disjunktive minimale Normalform. Das Resultat dieser Rechnung wird auf
+den Bildschirm oder in eine Datei ausgegeben. Sollten mehrere gleichwertige minimale
+Normalformen existieren, so werden alle berechnet.</p>
+
+<p>Die Wertetabelle ist einfach zu erstellen, da ein leistungsf&auml;higer Befehlssatz eine
+vereinfachte Schreibweise unterst&uuml;tzt. Diverse Steuerbefehle erlauben eine weitgehende
+Kontrolle der Berechnung.</p>
+
+<p>Das Programm ist unter Windows 95+ lauff&auml;hig. Das Programm ist <strong>Freeware</strong>.
+<a href="#_Toc350757147">Siehe Kapitel 7</a>.</p>
+
+<p><strong><a href="#_Toc">Inhalt</a></strong></p>
+
+<h2>1.2. <a NAME="_Toc350757120">Warum das Programm entstand</a></h2>
+
+<p>Die herk&ouml;mmliche graphische Methode zur Bildung der minimalen Normalformen, das
+Karnaugh-Veitch Diagramm, wird bei mehr als vier Variablen sehr unhandlich. Auch bei
+weniger Variablen besteht die Gefahr, dass eine L&ouml;sung &uuml;bersehen wird. Eine allgemeine
+Implementation auf Digitalrechnern w&uuml;rde dieses Problem l&ouml;sen, ist aber schwierig. </p>
+
+<p>Einen Ausweg bietet das Verfahren nach Quine-McCluskey. Dieses rein numerische
+Verfahren basiert auf der Manipulation von Tabellen. Es l&auml;sst die Verwendung beliebig
+vieler Variablen zu. Obwohl die Tabellen sehr umfangreich werden k&ouml;nnen, l&auml;sst es sich
+gut auf Digitalrechnern programmieren. Die einzige Begrenzung stellt der vorhandene
+Speicher und die zur Verf&uuml;gung stehende Rechenzeit dar.</p>
+
+<p><strong><a href="#_Toc">Inhalt</a></strong></p>
+
+<h2>1.3. <a NAME="_Toc350757121">Quellen</a></h2>
+
+<p>Entwickelt wurde dieses Verfahren erstmals 1951 vom Philosophen und Logiker Willard Van
+Orman Quine in Zusammenarbeit mit einigen Programmierern.</p>
+
+<p>Publikationen, die sich mit dem Vereinfachen von Logikgleichungen befassen:</p>
+<i>
+
+<p>Quine,W. V. O.: &quot;The problem of simplifying truth functions&quot;</i><br>
+1952 : ibid. 17: 156 (vermutlich eine Sammlung in der CSFR...)</p>
+<i>
+
+<p>Quine,W. V. O.: &quot;On cores and prime implicants of truth functions&quot;</i><br>
+Nov. 1959 in American Mathematical Monthly 66: No. 9, S.755-760<br>
+Lancaster PA., ISSN 0002-9890</p>
+<i>
+
+<p>McCluskey, E. J.: &quot;Minimisation of boolean Functions&quot;</i><br>
+1956 in Bell System technical Journal, S.1417-1444.</p>
+<i>
+
+<p>Karnaugh, M.: &quot;The map method for synthesis of combinational logic circuit&quot;</i><br>
+Nov 1953 in Trans. AIEE Communications and Electronics. 72, <br>
+S.593-599 </p>
+<i>
+
+<p>Veitch, E. W.: &quot;A chart method for simplifying truth functions&quot;</i><br>
+Mai 1952 in Proc. Assoc. for Computing Machinery, Pittsburgh.</p>
+
+<p><strong><a href="#_Toc">Inhalt</a></strong></p>
+
+<h1>2.<a name="handhabung"> Programmhandhabung</a></h1>
+
+<h2>2.1. <a NAME="installation">Installation</a></h2>
+
+<p>Das vollst&auml;ndige Programm ist in der Datei <b>QMC3xx.ZIP </b>gepakt. Zur Installation
+einfach das ZIP-Archiv in ein Verzeichnis entpacken und SETUP.EXE ausf&uuml;hren.</p>
+
+<p>F&uuml;r die beiden Editoren MUSS die True-Type Schriftart <b>MS LineDraw</b> installiert
+sein, sonst werden die Resultate falsch angezeigt. Wenn diese Schriftart unter einem
+leicht anderen Namen bereits auf dem System vorhanden ist, so kann die Einstellung in
+QMC3.INI angepasst werden.</p>
+
+<p><strong><a href="#_Toc">Inhalt</a></strong></p>
+
+<h2>2.2. <a NAME="programmstart">Programmstart</a></h2>
+
+<p>Der Syntax zum Start des Programmes ist folgendermassen:</p>
+
+<pre><strong>qmc3</strong> [Quelldatei]</pre>
+
+<p>oder: </p>
+
+<pre><strong>qmc3</strong> --autorun Quelldatei</pre>
+
+<p>Eine optional angegebene Quelldatei wird beim Start automatisch in den Quelleditor
+geladen. Falls eine Resultatdatei existiert wird diese im Resultatfenster angezeigt. </p>
+
+<p>Wird der Parameter&nbsp; --autorun zusammen mit einer Quelldatei, so wird wird die
+Quelldatei geladen und die Berechnung gestartet. Wenn die Berechnung fertig ist, wird das
+Programm beendet. Dies kann f&uuml;r den Betrieb im Batchmode verwendet werden. </p>
+
+<p><strong><a href="#_Toc">Inhalt</a></strong></p>
+
+<h2>2.3.&nbsp; <a NAME="kurzbeschrieb">Kurzbeschrieb der Oberfl&auml;che</a></h2>
+
+<p>Die Oberfl&auml;che bietet nach dem Start des Programmes folgendes Erscheinungsbild:</p>
+
+<p><img src="qimage108.gif" alt="Grafische Oberfl&auml;che" border="0" WIDTH="588" HEIGHT="427"></p>
+
+<p>Die Oberfl&auml;che besteht aus 2 Editoren, dem oberen, blauen Quelleditor und dem unteren,
+schwarzen Resultat &quot;Editor&quot; (die Resultate k&ouml;nnen nicht editiert werden.) Die
+Aufteilung zwischen den beiden Editoren l&auml;sst sich durch Verschieben des Trennstriches
+ver&auml;ndern.</p>
+
+<p>&Uuml;ber das Men&uuml; &quot;Datei&quot; lassen sich Quelltexte (*.QMC) in den Quelleditor
+laden. Wenn bereits eine entsprechende Resultatdatei (*.OUT) existiert, so wird diese
+ebenfalls geladen.</p>
+
+<p>Die Zwischenablage-Funktionen k&ouml;nnen in beiden Editoren benutzt werden; im
+Resultateditor ist allerdings nur &quot;Ausschneiden&quot; m&ouml;glich.</p>
+
+<p>Der Druckbefehl druckt ausschliesslich den Inhalt des Resultateditors aus.</p>
+
+<p>Eine Symbolleite erm&ouml;glicht den schnellen Zugriff auf die Programmfunktionen.</p>
+
+<p>Das Men&uuml; &quot;Sprache&quot; erlaubt die Einstellung der bevorzugten Interfacesprache.
+z.Z. wird Deutsch und Englisch unterst&uuml;tzt.</p>
+
+<p><a href="#_Toc"><strong>Inhalt</strong></a></p>
+
+<h2>2.4.&nbsp; <a name="neuerungen">Neuerungen in dieser Version</a></h2>
+
+<p>Neu in Version 3.10:
+
+<ul>
+  <li>Aufhebung der L&auml;ngenbegrenzung vom 255 Zeichen in Formeln (.GLEICHUNG-Befehl)</li>
+  <li>Mehrsprachiges Interface (z.Z. Deutsch und Englisch)</li>
+  <li>--autorun Parameter f&uuml;r den Batchbetrieb.</li>
+  <li>Bugfix: Die letzte Zeile einer Quelldatei wurde unter bestimmten Bedingungen nicht
+    ausgewertet.</li>
+</ul>
+
+<p>Neu in Version 3.02
+
+<ul>
+  <li>ANF Berechnungsmodus</li>
+  <li>.PI-Befehl</li>
+</ul>
+
+
+<h1>3. <a NAME="_Toc350757123">Quellcode</a></h1>
+
+<p>Die zu vereinfachende Schaltung wird im oberen, blauen Textfenster definiert. An die
+Formatierung des Textes werden nur minimale Anforderungen gestellt: 
+
+<ul>
+  <li>Jeder Befehl befindet sich auf einer eigenen Zeile (Ausnahme s. $-Zeichen).</li>
+  <li>Die einzelnen W&ouml;rter werden gew&ouml;hnlich durch Leerzeichen getrennt.</li>
+  <li>Gross und Kleinschreibung spielen keine Rolle.</li>
+</ul>
+
+<p>Die erlaubten Befehle werden im folgenden erl&auml;utert.</p>
+
+<p><strong><a href="#_Toc">Inhalt</a></strong></p>
+
+<h2>3.1. <a NAME="_Toc350757124">Gliederung</a></h2>
+
+<p>Die Befehle k&ouml;nnen in beliebiger Reihenfolge in der Quelldatei stehen. Es gilt
+generell: pro Befehl eine Zeile. Mit dem $-Befehl kann diese Regel durchbrochen werden.</p>
+
+<p>Die Quelldateien k&ouml;nnen im eingebauten Editor erstellt werden. F&uuml;r die verschiedenen
+Befehle sind im Menu Textbl&ouml;cke abrufbar. Textbl&ouml;cke k&ouml;nnen ebenfalls &uuml;ber die
+Symbolleiste eingef&uuml;gt werden. </p>
+
+<p><strong><a href="#_Toc">Inhalt</a></strong></p>
+
+<h2>3.2. <a NAME="_Toc350757125">Darstellung der Befehle</a></h2>
+
+<p>Der Syntax der Befehle wird in einem einheitlichen Schema dargestellt. Ein Befehl
+besteht aus bis zu vier verschiedenen Teilen. 
+
+<ol>
+  <li>zwingende Teile eines Befehls <br>
+    Sie werden durch <b>Fettschrift</b> hervorgehoben. Sie m&uuml;ssen immer angegeben werden.<br>
+  </li>
+  <li>variante Teile <br>
+    Sie werden durch das Zeichen <b>|</b> getrennt. Es muss eine der definierten Varianten
+    angegeben werden<br>
+  </li>
+  <li>optionale Teile <br>
+    Sie k&ouml;nnen, aber m&uuml;ssen nicht angegeben werden. Sie stehen in eckigen Klammern <b>[ ]</b>.<br>
+  </li>
+  <li>Parameter <br>
+    Sie bestehen aus Zahlen,Formeln oder Namen, die definiert werden m&uuml;ssen. Der Platzhalter
+    ist in gr&ouml;sser-kleiner Zeichen <b>&lt;&gt;</b> eingeschlossen.</li>
+</ol>
+
+<p><strong><a href="#_Toc">Inhalt</a></strong></p>
+
+<h2>3.3. <a NAME="_Toc350757126">Der Kommentar</a></h2>
+
+<pre>Syntax:<b> </b><strong>; </strong>[ein Kommentar]</pre>
+
+<p>Kommentare werden durch einen Strichpunkt eingeleitet und gehen bis zum Zeilenende.</p>
+
+<p>Beispiele:</p>
+
+<pre>; Dies ist ein Kommentar</pre>
+
+<p><strong><a href="#_Toc">Inhalt</a></strong></p>
+
+<h2>3.4. <a NAME="_Toc350757127">Das $-Zeichen</a></h2>
+
+<pre>Syntax:<b> $ </b>[Fortsetzung der letzten Zeile]</pre>
+
+<p>Es gilt die Regel &quot;pro Befehl eine Zeile&quot;. Wenn die Zeile zu kurz ist, kann
+die n&auml;chste Zeile an die vorhergehende angeh&auml;ngt werden, indem man ein $-Zeichen an den
+Anfang stellt. Das Beispiel veranschaulicht die Wirkung von Kommentaren.</p>
+
+<p>Beispiele:</p>
+
+<pre>.EING erster_Eingang zweiter_Eingang dritter_Eingang ; 3 Eing&auml;nge
+$ vierter_Eingang ; noch ein Eingang</pre>
+
+<p>dies ist identisch mit:</p>
+
+<pre>.EING erster_Eingang zweiter_Eingang dritter_Eingang vierter_Eingang</pre>
+
+<p><strong><a href="#_Toc">Inhalt</a></strong></p>
+
+<h2>3.5. <a NAME="_Toc350757128">.FORM Befehl</a></h2>
+
+<pre>Syntax: <b>.FORM</b> DNF | KNF | ANF</pre>
+
+<pre>Symbol: <img SRC="qimage110.gif" WIDTH="25" HEIGHT="25"></pre>
+
+<p>Dieser Befehl gibt an, welche Normalform berechnet werden soll. Dieser Befehl ist
+erforderlich. Es k&ouml;nnen mehrere Berechnungsformen gleichzeitig angegeben werden.</p>
+
+<table border="1" cellspacing="0" cellpadding="3">
+  <tr>
+    <td>DNF</td>
+    <td>Berechnung der disjunktiven Normalform</td>
+  </tr>
+  <tr>
+    <td>KNF</td>
+    <td>Berechnung der konjunktiven Normalform</td>
+  </tr>
+  <tr>
+    <td>ANF</td>
+    <td>Berechnung der alternativen Normalform</td>
+  </tr>
+</table>
+
+<p>Wenn das berechnete Resultat zu kompliziert ist, so sollte man die andere Normalform
+ausprobieren. Oft ergeben sich dabei &uuml;berraschend einfache Resultate. Ebenso kann man
+vorgehen, wenn die Umsetztabellen &uuml;berlaufen. </p>
+
+<p>Beispiele</p>
+
+<pre>.FORM DNF ; disjunktive Normalform
+.FORM KNF ANF ; konjunktive und alternative Normalform</pre>
+
+<p><strong><a href="#_Toc">Inhalt</a></strong></p>
+
+<h2>3.6. <a NAME="_Toc350757129">.EING Befehl</a></h2>
+
+<pre>Syntax: <b>.EING</b> [&lt;EName1&gt; [&lt;EName2&gt; ... ]]]</pre>
+
+<pre>Symbol: <img SRC="qimage111.gif" WIDTH="25" HEIGHT="25"></pre>
+
+<p>Dieser Befehl definiert die Anzahl und die Namen der Eingangsvariablen. Es k&ouml;nnen bis
+zu 16 Eingangsvariablennamen angegeben werden. Die Reihenfolge ist die gleiche wie f&uuml;r
+den Wertetabelleneintrag. Um Verwechslungen mit den beim .GLEICHUNG-Befehl verwendeten
+Operatoren auszuschliessen, sollten diese Operatoren nicht als Variablennamen verwendet
+werden</p>
+
+<p>Beispiele</p>
+
+<pre>.EING A0 A1 WR ; Es wird mit 3 Eingangsvariablen gerechnet: A0, A1, WR</pre>
+
+<p><strong><a href="#_Toc">Inhalt</a></strong></p>
+
+<h2>3.7. <a NAME="_Toc350757130">.AUSG Befehl</a></h2>
+
+<pre>Syntax: <b>.AUSG</b> [&lt;AName1&gt; [&lt;AName2&gt; ... ]]] </pre>
+
+<pre>Symbol: <img SRC="qimage112.gif" WIDTH="25" HEIGHT="25"></pre>
+
+<p>Dieser Befehl definiert die Anzahl und die Namen der Ausgangsvariablen. Es k&ouml;nnen bis
+zu 16 Ausgangsvariablennamen angegeben werden. Die Reihenfolge ist die gleiche wie f&uuml;r
+den Wertetabelleneintrag. Um Verwechslungen mit den beim .GLEICHUNG-Befehl verwendeten
+Operatoren auszuschliessen, sollten diese Operatoren nicht als Variablennamen verwendet
+werden</p>
+
+<p>Beispiele</p>
+
+<pre>.AUSG en Sel ; Es wird mit 2 Ausgangsvariablen gerechnet: en und Sel</pre>
+
+<p><strong><a href="#_Toc">Inhalt</a></strong></p>
+
+<h2>3.8. <a NAME="_Toc350757131">.RESULTAT Befehl</a></h2>
+
+<pre>Syntax: <b>.RESULTAT</b> SCHEMA | GLEICHUNG | TABELLE</pre>
+
+<pre>Symbol: <img SRC="qimage113.gif" WIDTH="25" HEIGHT="25"></pre>
+
+<p>Dieser Befehl gibt an, wie das Resultat ausgegeben werden soll. Es gibt drei
+M&ouml;glichkeiten:</p>
+
+<table border="1" cellspacing="0" cellpadding="3">
+  <tr>
+    <td>GLEICHUNG</td>
+    <td>Das Resultat wird in Form einer boolschen Gleichung ausgegeben (s. unten). Dies ist
+    der Defaultwert.</td>
+  </tr>
+  <tr>
+    <td>SCHEMA</td>
+    <td>Das Resultat wird in Form eines Schemas ausgegeben, dabei werden Schaltsymbole &nbsp;
+    nach IEC verwendet</td>
+  </tr>
+  <tr>
+    <td>TABELLE</td>
+    <td>Es wird eine vollst&auml;ndige Wertetabelle f&uuml;r alle Ein- und&nbsp; Ausg&auml;nge berechnet;
+    d.h. alle Bez&uuml;ge zwischen dem .GLEICHUNG-Befehl, Don't care-Ausgangszustand und &nbsp;
+    X-Zeichen werden aufgel&ouml;st . Diese Tabelle kann bei vielen&nbsp; Eingangsvariablen sehr
+    lang werden!.</td>
+  </tr>
+</table>
+
+<p>Die Resultatformen k&ouml;nnen beliebig kombiniert werden, es muss jedoch mindestens eine
+angegeben werden.</p>
+
+<p>Wenn das Resultat als Gleichung ausgegeben wird, so ist diese folgendermassen zu
+interpretieren:</p>
+
+<pre><strong>/A</strong> bedeutet: not A</pre>
+
+<pre><strong>A * B</strong> bedeutet: A and B</pre>
+
+<pre><strong>(A * /C) + (/A * B)</strong> bedeutet: (A and (not C)) or ((not A) and B)</pre>
+
+<pre><strong>(/A + B) * (C + /E)</strong> bedeutet: ((not A) or B) and (C or (not E))</pre>
+
+<p>Im Modus Schema sieht das Ergebnis zum Beispiel so aus:</p>
+
+<p><img src="qimage140.gif" alt="schemares.gif (2532 Byte)" WIDTH="330" HEIGHT="275"></p>
+
+<p>Spezialfall: Wenn ein Ausgang unabh&auml;ngig von den Eingangsvariablen ist, dann wird der
+Ausgangsvariable eine logische 1 (<i>log.1</i>) oder eine logische 0 (<i>log.0</i>)
+zugeordnet. Diese beiden kursiven Bezeichnungen sollten daher, um eine Verwechslung zu
+vermeiden, nicht als Name f&uuml;r eine Eingangsvariable verwendet werden.</p>
+
+<p>Wenn der .RESULTAT-Befehl nicht angegeben wird, so wird das Resultat als Gleichung
+ausgegeben. </p>
+
+<p>Beispiele:</p>
+
+<pre>.RESULTAT SCHEMA ; Resultat als Schema
+.RESULTAT SCHEMA GLEICHUNG TABELLE ; Alle m&ouml;glichen 
+; Resultatformen</pre>
+
+<p><strong><a href="#_Toc">Inhalt</a></strong></p>
+
+<h2>3.9.<a NAME="_Toc350757132"> Der Wertetabelleneintrag</a></h2>
+
+<pre>Syntax: <b>0|1|X </b>[0|1|X [0|1|X [ ... ]]] [-&gt;] <b>0|1|D</b> [0|1|D [ ... ]]</pre>
+
+<pre>Symbol: <img SRC="qimage115.gif" WIDTH="25" HEIGHT="25"></pre>
+
+<p>Erl&auml;uterung der Begriffe:</p>
+
+<p><img SRC="qimage131.gif" WIDTH="441" HEIGHT="195"></p>
+
+<p>1und <b>0</b> stehen f&uuml;r die entsprechenden logischen Pegel der Eingangsvariablen. Es
+m&uuml;ssen soviele Eingangsvariablen angegeben werden, wie mit dem .EING Befehl definiert
+wurden. </p>
+
+<p>Das Zeichen <b>X </b>steht f&uuml;r beide Zust&auml;nde; d.h. anstelle eines Eintrags mit einem
+<b>X</b> k&ouml;nnen auch zwei Eintr&auml;ge mit einem <b>1</b> bzw. einem <b>0</b> anstelle des <b>X</b>
+in die Wertetabelle geschrieben werden. Ein Eintrag mit zwei <b>X</b> m&uuml;sste nat&uuml;rlich
+durch vier Eintr&auml;ge mit <b>1</b> bzw <b>0</b> anstelle der <b>X</b> ersetzt werden (s.
+Beispiele). </p>
+
+<p>Das Pfeil-Zeichen <b>-&gt;</b> ist ein optionales Trennzeichen zwischen den Ein- und
+Ausg&auml;ngen. Es erh&ouml;ht die &Uuml;ebersichtlichkeit. Wenn es angegeben wird, so k&ouml;nnen die
+Ausgangsvariablen auch mit <b>1</b> oder <b>0</b> definiert werden. Die beiden
+Schreibweisen mit und ohne Pfeil sind von der Funktion her gleichwertig.</p>
+
+<p>Die Buchstaben<b> 1</b>,<b> 0</b> und<b> D</b> am Ende der Zeile geben an, was die
+Eingangsvariablenkombination an den Ausg&auml;ngen bewirken soll. Es m&uuml;ssen soviele
+Ausgangsvariablen angegeben werden, wie mit dem .AUSG Befehl definiert wurden. Dies sind
+die Bedeutungen der drei m&ouml;glichen Zeichen: </p>
+
+<table border="1" cellspacing="0" cellpadding="3">
+  <tr>
+    <td><b>1</b></td>
+    <td>Der Eintrag bewirkt eine logische <b>1</b> am entsprechenden Ausgang.</td>
+  </tr>
+  <tr>
+    <td><b>0</b></td>
+    <td>Der Eintrag bewirkt eine logische <b>0</b> am entsprechenden Ausgang.</td>
+  </tr>
+  <tr>
+    <td><b>D</b></td>
+    <td>Dies ist ein w&auml;hlbarer Eintrag (<b>D</b>on't care), er darf am entsprechenden Ausgang
+    sowohl eine logische Eins, wie auch eine logische Null bewirken (je nachdem was die
+    einfachere Gleichung ergibt).</td>
+  </tr>
+</table>
+
+<p>Es spielt &uuml;brigens keine Rolle, ob die einzelnen Zeichen des Wertetabelleneintrags
+durch Leerzeichen getrennt sind oder nicht; lediglich die Reihenfolge ist entscheidend.</p>
+
+<p>Beispiele</p>
+
+<pre>01 -&gt;<i> <b>1</b></i> ; bewirkt eine log. 1 am 1. Ausgang</pre>
+
+<pre>11xx1 -&gt; d0 ; 1. Ausgang: Don't care Kombination,
+            ; Zustand der 3. und 4. Eingangsvariable
+            ; beliebig. 2. Ausgang: bewirkt eine
+            ; log. 0 am 2. Ausgang, sonst wie 
+            ; 1. Ausgang.</pre>
+
+<pre>11<i><b>00</b></i>1 -&gt; d0
+11<i><b>01</b></i>1 -&gt; d0
+11<i><b>10</b></i>1 -&gt; d0
+11<i><b>11</b></i>1 -&gt; d0 ; identisch mit vorigem Beispiel, aber
+            ; ohne X ausgedr&uuml;ckt.</pre>
+<b><i>
+
+<pre>xxxx</i> </b>-&gt; 0111 ; jede Variablenkombination erzeugt
+             ; log. 0 am 1. Ausgang und log. 1 am
+             ; 2. bis 4. Ausgang.</pre>
+
+<p>Das letzte Beispiel ist aequivalent zum Befehl</p>
+
+<pre>.REST 0111 ; gleiche Bedeutung wie oben wenn keine 
+           ; Wertetabelle angegeben wird.</pre>
+
+<p>Es muss darauf geachtet werden, dass nicht in einem Eintrag eine bestimmte
+Variablenkombination log. 0 und in einem anderen Eintrag die gleiche Kombination log. 1 an
+einem Ausgang erzeugen soll. Dies kann bei Verwendung des <b>X</b>-Zeichens leicht
+passieren. Einzig Don't care Eintr&auml;ge k&ouml;nnen so &uuml;berstimmt werden. zB:</p>
+
+<pre>1111 -&gt; 0
+xxxx -&gt; 1 ; ist <i>unzul&auml;ssig</i>, da 1111 zuerst als log. 0, dann 
+          ; in xxxx versteckt als log. 1 definiert wurde.</pre>
+
+<pre>Aber:</pre>
+
+<pre>101010-&gt; 1
+xxxxxx -&gt; d ; ist <i>zul&auml;ssig</i>, da log. 1 (oder log. 0) gegen&uuml;ber
+            ; dem don't care Eintrag Vorrang hat. 101010 wird
+            ; hier als log. 1 und der Rest als don't care
+            ; definiert. Dadurch wird eine einfache
+            ; Schreibweise m&ouml;glich.</pre>
+
+<p><em><strong>Wichtig:</strong></em></p>
+
+<p>Der Wertetabelleeintrag hat gegen&uuml;ber einem .GLEICHUNG und einem .REST -Befehl Vorrang</p>
+
+<p><strong><a href="#_Toc">Inhalt</a></strong></p>
+
+<h2>3.10. <a NAME="_Toc350757133">.REST Befehl</a></h2>
+
+<pre>Syntax: <b>.REST 0|1|D</b> [0|1|D [ ... ]]</pre>
+
+<pre>Symbol: <img SRC="qimage117.gif" WIDTH="25" HEIGHT="25"></pre>
+
+<p>Alle nicht in der Wertetabelle aufgef&uuml;hrten Variablenkombinationen k&ouml;nnen mit diesem
+Befehl auf einen bestimmten Zustand gelegt werden. Die Bedeutung der m&ouml;glichen Parameter
+ist gleich der im Kapitel &quot;3.9. Der Wertetabelleneintrag&quot; verwendeten Suffixe
+f&uuml;r die Wertetabelleneintr&auml;ge. Dieser Befehl wirkt wie wenn alle fehlenden Eintr&auml;ge in
+die Tabelle aufgenommen w&uuml;rden. Es m&uuml;ssen genau so viele Parameter angegeben werden, wie
+Ausgangsvariablen definiert sind. </p>
+
+<p><em><strong>Wichtig:</strong></em></p>
+
+<p>Dieser Befehl kann nicht sinnvoll gleichzeitig mit dem .GLEICHUNG-Befehl verwendet
+werden, da der .GLEICHUNG Befehl vorrang hat. Wenn weder dieser Befehl noch ein
+.GLEICHUNG-Befehl f&uuml;r eine bestimmte Ausgangsvariable verwendet wurde, so werden die
+nicht aufgef&uuml;hrten Eintr&auml;ge als don't care definiert.</p>
+
+<p>Beispiel:</p>
+
+<pre>.REST D0D ; nicht aufgef&uuml;hrte Eintr&auml;ge sind beim 1. und 
+          ; 3. Ausgang don't care Eintr&auml;ge, beim 2. Ausgang
+          ; sollen sie log. 0 ergeben.</pre>
+
+<p><strong><a href="#_Toc">Inhalt</a></strong></p>
+
+<h2>3.11. <a NAME="_Toc350757134">.GLEICHUNG Befehl</a></h2>
+
+<pre>Syntax: <b>.GLEICHUNG &lt;Ausgangsvariable&gt; =&lt;Formel&gt;</pre>
+</b>
+
+<p>Dieser Befehl wirkt &auml;hnlich wie der .REST-Befehl. Anstelle eines festen Wertes f&uuml;r
+nicht aufgef&uuml;hrte Wertetabelleintr&auml;ge wird eine Formel ausgewertet und deren Resultat
+dem Eintrag zugeordnet. Ein .GLEICHUNG-Befehl enth&auml;lt jeweils eine Formel f&uuml;r eine
+Ausgangsvariable; d.h. bei mehreren Ausgangsvariablen muss dieser Befehl gegebenenfalls
+mehrmals verwendet werden. </p>
+
+<p>In der Formel werden die Eingangsvariablen mit Konstanten und Operatoren verkn&uuml;pft und
+das Ganze dann einem Ausgangsvariablen zugeordnet. Es gilt die normale Infix-Notation.</p>
+
+<p>Es sind zwei <b>Konstanten</b> definiert:</p>
+
+<table BORDER="1" CELLSPACING="0" CELLPADDING="3">
+  <tr>
+    <td VALIGN="top" width="20%">1</td>
+    <td VALIGN="top">Konstante f&uuml;r logisch 1.</td>
+  </tr>
+  <tr>
+    <td VALIGN="top" width="20%">0</td>
+    <td VALIGN="top">Konstante f&uuml;r logisch 0.</td>
+  </tr>
+</table>
+
+<p>G&uuml;ltige <b>Operatoren</b> sind:</p>
+
+<table BORDER="1" CELLSPACING="0" CELLPADDING="3">
+  <tr>
+    <td VALIGN="top">( )</td>
+    <td VALIGN="top">Klammern. Sie k&ouml;nnen verwendet werden, um die Operatorenpriorit&auml;t zu
+    umgehen</td>
+  </tr>
+  <tr>
+    <td VALIGN="top">/ , NOT</td>
+    <td VALIGN="top">Invertiert die nachfolgende Variable oder den nachfolgenden
+    Klammerausdruck.</td>
+  </tr>
+  <tr>
+    <td VALIGN="top">* , AND</td>
+    <td VALIGN="top">Und-Verkn&uuml;pfung</td>
+  </tr>
+  <tr>
+    <td VALIGN="top">NAND</td>
+    <td VALIGN="top">Und-Verkn&uuml;pfung mit anschliessender Invertierung des Resultats.</td>
+  </tr>
+  <tr>
+    <td VALIGN="top">+ , OR</td>
+    <td VALIGN="top">Oder-Verkn&uuml;pfung</td>
+  </tr>
+  <tr>
+    <td VALIGN="top">NOR</td>
+    <td VALIGN="top">Und-Verkn&uuml;pfung mit anschliessender Invertierung des Resultats.</td>
+  </tr>
+  <tr>
+    <td VALIGN="top">XOR, EXOR</td>
+    <td VALIGN="top">Exklusiv-Oder-Verkn&uuml;pfung oder Antivalenz-Verkn&uuml;pfung</td>
+  </tr>
+  <tr>
+    <td VALIGN="top">XNOR, EXNOR</td>
+    <td VALIGN="top">Aequivalenz-Verkn&uuml;pfung</td>
+  </tr>
+</table>
+
+<p>Die Priorit&auml;t der Operatoren nimmt in der Tabelle von oben nach unten ab. Die
+Operatoren k&ouml;nnen nat&uuml;rlich nicht als Variablennamen (.EING / .AUSG-Befehl) verwendet
+werden!</p>
+
+<p>Beispiele:</p>
+
+<pre>.EING 4 ; 4 Eingangsvariablen
+.NAMEN a0 a1 a2 a3 a4 en ; neue Namen
+
+.GLEICHUNG en = ( (not a0) and (not a2) ) or a3
+   ; en wurde f&uuml;r alle nicht in der Wertetabelle 
+   ; vorkommenden Eintr&auml;ge wird diese Gleichung verwendet.
+   ; Wegen der Operatorenpriorit&auml;t k&ouml;nnten in diesem Beispiel 
+   ; alle Klammern weggelassen werden.</pre>
+
+<pre>0000 -&gt; 1 ; Wenn alle Eing&auml;nge gleich sind, soll en log.1 werden
+1111 -&gt; 1 ; Diese Eintr&auml;ge stellen quasi die Ausnahmen f&uuml;r 
+   ; obige Formel dar.</pre>
+
+<p>Die Wertetabelle hat immer Vorrang. Die Gleichung wird nur ausgewertet, wenn kein
+entsprechender Eintrag in der Wertetabelle vorkommt.</p>
+
+<p>Die folgende Kombination von .GLEICHUNG-Befehlen wirkt gleich wie der .REST-Befehl
+darunter. Die Reihenfolge der .GLEICHUNG-Befehle ist &uuml;brigens egal:</p>
+
+<pre>.GLEICHUNG Ausgang1 = 1 ; Der 1. Ausgang soll 1 ergeben
+   ; Der 2. Ausgang hat keine Gleichung; er ergibt daher 
+   ; don't care.
+.GLEICHUNG Ausgang3 = 0 ; Der 3. Ausgang soll 0 ergeben</pre>
+
+<p>und hier das gleiche mit dem .REST-Befehl:</p>
+
+<pre>.REST 1D0 ; Gleiche Bedeutung wie oben</pre>
+
+<p><em><strong>Wichtig:</strong></em></p>
+
+<p>Dieser Befehl kann NICHT sinnvoll gleichzeitig mit dem .REST-Befehl verwendet werden,
+da der .GLEICHUNG-Befehl Vorrang hat. Wenn weder ein .REST-Befehl noch dieser Befehl f&uuml;r
+eine bestimmte Ausgangsvariable verwendet wurde, so werden die nicht in der Wertetabelle
+aufgef&uuml;hrten Eintr&auml;ge als don't care definiert.</p>
+
+<p><strong><a href="#_Toc">Inhalt</a></strong></p>
+
+<h2>3.12.<a NAME="_Toc350757135"> .PI Befehl</a></h2>
+
+<pre>Syntax: <b>.PI EXAKT|SCHNELL|HEURISTISCH</pre>
+</b>
+
+<p>Dieser Befehl bestimmt die Art und Weise wie aus den berechneten Primimplikanten die
+minimal notwendigen ausgesucht werden. Dieser Befehl ist optional, wird er nicht
+angegeben, dann gilt die Einstellung SCHNELL. Die Parameter haben folgende Bedeutung:</p>
+
+<table border="1" cellspacing="0" cellpadding="3">
+  <tr>
+    <td>EXAKT</td>
+    <td>Es wird eine vollst&auml;ndige Berechnung durch Ausmultiplizieren der Bitfelder der
+    Primimplikanten&nbsp; vorgenommen. Dies dauert eventuell sehr lange und braucht&nbsp; viel
+    Speicher, daf&uuml;r werden sicher alle L&ouml;sungen gefunden.</td>
+  </tr>
+  <tr>
+    <td>SCHNELL,<br>
+    HEURISTISCH<br>
+    (Default)</td>
+    <td>Die Auswahl wird mit einem heuristischen Verfahren&nbsp; vorgenomman. Dieses findet
+    sehr schnell L&ouml;sungen, aber es&nbsp;ist nicht sicher, dass die minimale L&ouml;sung schnell
+    gefunden&nbsp; wird. Unter Umst&auml;nden werden zuerst viele nicht minimale L&ouml;sungen
+    ermittelt. Das Verfahren liefert manchmal die minimalste L&ouml;sung nicht.&nbsp; Im Gegensatz
+    zum exakten Verfahren kann die Suche nach weiteren L&ouml;sungen abgebrochen werden - es
+    werden dann&nbsp; die bereits gefundenen L&ouml;sungen ausgegeben.</td>
+  </tr>
+</table>
+
+<p><strong><a href="#_Toc">Inhalt</a></strong></p>
+
+<h1>4. <a NAME="_Toc3507571351">Resultate</a></h1>
+
+<p>Die Ausgabe erfolgt in das Resultatfenster. Wenn der Quelltext schon in einer Datei
+gespeichert wurde, so wird das Resultat zus&auml;tzlich in eine Datei desselben Namens aber
+mit der Endung &#145;.OUT&#146; gespeichert..</p>
+
+<p><strong><a href="#_Toc">Inhalt</a></strong></p>
+
+<h2>4.1. <a NAME="_Toc350757136">Berechnung der Resultate</a></h2>
+
+<pre>Symbol: <img SRC="qimage132.gif" WIDTH="25" HEIGHT="25"></pre>
+
+<p>Durch Wahl des Menupunktes Berechnung wird die Vereinfachung gestartet. W&auml;hrend der
+Ausf&uuml;hrung werden die ablaufenden Aktionen angezeigt. Die folgende Beschreibung setzt
+voraus, dass das Verfahren Quine-McCluskey bekannt ist. </p>
+
+<p>Der Fortschritt der Berechnung wird in diesem Dialogfeld angezeigt:</p>
+
+<p><img SRC="qimage133.gif" WIDTH="450" HEIGHT="308"></p>
+
+<p>Die Berechnung kann jederzeit mit &quot;Berechnung abbrechen&quot; beendet werden.</p>
+
+<p><strong><a href="#_Toc">Inhalt</a></strong></p>
+
+<h2>4.2. <a NAME="_Toc350757137">Ablauf der Berechnung</a></h2>
+
+<p>Zuerst wird die interne Datenstruktur aufgebaut.</p>
+<i>
+
+<p>bilde Datenstruktur...</p>
+</i>
+
+<p>Welcher Ausgang wird berechnet?</p>
+<i>
+
+<p>Berechnung f&uuml;r 1. Ausgang</p>
+</i>
+
+<p>Als n&auml;chstes wird die Quelldatei eingelesen.</p>
+<i>
+
+<p>lese Quelldatei...</p>
+</i>
+
+<p>Eine Meldung zeigt die Berechnungsform an...</p>
+<i>
+
+<p>Berechnung f&uuml;r DNF</p>
+</i>
+
+<p>Beim nun folgenden Schritt werden alle Wertetabelleneintr&auml;ge mit X-Zeichen durch die
+ausgeschriebene Form des Tabelleneintrags ersetzt:</p>
+<i>
+
+<p>expandiere Wertetabelle...</p>
+</i>
+
+<p>Nun werden die Primimplikanten gebildet. Die Prozentanzeige gibt an, wieviel des
+jeweiligen Durchgangs (pass) schon berechnet ist. Die Anzahl Durchg&auml;nge ist von Fall zu
+Fall verschieden. Es kann sehr lange dauern!</p>
+<i>
+
+<p>berechne Primimplikanten...<br>
+pass 1 100%<br>
+pass 2 100%<br>
+pass 3 100%</p>
+</i>
+
+<p>Redundante Primimplikanten werden im n&auml;chsten Schritt eliminiert. Da das Endresultat
+von der Reihenfolge der Elimination abh&auml;ngt werden mehrere Anl&auml;ufe genommen; n&auml;mlich
+soviele wie &uuml;berhaupt m&ouml;glich sind. Auf diese Art werden alle L&ouml;sungen gefunden. Ein
+nachgeschaltetes &quot;Filter&quot; l&ouml;scht L&ouml;sungen, die nicht absolut minimal sind.</p>
+<i>
+
+<p>suche redundante Primimplikanten...</p>
+
+<p>pass 1<br>
+pass 2<br>
+pass 3 L&ouml;sung ist redundant &lt;- Das Filter hat zugeschlagen !</p>
+</i>
+
+<p>Am Schluss werden alle verbliebenen Resultate in die Resultatdatei oder auf den
+Bildschirm ausgegeben.</p>
+<i>
+
+<p>Schreibe Resultat nach DEC.OUT...<br>
+nicht minimale L&ouml;sung gel&ouml;scht... &lt;- Filterwirkung<br>
+Schreibe Resultat nach DEC.OUT...</p>
+</i>
+
+<p>Der beschriebene Vorgang wiederholt sich f&uuml;r jede Ausgangsvariable. Die Resultate
+werden anschliessend in das schwarze Editorfeld geladen.</p>
+
+<p><strong><a href="#_Toc">Inhalt</a></strong></p>
+
+<h2>4.3. <a NAME="_Toc350757138">Grenzen</a></h2>
+
+<p>Die Grenzen liegen vor allen in der Anzahl erlaubter Variablen und in der Gr&ouml;sse der
+intern verwendeten Tabellen. In der Version 3.0 sind 16 Variablen erlaubt. Die Tabellen
+zur Berechnung der Primimplikanten fassen ca. 65000 Eintr&auml;ge. Die Tabelle zur Ermittlung
+der redundanten Primimplikanten fasst maximal 65000 Primimplikanten. Die genannten
+Tabellengr&ouml;ssen sind nur voll ausnutzbar, wenn 16 MByte oder mehr Speicher verf&uuml;gbar
+ist. Der minimale Speicherbedarf betr&auml;gt ca. 3 MByte. Wenn wenig RAM verf&uuml;gbar ist, so
+werden intensiv tempor&auml;re Zwischendateien erzeugt, was einen markanten
+Geschwindigkeitseinbruch ergibt.</p>
+
+<p><strong><a href="#_Toc">Inhalt</a></strong></p>
+
+<h1>5. <a NAME="_Toc350757139">Wenn es nicht funktioniert</a></h1>
+
+<h2>5.1. <a NAME="_Toc350757140">Fehlermeldungen</a></h2>
+
+<p>Fehler, die w&auml;hrend der Berechnung auftauchen, werden in das Resultatfenster
+geschrieben. Zeilen, bei denen ein Fehler erkannt wurde beginnen mit einem ^. Der Fehler
+liegt in der unmittelbar dar&uuml;ber liegenden Zeile oder noch weiter oben im Quelltext.</p>
+
+<p>In den folgenden Listen sind alle Fehlermeldungen (mit entsprechenden Erkl&auml;rungen) in
+alphabetischer Reihenfolge enthalten:</p>
+
+<p><strong><a href="#_Toc">Inhalt</a></strong></p>
+
+<h2>5.2. <a NAME="_Toc350757141">Fehler im Quelltext</a></h2>
+
+<p>Diese Meldungen erscheinen beim Einlesen der Quelldatei. Wenn keine Resultatdatei
+angegeben wurde, so erscheint die fehlerhafte Zeile auf dem Bildschirm. Wurde eine
+Resultatdatei angegeben, so weist das Caret-Symbol ( <b>^</b>) in der Resultatdatei auf
+die fehlerhafte Quelltextzeile. </p>
+<b>
+
+<p>Anzahl Eing&auml;nge ist undefiniert </b>
+
+<dir>
+  <p>Grund : Das Programm hat einen Wertetabelleneintrag gefunden, bevor mit dem .EING
+  Befehl die Anzahl der verwendeten Eing&auml;nge definiert wurde. Eventuell fehlt der .EING
+  Befehl sogar.</p>
+  <p>Abhilfe : Der .EING Befehl muss vor der Wertetabelle in der Quelldatei stehen.<b></p>
+</dir>
+
+<p>Berechnungsform ist undefiniert 
+
+<dir>
+  </b><p>Grund : Das Programm hat einen Wertetabelleneintrag gefunden, bevor die mit dem
+  .FORM Befehl die Berechnungsform definiert wurde. Diese Information ist aber zur korrekten
+  Interpretation der Tabelle unerl&auml;sslich. M&ouml;glicherweise wurde der .FORM Befehl
+  vergessen.</p>
+  <p>Abhilfe : Der .FORM Befehl muss vor der Wertetabelle in der Quelldatei stehen.</p>
+</dir>
+<b>
+
+<p>Die Quelldatei ist fehlerhaft. 
+
+<dir>
+  </b><p>Grund : Die Quelldatei konnte nicht vollst&auml;ndig interpretiert werden.</p>
+  <p>Abhilfe : In der Resultatdatei ist der Fehler n&auml;her erl&auml;utert. Existiert eine solche
+  nicht, so steht die Erl&auml;uterung weiter oben auf dem Bildschirm.</p>
+</dir>
+<b>
+
+<p>Eintrag enth&auml;lt eine ung&uuml;ltige Anzahl Ausgangsvariablen 
+
+<dir>
+  </b><p>Grund : Ein Wertetabelleneintrag enth&auml;lt nicht die mit dem .EING Befehl definierte
+  Anzahl Eingangsvariablen.</p>
+  <p>Abhilfe : Tabelleneintrag vervollst&auml;ndigen bzw. korrigieren.</p>
+</dir>
+<b>
+
+<p>Eintrag enth&auml;lt eine ung&uuml;ltige Anzahl Eingangsvariablen 
+
+<dir>
+  </b><p>Grund : Ein Wertetabelleneintrag enth&auml;lt nicht die mit dem .EING Befehl definierte
+  Anzahl Eingangsvariablen.</p>
+  <p>Abhilfe : Tabelleneintrag vervollst&auml;ndigen bzw. korrigieren.</p>
+</dir>
+<b>
+
+<p>Evaluationsversion: zuviele Ausg&auml;nge angegeben (max 1) 
+
+<dir>
+  </b><p>Grund : Es wurde in der Evaluationsversion mehr als 1 Ausgang spezifiziert.</p>
+  <p>Abhilfe : In der Evaluationsversion kann nur 1 Ausgang definiert werden.</p>
+</dir>
+<b>
+
+<p>Evaluationsversion: zuviele Eing&auml;nge angegeben (max 4) 
+
+<dir>
+  </b><p>Grund : Es wurden in der Evaluationsversion mehr als 4 Eing&auml;nge spezifiziert.</p>
+  <p>Abhilfe : In der Evaluationsversion k&ouml;nnen maximal 4 Eing&auml;nge definiert werden.</p>
+</dir>
+<b>
+
+<p>Nicht definierter Eintrag in der Wertetabelle 
+
+<dir>
+  </b><p>Grund : Dem Eintrag konnte keinen Ausgangszustand zugeordnet werden. Es wurde eine
+  Ausgangsvariable vergessen.</p>
+  <p>Abhilfe : Eintrag durch den Suffix (die Suffixe) E,N oder D erg&auml;nzen.</p>
+</dir>
+<b>
+
+<p>unbekannter Befehl 
+
+<dir>
+  </b><p>Grund : Die betreffende Zeile enth&auml;lt einen unbekannten Befehl. Vermutlich ist ein
+  Befehl falsch eingetippt worden</p>
+  <p>Abhilfe : Befehl richtig eingeben!</p>
+</dir>
+<b>
+
+<p>unbekanntes Zeichen in der Wertetabelle 
+
+<dir>
+  </b><p>Grund : Die betreffende Zeile enth&auml;lt ein ung&uuml;ltiges Zeichen. Vermutlich ist die
+  Zeile falsch eingetippt worden</p>
+  <p>Abhilfe : Zeile richtig eingeben!</p>
+</dir>
+<b>
+
+<p>ung&uuml;ltige Anzahl Ausg&auml;nge 
+
+<dir>
+  </b><p>Grund : Es wurde keine g&uuml;ltige Anzahl Ausg&auml;nge angegeben.</p>
+  <p>Abhilfe : g&uuml;ltige Zahl angeben.</p>
+</dir>
+<b>
+
+<p>ung&uuml;ltige Anzahl Eing&auml;nge 
+
+<dir>
+  </b><p>Grund : Es wurde keine g&uuml;ltige Anzahl Eing&auml;nge angegeben.</p>
+  <p>Abhilfe : g&uuml;ltige Zahl angeben.</p>
+</dir>
+<b>
+
+<p>ung&uuml;ltige Berechnungsform (KNF oder DNF ist erlaubt) 
+
+<dir>
+  </b><p>Grund : Beim .FORM Befehl wurde eine ung&uuml;ltige Option angegeben.</p>
+  <p>Abhilfe : DNF, KNF oder ANF als Option angeben.</p>
+</dir>
+<b>
+
+<p>ung&uuml;ltige Option (D, E oder N ist erlaubt) 
+
+<dir>
+  </b><p>Grund : Beim .REST Befehl wurde eine ung&uuml;ltige Option angegeben.</p>
+  <p>Abhilfe : D, E oder N als Option verwenden.</p>
+</dir>
+<b>
+
+<p>ung&uuml;ltige Suchmodus (SCHNELL, HEURISTISCH, EXAKT sind erlaubt) 
+
+<dir>
+  </b><p>Grund : Beim .PI Befehl wurde eine ung&uuml;ltige Option angegeben.</p>
+  <p>Abhilfe : SCHNELL, HEURISTISCH, EXAKT als Option verwenden.</p>
+</dir>
+<b>
+
+<p>ung&uuml;ltiger Ausgabemodus (GLEICHUNG und/oder SCHEMA sind erlaubt) 
+
+<dir>
+  </b><p>Grund : Beim .RESULTAT Befehl wurde eine ung&uuml;ltige Option angegeben.</p>
+  <p>Abhilfe : SCHEMA und/oder GLEICHUNG als Option verwenden.</p>
+</dir>
+<b>
+
+<p>ung&uuml;ltiges Zeichen in der Wertetabelle 
+
+<dir>
+  </b><p>Grund : Die Wertetabelle enth&auml;lt eine ung&uuml;ltige Zeile </p>
+  <p>Abhilfe : Die Zeile enth&auml;lt ung&uuml;ltige Zeichen, z.B. irgendwelche Buchstaben. Sie muss
+  korrigiert werden.</p>
+</dir>
+<b>
+
+<p>zuviele Eing&auml;nge angegeben (max <i>nn</i>) 
+
+<dir>
+  </b><p>Grund : Es wurden mehr als <i>nn</i> Eing&auml;nge angegeben.</p>
+  <p>Abhilfe : Es d&uuml;rfen maximal <i>nn</i> Eing&auml;nge angegeben werden, sonst passen die
+  Umsetztabellen nicht in den Speicher.</p>
+</dir>
+<b>
+
+<p>zuviele Ausg&auml;nge angegeben (max <i>nn</i>) 
+
+<dir>
+  </b><p>Grund : Es wurden mehr als <i>nn</i> Ausg&auml;nge angegeben.</p>
+  <p>Abhilfe : Es d&uuml;rfen maximal <i>nn</i> Ausg&auml;nge angegeben werden. Sollten mehr als 16
+  Ausg&auml;nge n&ouml;tig sein, so kann man die Quelldatei aufteilen.</p>
+</dir>
+<b>
+
+<p>zuwenig Ausg&auml;nge angegeben (min 1) 
+
+<dir>
+  </b><p>Grund : Es wurde weniger als 1 Ausgang angegeben.</p>
+  <p>Abhilfe : Es muss mindestens 1 Ausgang angegeben werden.</p>
+</dir>
+<b>
+
+<p>zuwenig Eing&auml;nge angegeben (min 1) 
+
+<dir>
+  </b><p>Grund : Es wurde weniger als 1 Eingang angegeben.</p>
+  <p>Abhilfe : Es muss mindestens 1 Eingang angegeben werden.</p>
+</dir>
+
+<p><strong><a href="#_Toc">Inhalt</a></strong></p>
+
+<h2>5.3. <a NAME="_Toc350757142">Fehler w&auml;hrend der Berechnung</a></h2>
+
+<p>Diese Fehler treten w&auml;hrend der Berechnungsphase auf. Die Meldungen erscheinen in der
+Resultatdatei um schwarzen Editorfenster. </p>
+<b>
+
+<p>Berechnung durch Benutzer abgebrochen 
+
+<dir>
+  </b><p>Grund : Die Berechnung wurde durch den Benutzer abgebrochen.</p>
+  <p>Abhilfe : -</p>
+</dir>
+<b>
+
+<p>Fehler in Quelltext: Kombination doppelt! 
+
+<dir>
+  </b><p>Grund : Es wurde die selbe Zeile zweimal in der Wertetabelle angegeben.</p>
+  <p>Abhilfe : Eine Zeile l&ouml;schen.</p>
+</dir>
+<b>
+
+<p>Quelldatei &lt;Name&gt; nicht gefunden 
+
+<dir>
+  </b><p>Grund : Das Programm konnte die Quelldatei nicht finden.</p>
+  <p>Abhilfe : richtigen Dateinamen angeben.</p>
+  <b><p>&nbsp;</p>
+</dir>
+
+<p>relevante Eingangskombination doppelt angegeben : XXXXX 
+
+<dir>
+  </b><p>Grund : Eine nicht - Don't care Eingangskombination wurde gleichzeitig als log.1
+  und als log.0 am Ausgang definiert.</p>
+  <p>Abhilfe : Dies kann leicht bei umfangreichen Wertetabellen und bei Verwendung des X
+  Zeichens vorkommen.<br>
+  z.B.. 1XXXX -&gt; 0<br>
+  XXXX1 -&gt; 1<br>
+  Nach Expandieren der beiden Zeilen treten Kombinationen auf, die in beiden Zeilen
+  enthalten sind und somit nicht eindeutig zugeordnet werden k&ouml;nnen. Man beachte, dass wenn
+  z.B. die <i>untere</i> Zeile eine Don't&nbsp;care Kombination ist, so wird kein Fehler
+  ausgegeben. Die doppelt vergebene Kombination w&uuml;rde automatisch als der <i>oberen </i>Zeile
+  zugeh&ouml;rig betrachtet. Dies vereinfacht oft die Wertetabelle. Die doppelte Kombination ist
+  zu entfernen.</p>
+</dir>
+<b>
+
+<p>Resourcenmangel 
+
+<dir>
+  </b><p>Grund : Das Programm konnte nicht gen&uuml;gend Ressourcen wie Speicher, Dateien etc.
+  finden. Diese Meldung erscheint in Begleitung mit einer anderen Fehlermeldung (s. dort).</p>
+  <p>Abhilfe : -</p>
+</dir>
+<b>
+
+<p>Stack.Newstack: too many stacks defined 
+
+<dir>
+  </b><p>Grund : interner Fehler</p>
+  <p>Abhilfe : Kontakt mit Programmentwickler aufnehmen</p>
+</dir>
+<b>
+
+<p>Stack.Dispstack: stack already disposed 
+
+<dir>
+  </b><p>Grund : interner Fehler</p>
+  <p>Abhilfe : Kontakt mit Programmentwickler aufnehmen</p>
+</dir>
+<b>
+
+<p>Stack.Pop: stack empty 
+
+<dir>
+  </b><p>Grund : interner Fehler</p>
+  <p>Abhilfe : Kontakt mit Programmentwickler aufnehmen</p>
+</dir>
+<b>
+
+<p>Stack.Pop/Push/Pick/StackSize: stack undefined 
+
+<dir>
+  </b><p>Grund : interner Fehler</p>
+  <p>Abhilfe : Kontakt mit Programmentwickler aufnehmen</p>
+</dir>
+<b>
+
+<p>Stack.Push: stack overflow 
+
+<dir>
+  </b><p>Grund : interner Fehler</p>
+  <p>Abhilfe : Kontakt mit Programmentwickler aufnehmen</p>
+</dir>
+<b>
+
+<p>Stack.Pick: too few elements on stack 
+
+<dir>
+  </b><p>Grund : interner Fehler</p>
+  <p>Abhilfe : Kontakt mit Programmentwickler aufnehmen</p>
+</dir>
+<b>
+
+<p>&Uuml;berlauf der internen Tabelle 
+
+<dir>
+  </b><p>Grund : Die interne Umsetztabelle ist zu klein (zu viele Eingangsvariablen und eine
+  zu komplizierte Wertetabelle).</p>
+  <p>Abhilfe : Weniger Eingangsvariablen verwenden, andere Berechnungsform (DNF oder KNF)
+  ausprobieren. Wertetabelle vereinfachen.</p>
+</dir>
+<b>
+
+<p>&Uuml;berlauf der Primimplikantentabelle 
+
+<dir>
+  </b><p>Grund : Die Primimplikantentabelle ist zu klein (es entstanden mehr als xxxxx
+  Primimplikanten).</p>
+  <p>Abhilfe : Weniger Eingangsvariablen verwenden, andere Berechnungsform (DNF oder KNF)
+  ausprobieren. Wertetabelle vereinfachen.</p>
+</dir>
+<b>
+
+<p>unable to allocate XXXX bytes 
+
+<dir>
+  </b><p>Grund : Das Programm konnte XXXX Bytes Speicher nicht anfordern.</p>
+  <p>Abhilfe : Auf diese Meldung folgt die Meldung zuwenig Speicher. (s. dort).</p>
+</dir>
+<b>
+
+<p>zuwenig Speicher 
+
+<dir>
+  </b><p>Grund : Der verf&uuml;gbare Speicher reicht nicht aus.</p>
+  <p>Abhilfe : Speicher freigeben oder einen neuen PC kaufen. Sonst: Kontakt mit dem
+  Programmentwickler aufnehmen.</p>
+</dir>
+
+<p><strong><a href="#_Toc">Inhalt</a></strong></p>
+
+<h2>5.4. <a NAME="_Toc350757143">Tips und Tricks</a></h2>
+
+<p>Tja... Bis jetzt keine!</p>
+
+<p><strong><a href="#_Toc">Inhalt</a></strong></p>
+
+<h1>6. <a NAME="_Toc350757144">Anwendungsbeispiele</a></h1>
+
+<h2>6.1. <a NAME="_Toc350757145">Beispiel 1</a></h2>
+
+<p>Es soll eine Parity-Check Logik gebildet werden. Dazu sei folgende Wertetabelle gegeben
+: </p>
+
+<table BORDER="1" CELLSPACING="0" CELLPADDING="3">
+  <tr>
+    <th VALIGN="top"><p ALIGN="CENTER">Eing&auml;nge<br>
+    D0 D1 D2 D3 D4</th>
+    <th VALIGN="top"><p ALIGN="CENTER">Ausgang<br>
+    Parit&auml;t</th>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">0 0 0 0 0</td>
+    <td VALIGN="top"><p ALIGN="CENTER">0</td>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">0 0 0 0 1</td>
+    <td VALIGN="top"><p ALIGN="CENTER">1</td>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">0 0 0 1 0</td>
+    <td VALIGN="top"><p ALIGN="CENTER">1</td>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">0 0 0 1 1</td>
+    <td VALIGN="top"><p ALIGN="CENTER">0</td>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">0 0 1 0 0</td>
+    <td VALIGN="top"><p ALIGN="CENTER">1</td>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">0 0 1 0 1</td>
+    <td VALIGN="top"><p ALIGN="CENTER">0</td>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">0 0 1 1 0</td>
+    <td VALIGN="top"><p ALIGN="CENTER">0</td>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">0 0 1 1 1</td>
+    <td VALIGN="top"><p ALIGN="CENTER">1</td>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">0 1 0 0 0</td>
+    <td VALIGN="top"><p ALIGN="CENTER">1</td>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">0 1 0 0 1</td>
+    <td VALIGN="top"><p ALIGN="CENTER">0</td>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">0 1 0 1 0</td>
+    <td VALIGN="top"><p ALIGN="CENTER">0</td>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">0 1 0 1 1</td>
+    <td VALIGN="top"><p ALIGN="CENTER">1</td>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">0 1 1 0 0</td>
+    <td VALIGN="top"><p ALIGN="CENTER">0</td>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">0 1 1 0 1</td>
+    <td VALIGN="top"><p ALIGN="CENTER">1</td>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">0 1 1 1 0</td>
+    <td VALIGN="top"><p ALIGN="CENTER">1</td>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">0 1 1 1 1</td>
+    <td VALIGN="top"><p ALIGN="CENTER">0</td>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">1 0 0 0 0</td>
+    <td VALIGN="top"><p ALIGN="CENTER">1</td>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">1 0 0 0 1</td>
+    <td VALIGN="top"><p ALIGN="CENTER">0</td>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">1 0 0 1 0</td>
+    <td VALIGN="top"><p ALIGN="CENTER">0</td>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">1 0 0 1 1</td>
+    <td VALIGN="top"><p ALIGN="CENTER">1</td>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">1 0 1 0 0</td>
+    <td VALIGN="top"><p ALIGN="CENTER">0</td>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">1 0 1 0 1</td>
+    <td VALIGN="top"><p ALIGN="CENTER">1</td>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">1 0 1 1 0</td>
+    <td VALIGN="top"><p ALIGN="CENTER">1</td>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">1 0 1 1 1</td>
+    <td VALIGN="top"><p ALIGN="CENTER">0</td>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">1 1 0 0 0</td>
+    <td VALIGN="top"><p ALIGN="CENTER">0</td>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">1 1 0 0 1</td>
+    <td VALIGN="top"><p ALIGN="CENTER">1</td>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">1 1 0 1 0</td>
+    <td VALIGN="top"><p ALIGN="CENTER">1</td>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">1 1 0 1 1</td>
+    <td VALIGN="top"><p ALIGN="CENTER">0</td>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">1 1 1 0 0</td>
+    <td VALIGN="top"><p ALIGN="CENTER">1</td>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">1 1 1 0 1</td>
+    <td VALIGN="top"><p ALIGN="CENTER">0</td>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">1 1 1 1 0</td>
+    <td VALIGN="top"><p ALIGN="CENTER">0</td>
+  </tr>
+  <tr>
+    <td VALIGN="top"><p ALIGN="CENTER">1 1 1 1 1</td>
+    <td VALIGN="top"><p ALIGN="CENTER">1</td>
+  </tr>
+</table>
+
+<p>&nbsp; </p>
+
+<p>Setzt man diese Tabelle in eine Quelldatei um, so erh&auml;lt man die Demonstrationsdatei
+DEMO1.QMC :</p>
+
+<p>Zuerst Titel und Kommentare:</p>
+<i>
+
+<pre></i><small>; Demonstrationsdatei 1
+;Parity - Check Logik
+;MWI</small></pre>
+
+<p>Es folgen die Steueranweisungen. Es muss im Minimum die Anzahl Eing&auml;nge (1) und die
+Berechnungsform (2) definiert werden. Die Variablennamen sind optional, sonst werden
+einfach die ersten Buchstaben des Alphabets verwendet. Das Resultat wird als Gleichung
+ausgegeben, da nichts anderes definiert wurde.</p>
+<i>
+
+<pre></i><small>.eing D0 D1 D2 D3 D4 (1) ; 5 Eing&auml;nge
+.form DNF (2) ; disjunktive Normalform
+.ausg Resultat ; 5 Datenleitungen
+.rest 0 ; nicht angegebene Kombinationen -&gt; 0</small></pre>
+
+<p>Nun folgt die weiter oben gezeigte Wertetabelle:</p>
+<i>
+
+<pre></i><small>; Wertetabelle :
+
+0 0 0 0 1 -&gt; 1
+0 0 0 1 0 -&gt; 1
+0 0 1 0 0 -&gt; 1
+0 0 1 1 1 -&gt; 1
+0 1 0 0 0 -&gt; 1
+0 1 0 1 1 -&gt; 1
+0 1 1 0 1 -&gt; 1
+0 1 1 1 0 -&gt; 1
+1 0 0 0 0 -&gt; 1
+1 0 0 1 1 -&gt; 1
+1 0 1 0 1 -&gt; 1
+1 0 1 1 0 -&gt; 1
+1 1 0 0 1 -&gt; 1
+1 1 0 1 0 -&gt; 1
+1 1 1 0 0 -&gt; 1
+1 1 1 1 1 -&gt; 1
+
+; 1 am Schluss angegeben -&gt; Eintrag wird am 
+; Ausgang log. 1 ergeben Die Zust&auml;nde mit 0 m&uuml;ssen 
+; nicht spezifiziert werden (s. .REST-Befehl)</small></pre>
+
+<p>Und nun die vom Programm erzeugte Resultatdatei: Sie enth&auml;lt als erstes eine Kopie der
+Quelldatei. Dann folgen die errechneten Resultate (es k&ouml;nnen durchaus mehrere minimale
+L&ouml;sungen existieren).</p>
+
+<pre><small>Quine Mc Clusky V 2.0 Nr. #20100690-001
+Copyright (c) 1989,1996 by M.Wieser,Weidmattweg 6, 3018 Bern.
+
+Berechnung f&uuml;r 1. Ausgang
++++ Quelldatei DEMO1.QMC :
+------------------------------------------------------------------
+; Demonstrationsdatei 1
+;Parity - Check Logik
+;MWI
+
+.eing 5 ; 5 Eing&auml;nge
+.form DNF ; disjunktive Normalform
+.namen D0 D1 D2 D3 D4 Resultat ; 5 Datenleitungen
+.rest 0 ; nicht angegebene Kombinationen -&gt; 0
+
+; Wertetabelle :
+0 0 0 0 1 -&gt; 1
+0 0 0 1 0 -&gt; 1
+0 0 1 0 0 -&gt; 1
+0 0 1 1 1 -&gt; 1
+0 1 0 0 0 -&gt; 1
+0 1 0 1 1 -&gt; 1
+0 1 1 0 1 -&gt; 1
+0 1 1 1 0 -&gt; 1
+1 0 0 0 0 -&gt; 1
+1 0 0 1 1 -&gt; 1
+1 0 1 0 1 -&gt; 1
+1 0 1 1 0 -&gt; 1
+1 1 0 0 1 -&gt; 1
+1 1 0 1 0 -&gt; 1
+1 1 1 0 0 -&gt; 1
+1 1 1 1 1 -&gt; 1
+
+; 1 am Schluss angegeben -&gt; Eintrag wird am 
+; Ausgang log. 1 ergeben Die Zust&auml;nde mit 0 m&uuml;ssen 
+; nicht spezifiziert werden (s. .REST-Befehl)
+
++++ Ende der Quelldatei DEMO1.QMC
+------------------------------------------------------------------
+
++++ errechnete minimalisierte Normalform(en) :
+------------------------------------------------------------------
+
+Resultat = (/D0 * /D1 * /D2 * /D3 * D4) +
+           (/D0 * /D1 * /D2 * D3 * /D4) +
+           (/D0 * /D1 * D2 * /D3 * /D4) +
+           (/D0 * /D1 * D2 * D3 * D4) +
+           (/D0 * D1 * /D2 * /D3 * /D4) +
+           (/D0 * D1 * /D2 * D3 * D4) +
+           (/D0 * D1 * D2 * /D3 * D4) +
+           (/D0 * D1 * D2 * D3 * /D4) +
+           ( D0 * /D1 * /D2 * /D3 * /D4) +
+           ( D0 * /D1 * /D2 * D3 * D4) +
+           ( D0 * /D1 * D2 * /D3 * D4) +
+           ( D0 * /D1 * D2 * D3 * /D4) +
+           ( D0 * D1 * /D2 * /D3 * D4) +
+           ( D0 * D1 * /D2 * D3 * /D4) +
+           ( D0 * D1 * D2 * /D3 * /D4) +
+           ( D0 * D1 * D2 * D3 * D4)
+
+------------------------------------------------------------------
+Keine weiteren L&ouml;sungen f&uuml;r 1. Ausgang 
+</small></pre>
+
+<p>Wie ersichtlich ist, konnte das Programm diese Wertetabelle nicht in eine einfachere
+Logikschaltung &uuml;berf&uuml;hren. Dies liegt daran, dass f&uuml;r diese Wertetabelle keine
+minimalere dusjunktive Form als die voll ausgeschriebene Form existiert. Das heisst aber
+nicht, dass es nicht m&ouml;glich ist, hier etwas zu vereinfachen. Die Berechnung mit der
+alternativen Form bringt folgendes Resultat:</p>
+
+<pre>Resultat = D0 xor D1 xor D2 xor D3 xor D4</pre>
+
+<p><strong><a href="#_Toc">Inhalt</a></strong></p>
+
+<h2>6.2. <a NAME="_Toc350757146">Beispiel 2</a></h2>
+
+<p>In einem Mikroprozessorsystem soll ein Freigabesignal f&uuml;r eine externe Einheit erzeugt
+werden. Dabei soll folgende Wertetabelle gelten:</p>
+
+<table border="1" cellspacing="0" cellpadding="3">
+  <tr>
+    <th>Eing&auml;nge<br>
+    notReset En WR A0</th>
+    <th>Ausgang<br>
+    Freigabe</th>
+  </tr>
+  <tr>
+    <td>0 0 0 0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>0 0 0 1</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>0 0 1 0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>0 0 1 1</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>0 1 0 0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>0 1 0 1</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>0 1 1 0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>0 1 1 1</td>
+    <td>Don't care</td>
+  </tr>
+  <tr>
+    <td>1 0 0 0</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>1 0 0 1</td>
+    <td>Don't care</td>
+  </tr>
+  <tr>
+    <td>1 0 1 0</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>1 0 1 1</td>
+    <td>Don't care</td>
+  </tr>
+  <tr>
+    <td>1 1 0 0</td>
+    <td>Don't care</td>
+  </tr>
+  <tr>
+    <td>1 1 0 1</td>
+    <td>Don't care</td>
+  </tr>
+  <tr>
+    <td>1 1 1 0</td>
+    <td>Don't care</td>
+  </tr>
+  <tr>
+    <td>1 1 1 1</td>
+    <td>0</td>
+  </tr>
+</table>
+
+<p>Die Tabelle wird in eine Quelldatei umgesetzt. Durch geeigneten Einsatz des <b>X</b>-Zeichens
+konnten ein paar Eintr&auml;ge gespart werden. Diese Einsparung hat aber keinen Einfluss auf
+die Berechnung, sie ist etwas f&uuml;r Schreibfaule (Das Beispiel ist etwas zu einfach und zu
+klein, um die M&auml;chtigkeit des X-Zeichens zu demonstrieren). </p>
+
+<p>Das Resultat aller Bem&uuml;hungen ist die Quelldatei: DEMO2.QMC.</p>
+
+<p><strong><a href="#_Toc">Inhalt</a></strong></p>
+
+<h1>7. <a NAME="_Toc350757147">Lizenzvereinbarungen</a></h1>
+
+<p><strong>QMC ist ab Version 3.02 Freeware.</strong></p>
+
+<p>Dies bedeutet, dass Sie die Software kostenlos ben&uuml;tzen d&uuml;rfen. Sie&nbsp;d&uuml;rfen Sie
+Software auch kopieren und weitergeben, solange Sie dies&nbsp;auch kostenlos tun. Sie
+d&uuml;rfen keine &Auml;nderungen an der Software vornehmen und m&uuml;ssen jeweils alle zum Programm
+geh&ouml;renden Dateien weitergeben. Falls Sie eine unvollst&auml;ndige Kopie erhalten haben,
+finden Sie die neueste Version unter: <a href="http://www.iapetus.ch/wieser/software">http://www.iapetus.ch/wieser/software</a></p>
+
+<p><strong><a href="#_Toc">Inhalt</a></strong></p>
+
+<h1>8. <a NAME="_Toc350757148">Gew&auml;hrleistung</a></h1>
+
+<p><strong>Wir schliessen ausdr&uuml;cklich jede Gew&auml;hrleistung f&uuml;r dieses Programm
+(&quot;Software&quot;) aus. Die Software wird ihnen &quot;so wie sie ist&quot; zur
+Verf&uuml;gung gestellt, ohne jede Gew&auml;hrleistung irgendeiner Art, weder ausdr&uuml;cklich noch
+konkludent, einschliesslich aber nicht eingeschr&auml;nkt auf konkludente Gew&auml;hrleistungen
+der Tauglichkeit, der Eignung f&uuml;r einen bestimmten Zweck oder des Nichtbestehens einer
+Rechtsverletzung. Das gesamte Risiko, das sich aus dem Verwenden oder der Leistung der
+Software entsteht, verbleibt bei Ihnen.</strong></p>
+
+<p>Oder kurz: Sie benutzen die Software auf eigenes Risiko! </p>
+
+<p><strong><a href="#_Toc">Inhalt</a></strong></p>
+
+<p>&nbsp;</p>
+
+<hr noshade>
+
+<p><address>30. M&auml;rz 2002, martin.wieser@iapetus.ch</address></p>
+</body>
+</html>

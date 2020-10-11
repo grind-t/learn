@@ -1,0 +1,52 @@
+[PAGE_SETUP]
+BOTTOM_MARGIN=1.000000
+LEFT_MARGIN=1.000000
+PAPER_SIZE=9
+PAPER_SOURCE=15
+RIGHT_MARGIN=1.000000
+TOP_MARGIN=1.000000
+[||Simulation Report]
+OUTPUT_SECTION=1
+PAGE_ORIENTATION=0
+[||Simulation Report||Flow Settings]
+OUTPUT_SECTION=1
+PAGE_ORIENTATION=0
+[||Simulation Report||Flow Summary]
+OUTPUT_SECTION=1
+PAGE_ORIENTATION=0
+[||Simulation Report||Legal Notice]
+OUTPUT_SECTION=1
+PAGE_ORIENTATION=0
+[||Simulation Report||Simulator]
+OUTPUT_SECTION=1
+PAGE_ORIENTATION=0
+[||Simulation Report||Simulator||Simulation Coverage]
+OUTPUT_SECTION=1
+PAGE_ORIENTATION=0
+[||Simulation Report||Simulator||Simulation Coverage||Complete 1/0-Value Coverage]
+OUTPUT_SECTION=1
+PAGE_ORIENTATION=0
+[||Simulation Report||Simulator||Simulation Coverage||Coverage Summary]
+OUTPUT_SECTION=1
+PAGE_ORIENTATION=0
+[||Simulation Report||Simulator||Simulation Coverage||Missing 0-Value Coverage]
+OUTPUT_SECTION=1
+PAGE_ORIENTATION=0
+[||Simulation Report||Simulator||Simulation Coverage||Missing 1-Value Coverage]
+OUTPUT_SECTION=1
+PAGE_ORIENTATION=0
+[||Simulation Report||Simulator||Simulation Waveforms]
+OUTPUT_SECTION=1
+PAGE_ORIENTATION=1
+[||Simulation Report||Simulator||Simulator INI Usage]
+OUTPUT_SECTION=1
+PAGE_ORIENTATION=0
+[||Simulation Report||Simulator||Simulator Messages]
+OUTPUT_SECTION=1
+PAGE_ORIENTATION=0
+[||Simulation Report||Simulator||Simulator Settings]
+OUTPUT_SECTION=1
+PAGE_ORIENTATION=0
+[||Simulation Report||Simulator||Simulator Summary]
+OUTPUT_SECTION=1
+PAGE_ORIENTATION=0

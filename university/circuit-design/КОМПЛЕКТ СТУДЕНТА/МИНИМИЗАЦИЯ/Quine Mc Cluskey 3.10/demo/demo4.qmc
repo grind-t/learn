@@ -1,0 +1,11 @@
+; Testdatei demo4.qmc  11.12.90 M.Wieser
+
+.eing a7 a6 
+.ausg enable
+.form knf
+
+
+.resultat gleichung schema  tabelle
+
+.gleichung enable = a7 and not a6
+

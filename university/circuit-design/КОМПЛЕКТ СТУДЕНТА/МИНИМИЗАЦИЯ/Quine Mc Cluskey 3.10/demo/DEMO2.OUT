@@ -1,0 +1,106 @@
+Quine Mc Cluskey 3.24    (c)89-08 by http://www.iapetus.ch/software
+-----------------------------------------------------------------------
+Started at 04.06.2008 12:50:41
+
+
+Start of source file z:\media\DATA\recieved\Quine Mc Cluskey 3.10\demo\demo2.qmc
+-----------------------------------------------------------------------
+
+
+; Demonstrationsdatei 2
+; ---------------------
+
+.eing notReset En WR A0                    ; 4 Eingangsvariablen
+.ausg Freigabe Flag                        ; 2 Ausgangsvariable ist Default
+
+ 00X1 -> 11                  ; Eingangskombination welche '1' ergeben soll
+ 1001 -> dd                  ; Don't care Kombination
+ 110X -> d0                  ; X steht fr einen beliebigen Zustand
+ 1010 -> 11
+
+; Demonstration der M”glichkeiten des Programms          24.2.90  M.Wieser
+
+.form dnf                    ; konjunktive Normalform  (warum nicht?)
+            
+								     ; Variablennamen
+.resultat
+$schema
+$tabelle
+$gleichung
+ 
+
+; Damit ist alles definiert, um eine Berechnung zu starten...
+
+
+-----------------------------------------------------------------------
+End of source file z:\media\DATA\recieved\Quine Mc Cluskey 3.10\demo\demo2.qmc
+
+
+Quine Mc Cluskey 3.24    (c)89-08 by http://www.iapetus.ch/software
+-----------------------------------------------------------------------
+Calculated minimized disjunktive forms for output number 1:
+
+
+Freigabe = log.1
+
+log.1şÄÄÄÄÄÄÄşFreigabe
+
+
+
+No other solutions for output number 1.
+-----------------------------------------------------------------------
+
+
+Quine Mc Cluskey 3.24    (c)89-08 by http://www.iapetus.ch/software
+-----------------------------------------------------------------------
+Calculated minimized disjunktive forms for output number 2:
+
+Flag     =  (/En ) 
+
+şEn
+³    ÚÄÄÄÄÄ¿   
+ÀÄÄÄÄ´  1  ³oÄÄÄÄÄşFlag
+     ÀÄÄÄÄÄÙ   
+
+
+
+
+No other solutions for output number 2.
+-----------------------------------------------------------------------
+
+
+Quine Mc Cluskey 3.24    (c)89-08 by http://www.iapetus.ch/software
+-----------------------------------------------------------------------
+
+Expanding truth table for all outputs:
+
+ şnotReset
+ ³ şEn
+ ³ ³ şWR
+ ³ ³ ³ şA0
+ ³ ³ ³ ³ 
+ ³ ³ ³ ³   şFreigabe
+ ³ ³ ³ ³   ³ şFlag
+ ³ ³ ³ ³   ³ ³ 
+ÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄ
+ 0 0 0 0 ³ D D 
+ 0 0 0 1 ³ 1 1 
+ 0 0 1 0 ³ D D 
+ 0 0 1 1 ³ 1 1 
+ 0 1 0 0 ³ D D 
+ 0 1 0 1 ³ D D 
+ 0 1 1 0 ³ D D 
+ 0 1 1 1 ³ D D 
+ 1 0 0 0 ³ D D 
+ 1 0 0 1 ³ D D 
+ 1 0 1 0 ³ 1 1 
+ 1 0 1 1 ³ D D 
+ 1 1 0 0 ³ D 0 
+ 1 1 0 1 ³ D 0 
+ 1 1 1 0 ³ D D 
+ 1 1 1 1 ³ D D 
+
+
+
+Calculation successfully terminated. Time elapsed: 0:00:01
+
