@@ -1,5 +1,5 @@
 EDA Netlist Writer report for lab1_scheme2
-Sun Sep 27 21:16:28 2020
+Mon Sep 28 17:40:02 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sun Sep 27 21:16:28 2020 ;
+; EDA Netlist Writer Status ; Successful - Mon Sep 28 17:40:02 2020 ;
 ; Revision Name             ; lab1_scheme2                          ;
 ; Top-level Entity Name     ; lab1_scheme2                          ;
 ; Family                    ; Cyclone IV GX                         ;
@@ -103,7 +103,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sun Sep 27 21:16:27 2020
+    Info: Processing started: Mon Sep 28 17:40:01 2020
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory=C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab1/scheme2/simulation/qsim/ lab1_scheme2 -c lab1_scheme2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file lab1_scheme2_6_1200mv_85c_slow.vo in folder "C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab1/scheme2/simulation/qsim//" for EDA simulation tool
@@ -116,7 +116,7 @@ Info (204019): Generated file lab1_scheme2_min_1200mv_0c_v_fast.sdo in folder "C
 Info (204019): Generated file lab1_scheme2_v.sdo in folder "C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab1/scheme2/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4721 megabytes
-    Info: Processing ended: Sun Sep 27 21:16:28 2020
+    Info: Processing ended: Mon Sep 28 17:40:02 2020
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

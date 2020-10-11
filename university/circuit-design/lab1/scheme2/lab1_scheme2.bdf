@@ -117,22 +117,6 @@ https://fpgasoftware.intel.com/eula.
 	)
 )
 (symbol
-	(rect 472 504 488 536)
-	(text "VCC" (rect 0 5 10 25)(font "Arial" (font_size 6))(vertical))
-	(text "inst3" (rect 5 7 22 29)(font "Intel Clear" )(vertical)(invisible))
-	(port
-		(pt 16 16)
-		(output)
-		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
-		(text "1" (rect 7 8 19 13)(font "Courier New" (bold))(vertical)(invisible))
-		(line (pt 16 16)(pt 8 16))
-	)
-	(drawing
-		(line (pt 8 24)(pt 8 8))
-	)
-	(rotate90)
-)
-(symbol
 	(rect 496 328 608 624)
 	(text "K155LA4" (rect 32 0 85 14)(font "Arial" (font_size 8)))
 	(text "inst2" (rect 16 256 39 268)(font "Arial" ))
@@ -826,14 +810,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 472 320)
 )
 (connector
-	(pt 480 544)
-	(pt 480 624)
-)
-(connector
-	(pt 496 520)
-	(pt 488 520)
-)
-(connector
 	(pt 608 384)
 	(pt 616 384)
 )
@@ -861,6 +837,19 @@ https://fpgasoftware.intel.com/eula.
 	(pt 672 392)
 	(pt 632 392)
 )
+(connector
+	(pt 480 520)
+	(pt 480 544)
+)
+(connector
+	(pt 480 544)
+	(pt 480 624)
+)
+(connector
+	(pt 496 520)
+	(pt 480 520)
+)
 (junction (pt 664 224))
 (junction (pt 656 248))
 (junction (pt 616 384))
+(junction (pt 480 544))

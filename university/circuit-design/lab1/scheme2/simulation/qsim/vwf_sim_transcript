@@ -26,7 +26,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sun Sep 27 21:16:26 2020
+    Info: Processing started: Mon Sep 28 17:40:00 2020
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab1_scheme2 -c lab1_scheme2 --vector_source=C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab1/scheme2/Waveform.vwf --testbench_file=C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab1/scheme2/simulation/qsim/Waveform.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -55,7 +55,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sun Sep 27 21:16:27 2020
+    Info: Processing started: Mon Sep 28 17:40:01 2020
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory=C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab1/scheme2/simulation/qsim/ lab1_scheme2 -c lab1_scheme2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file lab1_scheme2_6_1200mv_85c_slow.vo in folder "C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab1/scheme2/simulation/qsim//" for EDA simulation tool
@@ -68,7 +68,7 @@ Info (204019): Generated file lab1_scheme2_min_1200mv_0c_v_fast.sdo in folder "C
 Info (204019): Generated file lab1_scheme2_v.sdo in folder "C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab1/scheme2/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4721 megabytes
-    Info: Processing ended: Sun Sep 27 21:16:28 2020
+    Info: Processing ended: Mon Sep 28 17:40:02 2020
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -92,7 +92,7 @@ Reading pref.tcl
 
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:16:29 on Sep 27,2020
+# Start time: 17:40:03 on Sep 28,2020
 # vlog -work work lab1_scheme2.vo 
 
 # -- Compiling module lab1_scheme2
@@ -100,21 +100,21 @@ Reading pref.tcl
 # 
 # Top level modules:
 # 	lab1_scheme2
-# End time: 21:16:29 on Sep 27,2020, Elapsed time: 0:00:00
+# End time: 17:40:04 on Sep 28,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:16:29 on Sep 27,2020
+# Start time: 17:40:04 on Sep 28,2020
 # vlog -work work Waveform.vwf.vt 
 # -- Compiling module lab1_scheme2_vlg_vec_tst
 # 
 # Top level modules:
 # 	lab1_scheme2_vlg_vec_tst
-# End time: 21:16:29 on Sep 27,2020, Elapsed time: 0:00:00
+# End time: 17:40:04 on Sep 28,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.lab1_scheme2_vlg_vec_tst 
-# Start time: 21:16:29 on Sep 27,2020
+# Start time: 17:40:04 on Sep 28,2020
 # Loading work.lab1_scheme2_vlg_vec_tst
 # Loading work.lab1_scheme2
 # Loading work.hard_block
@@ -130,7 +130,7 @@ Reading pref.tcl
 # after#26
 # ** Note: $finish    : Waveform.vwf.vt(53)
 #    Time: 1 us  Iteration: 0  Instance: /lab1_scheme2_vlg_vec_tst
-# End time: 21:16:30 on Sep 27,2020, Elapsed time: 0:00:01
+# End time: 17:40:05 on Sep 28,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
@@ -143,7 +143,7 @@ Reading C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab1/scheme
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab1/scheme2/simulation/qsim/lab1_scheme2_20200927211630.sim.vwf
+Writing the resulting VWF to C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab1/scheme2/simulation/qsim/lab1_scheme2_20200928174005.sim.vwf
 
 Finished VCD to VWF conversion.
 
