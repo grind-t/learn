@@ -1,0 +1,32 @@
+|Shema
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+C => inst1.IN0
+C => inst.IN2
+C => inst8.IN0
+E2 => inst1.IN1
+S => 74157M:inst9.SEL
+S => 74157M:inst11.SEL
+E1 => inst.IN1
+q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Shema|74157M:inst9
+Y <= 25.DB_MAX_OUTPUT_PORT_TYPE
+A => 20.IN0
+GN => 12.IN0
+GN => 13.IN0
+SEL => 12.IN1
+SEL => 1.IN0
+B => 21.IN0
+
+
+|Shema|74157M:inst11
+Y <= 25.DB_MAX_OUTPUT_PORT_TYPE
+A => 20.IN0
+GN => 12.IN0
+GN => 13.IN0
+SEL => 12.IN1
+SEL => 1.IN0
+B => 21.IN0
+
+

@@ -1,0 +1,157 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/grind/Desktop/projects/learn/university/circuit-design/lab3/simulation/qsim
+vhard_block
+Z1 !s110 1604678555
+!i10b 1
+!s100 <5zIZZFeDc7bLE]M:a2SH3
+ITz@:R<_KHjMkghd3[VXif3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1604678554
+Z4 8lab3.vo
+Z5 Flab3.vo
+L0 293
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1604678555.000000
+Z8 !s107 lab3.vo|
+Z9 !s90 -work|work|lab3.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vprimitives_scheme
+Z12 !s110 1604676588
+!i10b 1
+!s100 L3ll]OZFBez]lgHH?CJB^3
+IWcTWoGJPnXg6_CzJFBUZ[1
+R2
+R0
+Z13 w1604676587
+R4
+R5
+Z14 L0 32
+R6
+r1
+!s85 0
+31
+Z15 !s108 1604676588.000000
+R8
+R9
+!i113 1
+R10
+R11
+vprimitives_scheme_vlg_vec_tst
+R12
+!i10b 1
+!s100 32Gz5n^8VNe9P8^2T6Vg12
+I0d1=d02JOc4_Ine]3<<2O0
+R2
+R0
+R13
+Z16 8Waveform.vwf.vt
+Z17 FWaveform.vwf.vt
+Z18 L0 30
+R6
+r1
+!s85 0
+31
+R15
+Z19 !s107 Waveform.vwf.vt|
+Z20 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+vscheme
+R1
+!i10b 1
+!s100 Ed@OZ_doaBQ>_Vk@CcDY^0
+IFZQ4KEPeZCaAOoZU^lWe41
+R2
+R0
+R3
+R4
+R5
+R14
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vscheme1
+Z21 !s110 1603475555
+!i10b 1
+!s100 dSzAEb_gzjdH<MO^O9I>Z0
+I9c7m7ldgYlmNkR@Q7hV502
+R2
+R0
+w1603475554
+R4
+R5
+R14
+R6
+r1
+!s85 0
+31
+Z22 !s108 1603475555.000000
+R8
+R9
+!i113 1
+R10
+R11
+vscheme1_vlg_vec_tst
+R21
+!i10b 1
+!s100 1YQ?<Q0EDX7XM5ANzK8IM3
+IkQf2AfJOSzS@fBm8Hjf`W1
+R2
+R0
+w1603475553
+R16
+R17
+R18
+R6
+r1
+!s85 0
+31
+R22
+R19
+R20
+!i113 1
+R10
+R11
+vscheme_vlg_vec_tst
+R1
+!i10b 1
+!s100 F4<_VhVWEZ_3GWGLk]^4Z1
+I8TJg2l7lPWoBd>Y;WjXFf1
+R2
+R0
+w1604678553
+R16
+R17
+R18
+R6
+r1
+!s85 0
+31
+R7
+R19
+R20
+!i113 1
+R10
+R11
