@@ -1,10 +1,10 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab3/scheme1.bdf
-source_file = 1, C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab3/scheme.bdf
-source_file = 1, C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab3/Waveform.vwf
-source_file = 1, C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab3/primitives_scheme.bdf
-source_file = 1, c:/users/grind/desktop/projects/learn/university/circuit-design/series_k155/k155la4.bdf
-source_file = 1, c:/users/grind/desktop/projects/learn/university/circuit-design/series_k155/k155la3.bdf
+source_file = 1, C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/scheme1.bdf
+source_file = 1, C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/scheme.bdf
+source_file = 1, C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/Waveform.vwf
+source_file = 1, C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/primitives_scheme.bdf
+source_file = 1, c:/users/gd/desktop/projects/learn/university/circuit-design/series_k155/k155la4.bdf
+source_file = 1, c:/users/gd/desktop/projects/learn/university/circuit-design/series_k155/k155la3.bdf
 design_name = scheme
 instance = comp, \Q2~output , Q2~output, scheme, 1
 instance = comp, \Q1~output , Q1~output, scheme, 1

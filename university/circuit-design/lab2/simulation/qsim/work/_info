@@ -1,0 +1,150 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab2/simulation/qsim
+v\2addr 
+!s110 1602413864
+!i10b 1
+!s100 S0e[0QVVb=WQ^=7k5XZO[1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I:1Jn>hKbDZG?Sk6aWd^@C3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1602413862
+Z3 8lab2.vo
+Z4 Flab2.vo
+!i122 3
+Z5 L0 32 154
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1602413864.000000
+Z7 !s107 lab2.vo|
+Z8 !s90 -work|work|lab2.vo|
+!i113 1
+Z9 o-work work
+Z10 tCvgOpt 0
+n@1342addr@040
+vhard_block
+Z11 !s110 1602418941
+!i10b 1
+!s100 >4]830VG:iSS<A>;0Q=Eg3
+R1
+IV^l^@9e8lCem6AGLz<hIo1
+R2
+R0
+Z12 w1602418939
+R3
+R4
+!i122 26
+L0 191 34
+R6
+r1
+!s85 0
+31
+Z13 !s108 1602418941.000000
+R7
+R8
+!i113 1
+R9
+R10
+vthree_addr
+R11
+!i10b 1
+!s100 aRX`<iD@h@OILW53WdG7A2
+R1
+InPl_FcHX2GnLc7]AWnk;^2
+R2
+R0
+R12
+R3
+R4
+!i122 26
+L0 32 158
+R6
+r1
+!s85 0
+31
+R13
+R7
+R8
+!i113 1
+R9
+R10
+vthree_addr_vlg_vec_tst
+R11
+!i10b 1
+!s100 B<LEbg53@]m3QLFIAP6k70
+R1
+I=;g3BU^8OXZXSHMf>BR7d2
+R2
+R0
+w1602418938
+Z14 8Waveform.vwf.vt
+Z15 FWaveform.vwf.vt
+!i122 27
+Z16 L0 30 80
+R6
+r1
+!s85 0
+31
+R13
+Z17 !s107 Waveform.vwf.vt|
+Z18 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R9
+R10
+vtwo_addr
+Z19 !s110 1602415082
+!i10b 1
+!s100 E_QNl>;>ch8M0Se^Zk<Rh2
+R1
+I;;mXo^R^<?I^[4]e6m:g<0
+R2
+R0
+w1602415081
+R3
+R4
+!i122 16
+R5
+R6
+r1
+!s85 0
+31
+Z20 !s108 1602415082.000000
+R7
+R8
+!i113 1
+R9
+R10
+vtwo_addr_vlg_vec_tst
+R19
+!i10b 1
+!s100 ]BlRb[e7lW`PZKaG8mgCL3
+R1
+INK6Yi:Kn@`6ciXL8JcBHh3
+R2
+R0
+w1602415080
+R14
+R15
+!i122 17
+R16
+R6
+r1
+!s85 0
+31
+R20
+R17
+R18
+!i113 1
+R9
+R10

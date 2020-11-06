@@ -1,6 +1,6 @@
 Analysis & Synthesis report for lab3
-Fri Nov 06 18:33:48 2020
-Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Fri Nov 06 19:47:19 2020
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
 ---------------------
@@ -24,7 +24,7 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2019  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -44,8 +44,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov 06 18:33:48 2020       ;
-; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 06 19:47:18 2020       ;
+; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; lab3                                        ;
 ; Top-level Entity Name              ; scheme                                      ;
 ; Family                             ; Cyclone IV GX                               ;
@@ -166,15 +166,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                            ;
-+----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                            ; Library ;
-+----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------------------+---------+
-; scheme.bdf                       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab3/scheme.bdf         ;         ;
-; k155la4.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/users/grind/desktop/projects/learn/university/circuit-design/series_k155/k155la4.bdf ;         ;
-; k155la3.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/users/grind/desktop/projects/learn/university/circuit-design/series_k155/k155la3.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                         ;
++----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                         ; Library ;
++----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------------------+---------+
+; scheme.bdf                       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/scheme.bdf         ;         ;
+; k155la4.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/users/gd/desktop/projects/learn/university/circuit-design/series_k155/k155la4.bdf ;         ;
+; k155la3.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/users/gd/desktop/projects/learn/university/circuit-design/series_k155/k155la3.bdf ;         ;
++----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------+
@@ -254,7 +254,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:09     ;
 +----------------+--------------+
 
 
@@ -263,8 +263,8 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Fri Nov 06 18:33:36 2020
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Fri Nov 06 19:46:36 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab3 -c lab3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -275,10 +275,10 @@ Info (12021): Found 1 design units, including 1 entities, in source file scheme.
 Info (12021): Found 1 design units, including 1 entities, in source file primitives_scheme.bdf
     Info (12023): Found entity 1: primitives_scheme
 Info (12127): Elaborating entity "scheme" for the top level hierarchy
-Warning (12125): Using design file /users/grind/desktop/projects/learn/university/circuit-design/series_k155/k155la4.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+Warning (12125): Using design file /users/gd/desktop/projects/learn/university/circuit-design/series_k155/k155la4.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: K155LA4
 Info (12128): Elaborating entity "K155LA4" for hierarchy "K155LA4:inst"
-Warning (12125): Using design file /users/grind/desktop/projects/learn/university/circuit-design/series_k155/k155la3.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+Warning (12125): Using design file /users/gd/desktop/projects/learn/university/circuit-design/series_k155/k155la3.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: K155LA3
 Info (12128): Elaborating entity "K155LA3" for hierarchy "K155LA3:inst2"
 Info (286030): Timing-Driven Synthesis is running
@@ -289,9 +289,9 @@ Info (21057): Implemented 14 device resources after synthesis - the final resour
     Info (21059): Implemented 4 output pins
     Info (21061): Implemented 5 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4812 megabytes
-    Info: Processing ended: Fri Nov 06 18:33:48 2020
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:32
+    Info: Peak virtual memory: 4822 megabytes
+    Info: Processing ended: Fri Nov 06 19:47:19 2020
+    Info: Elapsed time: 00:00:43
+    Info: Total CPU time (on all processors): 00:00:34
 
 

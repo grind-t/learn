@@ -1,18 +1,18 @@
 Determining the location of the ModelSim executable...
 
-Using: C:\intelFPGA\19.1\modelsim_ase\win32aloem
+Using: C:\intelFPGA_lite\20.1\modelsim_ase\win32aloem
 
 To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
 Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab3 -c lab3 --vector_source="C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab3/Waveform.vwf" --testbench_file="C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab3/simulation/qsim/Waveform.vwf.vt"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab3 -c lab3 --vector_source="C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/Waveform.vwf" --testbench_file="C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim/Waveform.vwf.vt"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Copyright (C) 2019  Intel Corporation. All rights reserved.
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Copyright (C) 2020  Intel Corporation. All rights reserved.
     Info: Your use of Intel Corporation's design tools, logic functions 
     Info: and other software and tools, and any partner logic 
     Info: functions, and any output files from any of the foregoing 
@@ -26,22 +26,22 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Fri Nov 06 19:02:33 2020
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab3 -c lab3 --vector_source=C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab3/Waveform.vwf --testbench_file=C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab3/simulation/qsim/Waveform.vwf.vt
+    Info: Processing started: Fri Nov 06 19:56:18 2020
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab3 -c lab3 --vector_source=C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/Waveform.vwf --testbench_file=C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim/Waveform.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
 Completed successfully. 
 
 Completed successfully. 
 
-**** Generating the functional simulation netlist ****
+**** Generating the timing simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab3/simulation/qsim/" lab3 -c lab3
+quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim/" lab3 -c lab3
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Copyright (C) 2019  Intel Corporation. All rights reserved.
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Copyright (C) 2020  Intel Corporation. All rights reserved.
     Info: Your use of Intel Corporation's design tools, logic functions 
     Info: and other software and tools, and any partner logic 
     Info: functions, and any output files from any of the foregoing 
@@ -55,81 +55,96 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Fri Nov 06 19:02:34 2020
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab3/simulation/qsim/ lab3 -c lab3
+    Info: Processing started: Fri Nov 06 19:56:20 2020
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory=C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim/ lab3 -c lab3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file lab3.vo in folder "C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab3/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file lab3_6_1200mv_85c_slow.vo in folder "C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file lab3_6_1200mv_0c_slow.vo in folder "C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file lab3_min_1200mv_0c_fast.vo in folder "C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file lab3.vo in folder "C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file lab3_6_1200mv_85c_v_slow.sdo in folder "C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file lab3_6_1200mv_0c_v_slow.sdo in folder "C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file lab3_min_1200mv_0c_v_fast.sdo in folder "C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file lab3_v.sdo in folder "C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4709 megabytes
-    Info: Processing ended: Fri Nov 06 19:02:34 2020
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 4723 megabytes
+    Info: Processing ended: Fri Nov 06 19:56:21 2020
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
 
 **** Generating the ModelSim .do script ****
 
-C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab3/simulation/qsim/lab3.do generated.
+C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim/lab3.do generated.
 
 Completed successfully. 
 
 **** Running the ModelSim simulation ****
 
-C:/intelFPGA/19.1/modelsim_ase/win32aloem/vsim -c -do lab3.do
+C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vsim -c -do lab3.do
 
-Reading C:/intelFPGA/19.1/modelsim_ase/tcl/vsim/pref.tcl
+Reading pref.tcl
 
-# 10.5b
+# 2020.1
+
 
 # do lab3.do
 # ** Warning: (vlib-34) Library already exists at "work".
 
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:02:35 on Nov 06,2020
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:56:22 on Nov 06,2020
 # vlog -work work lab3.vo 
 # -- Compiling module scheme
+
 # -- Compiling module hard_block
 # 
 # Top level modules:
 # 	scheme
-# End time: 19:02:35 on Nov 06,2020, Elapsed time: 0:00:00
+# End time: 19:56:22 on Nov 06,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:02:35 on Nov 06,2020
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:56:22 on Nov 06,2020
 # vlog -work work Waveform.vwf.vt 
+
 # -- Compiling module scheme_vlg_vec_tst
 # 
 # Top level modules:
 # 	scheme_vlg_vec_tst
-# End time: 19:02:35 on Nov 06,2020, Elapsed time: 0:00:00
+# End time: 19:56:22 on Nov 06,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
-# vsim -novopt -c -t 1ps -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.scheme_vlg_vec_tst 
-# Start time: 19:02:35 on Nov 06,2020
+# vsim -c -t 1ps -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.scheme_vlg_vec_tst 
+# Start time: 19:56:22 on Nov 06,2020
 # Loading work.scheme_vlg_vec_tst
 # Loading work.scheme
 # Loading work.hard_block
 # Loading cycloneiv_ver.cycloneiv_io_obuf
 # Loading cycloneiv_ver.cycloneiv_io_ibuf
 # Loading cycloneiv_ver.cycloneiv_lcell_comb
+# SDF 2020.1 Compiler 2020.02 Feb 28 2020
+# 
+# Loading instances from lab3_v.sdo
+# Loading timing data from lab3_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /scheme_vlg_vec_tst File: Waveform.vwf.vt
 # after#26
 # ** Note: $finish    : Waveform.vwf.vt(59)
 #    Time: 1 us  Iteration: 0  Instance: /scheme_vlg_vec_tst
-# End time: 19:02:35 on Nov 06,2020, Elapsed time: 0:00:00
+# End time: 19:56:23 on Nov 06,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab3/Waveform.vwf...
+Reading C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/Waveform.vwf...
 
-Reading C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab3/simulation/qsim/lab3.msim.vcd...
+Reading C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim/lab3.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab3/simulation/qsim/lab3_20201106190235.sim.vwf
+Writing the resulting VWF to C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim/lab3_20201106195623.sim.vwf
 
 Finished VCD to VWF conversion.
 

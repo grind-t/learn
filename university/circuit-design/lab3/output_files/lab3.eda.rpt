@@ -1,6 +1,6 @@
 EDA Netlist Writer report for lab3
-Fri Nov 06 19:02:34 2020
-Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Fri Nov 06 19:56:21 2020
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
 ---------------------
@@ -17,7 +17,7 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2019  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Nov 06 19:02:34 2020 ;
+; EDA Netlist Writer Status ; Successful - Fri Nov 06 19:56:21 2020 ;
 ; Revision Name             ; lab3                                  ;
 ; Top-level Entity Name     ; scheme                                ;
 ; Family                    ; Cyclone IV GX                         ;
@@ -51,7 +51,8 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                                            ; Setting                   ;
 +---------------------------------------------------------------------------------------------------+---------------------------+
 ; Tool Name                                                                                         ; ModelSim-Altera (Verilog) ;
-; Generate functional simulation netlist                                                            ; On                        ;
+; Generate functional simulation netlist                                                            ; Off                       ;
+; Time scale                                                                                        ; 1 ps                      ;
 ; Truncate long hierarchy paths                                                                     ; Off                       ;
 ; Map illegal HDL characters                                                                        ; Off                       ;
 ; Flatten buses into individual nodes                                                               ; Off                       ;
@@ -66,13 +67,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+-----------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                    ;
-+-----------------------------------------------------------------------------------------------+
-; Generated Files                                                                               ;
-+-----------------------------------------------------------------------------------------------+
-; C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab3/simulation/qsim//lab3.vo ;
-+-----------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                       ;
++------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                  ;
++------------------------------------------------------------------------------------------------------------------+
+; C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim//lab3_6_1200mv_85c_slow.vo     ;
+; C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim//lab3_6_1200mv_0c_slow.vo      ;
+; C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim//lab3_min_1200mv_0c_fast.vo    ;
+; C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim//lab3.vo                       ;
+; C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim//lab3_6_1200mv_85c_v_slow.sdo  ;
+; C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim//lab3_6_1200mv_0c_v_slow.sdo   ;
+; C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim//lab3_min_1200mv_0c_v_fast.sdo ;
+; C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim//lab3_v.sdo                    ;
++------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -80,8 +88,8 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Copyright (C) 2019  Intel Corporation. All rights reserved.
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Copyright (C) 2020  Intel Corporation. All rights reserved.
     Info: Your use of Intel Corporation's design tools, logic functions 
     Info: and other software and tools, and any partner logic 
     Info: functions, and any output files from any of the foregoing 
@@ -95,14 +103,21 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Fri Nov 06 19:02:34 2020
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab3/simulation/qsim/ lab3 -c lab3
+    Info: Processing started: Fri Nov 06 19:56:20 2020
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory=C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim/ lab3 -c lab3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file lab3.vo in folder "C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab3/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file lab3_6_1200mv_85c_slow.vo in folder "C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file lab3_6_1200mv_0c_slow.vo in folder "C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file lab3_min_1200mv_0c_fast.vo in folder "C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file lab3.vo in folder "C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file lab3_6_1200mv_85c_v_slow.sdo in folder "C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file lab3_6_1200mv_0c_v_slow.sdo in folder "C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file lab3_min_1200mv_0c_v_fast.sdo in folder "C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file lab3_v.sdo in folder "C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4709 megabytes
-    Info: Processing ended: Fri Nov 06 19:02:34 2020
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 4723 megabytes
+    Info: Processing ended: Fri Nov 06 19:56:21 2020
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 
