@@ -1,6 +1,6 @@
 Assembler report for lab3
-Fri Nov 06 19:48:30 2020
-Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Sat Nov 07 19:54:44 2020
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
 ---------------------
@@ -10,7 +10,7 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/output_files/lab3.sof
+  5. Assembler Device Options: C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab3/output_files/lab3.sof
   6. Assembler Messages
 
 
@@ -18,7 +18,7 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2019  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Fri Nov 06 19:48:30 2020 ;
+; Assembler Status      ; Successful - Sat Nov 07 19:54:44 2020 ;
 ; Revision Name         ; lab3                                  ;
 ; Top-level Entity Name ; scheme                                ;
 ; Family                ; Cyclone IV GX                         ;
@@ -53,23 +53,23 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                               ;
-+-----------------------------------------------------------------------------------------+
-; File Name                                                                               ;
-+-----------------------------------------------------------------------------------------+
-; C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/output_files/lab3.sof ;
-+-----------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                  ;
++--------------------------------------------------------------------------------------------+
+; File Name                                                                                  ;
++--------------------------------------------------------------------------------------------+
+; C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab3/output_files/lab3.sof ;
++--------------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/output_files/lab3.sof ;
-+----------------+--------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                          ;
-+----------------+--------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x000BC82D                                                                                       ;
-; Checksum       ; 0x000BC82D                                                                                       ;
-+----------------+--------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab3/output_files/lab3.sof ;
++----------------+-----------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                             ;
++----------------+-----------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x000BC82D                                                                                          ;
+; Checksum       ; 0x000BC82D                                                                                          ;
++----------------+-----------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -77,15 +77,15 @@ https://fpgasoftware.intel.com/eula.
 +--------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
-    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri Nov 06 19:48:28 2020
+    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+    Info: Processing started: Sat Nov 07 19:54:42 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off lab3 -c lab3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4761 megabytes
-    Info: Processing ended: Fri Nov 06 19:48:30 2020
+    Info: Peak virtual memory: 4753 megabytes
+    Info: Processing ended: Sat Nov 07 19:54:44 2020
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 

@@ -1,0 +1,57 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "q3",
+					"strict" : false
+				},
+				{
+					"name" : "q1",
+					"strict" : false
+				},
+				{
+					"name" : "q2",
+					"strict" : false
+				},
+				{
+					"name" : "NSA",
+					"strict" : false
+				},
+				{
+					"name" : "NRA",
+					"strict" : false
+				},
+				{
+					"name" : "C",
+					"strict" : false
+				},
+				{
+					"name" : "b3",
+					"strict" : false
+				},
+				{
+					"name" : "v2",
+					"strict" : false
+				},
+				{
+					"name" : "v1",
+					"strict" : false
+				},
+				{
+					"name" : "Dr",
+					"strict" : false
+				},
+				{
+					"name" : "b1",
+					"strict" : false
+				},
+				{
+					"name" : "b2",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

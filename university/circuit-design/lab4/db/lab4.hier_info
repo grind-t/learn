@@ -1,0 +1,174 @@
+|scheme
+q3 <= K155TM2:inst3.Q1
+NSA => K155TM2:inst3.nS1
+NSA => K155TM2:inst4.nS1
+NSA => K155TM2:inst4.nS2
+NRA => K155TM2:inst3.nR1
+NRA => K155TM2:inst4.nR1
+NRA => K155TM2:inst4.nR2
+C => K155TM2:inst3.C1
+C => K155TM2:inst4.C1
+C => K155TM2:inst4.C2
+b3 => K155KP7:inst2.D0
+Dr => K155KP7:inst2.D6
+Dr => K155KP7:inst2.D7
+v1 => K155KP7:inst2.SED2
+v1 => K155KP7:inst.SED2
+v1 => K155KP7:inst1.SED2
+v2 => K155KP7:inst2.SED3
+v2 => K155KP7:inst.SED3
+v2 => K155KP7:inst1.SED3
+q1 <= K155TM2:inst4.Q1
+b1 => K155KP7:inst.D0
+q2 <= K155TM2:inst4.Q2
+b2 => K155KP7:inst1.D0
+
+
+|scheme|K155TM2:inst3
+Q1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+nS1 => inst4.IN0
+nS1 => inst.IN0
+C1 => inst2.IN1
+C1 => inst1.IN2
+nR1 => inst3.IN1
+nR1 => inst1.IN1
+nR1 => inst5.IN1
+D1 => inst3.IN2
+nQ1 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+nS2 => inst9.IN0
+nS2 => inst11.IN0
+C2 => inst7.IN1
+C2 => inst6.IN2
+nR2 => inst8.IN1
+nR2 => inst6.IN1
+nR2 => inst10.IN1
+D2 => inst8.IN2
+nQ2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|scheme|K155KP7:inst2
+Y <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+SED2 => inst17.IN0
+SED2 => inst2.IN0
+SED2 => inst6.IN0
+SED2 => inst5.IN0
+SED2 => inst9.IN0
+SED1 => inst16.IN0
+SED1 => inst1.IN1
+SED1 => inst6.IN1
+SED1 => inst4.IN1
+SED1 => inst9.IN1
+D0 => inst.IN2
+nC => inst15.IN0
+SED3 => inst18.IN0
+SED3 => inst4.IN4
+SED3 => inst3.IN4
+SED3 => inst5.IN4
+SED3 => inst9.IN4
+D2 => inst2.IN2
+D1 => inst1.IN2
+D3 => inst6.IN2
+D5 => inst4.IN2
+D4 => inst3.IN2
+D6 => inst5.IN2
+D7 => inst9.IN2
+nY <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|scheme|K155LN1:instt
+02 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+01 => inst.IN0
+04 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+03 => inst1.IN0
+06 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+05 => inst2.IN0
+08 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+09 => inst3.IN0
+10 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+11 => inst4.IN0
+12 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+13 => inst5.IN0
+
+
+|scheme|K155TM2:inst4
+Q1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+nS1 => inst4.IN0
+nS1 => inst.IN0
+C1 => inst2.IN1
+C1 => inst1.IN2
+nR1 => inst3.IN1
+nR1 => inst1.IN1
+nR1 => inst5.IN1
+D1 => inst3.IN2
+nQ1 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+nS2 => inst9.IN0
+nS2 => inst11.IN0
+C2 => inst7.IN1
+C2 => inst6.IN2
+nR2 => inst8.IN1
+nR2 => inst6.IN1
+nR2 => inst10.IN1
+D2 => inst8.IN2
+nQ2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|scheme|K155KP7:inst
+Y <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+SED2 => inst17.IN0
+SED2 => inst2.IN0
+SED2 => inst6.IN0
+SED2 => inst5.IN0
+SED2 => inst9.IN0
+SED1 => inst16.IN0
+SED1 => inst1.IN1
+SED1 => inst6.IN1
+SED1 => inst4.IN1
+SED1 => inst9.IN1
+D0 => inst.IN2
+nC => inst15.IN0
+SED3 => inst18.IN0
+SED3 => inst4.IN4
+SED3 => inst3.IN4
+SED3 => inst5.IN4
+SED3 => inst9.IN4
+D2 => inst2.IN2
+D1 => inst1.IN2
+D3 => inst6.IN2
+D5 => inst4.IN2
+D4 => inst3.IN2
+D6 => inst5.IN2
+D7 => inst9.IN2
+nY <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|scheme|K155KP7:inst1
+Y <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+SED2 => inst17.IN0
+SED2 => inst2.IN0
+SED2 => inst6.IN0
+SED2 => inst5.IN0
+SED2 => inst9.IN0
+SED1 => inst16.IN0
+SED1 => inst1.IN1
+SED1 => inst6.IN1
+SED1 => inst4.IN1
+SED1 => inst9.IN1
+D0 => inst.IN2
+nC => inst15.IN0
+SED3 => inst18.IN0
+SED3 => inst4.IN4
+SED3 => inst3.IN4
+SED3 => inst5.IN4
+SED3 => inst9.IN4
+D2 => inst2.IN2
+D1 => inst1.IN2
+D3 => inst6.IN2
+D5 => inst4.IN2
+D4 => inst3.IN2
+D6 => inst5.IN2
+D7 => inst9.IN2
+nY <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+

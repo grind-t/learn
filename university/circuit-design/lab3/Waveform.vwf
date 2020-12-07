@@ -1,8 +1,8 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab3 -c lab3 --vector_source="C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/Waveform.vwf" --testbench_file="C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim/Waveform.vwf.vt"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab3 -c lab3 --vector_source="C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/Waveform.vwf" --testbench_file="C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim/Waveform.vwf.vt"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim/" lab3 -c lab3</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="C:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim/" lab3 -c lab3</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab3 -c lab3 --vector_source="C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab3/Waveform.vwf" --testbench_file="C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab3/simulation/qsim/Waveform.vwf.vt"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab3 -c lab3 --vector_source="C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab3/Waveform.vwf" --testbench_file="C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab3/simulation/qsim/Waveform.vwf.vt"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab3/simulation/qsim/" lab3 -c lab3</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab3/simulation/qsim/" lab3 -c lab3</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vlog -work work lab3.vo
@@ -20,12 +20,15 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
+
+
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
 vlog -work work lab3.vo
 vlog -work work Waveform.vwf.vt
-vsim -c -t 1ps -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.scheme_vlg_vec_tst
+vsim -novopt -c -t 1ps -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.scheme_vlg_vec_tst
 vcd file -direction lab3.msim.vcd
 vcd add -internal scheme_vlg_vec_tst/*
 vcd add -internal scheme_vlg_vec_tst/i1/*
@@ -38,6 +41,9 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
+
+
 </modelsim_script_timing>
 <hdl_lang>verilog</hdl_lang>
 </simulation_settings>*/
@@ -48,7 +54,7 @@ the Block Editor! File corruption is VERY likely to occur.
 */
 
 /*
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2019  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -146,22 +152,36 @@ SIGNAL("NSA")
 	PARENT = "";
 }
 
-GROUP("NSANRA")
-{
-	MEMBERS = "NSA", "NRA";
-}
-
-GROUP("E1E2")
-{
-	MEMBERS = "E1", "E2";
-}
-
 TRANSITION_LIST("C")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 37.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 37.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 37.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 37.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 37.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 37.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 37.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 362.5;
+		LEVEL 1 FOR 12.5;
+		NODE
+		{
+			REPEAT = 6;
+			LEVEL 0 FOR 12.5;
+			LEVEL 1 FOR 12.5;
+		}
+		LEVEL 0 FOR 12.5;
 	}
 }
 
@@ -170,11 +190,17 @@ TRANSITION_LIST("E1")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 150.0;
-		LEVEL 1 FOR 150.0;
-		LEVEL 0 FOR 150.0;
-		LEVEL 1 FOR 150.0;
-		LEVEL 0 FOR 400.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 25.0;
+		LEVEL 0 FOR 500.0;
 	}
 }
 
@@ -183,9 +209,13 @@ TRANSITION_LIST("E2")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 300.0;
-		LEVEL 1 FOR 300.0;
-		LEVEL 0 FOR 400.0;
+		LEVEL 0 FOR 75.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 150.0;
+		LEVEL 1 FOR 75.0;
+		LEVEL 0 FOR 500.0;
 	}
 }
 
@@ -213,13 +243,9 @@ TRANSITION_LIST("NRA")
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 25.0;
-		LEVEL 1 FOR 125.0;
+		LEVEL 1 FOR 475.0;
 		LEVEL 0 FOR 25.0;
-		LEVEL 1 FOR 125.0;
-		LEVEL 0 FOR 25.0;
-		LEVEL 1 FOR 125.0;
-		LEVEL 0 FOR 25.0;
-		LEVEL 1 FOR 525.0;
+		LEVEL 1 FOR 475.0;
 	}
 }
 
@@ -228,13 +254,7 @@ TRANSITION_LIST("NSA")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 75.0;
-		LEVEL 0 FOR 25.0;
-		LEVEL 1 FOR 125.0;
-		LEVEL 0 FOR 25.0;
-		LEVEL 1 FOR 125.0;
-		LEVEL 0 FOR 25.0;
-		LEVEL 1 FOR 125.0;
+		LEVEL 1 FOR 525.0;
 		LEVEL 0 FOR 25.0;
 		LEVEL 1 FOR 450.0;
 	}
@@ -251,22 +271,11 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "E1E2";
+	CHANNEL = "E1";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1;
 	TREE_LEVEL = 0;
-	CHILDREN = 2, 3;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "E1";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 2;
-	TREE_LEVEL = 1;
-	PARENT = 1;
 }
 
 DISPLAY_LINE
@@ -274,9 +283,8 @@ DISPLAY_LINE
 	CHANNEL = "E2";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 3;
-	TREE_LEVEL = 1;
-	PARENT = 1;
+	TREE_INDEX = 2;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
@@ -284,7 +292,7 @@ DISPLAY_LINE
 	CHANNEL = "Q1";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 4;
+	TREE_INDEX = 3;
 	TREE_LEVEL = 0;
 }
 
@@ -293,18 +301,8 @@ DISPLAY_LINE
 	CHANNEL = "Q2";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 5;
+	TREE_INDEX = 4;
 	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "NSANRA";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 6;
-	TREE_LEVEL = 0;
-	CHILDREN = 7, 8;
 }
 
 DISPLAY_LINE
@@ -312,9 +310,8 @@ DISPLAY_LINE
 	CHANNEL = "NSA";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 7;
-	TREE_LEVEL = 1;
-	PARENT = 6;
+	TREE_INDEX = 5;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
@@ -322,9 +319,8 @@ DISPLAY_LINE
 	CHANNEL = "NRA";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 8;
-	TREE_LEVEL = 1;
-	PARENT = 6;
+	TREE_INDEX = 6;
+	TREE_LEVEL = 0;
 }
 
 TIME_BAR

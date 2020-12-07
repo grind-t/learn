@@ -10,155 +10,149 @@ z2
 cModel Technology
 Z0 dC:/Users/grind/Desktop/projects/learn/university/circuit-design/lab3/simulation/qsim
 vhard_block
-Z1 !s110 1604681782
+Z1 !s110 1605193381
 !i10b 1
-!s100 QmOkG5`4_a_XaIO=DUUWA2
-Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I4IGzOW0CA3ca07ShQF[^G2
-Z3 VDg1SIo80bB@j0V0VzS_@n1
-Z4 dC:/Users/GD/Desktop/Projects/learn/university/circuit-design/lab3/simulation/qsim
-Z5 w1604681781
-Z6 8lab3.vo
-Z7 Flab3.vo
-!i122 6
-L0 297 34
-Z8 OV;L;2020.1;71
+!s100 ^dYLFcoJLH7<j37TM28F01
+Ib>7Sm^3EC_L0<3jP4<h:61
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1605193380
+Z4 8lab3.vo
+Z5 Flab3.vo
+L0 297
+Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z9 !s108 1604681782.000000
-Z10 !s107 lab3.vo|
-Z11 !s90 -work|work|lab3.vo|
+Z7 !s108 1605193381.000000
+Z8 !s107 lab3.vo|
+Z9 !s90 -work|work|lab3.vo|
 !i113 1
-Z12 o-work work
-Z13 tCvgOpt 0
+Z10 o-work work
+Z11 tCvgOpt 0
 vprimitives_scheme
-Z14 !s110 1604676588
+Z12 !s110 1604676588
 !i10b 1
 !s100 L3ll]OZFBez]lgHH?CJB^3
 IWcTWoGJPnXg6_CzJFBUZ[1
-R3
+R2
 R0
-Z15 w1604676587
+Z13 w1604676587
+R4
+R5
+Z14 L0 32
 R6
-R7
-Z16 L0 32
-Z17 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z18 !s108 1604676588.000000
+Z15 !s108 1604676588.000000
+R8
+R9
+!i113 1
 R10
 R11
-!i113 1
-R12
-R13
 vprimitives_scheme_vlg_vec_tst
-R14
+R12
 !i10b 1
 !s100 32Gz5n^8VNe9P8^2T6Vg12
 I0d1=d02JOc4_Ine]3<<2O0
-R3
+R2
 R0
-R15
-Z19 8Waveform.vwf.vt
-Z20 FWaveform.vwf.vt
-Z21 L0 30
-R17
+R13
+Z16 8Waveform.vwf.vt
+Z17 FWaveform.vwf.vt
+Z18 L0 30
+R6
 r1
 !s85 0
 31
-R18
-Z22 !s107 Waveform.vwf.vt|
-Z23 !s90 -work|work|Waveform.vwf.vt|
+R15
+Z19 !s107 Waveform.vwf.vt|
+Z20 !s90 -work|work|Waveform.vwf.vt|
 !i113 1
-R12
-R13
+R10
+R11
 vscheme
 R1
 !i10b 1
-!s100 Dfn==:MeeFg8oECENfD4O2
+!s100 =h5B6Oz<85[N7DRgM]71O0
+I6=jUJNGlGz2^@3Tb9De683
 R2
-Ij1P02_c:Wgb>6LKl:fPn02
+R0
 R3
 R4
 R5
+R14
 R6
-R7
-!i122 6
-L0 32 264
-R8
 r1
 !s85 0
 31
+R7
+R8
 R9
+!i113 1
 R10
 R11
-!i113 1
-R12
-R13
 vscheme1
-Z24 !s110 1603475555
+Z21 !s110 1603475555
 !i10b 1
 !s100 dSzAEb_gzjdH<MO^O9I>Z0
 I9c7m7ldgYlmNkR@Q7hV502
-R3
+R2
 R0
 w1603475554
+R4
+R5
+R14
 R6
-R7
-R16
-R17
 r1
 !s85 0
 31
-Z25 !s108 1603475555.000000
+Z22 !s108 1603475555.000000
+R8
+R9
+!i113 1
 R10
 R11
-!i113 1
-R12
-R13
 vscheme1_vlg_vec_tst
-R24
+R21
 !i10b 1
 !s100 1YQ?<Q0EDX7XM5ANzK8IM3
 IkQf2AfJOSzS@fBm8Hjf`W1
-R3
+R2
 R0
 w1603475553
-R19
-R20
-R21
+R16
 R17
+R18
+R6
 r1
 !s85 0
 31
-R25
 R22
-R23
+R19
+R20
 !i113 1
-R12
-R13
+R10
+R11
 vscheme_vlg_vec_tst
 R1
 !i10b 1
-!s100 g1NFHL^jjhe?5Pi2;[[of1
+!s100 _f<eb4GE:bl]dD1fX?K_Q0
+I]glAhldDdGlVmo`i90lCO1
 R2
-IlRnZdofmO5ZD7g:[n@4Vo2
-R3
-R4
-w1604681779
-R19
-R20
-!i122 7
-L0 30 83
-R8
+R0
+w1605193379
+R16
+R17
+R18
+R6
 r1
 !s85 0
 31
-R9
-R22
-R23
+R7
+R19
+R20
 !i113 1
-R12
-R13
+R10
+R11

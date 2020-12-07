@@ -1,0 +1,209 @@
+// Copyright (C) 2019  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "12/06/2020 13:57:01"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          scheme
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module scheme_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg b1;
+reg b2;
+reg b3;
+reg C;
+reg Dr;
+reg NRA;
+reg NSA;
+reg v1;
+reg v2;
+// wires                                               
+wire q1;
+wire q2;
+wire q3;
+
+// assign statements (if any)                          
+scheme i1 (
+// port map - connection between master ports and signals/registers   
+	.b1(b1),
+	.b2(b2),
+	.b3(b3),
+	.C(C),
+	.Dr(Dr),
+	.NRA(NRA),
+	.NSA(NSA),
+	.q1(q1),
+	.q2(q2),
+	.q3(q3),
+	.v1(v1),
+	.v2(v2)
+);
+initial 
+begin 
+#1100000 $finish;
+end 
+
+// v1
+initial
+begin
+	v1 = 1'b1;
+	v1 = #75000 1'b0;
+	v1 = #300000 1'b1;
+	v1 = #600000 1'b0;
+end 
+
+// v2
+initial
+begin
+	v2 = 1'b0;
+	v2 = #75000 1'b1;
+	v2 = #100000 1'b0;
+	v2 = #200000 1'b1;
+	v2 = #600000 1'b0;
+end 
+
+// b1
+initial
+begin
+	b1 = 1'b0;
+	b1 = #225000 1'b1;
+	b1 = #50000 1'b0;
+	b1 = #50000 1'b1;
+	b1 = #50000 1'b0;
+end 
+
+// b2
+initial
+begin
+	b2 = 1'b0;
+	b2 = #225000 1'b1;
+	b2 = #50000 1'b0;
+	b2 = #50000 1'b1;
+	b2 = #50000 1'b0;
+end 
+
+// b3
+initial
+begin
+	b3 = 1'b0;
+	b3 = #225000 1'b1;
+	b3 = #50000 1'b0;
+	b3 = #50000 1'b1;
+	b3 = #50000 1'b0;
+end 
+
+// Dr
+initial
+begin
+	Dr = 1'b0;
+	Dr = #500000 1'b1;
+	Dr = #50000 1'b0;
+	Dr = #75000 1'b1;
+	Dr = #75000 1'b0;
+	Dr = #50000 1'b1;
+	Dr = #50000 1'b0;
+	Dr = #50000 1'b1;
+	Dr = #125000 1'b0;
+end 
+
+// C
+initial
+begin
+	C = 1'b0;
+	C = #37500 1'b1;
+	C = #12500 1'b0;
+	C = #12500 1'b1;
+	C = #12500 1'b0;
+	C = #37500 1'b1;
+	# 12500;
+	repeat(2)
+	begin
+		C = 1'b0;
+		C = #12500 1'b1;
+		# 12500;
+	end
+	C = 1'b0;
+	C = #37500 1'b1;
+	C = #12500 1'b0;
+	C = #37500 1'b1;
+	C = #12500 1'b0;
+	C = #37500 1'b1;
+	C = #12500 1'b0;
+	C = #37500 1'b1;
+	C = #12500 1'b0;
+	C = #37500 1'b1;
+	# 12500;
+	repeat(3)
+	begin
+		C = 1'b0;
+		C = #12500 1'b1;
+		# 12500;
+	end
+	C = 1'b0;
+	C = #37500 1'b1;
+	C = #12500 1'b0;
+	C = #37500 1'b1;
+	C = #12500 1'b0;
+	C = #12500 1'b1;
+	C = #12500 1'b0;
+	C = #37500 1'b1;
+	C = #12500 1'b0;
+	C = #12500 1'b1;
+	C = #12500 1'b0;
+	C = #37500 1'b1;
+	C = #12500 1'b0;
+	C = #37500 1'b1;
+	C = #12500 1'b0;
+	C = #37500 1'b1;
+	C = #12500 1'b0;
+	C = #37500 1'b1;
+	# 12500;
+	repeat(3)
+	begin
+		C = 1'b0;
+		C = #12500 1'b1;
+		# 12500;
+	end
+	C = 1'b0;
+end 
+
+// NSA
+initial
+begin
+	NSA = 1'b1;
+	NSA = #1000000 1'b0;
+	NSA = #25000 1'b1;
+end 
+
+// NRA
+initial
+begin
+	NRA = 1'b0;
+	NRA = #25000 1'b1;
+	NRA = #950000 1'b0;
+	NRA = #25000 1'b1;
+end 
+endmodule
+

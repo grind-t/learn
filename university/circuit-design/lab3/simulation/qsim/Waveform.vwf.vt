@@ -1,4 +1,4 @@
-// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Copyright (C) 2019  Intel Corporation. All rights reserved.
 // Your use of Intel Corporation's design tools, logic functions 
 // and other software and tools, and any partner logic 
 // functions, and any output files from any of the foregoing 
@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/06/2020 19:56:19"
+// Generated on "11/12/2020 18:02:59"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          scheme
 // 
@@ -63,37 +63,66 @@ end
 initial
 begin
 	C = 1'b0;
+	C = #100000 1'b1;
+	C = #12500 1'b0;
+	C = #37500 1'b1;
+	C = #12500 1'b0;
+	C = #37500 1'b1;
+	C = #12500 1'b0;
+	C = #37500 1'b1;
+	C = #12500 1'b0;
+	C = #37500 1'b1;
+	C = #12500 1'b0;
+	C = #37500 1'b1;
+	C = #12500 1'b0;
+	C = #37500 1'b1;
+	C = #12500 1'b0;
+	C = #37500 1'b1;
+	C = #12500 1'b0;
+	C = #362500 1'b1;
+	# 12500;
+	repeat(6)
+	begin
+		C = 1'b0;
+		C = #12500 1'b1;
+		# 12500;
+	end
+	C = 1'b0;
 end 
 
 // E1
 initial
 begin
 	E1 = 1'b0;
-	E1 = #150000 1'b1;
-	E1 = #150000 1'b0;
-	E1 = #150000 1'b1;
-	E1 = #150000 1'b0;
+	E1 = #50000 1'b1;
+	E1 = #25000 1'b0;
+	E1 = #50000 1'b1;
+	E1 = #50000 1'b0;
+	E1 = #50000 1'b1;
+	E1 = #100000 1'b0;
+	E1 = #50000 1'b1;
+	E1 = #50000 1'b0;
+	E1 = #50000 1'b1;
+	E1 = #25000 1'b0;
 end 
 
 // E2
 initial
 begin
 	E2 = 1'b0;
-	E2 = #300000 1'b1;
-	E2 = #300000 1'b0;
+	E2 = #75000 1'b1;
+	E2 = #100000 1'b0;
+	E2 = #50000 1'b1;
+	E2 = #50000 1'b0;
+	E2 = #150000 1'b1;
+	E2 = #75000 1'b0;
 end 
 
 // NSA
 initial
 begin
 	NSA = 1'b1;
-	NSA = #75000 1'b0;
-	NSA = #25000 1'b1;
-	NSA = #125000 1'b0;
-	NSA = #25000 1'b1;
-	NSA = #125000 1'b0;
-	NSA = #25000 1'b1;
-	NSA = #125000 1'b0;
+	NSA = #525000 1'b0;
 	NSA = #25000 1'b1;
 end 
 
@@ -102,11 +131,7 @@ initial
 begin
 	NRA = 1'b0;
 	NRA = #25000 1'b1;
-	NRA = #125000 1'b0;
-	NRA = #25000 1'b1;
-	NRA = #125000 1'b0;
-	NRA = #25000 1'b1;
-	NRA = #125000 1'b0;
+	NRA = #475000 1'b0;
 	NRA = #25000 1'b1;
 end 
 endmodule

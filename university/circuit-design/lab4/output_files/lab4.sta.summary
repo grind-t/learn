@@ -1,0 +1,41 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Recovery 'NSA'
+Slack : -4.028
+TNS   : -10.711
+
+Type  : Slow 1200mV 85C Model Removal 'NSA'
+Slack : 1.145
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'NSA'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Recovery 'NSA'
+Slack : -3.523
+TNS   : -9.438
+
+Type  : Slow 1200mV 0C Model Removal 'NSA'
+Slack : 1.036
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'NSA'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Recovery 'NSA'
+Slack : -1.772
+TNS   : -5.001
+
+Type  : Fast 1200mV 0C Model Removal 'NSA'
+Slack : 0.635
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'NSA'
+Slack : -3.000
+TNS   : -3.000
+
+------------------------------------------------------------
