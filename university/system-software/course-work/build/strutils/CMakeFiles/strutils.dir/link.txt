@@ -1,0 +1,2 @@
+/usr/bin/ar qc libstrutils.a  CMakeFiles/strutils.dir/strutils.c.o
+/usr/bin/ranlib libstrutils.a

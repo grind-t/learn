@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/gdev/labs/course3/lab7/parser/parser.h
+
+/home/gdev/labs/course3/lab7/parser/parser_test.c
+stdlib.h
+-
+string.h
+-
+assert.h
+-
+parser.h
+/home/gdev/labs/course3/lab7/parser/parser.h
+

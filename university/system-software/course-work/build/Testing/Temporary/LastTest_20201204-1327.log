@@ -1,0 +1,33 @@
+Start testing: Dec 05 01:16 MSK
+----------------------------------------------------------
+1/2 Testing: deftab
+1/2 Test: deftab
+Command: "/home/gdev/labs/course3/lab7/build/deftab/deftab_test"
+Directory: /home/gdev/labs/course3/lab7/build/deftab
+"deftab" start time: Dec 05 01:16 MSK
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"deftab" end time: Dec 05 01:16 MSK
+"deftab" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: namtab
+2/2 Test: namtab
+Command: "/home/gdev/labs/course3/lab7/build/namtab/namtab_test"
+Directory: /home/gdev/labs/course3/lab7/build/namtab
+"namtab" start time: Dec 05 01:16 MSK
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"namtab" end time: Dec 05 01:16 MSK
+"namtab" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 05 01:16 MSK

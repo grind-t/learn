@@ -1,0 +1,4 @@
+                                        (MACRO) M3 hello
+                                        (MACRO) M2 hello_world
+                                        (MACRO) M1 hello_world!
+   CMD   hello_world!1

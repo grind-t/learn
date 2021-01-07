@@ -1,0 +1,13 @@
+    begin 1000
+somelabel                                   
+                                        Some comment.
+someLabel lda a                         More comments.
+    jsub sub
+a db 0FFh 
+b dw 0FFFFFFh
+c rb 2
+d rw 1
+
+sub add 5
+    rsub
+    end label

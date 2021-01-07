@@ -1,0 +1,16 @@
+    begin 0x1000
+start lda n
+    jmp while
+body lda f
+    mul n
+    sta f
+    lda n
+    sub one
+    sta n
+while comp one
+    jgt body
+
+f dw 1
+n dw 7
+one dw 1
+    end start

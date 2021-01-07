@@ -1,0 +1,1 @@
+/usr/bin/gcc-9 -g  -rdynamic CMakeFiles/strutils_test.dir/strutils_test.c.o  -o strutils_test  libstrutils.a 

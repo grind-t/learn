@@ -1,5 +1,5 @@
 Flow report for lab4
-Sun Dec 06 13:57:02 2020
+Wed Dec 09 00:15:45 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Dec 06 13:57:02 2020       ;
+; Flow Status                        ; Successful - Wed Dec 09 00:15:45 2020       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; lab4                                        ;
 ; Top-level Entity Name              ; scheme                                      ;
@@ -122,7 +122,9 @@ https://fpgasoftware.intel.com/eula.
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4709 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4704 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4715 MB             ; 00:00:01                           ;
-; Total                ; 00:00:28     ; --                      ; --                  ; 00:00:56                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4704 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4709 MB             ; 00:00:01                           ;
+; Total                ; 00:00:31     ; --                      ; --                  ; 00:00:58                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -135,6 +137,8 @@ https://fpgasoftware.intel.com/eula.
 ; Fitter               ; DESKTOP-1IJEN2J  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Assembler            ; DESKTOP-1IJEN2J  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Timing Analyzer      ; DESKTOP-1IJEN2J  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-1IJEN2J  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-1IJEN2J  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-1IJEN2J  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-1IJEN2J  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-1IJEN2J  ; Windows 10 ; 10.0       ; x86_64         ;
@@ -194,6 +198,8 @@ quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_setting
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab4/simulation/qsim/ lab4 -c lab4
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab4 -c lab4 --vector_source=C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab4/Waveform1.vwf --testbench_file=C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab4/simulation/qsim/Waveform1.vwf.vt
 quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory=C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab4/simulation/qsim/ lab4 -c lab4
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab4 -c lab4 --vector_source=C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab4/Waveform1.vwf --testbench_file=C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab4/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/grind/Desktop/projects/learn/university/circuit-design/lab4/simulation/qsim/ lab4 -c lab4
 
 
 

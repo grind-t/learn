@@ -1,0 +1,11 @@
+M1 MACRO &arg
+   CMD   &arg1
+   MEND
+M2 MACRO &arg
+   M1    &arg!
+   MEND
+M3 MACRO &arg
+   M2    &arg_world
+   MEND
+
+   M3    hello

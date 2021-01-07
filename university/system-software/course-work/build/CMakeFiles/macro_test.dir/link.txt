@@ -1,0 +1,1 @@
+/usr/bin/gcc-9 -g  -rdynamic CMakeFiles/macro_test.dir/macro_test.c.o  -o macro_test 

@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/gdev/labs/course3/lab7/namtab/namtab.c
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+assert.h
+-
+math.h
+-
+namtab.h
+/home/gdev/labs/course3/lab7/namtab/namtab.h
+
+/home/gdev/labs/course3/lab7/namtab/namtab.h
+stdlib.h
+-
+

@@ -1,0 +1,5 @@
+                                        (MACRO) M 
+                                        (MACRO) M1 hello
+   CMD1  hello
+                                        (MACRO) M2 world
+   CMD2  world

@@ -1,0 +1,1 @@
+/usr/bin/gcc-9 -g  -rdynamic CMakeFiles/macro.dir/macro.c.o  -o macro  parser/libparser.a deftab/libdeftab.a namtab/libnamtab.a strutils/libstrutils.a -lm 

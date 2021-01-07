@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
 
-// DATE "12/06/2020 13:57:02"
+// DATE "12/09/2020 00:15:45"
 
 // 
 // Device: Altera EP4CGX15BF14C6 Package FBGA169
@@ -81,10 +81,6 @@ assign unknown = 1'bx;
 tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
-// synopsys translate_off
-initial $sdf_annotate("lab4_v.sdo");
-// synopsys translate_on
-
 wire \q3~output_o ;
 wire \q1~output_o ;
 wire \q2~output_o ;

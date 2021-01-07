@@ -1,0 +1,1 @@
+/usr/bin/gcc-9 -g  -rdynamic CMakeFiles/deftab_test.dir/deftab_test.c.o  -o deftab_test  libdeftab.a 

@@ -1,0 +1,84 @@
+Start testing: Dec 06 22:55 MSK
+----------------------------------------------------------
+1/4 Testing: macro_base_test
+1/4 Test: macro_base_test
+Command: "/home/gdev/labs/course3/lab7/build/macro" "macro_base_test.txt" "out.txt"
+Directory: /home/gdev/labs/course3/lab7/build
+"macro_base_test" start time: Dec 06 22:55 MSK
+Output:
+----------------------------------------------------------
+        CLEAR  X                        
+        CLEAR  A
+        CLEAR  S
+       +LDT   #4096                     
+        TD    =X'?0'                
+        JEQ    *-3                      
+        RD    =X'?0'                
+        COMPR  A,S                      
+        JEQ    *+11                     
+        STCH   ?1,X                
+        TIXR   T                        
+        JLT    *-19
+        STX    ?2                  
+        CLEAR  X                        
+        LDT    ?2
+        LDCH   ?1,X                
+        TD    =X'?0'               
+        JEQ    *-3                      
+        WD    =X'?0'               
+        TIXR   T                        
+        JLT    *-14
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"macro_base_test" end time: Dec 06 22:55 MSK
+"macro_base_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/4 Testing: strutils
+4/4 Test: strutils
+Command: "/home/gdev/labs/course3/lab7/build/strutils/strutils_test"
+Directory: /home/gdev/labs/course3/lab7/build/strutils
+"strutils" start time: Dec 06 22:55 MSK
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"strutils" end time: Dec 06 22:55 MSK
+"strutils" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/4 Testing: deftab
+2/4 Test: deftab
+Command: "/home/gdev/labs/course3/lab7/build/deftab/deftab_test"
+Directory: /home/gdev/labs/course3/lab7/build/deftab
+"deftab" start time: Dec 06 22:55 MSK
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"deftab" end time: Dec 06 22:55 MSK
+"deftab" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/4 Testing: namtab
+3/4 Test: namtab
+Command: "/home/gdev/labs/course3/lab7/build/namtab/namtab_test"
+Directory: /home/gdev/labs/course3/lab7/build/namtab
+"namtab" start time: Dec 06 22:55 MSK
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"namtab" end time: Dec 06 22:55 MSK
+"namtab" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 06 22:55 MSK

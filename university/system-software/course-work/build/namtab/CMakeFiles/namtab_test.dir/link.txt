@@ -1,0 +1,1 @@
+/usr/bin/gcc-9 -g  -rdynamic CMakeFiles/namtab_test.dir/namtab_test.c.o  -o namtab_test  libnamtab.a -lm 

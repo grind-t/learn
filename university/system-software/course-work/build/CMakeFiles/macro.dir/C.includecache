@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../deftab/deftab.h
+stdlib.h
+-
+
+../namtab/namtab.h
+stdlib.h
+-
+
+../parser/parser.h
+
+../strutils/strutils.h
+stdlib.h
+-
+
+/home/gdev/labs/course3/lab7/macro.c
+stdio.h
+-
+string.h
+-
+ctype.h
+-
+parser.h
+/home/gdev/labs/course3/lab7/parser.h
+deftab.h
+/home/gdev/labs/course3/lab7/deftab.h
+namtab.h
+/home/gdev/labs/course3/lab7/namtab.h
+strutils.h
+/home/gdev/labs/course3/lab7/strutils.h
+

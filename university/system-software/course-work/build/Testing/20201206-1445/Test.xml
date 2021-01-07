@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Linux-c++"
+	BuildStamp="20201206-1445-Experimental"
+	Name="DESKTOP-1IJEN2J"
+	Generator="ctest-3.16.3"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="9.3.0"
+	OSName="Linux"
+	Hostname="DESKTOP-1IJEN2J"
+	OSRelease="4.4.0-19041-Microsoft"
+	OSVersion="#488-Microsoft Mon Sep 01 13:43:00 PST 2020"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="142"
+	ProcessorCacheSize="256"
+	NumberOfLogicalCPU="8"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="24576"
+	TotalPhysicalMemory="7974"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="1800"
+	>
+	<Testing>
+		<StartDateTime>Dec 06 22:55 MSK</StartDateTime>
+		<StartTestTime>1607284521</StartTestTime>
+		<TestList>
+			<Test>./macro_base_test</Test>
+			<Test>./strutils/strutils</Test>
+			<Test>./deftab/deftab</Test>
+			<Test>./namtab/namtab</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>macro_base_test</Name>
+			<Path>.</Path>
+			<FullName>./macro_base_test</FullName>
+			<FullCommandLine>/home/gdev/labs/course3/lab7/build/macro "macro_base_test.txt" "out.txt"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0342646</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/gdev/labs/course3/lab7/build/macro "macro_base_test.txt" "out.txt"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJxTUIAAZx9XxyAFhQgFHIBLAVWhI7pAMExA28clBEgpmxhYmuE3KsQFRNpGqNsbqONU5OUaCKK0dI0JOCyIGNOc/X0DQK7XCSZgGsxabUND/AqDQ5w9gJS9oQ5G2CE86hkRBKKw24lsqw9YjZauoSWSBWCD7Y3w6CM69iBxAzQMSYQI9+MOWtLjKZwIw8gIMBMuAA9Aao4=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>strutils</Name>
+			<Path>./strutils</Path>
+			<FullName>./strutils/strutils</FullName>
+			<FullCommandLine>/home/gdev/labs/course3/lab7/build/strutils/strutils_test</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0245686</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/gdev/labs/course3/lab7/build/strutils/strutils_test</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value></Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>deftab</Name>
+			<Path>./deftab</Path>
+			<FullName>./deftab/deftab</FullName>
+			<FullCommandLine>/home/gdev/labs/course3/lab7/build/deftab/deftab_test</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0175996</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/gdev/labs/course3/lab7/build/deftab/deftab_test</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value></Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>namtab</Name>
+			<Path>./namtab</Path>
+			<FullName>./namtab/namtab</FullName>
+			<FullCommandLine>/home/gdev/labs/course3/lab7/build/namtab/namtab_test</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0123659</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/gdev/labs/course3/lab7/build/namtab/namtab_test</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value></Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Dec 06 22:55 MSK</EndDateTime>
+		<EndTestTime>1607284521</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/gdev/labs/course3/lab7/deftab/deftab.h
+stdlib.h
+-
+
+/home/gdev/labs/course3/lab7/deftab/deftab_test.c
+assert.h
+-
+string.h
+-
+deftab.h
+/home/gdev/labs/course3/lab7/deftab/deftab.h
+

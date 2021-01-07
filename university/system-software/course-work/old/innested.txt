@@ -1,0 +1,48 @@
+COPY    START  0                        КОПИРОВАНИЕ ФАЙЛА
+CLR     MACRO
+        CLEAR  X                        ОЧИСТКА СЧЕТЧИКА ЦИКЛА
+        CLEAR  A
+        CLEAR  S
+        MEND
+MACROS  MACRO
+RDBUFF  MACRO  &INDEV,&BUFADR,&RECLTH   МАКРОС ДЛЯ ЧТЕНИЯ В БУФЕР
+        CLR
+       +LDT   #4096                     УСТАНОВКА МАКСИМАЛЬНОЙ ДЛИНЫ ЗАПИСИ
+        TD    =X'&INDEV'                ПРОВЕРКА ГОТОВНОСТИ УСТРОЙСТВА
+        JEQ    *-3                      ЦИКЛ ОЖИДАНИЯ ГОТОВНОСТИ
+        RD    =X'&INDEV'                ЧТЕНИЯ СИМВОЛА В РЕГИСТР A
+        COMPR  A,S                      ПРОВЕРКА НА КОНЕЦ ЗАПИСИ файла
+        JEQ    *+11                     ВЫХОД ИЗ ЦИКЛА ЕСЛИ КОНЕЦ ЗАПИСИ
+        STCH   &BUFADR,X                ЗАПИСЬ СИМВОЛА В буфер
+        TIXR   T                        ЦИКЛ ДО ДОСТИЖЕНИЯ МАКСИМАЛЬНОЙ ДЛИНЫ ЗАПИСИ
+        JLT    *-19
+        STX    &RECLTH                  СОХРАНЕНИЕ ДЛИНЫ ЗАПИСИ
+        MEND
+WRBUFF  MACRO  &OUTDEV,&BUFADR,&RECLTH  МАКРОС ДЛЯ ЗАПИСИ ИЗ БУФЕРА
+        CLEAR  X                        ОЧИСТКА СЧЕТЧИКА ЦИКЛА
+        LDT    &RECLTH
+        LDCH   &BUFADR,X                ВЫБОРКА СИМВОЛА ИЗ БУФЕРА
+        TD    =X'&OUTDEV'               ПРОВЕРКА ГОТОВНОСТИ УСТРОЙСТВА
+        JEQ    *-3                      ЦИКЛ ОЖИДАНИЯ ГОТОВНОСТИ
+        WD    =X'&OUTDEV'               ЗАПИСЬ СИМВОЛА
+        TIXR   T                        ЦИКЛ ПОКА ВСЕ СИМВОЛЫ НЕ БУДУТ ЗАПИСАНЫ
+        JLT    *-14
+        MEND
+        MEND
+.ОСНОВНАЯ ПРОГРАММА
+        MACROS
+FIRST   STL    RETADR                   СОХРАНЕНИЯ АДРЕСА ВОЗВРАТА
+CLOOP   RDBUFF F1,BUFFER,LENGTH         ЧТЕНИЕ ЗАПИСИ В БУФЕР
+        LDA    LENGTH                   ПРОВЕРКА НА КОНЕЦ ФАЙЛА
+        COMP  #0
+        JEQ    ENDFIL                   ВЫХОД ПО КОНЦУ ФАЙЛА
+        WRBUFF 05,BUFFER,LENGTH         ЗАПИСЬ ВЫХОДНОЙ ЗАПИСИ
+        J      CLOOP                    ЦИКЛ
+ENDFIL  WRBUFF 05,EOF,THREE             ЗАНЕСЕНИЕ МАРКЕРА КОНЦА ФАЙЛА
+        J     @RETADR
+EOF     BYTE   C'EOF'
+THREE   WORD   3
+RETADR  RESW   1
+LENGTH  RESW   1                        ДЛИНА ЗАПИСИ
+BUFFER  RESB   4096                     БУФЕР ДЛИНОЙ 4096 БАЙТ
+        END    FIRST

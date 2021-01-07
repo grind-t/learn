@@ -1,0 +1,13 @@
+M  MACRO
+M1 MACRO &arg
+   CMD1  &arg
+   MEND
+M2 MACRO &arg
+   CMD2  &arg
+   MEND
+   MEND
+
+   M
+   M1   hello
+   M2   world
+   

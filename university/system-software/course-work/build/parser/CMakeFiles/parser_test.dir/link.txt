@@ -1,0 +1,1 @@
+/usr/bin/gcc-9 -g  -rdynamic CMakeFiles/parser_test.dir/parser_test.c.o  -o parser_test  libparser.a 

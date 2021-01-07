@@ -1,0 +1,32 @@
+    begin 0x1000
+4096 1
+start lda n
+4099 0 27 0
+    jmp while
+4102 0 32 0
+body lda f
+4105 0 27 0
+    mul n
+4108 0 24 0
+    sta f
+4111 0 31 0
+    lda n
+4114 0 27 0
+    sub one
+4117 0 28 0
+    sta n
+4120 0 31 0
+while comp one
+4123 0 33 0
+    jgt body
+4126 0 30 0
+
+4126 -1
+f dw 1
+4129 1
+n dw 7
+4132 1
+one dw 1
+4135 1
+    end start
+4135 1

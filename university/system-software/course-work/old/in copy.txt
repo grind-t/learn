@@ -1,0 +1,5 @@
+MYMACRO MACRO &ARG1,&ARG2,&ARG3         КОММЕНТАРИЙ
+        MY
+        MACRO
+        BODY
+        MEND

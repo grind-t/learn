@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdeftab.a  CMakeFiles/deftab.dir/deftab.c.o
+/usr/bin/ranlib libdeftab.a

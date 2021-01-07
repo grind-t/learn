@@ -1,0 +1,47 @@
+[
+{
+  "directory": "/home/gdev/labs/course3/lab7/build",
+  "command": "/usr/bin/gcc-9  -I/home/gdev/labs/course3/lab7/parser -I/home/gdev/labs/course3/lab7/deftab -I/home/gdev/labs/course3/lab7/namtab -I/home/gdev/labs/course3/lab7/strutils  -g   -o CMakeFiles/macro.dir/macro.c.o   -c /home/gdev/labs/course3/lab7/macro.c",
+  "file": "/home/gdev/labs/course3/lab7/macro.c"
+},
+{
+  "directory": "/home/gdev/labs/course3/lab7/build/parser",
+  "command": "/usr/bin/gcc-9  -I/home/gdev/labs/course3/lab7/parser  -g   -o CMakeFiles/parser_test.dir/parser_test.c.o   -c /home/gdev/labs/course3/lab7/parser/parser_test.c",
+  "file": "/home/gdev/labs/course3/lab7/parser/parser_test.c"
+},
+{
+  "directory": "/home/gdev/labs/course3/lab7/build/parser",
+  "command": "/usr/bin/gcc-9   -g   -o CMakeFiles/parser.dir/parser.c.o   -c /home/gdev/labs/course3/lab7/parser/parser.c",
+  "file": "/home/gdev/labs/course3/lab7/parser/parser.c"
+},
+{
+  "directory": "/home/gdev/labs/course3/lab7/build/deftab",
+  "command": "/usr/bin/gcc-9  -I/home/gdev/labs/course3/lab7/deftab  -g   -o CMakeFiles/deftab_test.dir/deftab_test.c.o   -c /home/gdev/labs/course3/lab7/deftab/deftab_test.c",
+  "file": "/home/gdev/labs/course3/lab7/deftab/deftab_test.c"
+},
+{
+  "directory": "/home/gdev/labs/course3/lab7/build/deftab",
+  "command": "/usr/bin/gcc-9   -g   -o CMakeFiles/deftab.dir/deftab.c.o   -c /home/gdev/labs/course3/lab7/deftab/deftab.c",
+  "file": "/home/gdev/labs/course3/lab7/deftab/deftab.c"
+},
+{
+  "directory": "/home/gdev/labs/course3/lab7/build/namtab",
+  "command": "/usr/bin/gcc-9  -I/home/gdev/labs/course3/lab7/namtab  -g   -o CMakeFiles/namtab_test.dir/namtab_test.c.o   -c /home/gdev/labs/course3/lab7/namtab/namtab_test.c",
+  "file": "/home/gdev/labs/course3/lab7/namtab/namtab_test.c"
+},
+{
+  "directory": "/home/gdev/labs/course3/lab7/build/namtab",
+  "command": "/usr/bin/gcc-9   -g   -o CMakeFiles/namtab.dir/namtab.c.o   -c /home/gdev/labs/course3/lab7/namtab/namtab.c",
+  "file": "/home/gdev/labs/course3/lab7/namtab/namtab.c"
+},
+{
+  "directory": "/home/gdev/labs/course3/lab7/build/strutils",
+  "command": "/usr/bin/gcc-9  -I/home/gdev/labs/course3/lab7/strutils  -g   -o CMakeFiles/strutils_test.dir/strutils_test.c.o   -c /home/gdev/labs/course3/lab7/strutils/strutils_test.c",
+  "file": "/home/gdev/labs/course3/lab7/strutils/strutils_test.c"
+},
+{
+  "directory": "/home/gdev/labs/course3/lab7/build/strutils",
+  "command": "/usr/bin/gcc-9   -g   -o CMakeFiles/strutils.dir/strutils.c.o   -c /home/gdev/labs/course3/lab7/strutils/strutils.c",
+  "file": "/home/gdev/labs/course3/lab7/strutils/strutils.c"
+}
+]

@@ -1,0 +1,14 @@
+    begin 0x1000
+errorLabel                                   
+                                        Some comment.
+errorLabel lda a,E                         More comments.
+    errorCommand sub
+a db 0xFFFF 
+b dw 10
+c rb 5
+d rw 2
+e db 'abcd
+
+sub add errorName1
+    rsub
+    end errorName2

@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/gdev/labs/course3/lab7/strutils/strutils.h
+stdlib.h
+-
+
+/home/gdev/labs/course3/lab7/strutils/strutils_test.c
+stdlib.h
+-
+stdio.h
+-
+assert.h
+-
+string.h
+-
+strutils.h
+/home/gdev/labs/course3/lab7/strutils/strutils.h
+

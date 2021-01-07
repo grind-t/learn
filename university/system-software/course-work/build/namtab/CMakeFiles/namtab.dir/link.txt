@@ -1,0 +1,2 @@
+/usr/bin/ar qc libnamtab.a  CMakeFiles/namtab.dir/namtab.c.o
+/usr/bin/ranlib libnamtab.a

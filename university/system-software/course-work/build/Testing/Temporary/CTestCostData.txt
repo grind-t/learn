@@ -1,0 +1,8 @@
+macro_base_test 8 0.0614699
+macro_recursive_test 8 0.0493429
+macro_nested_test 8 0.0414169
+parser 8 0.0349864
+deftab 8 0.0277828
+namtab 8 0.0214783
+strutils 8 0.0155243
+---

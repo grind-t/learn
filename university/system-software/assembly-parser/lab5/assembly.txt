@@ -1,0 +1,14 @@
+    begin 0x1000
+somelabel                                   
+                                        Some comment.
+someLabel lda a,X                       More comments.
+    jsub sub
+a db 0xFFFF 
+b dw 10
+c rb 5
+d rw 2
+e db 'abcd'
+
+sub add b
+    rsub
+    end somelabel
