@@ -1,0 +1,196 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/grind/Desktop/projects/learn/university/circuit-design/sem2/lab3/simulation/qsim
+vhard_block
+Z1 !s110 1614541906
+!i10b 1
+!s100 g3I4LbFRdV234^IIPU0Jj1
+IfKW3^V<Vl0ozE8<8ZUX]m1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1614541905
+Z4 8lab3.vo
+Z5 Flab3.vo
+L0 527
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1614541906.000000
+Z8 !s107 lab3.vo|
+Z9 !s90 -work|work|lab3.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vscheme
+R1
+!i10b 1
+!s100 Ucdm5CNANfg`=a_IB^8_W1
+I[41FVY6Ca80^4hF41URzg0
+R2
+R0
+R3
+R4
+R5
+Z12 L0 32
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+Escheme_vhd_vec_tst
+Z13 w1614366745
+Z14 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z15 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z16 8Waveform.vwf.vht
+Z17 FWaveform.vwf.vht
+l0
+L32
+V6>2?6h;S7[EHULokVmgGP3
+!s100 ^a4KFBR2hIGXE>D[4=BHD0
+Z18 OV;C;10.5b;63
+32
+Z19 !s110 1614366747
+!i10b 1
+Z20 !s108 1614366747.000000
+Z21 !s90 -work|work|Waveform.vwf.vht|
+Z22 !s107 Waveform.vwf.vht|
+!i113 1
+R10
+Z23 tExplicit 1 CvgOpt 0
+Ascheme_arch
+R14
+R15
+DEx4 work 18 scheme_vhd_vec_tst 0 22 6>2?6h;S7[EHULokVmgGP3
+l57
+L34
+V8E^@YHc`L6VgY]:fMTaLP3
+!s100 NdU:@8lmT0@RU<1oK[N5Y0
+R18
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R10
+R23
+vscheme_vlg_vec_tst
+R1
+!i10b 1
+!s100 Z8gh@kZckeKejm=3iBFIn1
+IN2:6=mfm9RolW4:27;E^Y0
+R2
+R0
+w1614541904
+Z24 8Waveform.vwf.vt
+Z25 FWaveform.vwf.vt
+Z26 L0 30
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+Z27 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+vsubtract_counter_m5
+Z28 !s110 1614363612
+!i10b 1
+!s100 b=7Z@Y=Gz8Dm`9IA]ZAPm3
+IUY4^aV7RJ7H5_HD7nPS^i2
+R2
+R0
+Z29 w1614363611
+R4
+R5
+R12
+R6
+r1
+!s85 0
+31
+Z30 !s108 1614363612.000000
+R8
+R9
+!i113 1
+R10
+R11
+vsubtract_counter_m5_vlg_vec_tst
+R28
+!i10b 1
+!s100 hPQ];@8O0_lVnc3RgR5f=2
+IoXz<C[Z2XFQOn?KjblF<k1
+R2
+R0
+R29
+R24
+R25
+R26
+R6
+r1
+!s85 0
+31
+R30
+!s107 Waveform.vwf.vt|
+R27
+!i113 1
+R10
+R11
+vsubtract_counter_m7
+Z31 !s110 1614363518
+!i10b 1
+!s100 dk3QJJR1@I0gAB7dbi_:n1
+I@ZihfCO=09EKbKNFVGnTO2
+R2
+R0
+w1614363517
+R4
+R5
+R12
+R6
+r1
+!s85 0
+31
+Z32 !s108 1614363518.000000
+R8
+R9
+!i113 1
+R10
+R11
+vsubtract_counter_m7_vlg_vec_tst
+R31
+!i10b 1
+!s100 dH>I;D`Dl<fWC4Q<?=2fm2
+I_U13_4NkN37ilEC<L<XLz2
+R2
+R0
+w1614363516
+R24
+R25
+R26
+R6
+r1
+!s85 0
+31
+R32
+!s107 Waveform.vwf.vt|
+R27
+!i113 1
+R10
+R11

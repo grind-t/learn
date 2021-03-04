@@ -1,0 +1,20 @@
+Fitter Status : Successful - Sun Feb 28 22:31:39 2021
+Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Revision Name : lab3
+Top-level Entity Name : scheme
+Family : Cyclone IV GX
+Device : EP4CGX15BF14C6
+Timing Models : Final
+Total logic elements : 9 / 14,400 ( < 1 % )
+    Total combinational functions : 6 / 14,400 ( < 1 % )
+    Dedicated logic registers : 6 / 14,400 ( < 1 % )
+Total registers : 6
+Total pins : 8 / 81 ( 10 % )
+Total virtual pins : 0
+Total memory bits : 0 / 552,960 ( 0 % )
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 0 / 2 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 2 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 2 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 2 ( 0 % )
+Total PLLs : 0 / 3 ( 0 % )

@@ -1,0 +1,18 @@
+Analysis & Synthesis Status : Successful - Mon Feb 22 14:49:35 2021
+Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Revision Name : lab2
+Top-level Entity Name : scheme
+Family : Cyclone IV GX
+Total logic elements : 7
+    Total combinational functions : 7
+    Dedicated logic registers : 5
+Total registers : 5
+Total pins : 7
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0

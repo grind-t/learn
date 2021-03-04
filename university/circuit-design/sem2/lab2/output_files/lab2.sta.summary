@@ -1,0 +1,233 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'C'
+Slack : -1.402
+TNS   : -1.402
+
+Type  : Slow 1200mV 85C Model Setup 'K155TB6:inst3|inst'
+Slack : -0.337
+TNS   : -0.337
+
+Type  : Slow 1200mV 85C Model Setup 'K155TB6:inst2|inst'
+Slack : -0.237
+TNS   : -0.237
+
+Type  : Slow 1200mV 85C Model Setup 'K155TB6:inst1|inst'
+Slack : -0.067
+TNS   : -0.067
+
+Type  : Slow 1200mV 85C Model Setup 'K155TB6:inst3|inst1'
+Slack : 0.318
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'K155TB6:inst1|inst'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'K155TB6:inst3|inst1'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'K155TB6:inst2|inst'
+Slack : 0.422
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'K155TB6:inst3|inst'
+Slack : 0.513
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'C'
+Slack : 1.486
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'K155TB6:inst2|inst'
+Slack : -2.700
+TNS   : -2.700
+
+Type  : Slow 1200mV 85C Model Recovery 'K155TB6:inst1|inst'
+Slack : -2.358
+TNS   : -2.358
+
+Type  : Slow 1200mV 85C Model Removal 'K155TB6:inst1|inst'
+Slack : 0.662
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'K155TB6:inst2|inst'
+Slack : 1.018
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'C'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'K155TB6:inst1|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'K155TB6:inst2|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'K155TB6:inst3|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'K155TB6:inst3|inst1'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Setup 'C'
+Slack : -1.203
+TNS   : -1.203
+
+Type  : Slow 1200mV 0C Model Setup 'K155TB6:inst3|inst'
+Slack : -0.240
+TNS   : -0.240
+
+Type  : Slow 1200mV 0C Model Setup 'K155TB6:inst2|inst'
+Slack : -0.174
+TNS   : -0.174
+
+Type  : Slow 1200mV 0C Model Setup 'K155TB6:inst1|inst'
+Slack : 0.008
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'K155TB6:inst3|inst1'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'K155TB6:inst1|inst'
+Slack : 0.150
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'K155TB6:inst3|inst1'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'K155TB6:inst2|inst'
+Slack : 0.381
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'K155TB6:inst3|inst'
+Slack : 0.448
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'C'
+Slack : 1.369
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'K155TB6:inst2|inst'
+Slack : -2.388
+TNS   : -2.388
+
+Type  : Slow 1200mV 0C Model Recovery 'K155TB6:inst1|inst'
+Slack : -2.064
+TNS   : -2.064
+
+Type  : Slow 1200mV 0C Model Removal 'K155TB6:inst1|inst'
+Slack : 0.580
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'K155TB6:inst2|inst'
+Slack : 0.917
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'C'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'K155TB6:inst1|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'K155TB6:inst2|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'K155TB6:inst3|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'K155TB6:inst3|inst1'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Setup 'C'
+Slack : -0.382
+TNS   : -0.382
+
+Type  : Fast 1200mV 0C Model Setup 'K155TB6:inst3|inst'
+Slack : 0.056
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'K155TB6:inst2|inst'
+Slack : 0.115
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'K155TB6:inst1|inst'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'K155TB6:inst3|inst1'
+Slack : 0.626
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'K155TB6:inst1|inst'
+Slack : 0.107
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'K155TB6:inst3|inst1'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'K155TB6:inst2|inst'
+Slack : 0.225
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'K155TB6:inst3|inst'
+Slack : 0.271
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'C'
+Slack : 0.617
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'K155TB6:inst2|inst'
+Slack : -1.633
+TNS   : -1.633
+
+Type  : Fast 1200mV 0C Model Recovery 'K155TB6:inst1|inst'
+Slack : -1.458
+TNS   : -1.458
+
+Type  : Fast 1200mV 0C Model Removal 'K155TB6:inst1|inst'
+Slack : 0.366
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'K155TB6:inst2|inst'
+Slack : 0.549
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'C'
+Slack : -3.000
+TNS   : -4.153
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'K155TB6:inst1|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'K155TB6:inst2|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'K155TB6:inst3|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'K155TB6:inst3|inst1'
+Slack : -1.000
+TNS   : -1.000
+
+------------------------------------------------------------

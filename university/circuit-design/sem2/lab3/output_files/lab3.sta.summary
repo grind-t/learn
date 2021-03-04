@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'C'
+Slack : -1.173
+TNS   : -3.331
+
+Type  : Slow 1200mV 85C Model Setup 'subtract_counter_m5:inst|K155TB6:inst1|inst'
+Slack : -0.090
+TNS   : -0.174
+
+Type  : Slow 1200mV 85C Model Hold 'subtract_counter_m5:inst|K155TB6:inst1|inst'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'C'
+Slack : 1.124
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'C'
+Slack : -3.000
+TNS   : -6.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'subtract_counter_m5:inst|K155TB6:inst1|inst'
+Slack : -1.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Setup 'C'
+Slack : -1.000
+TNS   : -2.909
+
+Type  : Slow 1200mV 0C Model Setup 'subtract_counter_m5:inst|K155TB6:inst1|inst'
+Slack : 0.035
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'subtract_counter_m5:inst|K155TB6:inst1|inst'
+Slack : 0.310
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'C'
+Slack : 0.960
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'C'
+Slack : -3.000
+TNS   : -6.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'subtract_counter_m5:inst|K155TB6:inst1|inst'
+Slack : -1.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Setup 'C'
+Slack : -0.199
+TNS   : -0.541
+
+Type  : Fast 1200mV 0C Model Setup 'subtract_counter_m5:inst|K155TB6:inst1|inst'
+Slack : 0.387
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'subtract_counter_m5:inst|K155TB6:inst1|inst'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'C'
+Slack : 0.387
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'C'
+Slack : -3.000
+TNS   : -6.207
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'subtract_counter_m5:inst|K155TB6:inst1|inst'
+Slack : -1.000
+TNS   : -3.000
+
+------------------------------------------------------------

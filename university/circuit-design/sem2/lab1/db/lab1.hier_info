@@ -1,0 +1,71 @@
+|scheme
+Q1 <= K155TB6:inst1.1Q
+C => K155TB6:inst2.C1
+C => K155TB6:inst1.C1
+C => K155TB6:inst1.C2
+S => K155LN1:inst4.05
+R => K155LN1:inst4.13
+Q2 <= K155TB6:inst1.2Q
+Q3 <= K155TB6:inst2.1Q
+
+
+|scheme|K155TB6:inst1
+1Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+nR1 => inst.ACLR
+K1 => inst.IN0
+J1 => inst.IN1
+C1 => inst17.IN0
+1nQ <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+2Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+nR2 => inst1.ACLR
+K2 => inst1.IN0
+J2 => inst1.IN1
+C2 => inst18.IN0
+2nQ <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|scheme|K155LI1:inst3
+03 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+01 => inst.IN0
+02 => inst.IN1
+06 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+04 => inst1.IN0
+05 => inst1.IN1
+08 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+09 => inst2.IN0
+10 => inst2.IN1
+11 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+12 => inst3.IN0
+13 => inst3.IN1
+
+
+|scheme|K155LN1:inst4
+02 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+01 => inst.IN0
+04 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+03 => inst1.IN0
+06 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+05 => inst2.IN0
+08 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+09 => inst3.IN0
+10 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+11 => inst4.IN0
+12 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+13 => inst5.IN0
+
+
+|scheme|K155TB6:inst2
+1Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+nR1 => inst.ACLR
+K1 => inst.IN0
+J1 => inst.IN1
+C1 => inst17.IN0
+1nQ <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+2Q <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+nR2 => inst1.ACLR
+K2 => inst1.IN0
+J2 => inst1.IN1
+C2 => inst18.IN0
+2nQ <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
