@@ -1,0 +1,142 @@
+Flow report for RingCounter
+Sun May 23 22:36:56 2021
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Sun May 23 22:36:56 2021       ;
+; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
+; Revision Name                      ; RingCounter                                 ;
+; Top-level Entity Name              ; _PK_NAND                                    ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 31 / 6,272 ( < 1 % )                        ;
+;     Total combinational functions  ; 19 / 6,272 ( < 1 % )                        ;
+;     Dedicated logic registers      ; 23 / 6,272 ( < 1 % )                        ;
+; Total registers                    ; 23                                          ;
+; Total pins                         ; 11 / 92 ( 12 % )                            ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0 / 276,480 ( 0 % )                         ;
+; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                              ;
+; Total PLLs                         ; 0 / 2 ( 0 % )                               ;
+; Device                             ; EP4CE6E22C6                                 ;
+; Timing Models                      ; Final                                       ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 05/23/2021 22:19:39 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; RingCounter         ;
++-------------------+---------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                ;
++-------------------------------------+------------------------------------------------+---------------+-------------+------------+
+; Assignment Name                     ; Value                                          ; Default Value ; Entity Name ; Section Id ;
++-------------------------------------+------------------------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID               ; 1099194751988.162179757910848                  ; --            ; --          ; --         ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family)         ; --            ; _PK_NAND    ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)         ; --            ; _PK_NAND    ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)         ; --            ; _PK_NAND    ; Top        ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                   ; --            ; --          ; --         ;
+; SEARCH_PATH                         ; d:\libraries\quartuslibraries\series_k1533 new ; --            ; --          ; --         ;
+; TOP_LEVEL_ENTITY                    ; _PK_NAND                                       ; RingCounter   ; --          ; --         ;
++-------------------------------------+------------------------------------------------+---------------+-------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4756 MB             ; 00:00:23                           ;
+; Fitter               ; 00:00:06     ; 1.0                     ; 5496 MB             ; 00:00:06                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4678 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4769 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4627 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4636 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4626 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4638 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4626 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4643 MB             ; 00:00:01                           ;
+; Total                ; 00:00:21     ; --                      ; --                  ; 00:00:38                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; DESKTOP-1IJEN2J  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-1IJEN2J  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-1IJEN2J  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-1IJEN2J  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-1IJEN2J  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-1IJEN2J  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-1IJEN2J  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-1IJEN2J  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-1IJEN2J  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-1IJEN2J  ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off RingCounter -c RingCounter
+quartus_fit --read_settings_files=off --write_settings_files=off RingCounter -c RingCounter
+quartus_asm --read_settings_files=off --write_settings_files=off RingCounter -c RingCounter
+quartus_sta RingCounter -c RingCounter
+quartus_eda --read_settings_files=on --write_settings_files=off RingCounter -c RingCounter
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off RingCounter -c RingCounter --vector_source=C:/Users/grind/Desktop/projects/learn/university/circuit-design/RingCounter/_WaveformPK_NAND.vwf --testbench_file=C:/Users/grind/Desktop/projects/learn/university/circuit-design/RingCounter/simulation/qsim/_WaveformPK_NAND.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/grind/Desktop/projects/learn/university/circuit-design/RingCounter/simulation/qsim/ RingCounter -c RingCounter
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off RingCounter -c RingCounter --vector_source=C:/Users/grind/Desktop/projects/learn/university/circuit-design/RingCounter/_WaveformPK_NAND.vwf --testbench_file=C:/Users/grind/Desktop/projects/learn/university/circuit-design/RingCounter/simulation/qsim/_WaveformPK_NAND.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/grind/Desktop/projects/learn/university/circuit-design/RingCounter/simulation/qsim/ RingCounter -c RingCounter
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off RingCounter -c RingCounter --vector_source=C:/Users/grind/Desktop/projects/learn/university/circuit-design/RingCounter/_WaveformPK_NAND.vwf --testbench_file=C:/Users/grind/Desktop/projects/learn/university/circuit-design/RingCounter/simulation/qsim/_WaveformPK_NAND.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory=C:/Users/grind/Desktop/projects/learn/university/circuit-design/RingCounter/simulation/qsim/ RingCounter -c RingCounter
+
+
+

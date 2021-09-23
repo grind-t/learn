@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Mar 25 14:52:12 2021
+Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Revision Name : JohnsonCounter
+Top-level Entity Name : _PK_NAND
+Family : Cyclone IV E
+Total logic elements : 24
+    Total combinational functions : 14
+    Dedicated logic registers : 12
+Total registers : 12
+Total pins : 11
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

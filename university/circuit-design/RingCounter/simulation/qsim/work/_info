@@ -1,0 +1,256 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/QuartusProjects/KP/RingCounter/simulation/qsim
+v_PK_NAND
+Z1 !s110 1621798617
+!i10b 1
+!s100 PBRl==b5H9z[M=_BP32Li3
+I:28f:LB:F?dQfQ9>cm:j<1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/grind/Desktop/projects/learn/university/circuit-design/RingCounter/simulation/qsim
+Z4 w1621798616
+Z5 8RingCounter.vo
+Z6 FRingCounter.vo
+Z7 L0 32
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1621798617.000000
+Z10 !s107 RingCounter.vo|
+Z11 !s90 -work|work|RingCounter.vo|
+!i113 1
+Z12 o-work work
+Z13 tCvgOpt 0
+n@_@p@k_@n@a@n@d
+v_PK_NAND_vlg_vec_tst
+R1
+!i10b 1
+!s100 a2efFdo?P_64BP1c6oj4Y0
+IX9DKSCY_]ET8Al:@I<FWM1
+R2
+R3
+w1621798615
+8_WaveformPK_NAND.vwf.vt
+F_WaveformPK_NAND.vwf.vt
+Z14 L0 30
+R8
+r1
+!s85 0
+31
+R9
+!s107 _WaveformPK_NAND.vwf.vt|
+!s90 -work|work|_WaveformPK_NAND.vwf.vt|
+!i113 1
+R12
+R13
+n@_@p@k_@n@a@n@d_vlg_vec_tst
+v_RingCounterDFF
+Z15 !s110 1621610388
+!i10b 1
+!s100 5O:^224]z]ii8g`5OBGZG1
+IUzQ7W7kUeIAfj9lf95ARI1
+R2
+R3
+w1621610387
+R5
+R6
+R7
+R8
+r1
+!s85 0
+31
+Z16 !s108 1621610388.000000
+R10
+R11
+!i113 1
+R12
+R13
+n@_@ring@counter@d@f@f
+v_RingCounterDFF_vlg_vec_tst
+R15
+!i10b 1
+!s100 697=MY`dSW0^6JKdLaglG2
+I:13M^J@0d<MDo_BK1@:`e0
+R2
+R3
+w1621610386
+Z17 8_Waveform.vwf.vt
+Z18 F_Waveform.vwf.vt
+R14
+R8
+r1
+!s85 0
+31
+R16
+Z19 !s107 _Waveform.vwf.vt|
+Z20 !s90 -work|work|_Waveform.vwf.vt|
+!i113 1
+R12
+R13
+n@_@ring@counter@d@f@f_vlg_vec_tst
+v_RingCounterJKFF
+Z21 !s110 1621614207
+!i10b 1
+!s100 ^RJQ09h[BH?SHSk@HJea41
+INzd9F6o2=Df]YI:4jh`6Z2
+R2
+R3
+w1621614206
+R5
+R6
+R7
+R8
+r1
+!s85 0
+31
+Z22 !s108 1621614207.000000
+R10
+R11
+!i113 1
+R12
+R13
+n@_@ring@counter@j@k@f@f
+v_RingCounterJKFF_vlg_vec_tst
+R21
+!i10b 1
+!s100 YGTXF<EfolJah2QZg@HH93
+IDBdY;cbQCGnf7LK>iJ_f33
+R2
+R3
+w1621614205
+R17
+R18
+R14
+R8
+r1
+!s85 0
+31
+R22
+R19
+R20
+!i113 1
+R12
+R13
+n@_@ring@counter@j@k@f@f_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 eX85nB[]z[Sd3i^?OAOB12
+IIHVKdTZ?P3oFhB4>jEa`B2
+R2
+R3
+R4
+R5
+R6
+L0 1306
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vPK_NAND
+Z23 !s110 1615813950
+!i10b 1
+!s100 1@KP2N:Pbb9C?iIbnX]S51
+Z24 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IWUTZXkLcB6K2:WjA8GBBd1
+R2
+R0
+w1615813949
+R5
+R6
+!i122 16
+L0 32 1071
+Z25 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z26 !s108 1615813950.000000
+R10
+R11
+!i113 1
+R12
+R13
+n@p@k_@n@a@n@d
+vPK_NAND_vlg_vec_tst
+R23
+!i10b 1
+!s100 N1?nMYN55WM;EPnnYQ`eC0
+R24
+IOg^_1i1Yl9zJh4>m@<mmc3
+R2
+R0
+w1615813948
+8Waveform2.vwf.vt
+FWaveform2.vwf.vt
+!i122 17
+L0 30 56
+R25
+r1
+!s85 0
+31
+R26
+!s107 Waveform2.vwf.vt|
+!s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R12
+R13
+n@p@k_@n@a@n@d_vlg_vec_tst
+vRingCounterDFF
+Z27 !s110 1621604187
+!i10b 1
+!s100 OBz1390P^hIEN]kninjCz0
+IklaeK_oIAzaWM47G0HKRc0
+R2
+R3
+Z28 w1621604186
+R5
+R6
+R7
+R8
+r1
+!s85 0
+31
+Z29 !s108 1621604187.000000
+R10
+R11
+!i113 1
+R12
+R13
+n@ring@counter@d@f@f
+vRingCounterDFF_vlg_vec_tst
+R27
+!i10b 1
+!s100 G^eF1aQ553ZRf^HjhOK6A3
+I2@9Jma:_8C4@ocT]bD]E;3
+R2
+R3
+R28
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+R14
+R8
+r1
+!s85 0
+31
+R29
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R12
+R13
+n@ring@counter@d@f@f_vlg_vec_tst

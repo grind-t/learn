@@ -1,0 +1,50 @@
+$comment
+	File created using the following command:
+		vcd file Exam.msim.vcd -direction
+$end
+$date
+	Sun Jun 20 16:20:01 2021
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module Exam_Kostin_vlg_vec_tst $end
+$var reg 1 ! I1 $end
+$var reg 1 " I2 $end
+$var wire 1 # O $end
+
+$scope module i1 $end
+$var wire 1 $ gnd $end
+$var wire 1 % vcc $end
+$var wire 1 & unknown $end
+$var tri1 1 ' devclrn $end
+$var tri1 1 ( devpor $end
+$var tri1 1 ) devoe $end
+$var wire 1 * O~output_o $end
+$var wire 1 + I2~input_o $end
+$var wire 1 , I1~input_o $end
+$var wire 1 - inst~combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+1"
+1#
+0$
+1%
+x&
+1'
+1(
+1)
+1*
+1+
+1,
+1-
+$end
+#1000000

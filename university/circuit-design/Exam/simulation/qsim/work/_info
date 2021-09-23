@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/grind/Desktop/projects/learn/university/circuit-design/Exam/simulation/qsim
+vExam_Kostin
+Z1 !s110 1624195200
+!i10b 1
+!s100 kR4^dQiz]@FibX?D0F78F0
+IDfm`2g6E1nX?z?;KM?D;[0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1624195200
+Z4 8Exam.vo
+Z5 FExam.vo
+L0 32
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1624195200.000000
+Z8 !s107 Exam.vo|
+Z9 !s90 -work|work|Exam.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@exam_@kostin
+vExam_Kostin_vlg_vec_tst
+!s110 1624195201
+!i10b 1
+!s100 7YRb0X>gX^?bB;iST1`ag1
+Ibe^C_KkOQELR^[M]XzDOR1
+R2
+R0
+w1624195199
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 30
+R6
+r1
+!s85 0
+31
+!s108 1624195201.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@exam_@kostin_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 [ne2BiOzVI;b^k__Ne01C1
+ICfYb[hn;57Z9L4>6PR`0P1
+R2
+R0
+R3
+R4
+R5
+L0 122
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

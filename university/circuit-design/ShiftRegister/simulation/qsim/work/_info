@@ -1,0 +1,494 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/QuartusProjects/KP/JohnsonCounter/simulation/qsim
+v_JohnsonCounterDFF
+Z1 !s110 1622726288
+!i10b 1
+!s100 ^3[P>`N8oe^3<OX]JQfa80
+I;[1jX1;DG;P:lQ`^?CffJ3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/grind/Desktop/projects/learn/university/circuit-design/ShiftRegister/simulation/qsim
+Z4 w1622726285
+Z5 8JohnsonCounter.vo
+Z6 FJohnsonCounter.vo
+Z7 L0 32
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1622726288.000000
+Z10 !s107 JohnsonCounter.vo|
+Z11 !s90 -work|work|JohnsonCounter.vo|
+!i113 1
+Z12 o-work work
+Z13 tCvgOpt 0
+n@_@johnson@counter@d@f@f
+v_JohnsonCounterDFF_vlg_vec_tst
+!s110 1622726289
+!i10b 1
+!s100 7;EH>8:lUV<z30c8JIMhn1
+IPdY8EfQL:dU[hMQecQZ5a2
+R2
+R3
+w1622726284
+Z14 8_WaveformPK_NAND.vwf.vt
+Z15 F_WaveformPK_NAND.vwf.vt
+Z16 L0 30
+R8
+r1
+!s85 0
+31
+R9
+!s107 _WaveformPK_NAND.vwf.vt|
+Z17 !s90 -work|work|_WaveformPK_NAND.vwf.vt|
+!i113 1
+R12
+R13
+n@_@johnson@counter@d@f@f_vlg_vec_tst
+v_JohnsonCounterJKFF
+Z18 !s110 1616533881
+!i10b 1
+!s100 ih=D8<P=Tm2aAfbNOSW[g1
+IFcXfdbbTz4<hcMS1RAXng3
+R2
+Z19 dC:/Users/grind/Desktop/projects/learn/university/circuit-design/JohnsonCounter/simulation/qsim
+w1616533880
+R5
+R6
+R7
+R8
+r1
+!s85 0
+31
+Z20 !s108 1616533881.000000
+R10
+R11
+!i113 1
+R12
+R13
+n@_@johnson@counter@j@k@f@f
+v_JohnsonCounterJKFF_vlg_vec_tst
+R18
+!i10b 1
+!s100 X77cR>i@JOKW`O<onYn;K2
+I0gcl0E7510M8Y@KKTfC@T3
+R2
+R19
+w1616533879
+8_WaveformJKFF.vwf.vt
+F_WaveformJKFF.vwf.vt
+R16
+R8
+r1
+!s85 0
+31
+R20
+!s107 _WaveformJKFF.vwf.vt|
+!s90 -work|work|_WaveformJKFF.vwf.vt|
+!i113 1
+R12
+R13
+n@_@johnson@counter@j@k@f@f_vlg_vec_tst
+v_PK_NAND
+Z21 !s110 1616674906
+!i10b 1
+!s100 VA9LVT4[D[1gI;2S1b=IQ2
+I?oJ<07oQJNhBjA><a>o?X3
+R2
+R19
+w1616674905
+R5
+R6
+R7
+R8
+r1
+!s85 0
+31
+Z22 !s108 1616674906.000000
+R10
+R11
+!i113 1
+R12
+R13
+n@_@p@k_@n@a@n@d
+v_PK_NAND_vlg_vec_tst
+R21
+!i10b 1
+!s100 a2efFdo?P_64BP1c6oj4Y0
+IX9DKSCY_]ET8Al:@I<FWM1
+R2
+R19
+w1616674904
+R14
+R15
+R16
+R8
+r1
+!s85 0
+31
+R22
+!s107 _WaveformPK_NAND.vwf.vt|
+R17
+!i113 1
+R12
+R13
+n@_@p@k_@n@a@n@d_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 ;LP9hE@EgA?cijZ=<fH>A3
+I1kPV0;V6LERd^3a?<mjdO3
+R2
+R3
+R4
+R5
+R6
+L0 700
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+vJohnsonCounter
+Z23 !s110 1612122188
+!i10b 1
+!s100 R`n`m4P@ZO705ZLS6]:aM1
+Z24 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IlcI1@E7fJ<T2RnXS=zSEl0
+R2
+R0
+w1612122187
+R5
+R6
+!i122 32
+L0 32 707
+Z25 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z26 !s108 1612122188.000000
+R10
+R11
+!i113 1
+R12
+R13
+n@johnson@counter
+vJohnsonCounter_vlg_vec_tst
+R23
+!i10b 1
+!s100 0OMf0a^6hE56SB_R3Q10k3
+R24
+IbhfU:bif5J;l<h8jeKmn@2
+R2
+R0
+w1612122186
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 33
+L0 30 60
+R25
+r1
+!s85 0
+31
+R26
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R12
+R13
+n@johnson@counter_vlg_vec_tst
+vJohnsonCounterDFF
+Z27 !s110 1616514560
+!i10b 1
+!s100 4B@L?En9fdk@24[@S_=Cm0
+I>hZCLbIJjHT8m]fZ^P9J]1
+R2
+R19
+w1616514559
+R5
+R6
+R7
+R8
+r1
+!s85 0
+31
+Z28 !s108 1616514560.000000
+R10
+R11
+!i113 1
+R12
+R13
+n@johnson@counter@d@f@f
+vJohnsonCounterDFF_vlg_vec_tst
+R27
+!i10b 1
+!s100 KbjLlA;e@S[XfY<dEkMd33
+I`:czkRVH4l<?<EEOFkdMM2
+R2
+R19
+w1616514558
+8WaveformDFF.vwf.vt
+FWaveformDFF.vwf.vt
+R16
+R8
+r1
+!s85 0
+31
+R28
+!s107 WaveformDFF.vwf.vt|
+!s90 -work|work|WaveformDFF.vwf.vt|
+!i113 1
+R12
+R13
+n@johnson@counter@d@f@f_vlg_vec_tst
+vJohnsonCounterJKFF
+Z29 !s110 1615763210
+!i10b 1
+!s100 Sj6:j9zaS7I_X3ah7V@dF0
+R24
+IX]MbZWi[QU@A_QIA=iFOh1
+R2
+R0
+w1615763209
+R5
+R6
+!i122 218
+L0 32 920
+R25
+r1
+!s85 0
+31
+Z30 !s108 1615763210.000000
+R10
+R11
+!i113 1
+R12
+R13
+n@johnson@counter@j@k@f@f
+vJohnsonCounterJKFF_vlg_vec_tst
+R29
+!i10b 1
+!s100 0B^WYEH=o2K:[lEnFfk5Z0
+R24
+IJ]8jh71J2eHQO5CLPizF>0
+R2
+R0
+w1615763208
+8WaveformJKFF.vwf.vt
+FWaveformJKFF.vwf.vt
+!i122 219
+L0 30 82
+R25
+r1
+!s85 0
+31
+R30
+!s107 WaveformJKFF.vwf.vt|
+!s90 -work|work|WaveformJKFF.vwf.vt|
+!i113 1
+R12
+R13
+n@johnson@counter@j@k@f@f_vlg_vec_tst
+vPK
+Z31 !s110 1611950615
+!i10b 1
+!s100 bhnSIX[4?>Ul=nWhh04D03
+R24
+IO0jN9Nc>fI:i48gMRF_6l1
+R2
+R0
+w1611950614
+R5
+R6
+!i122 22
+L0 32 517
+R25
+r1
+!s85 0
+31
+Z32 !s108 1611950615.000000
+R10
+R11
+!i113 1
+R12
+R13
+n@p@k
+vPK_mountOR
+Z33 !s110 1612707871
+!i10b 1
+!s100 jA3h^VPaQm7^cJ5RfLlWA2
+R24
+IA_cDVb:RSbA0<TfQP=8Ej2
+R2
+R0
+w1612707870
+R5
+R6
+!i122 54
+L0 32 146
+R25
+r1
+!s85 0
+31
+Z34 !s108 1612707871.000000
+R10
+R11
+!i113 1
+R12
+R13
+n@p@k_mount@o@r
+vPK_mountOR_vlg_vec_tst
+R33
+!i10b 1
+!s100 [=dC=TK1hRg_RFNHSSJjW1
+R24
+ImfLmSj0bod2PP3d6fVSnk2
+R2
+R0
+w1612707869
+8Waveform4.vwf.vt
+FWaveform4.vwf.vt
+!i122 55
+L0 30 52
+R25
+r1
+!s85 0
+31
+R34
+!s107 Waveform4.vwf.vt|
+!s90 -work|work|Waveform4.vwf.vt|
+!i113 1
+R12
+R13
+n@p@k_mount@o@r_vlg_vec_tst
+vPK_NAND
+Z35 !s110 1615820097
+!i10b 1
+!s100 minOaem4=o=o<WH1;ND=A2
+R24
+ImB?IDLOT70mglV5hLP=P]3
+R2
+R0
+w1615820096
+R5
+R6
+!i122 224
+L0 32 835
+R25
+r1
+!s85 0
+31
+Z36 !s108 1615820097.000000
+R10
+R11
+!i113 1
+R12
+R13
+n@p@k_@n@a@n@d
+vPK_NAND_vlg_vec_tst
+R35
+!i10b 1
+!s100 F>N00<oIa`?9DHScQSLEJ0
+R24
+Ij6z>U73:YjGS@QS`PmL8N2
+R2
+R0
+w1615820095
+8WaveformPK_NAND.vwf.vt
+FWaveformPK_NAND.vwf.vt
+!i122 225
+L0 30 55
+R25
+r1
+!s85 0
+31
+R36
+!s107 WaveformPK_NAND.vwf.vt|
+!s90 -work|work|WaveformPK_NAND.vwf.vt|
+!i113 1
+R12
+R13
+n@p@k_@n@a@n@d_vlg_vec_tst
+vPK_vlg_vec_tst
+R31
+!i10b 1
+!s100 z56DI7^O2:[3`TdGEI4ij3
+R24
+ImOg]G>ESnzgn:N27@i0SO0
+R2
+R0
+w1611950613
+Z37 8Waveform1.vwf.vt
+Z38 FWaveform1.vwf.vt
+!i122 23
+L0 30 35
+R25
+r1
+!s85 0
+31
+R32
+Z39 !s107 Waveform1.vwf.vt|
+Z40 !s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R12
+R13
+n@p@k_vlg_vec_tst
+vtest
+Z41 !s110 1613083079
+!i10b 1
+!s100 ?fzBE]OE_[DimOW<>b1aX3
+R24
+IgUJlD5HKGl4l7;hjzSAD[2
+R2
+R0
+w1613083078
+R5
+R6
+!i122 140
+L0 32 916
+R25
+r1
+!s85 0
+31
+!s108 1613083078.000000
+R10
+R11
+!i113 1
+R12
+R13
+vtest_vlg_vec_tst
+R41
+!i10b 1
+!s100 iaAXOHQCJJVcWZdJBndng2
+R24
+I>DB?cB70`N:LU6=Ci^BdF2
+R2
+R0
+w1613083077
+R37
+R38
+!i122 141
+L0 30 77
+R25
+r1
+!s85 0
+31
+!s108 1613083079.000000
+R39
+R40
+!i113 1
+R12
+R13

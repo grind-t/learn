@@ -1,0 +1,6 @@
+|Exam_Kostin
+O <= inst.DB_MAX_OUTPUT_PORT_TYPE
+I1 => inst.IN0
+I2 => inst.IN1
+
+

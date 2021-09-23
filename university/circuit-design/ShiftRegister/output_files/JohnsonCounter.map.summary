@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Jun 03 16:17:31 2021
+Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Revision Name : JohnsonCounter
+Top-level Entity Name : _JohnsonCounterDFF
+Family : Cyclone IV E
+Total logic elements : 12
+    Total combinational functions : 12
+    Dedicated logic registers : 10
+Total registers : 10
+Total pins : 11
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
