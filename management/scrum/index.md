@@ -1,1 +1,2 @@
-
+Key concepts:
+- Iterative approach
