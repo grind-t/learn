@@ -8,4 +8,12 @@ Key concepts:
 - Sprint
 - Demo
 - Standup
-- Communication and awareness speeds up work
+- Communication and awareness increases productivity
+- Multitasking reduces productivity
+- Only completed tasks have real value
+- Fixing an error immediately is faster than over time
+- Working hard reduces productivity due to fatigue and mistakes
+- Absurdly unattainable goals reduces productivity due to frustration
+- Heroic completion of tasks indicates poor planning
+- Processes should be as simple as possible and not take up unnecessary time
+- People who create emotional chaos reduce productivity
