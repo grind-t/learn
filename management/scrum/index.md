@@ -17,3 +17,16 @@ Key concepts:
 - Heroic completion of tasks indicates poor planning
 - Processes should be as simple as possible and not take up unnecessary time
 - People who create emotional chaos reduce productivity
+- The duration of the plan reduces its accuracy
+- Cone of Uncertainty
+- Task priority
+- Story points and fibonacci numbers
+- Information cascade
+- Halo effect
+- Delphi method
+- Poker planning
+- User story and INVEST criteria
+- Epic
+- Sprint planning
+- Performance dynamics
+- Retrospective
