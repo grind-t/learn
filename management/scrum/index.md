@@ -1,7 +1,7 @@
 Key concepts:
 - Iterative approach
 - Regular feedback and adaptation
-- Plan, Do, Check (review), Act (correct)
+- Deming Cycle - Plan, Do, Check (review), Act (correct)
 - Small autonomous multifunctional teams that constantly strive for excellence
 - Scrum Master
 - System > Individual
