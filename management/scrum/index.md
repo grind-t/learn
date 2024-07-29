@@ -30,3 +30,5 @@ Key concepts:
 - Sprint planning
 - Performance dynamics
 - Retrospective
+- Happiness increases productivity
+- 
