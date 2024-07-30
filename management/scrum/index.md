@@ -40,3 +40,10 @@ Key concepts:
   - Name one thing that could make you happier in the next sprint
 - Secrecy slows down work
 - Scrum board
+- Backlog
+- Priority:
+  - Value for the project
+  - Importance for customer
+  - Revenue
+  - Complexity
+- 80/20 rule
