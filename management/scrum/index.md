@@ -31,8 +31,12 @@ Key concepts:
 - Performance dynamics
 - Retrospective
 - Happiness increases productivity
+- Happiness is a journey, not a destination
+- Happiness is independence, mastery and higher purpose
 - Questions to measure index of happiness:
   - Rate your role in the company on a scale of one to five
   - Rate the company as a whole on the same scale
   - Why do you think so
   - Name one thing that could make you happier in the next sprint
+- Secrecy slows down work
+- Scrum board
