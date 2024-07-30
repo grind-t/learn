@@ -42,8 +42,8 @@ Key concepts:
 - Scrum board
 - Backlog
 - Priority:
-  - Value for the project
-  - Importance for customer
+  - Value for customer or users
+  - Importance for customer or users
   - Revenue
   - Complexity
 - 80/20 rule
