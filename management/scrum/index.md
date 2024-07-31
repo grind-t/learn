@@ -49,3 +49,4 @@ Key concepts:
 - 80/20 rule
 - Product owner
 - OODA loop
+- MVP
