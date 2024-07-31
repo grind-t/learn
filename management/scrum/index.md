@@ -48,3 +48,4 @@ Key concepts:
   - Complexity
 - 80/20 rule
 - Product owner
+- OODA loop
