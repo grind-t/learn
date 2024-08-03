@@ -1,21 +1,5 @@
-**Metadata**
-- [base](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base)
-- [head](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head)
-- [link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link)
-- [meta](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta)
-- [style](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style)
-- [title](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title)
+## Metadata
+[base](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base), [head](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head), [link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link), [meta](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta), [style](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style), [title](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title)
 
-**Sectioning**
-- [body](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body)
-- [header](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header)
-- [hgroup](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup)
-- [h1-h6](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements)
-- [nav](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav)
-- [search](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/search)
-- [address](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address)
-- [main](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main)
-- [section](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section)
-- [article](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article)
-- [aside](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside)
-- [footer](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer)
+## Sectioning
+[body](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body), [header](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header), [hgroup](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup), [h1-h6](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements), [nav](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav), [search](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/search), [address](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address), [main](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main), [section](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section), [article](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article), [aside](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside), [footer](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer)
