@@ -12,3 +12,6 @@
 
 ## Multimedia
 [audio](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio), [video](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video), [track](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track), [img](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img), [map](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map)
+
+## Embedded content
+[iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe), [portal](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/portal), [object](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object), [picture](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture), [source](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source)
