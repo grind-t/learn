@@ -2,5 +2,5 @@
 - [Void element](https://chatgpt.com/?q=What%20is%20void%20element%20in%20html%20(compact%20answer))
 - [Boolean attribute](https://chatgpt.com/?q=what%20is%20boolean%20attribute%20in%20html)
 - [Whitspaces](https://chatgpt.com/?q=How%20are%20spaces%20handled%20in%20html%20(compact%20answer))
-- [Character reference](https://chatgpt.com/?q=What%20is%20a%20character%20reference%20in%20html)
-- [Comment](https://chatgpt.com/?q=Describe%20the%20syntax%20of%20the%20html%20comment%20(compact%20answer))
+- [Character references](https://chatgpt.com/?q=What%20is%20a%20character%20reference%20in%20html)
+- [Comments](https://chatgpt.com/?q=Describe%20the%20syntax%20of%20the%20html%20comment%20(compact%20answer))
